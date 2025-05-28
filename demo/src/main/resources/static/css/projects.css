@@ -1,0 +1,146 @@
+body {
+    background-image: url("../Dateien/14421.png");
+    background-position: center;
+    background-repeat: round;
+    font-family: sans-serif;
+}
+.glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-image:
+            linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.center-wrapper .links {
+    display: flex;
+    justify-content: left;
+    margin-top: 1rem;
+}
+
+.center-wrapper .rechts {
+    display: flex;
+    justify-content: right;
+    margin-top: 1rem;
+}
+
+.row-mapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+
+
+.bild {
+    display: block;
+    margin: 0 auto;
+}
+
+.glass h1,
+.glass h2,
+.glass p {
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer span {
+    color: white !important;
+}
+
+h3 {
+    color: white !important;
+    font-size: 1.5rem;
+}
+
+.p-5 {
+    color: white;
+}
+
+.py-6 h1,
+.py-6 p {
+    color: white;
+}
+
+.p-5 .rechts img {
+    color: white;
+}
+
+.elementi {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* zentriert vertikal */
+    align-items: center;     /* zentriert horizontal */
+    height: 100%;            /* falls nötig: Höhe anpassen */
+    padding: 1rem;
+}
+
+.elementi h3 {
+    align-self: flex-start;  /* h3 oben links */
+    margin-bottom: auto;     /* schiebt Bild nach unten */
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.about-section .text {
+    flex: 1 1 50%;
+    min-width: 250px;
+    color: whitesmoke;
+    text-align: left;
+}
+
+/* Bild bleibt wie gehabt */
+.about-image {
+    flex: 0 0 200px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-image.right {
+    order: 2;
+}
+
+.about-image.left {
+    order: 0;
+}
+
+/* Neuer Stil für mittleren Textblock */
+.text.aligncenter {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 800px;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+/* Neuer Stil speziell für oberen Text rechtsbündig im Block */
+.about-section.top .text {
+    text-align: right;
+}
