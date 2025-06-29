@@ -41,3 +41,19 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const copyBtn = document.getElementById("copyEmailBtn");
+    const msg = document.getElementById("copiedMessage");
+
+    if (copyBtn && msg) {
+        copyBtn.addEventListener("click", () => {
+            navigator.clipboard.writeText("ionescurobert117@yahoo.com").then(() => {
+                msg.classList.add("visible");
+                setTimeout(() => {
+                    msg.classList.remove("visible");
+                }, 2000);
+            });
+        });
+    }
+});
