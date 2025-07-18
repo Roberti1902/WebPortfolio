@@ -1,9 +1,35 @@
 body {
-    background-image: url("../Dateien/14421.png");
+    background-image: url("../Dateien/backgroundfinal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-repeat: round;
     font-family: sans-serif;
 }
+
+.custom-cursor,
+.ghost-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.custom-cursor {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.ghost-cursor {
+    z-index: 9998;
+    opacity: 0.08;
+    filter: blur(5px);
+}
+
 .glass {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -66,6 +92,14 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     text-align: center;
     margin-top: 20px;
+}
+
+.glass.rechtsalign p {
+    text-align: start !important;
+}
+
+.glass.linksalign p {
+    text-align: end !important;
 }
 
 ul {
@@ -132,7 +166,6 @@ h3 {
 
 .projects .rechti {
     grid-column: 2;
-    justify-self: end;
     color: white;
 }
 
@@ -175,6 +208,174 @@ h3 {
 }
 
 
+*, *:hover {
+    cursor: none !important;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+    transition: all 1s ease-out;
+    will-change: transform, opacity, filter;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.available-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 9999px;
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.status-dot {
+    transform: translateY(-0.8px) !important;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: sandybrown;
+    animation: pulse 1.5s infinite ease-in-out;
+    box-shadow: 0 0 6px rgba(244, 164, 96, 0.6);
+}
+
+.status-dot2 {
+    transform: translateY(-0.8px) !important;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: green;
+    animation: pulse 1.5s infinite ease-in-out;
+    box-shadow: 0 0 6px rgba(0, 255, 136, 0.6);
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.6); opacity: 0.3; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.available-badge::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10px center, rgba(0, 255, 136, 0.1), transparent 60%);
+    transform: translateY(-50%);
+    animation: glow 4s infinite ease-in-out;
+    z-index: 0;
+}
+
+@keyframes glow {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.2; }
+}
+
+.status-text {
+    position: relative;
+    z-index: 1;
+}
 
 
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px goldenrod); }
+    25% { transform: scale(1.02); filter: drop-shadow(0 0 10px goldenrod); }
+    50% { transform: scale(0.99); }
+    75% { transform: scale(1.01); }
+}
 
+.top-skill {
+    animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+.highlight {
+    color: #f5bc50 !important; /* z.B. Gold für Strahlkraft */
+    font-weight: 600;
+}
+
+.highlight:hover {
+    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
+}
+
+h3 {
+    color: #00BFFF !important;
+}
+
+.projects-container {
+    width: 100%;
+    padding-inline: 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.coni {
+    max-width: 1800px !important;     /* oder 100%, wenn du volle Breite willst */
+    margin: 0 auto;        /* zentriert den Container */
+    padding: 0 3vw;
+}
+
+.hover-effect-5 {
+    position: relative;
+    overflow: hidden;
+}
+.hover-effect-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+.hover-effect-5:hover::before {
+    left: 100%;
+}
+
+
+.language-flags {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.lang-flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.lang-flag:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.lang-flag.active {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 3px white);
+}

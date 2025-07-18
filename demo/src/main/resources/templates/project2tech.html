@@ -21,58 +21,59 @@
 
 <div class="center-wrapper">
     <div class="p-5 glass">
-        <div class="container-fluid py-5">
+
+        <div class="language-flags d-flex justify-content-center align-items-center gap-3">
+            <img src="/Dateien/ger2.png" alt="Deutsch" class="lang-flag" data-lang="de">
+            <img src="/Dateien/eng2.png" alt="English" class="lang-flag" data-lang="en">
+            <img src="/Dateien/fr2.png" alt="Français" class="lang-flag" data-lang="fr">
+        </div>
+
+        <div class="container-fluid py-3">
             <img src="../../Dateien/facelogo.png" class="bild" alt="Gesicht" height="200px">
-            <h1 class="display-5 fw-bold">Project 2: Personal Web-Portfolio</h1>
+            <h1 class="display-5 fw-bold" data-i18n="project2Portfolio.headline">Project 2: Personal Web-Portfolio</h1>
 
 
             <div class="row-mapper">
-                <div class="p-5 glass links">
+                <div class="textblock text-left">
+                    <p data-i18n="project2Portfolio.section1.paragraph1">
+                        Mit dem persönlichen <span class="highlight">Web-Portfolio</span> schuf ich ein modular aufgebautes Frontend, das <span class="highlight">responsives Design</span>, <span class="highlight">component-based Architecture</span> und eine konsistente <span class="highlight">UI/UX-Strategie</span> nahtlos verbindet. Jedes Modul wurde technisch präzise in <span class="highlight">HTML</span>, <span class="highlight">CSS</span> und <span class="highlight">JavaScript</span> umgesetzt.
+                    </p>
+
+
+                    <p data-i18n="project2Portfolio.section1.paragraph2">
+                        Das Layout wurde an verschiedenen Viewport-Größen optimiert, um **<span class="highlight">Barrierefreiheit</span>** und **<span class="highlight">Performance</span>** zu maximieren. Ein durchgängiges <span class="highlight">Design-System</span> und wiederverwendbare <span class="highlight">UI-Komponenten</span> garantieren eine einheitliche Nutzererfahrung und effiziente Wartungszyklen.
+                    </p>
 
                 </div>
-                <div class="p-5 glass rechts">
-
-                </div>
+                <img class="beschreibung" src="../../Dateien/port1.png" alt="Bild 1" height="400px">
             </div>
 
-            <div class="row-mapper zweitetech">
-                <div class="p-5 glass links zweite">
+            <hr>
 
-                </div>
-                <div class="p-5 glass rechts zweite">
+            <div class="row-mapper">
 
+                <img class="beschreibung" src="../../Dateien/port2.png" alt="Bild 2" height="400px">
+
+                <div class="textblock text-right">
+                    <p data-i18n="project2Portfolio.section2.paragraph1">
+                        Durch den tiefen Einstieg in <span class="highlight">TypeScript-Typisierung</span> und strukturiertes <span class="highlight">State-Handling</span> etablierte ich robuste Architektur-Patterns. Der Einsatz von <span class="highlight">Interfaces</span>, <span class="highlight">Generics</span> und <span class="highlight">State-Management-Patterns</span> (beispielsweise Redux-ähnliche Stores) sorgt für langfristige <span class="highlight">Wartbarkeit</span> und <span class="highlight">Skalierbarkeit</span>.
+                    </p>
+
+                    <p data-i18n="project2Portfolio.section2.paragraph2">
+                        Zur Sicherung der Codequalität integrierte ich umfassende <span class="highlight">Unit-Tests</span>, <span class="highlight">Linting-Regeln</span> und automatisierte <span class="highlight">Build-Prozesse</span>. Dieser workflowoptimierte Ansatz hält das Projekt flexibel und bereitet es ideal auf zukünftige Erweiterungen und Teamkollaborationen vor.
+                    </p>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
-
 <div class="container footer">
     <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-                <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
             <span class="mb-3 mb-md-0 text-body-secondary">Robert Andreas Ionescu © 2025. All rights reserved </span>
         </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3">
-                <a class="text-body-secondary" href="#" aria-label="Instagram">
-                    <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"></use></svg>
-                </a>
-            </li>
-            <li class="ms-3">
-                <a class="text-body-secondary" href="#" aria-label="Facebook">
-                    <svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg>
-                </a>
-            </li>
-        </ul>
     </footer>
 </div>
-
-
 </body>
 </html>

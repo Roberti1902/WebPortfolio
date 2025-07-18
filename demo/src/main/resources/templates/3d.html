@@ -8,25 +8,33 @@
     <script src="/javascript/main.js" defer></script>
 </head>
 <body>
-<div class="containers">
+<div class="containers reveal">
     <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="/technical" class="nav-link active" aria-current="page">Tech-Portfolio</a></li>
+            <li class="nav-item"><a href="/technical" class="nav-link active hover-effect-5" aria-current="page">Tech-Portfolio</a></li>
             <li class="nav-item"><a href="about" class="nav-link">About</a></li>
         </ul>
     </header>
 </div>
 
 
-<div class="center-wrapper">
+<div class="center-wrapper reveal">
     <div class="p-5 glass">
+
+        <div class="language-flags d-flex justify-content-center align-items-center gap-3">
+            <img src="/Dateien/ger2.png" alt="Deutsch" class="lang-flag" data-lang="de">
+            <img src="/Dateien/eng2.png" alt="English" class="lang-flag" data-lang="en">
+            <img src="/Dateien/fr2.png" alt="Français" class="lang-flag" data-lang="fr">
+        </div>
+
         <div class="container-fluid py-5">
+
             <img src="/Dateien/facelogo.png" class="bild" alt="Gesicht" height="200px">
-            <h1 class="display-5 fw-bold">3D-Stack</h1>
-            <h2 class="display-7 fw-bold">Programme</h2>
+            <h1 class="display-5 fw-bold" data-i18n="stackPage.headline">3D-Stack</h1>
+            <h2 class="display-7 fw-bold" data-i18n="stackPage.programsTitle">Programme</h2>
             <ul>
-                <li class="skill">
+                <li class="top-skill">
                     <img src="../Dateien/3dlogo/blender.png" alt="Skill" height="125px">
                     <p>
                         Blender
@@ -56,14 +64,14 @@
                     </p>
                 </li>
 
-                <li class="skill">
+                <li class="top-skill">
                     <img src="../Dateien/3dlogo/premiere.png" alt="Skill" height="125px">
                     <p>
                         Premiere Pro
                     </p>
                 </li>
 
-                <li class="skill">
+                <li class="top-skill">
                     <img src="../Dateien/3dlogo/after.png" alt="Skill" height="125px">
                     <p>
                         After Effects
@@ -75,134 +83,146 @@
 </div>
 
 <div class="row-mapper zweitetech">
-    <div class="p-5 glass links zweite">
-        <h3>
+    <div class="p-5 glass links zweite reveal rechtsalign">
+        <h3 data-i18n="stackPage.section1.headline">
             Durch kontinuierliches Selbststudium entwickelt
         </h3>
-        <br>
-        Auf der Suche nach einem kreativen Ausgleich zu meiner analytischen Seite stieß ich über mein Interesse an Ghibli auf Blender.
-        <br>
-        <br>
-        Die Kombination aus Technik und Ästhetik faszinierte mich sofort – besonders prozedurale Texturen und der Aufbau realistischer Szenen.
-        <br>
-        <br>
-        Ich vertiefte mich intensiv durch Kurse und
-        unzählige Tutorials, lernte Kameraarbeit, Lichtführung und Komposition, um digitale Welten nicht nur visuell,
-        sondern auch technisch fundiert gestalten zu können.
+
+        <p data-i18n="stackPage.section1.paragraph1">
+        Auf der Suche nach einem kreativen Gegenpol zu meiner analytischen Seite entdeckte ich über mein Interesse an <span class="highlight">Studio Ghibli</span> die Software <span class="highlight">Blender</span>.
+        </p>
+        <p data-i18n="stackPage.section1.paragraph2">
+        Die Kombination aus <span class="highlight">Technik</span> und <span class="highlight">Ästhetik</span> faszinierte mich sofort – besonders <span class="highlight">prozedurale Texturen</span>, <span class="highlight">physikbasiertes Shading</span> und der <span class="highlight">Aufbau realistischer Szenen</span> durch gezielte <span class="highlight">Lichtführung</span> und <span class="highlight">Kamerakomposition</span>.
+        </p>
+        <p data-i18n="stackPage.section1.paragraph3">
+        Mithilfe von <span class="highlight">Online-Kursen</span>, <span class="highlight">Tutorials</span> und praktischen Projekten entwickelte ich ein tiefes Verständnis für <span class="highlight">3D-Visualisierung</span> mit gestalterischer Präzision.
+        </p>
     </div>
-    <div class="p-5 glass rechts zweite">
-        <h3>
+    <div class="p-5 glass rechts zweite reveal">
+        <h3 data-i18n="stackPage.section2.headline">
             Youtube-Videos / Webkurse:
         </h3>
-        Fokus auf photorealistisches 3D-Rendering, prozedurale Texturen, Shader-Workflows und cinematische Kameraführung – von der Konzeptphase bis zum finalen Render.
+        <p data-i18n="stackPage.section2.paragraph1">
+        Fokus auf <span class="highlight">photorealistisches Rendering</span>, <span class="highlight">Shader-Workflows</span>, <span class="highlight">Cinematic Camera Movement</span> und <span class="highlight">prozedurale Materialsysteme</span> – von der <span class="highlight">Konzeptphase</span> bis zum <span class="highlight">finalen Render</span>.
+        </p>
         <hr>
-        Vertiefung in Motion Design, Produktvisualisierung, Redshift-Rendering und stylisierte Animationen für markenorientierte 3D-Projekte.
+        <p data-i18n="stackPage.section2.paragraph2">
+        Vertiefung in <span class="highlight">Motion Design</span>, <span class="highlight">Produktvisualisierung</span>, <span class="highlight">Redshift</span> und <span class="highlight">stilisierten Animationen</span> für <span class="highlight">markenorientierte 3D-Projekte</span>.
+        </p>
         <hr>
-        Simulation von Kleidung auf Basis physikalischer Stoffeigenschaften, pattern-basierte Schnitterstellung und realistische Fashion-Visuals.
+        <p data-i18n="stackPage.section2.paragraph3">
+        <span class="highlight">Cloth Simulation</span> auf Basis <span class="highlight">physikalisch korrekter Stoffeigenschaften</span>, <span class="highlight">pattern-basiertes Tailoring</span> und realistische <span class="highlight">Fashion-Visuals</span> mit hohem Detailgrad.
+        </p>
     </div>
 </div>
 
-<div class="row-mapper zweitetech projects">
-    <div class="p-5 glass uno linki">
-        <h3>
-            Projekt 1: Product Modelling Series
-        </h3>
-        <hr>
-        Fundierte Auseinandersetzung mit der Software und dem präzisen 3D-Modelling komplexer Produkte bis ins technische Detail.
-        <hr>
-        Einsatz von Overlaying prozeduraler Texturen und Blenders internem Post-Processing zur gezielten Erzeugung fotorealistischer Renderings.
-        <hr>
+    <div class="projects-container">
+        <div class="p-5 glass reveal coni rechtsalign">
+            <h3 data-i18n="stackPage.projects.project1.title">
+                Projekt 1: Product Modelling Series
+            </h3>
+            <hr>
+            <p data-i18n="stackPage.projects.project1.paragraph1">
+            Erstellung hochwertiger <span class="highlight">3D-Visuals</span> zur gezielten <span class="highlight">Markenkommunikation</span> und <span class="highlight">Umsetzung individueller Kundenanforderungen</span>.
+            </p>
+            <hr>
+            <p data-i18n="stackPage.projects.project1.paragraph2">
+            Einsatz von <span class="highlight">Overlaying-Texturen</span>, <span class="highlight">Compositing</span> und Blenders internem <span class="highlight">Post-Processing</span> zur gezielten Steuerung von <span class="highlight">Bildwirkung</span> und <span class="highlight">Materialtiefe</span>.
+            </p>
+            <hr>
+            <p data-i18n="stackPage.projects.project1.description">
+            Hier gehts zum Projekt
+            </p>
+            <a href="/project13d" class="btn btn-primary hover-effect-5" role="button" data-i18n="stackPage.projects.project1.button">Projektlink</a>
 
-        Hier gehts zum Projekt
-        <a href="/project13d" class="btn btn-outline-light" role="button">Projektlink</a>
+            <div class="available-badge">
+                <span class="status-dot2"></span>
+                <span class="status-text">Online!</span>
+            </div>
+        </div>
 
+
+
+        <div class="p-5 glass reveal coni rechtsalign">
+            <h3 data-i18n="stackPage.projects.project2.title">
+                Projekt 2: Blenderlifehacks
+            </h3>
+            <hr>
+            <p data-i18n="stackPage.projects.project2.paragraph1">
+            Entwicklung einer <span class="highlight">visuellen Content-Identität</span> durch gezieltes <span class="highlight">Storytelling</span>, klare <span class="highlight">Designsprache</span> und stringente <span class="highlight">Bildkomposition</span> – abgestimmt auf die <span class="highlight">visuelle Kultur</span> der Plattform.
+            </p>
+            <hr>
+            <p data-i18n="stackPage.projects.project2.paragraph2">
+            Umsetzung von <span class="highlight">A/B-Testing</span>, <span class="highlight">Post-Timings</span> und gezielten <span class="highlight">Format-Varianten</span> zur Maximierung von <span class="highlight">KPI-Zielen</span> und organischer <span class="highlight">Plattform-Reichweite</span>.
+            </p>
+            <hr>
+            <p data-i18n="stackPage.projects.project2.description">
+            Hier gehts zum Projekt
+            </p>
+            <a href="/project23d" class="btn btn-primary hover-effect-5" role="button" data-i18n="stackPage.projects.project2.button1">Projektlink</a>
+            <a href="https://www.instagram.com/blenderlifehacks/" class="btn btn-info" role="button">Instagram-Link</a>
+
+
+            <div class="available-badge">
+                <span class="status-dot2"></span>
+                <span class="status-text">Online!</span>
+            </div>
+        </div>
+
+        <div class="p-5 glass reveal coni rechtsalign">
+            <h3 data-i18n="stackPage.projects.project3.title">Projekt 3: 3D Brand-Projekte</h3>
+            <hr>
+            <p data-i18n="stackPage.projects.project3.paragraph1">
+            Erstellung hochwertiger <span class="highlight">3D-Visuals</span> zur gezielten <span class="highlight">Kommunikation von Markenbotschaften</span> und zur <span class="highlight">Erfüllung individueller Kundenanforderungen</span>.
+            </p>
+            <hr>
+            <p data-i18n="stackPage.projects.project3.paragraph2">
+            Kombination aus <span class="highlight">kundenzentrierter Kommunikation</span> und <span class="highlight">Visual Storytelling</span> zur Entwicklung <span class="highlight">ästhetisch</span> und <span class="highlight">strategisch wirksamer Designs</span>.
+            </p>
+            <hr>
+            <p data-i18n="stackPage.projects.project3.description">
+            Hier gehts zum Projekt
+            </p>
+
+            <a href="/project33d" class="btn btn-primary hover-effect-5" role="button" data-i18n="stackPage.projects.project3.button">Projektlink</a>
+
+
+            <div class="available-badge">
+                <span class="status-dot2"></span>
+                <span class="status-text">Online!</span>
+            </div>
+        </div>
     </div>
-    <div class="p-5 glass uno rechti">
-        <h3>
-            Difficulty
-        </h3>
-    </div>
-</div>
 
-<div class="row-mapper projects-row mitte-flex">
-
-    <div class="p-5 glass linki dos mitte">
-        <h3>
-            Difficulty
-        </h3>
-    </div>
-
-    <div class="p-5 glass rechti dos mitte">
-        <h3>
-            Projekt 2: Blenderlifehacks
-        </h3>
-        <hr>
-        - Strategischer Aufbau einer konsistenten Community durch gezielte Interaktion und langfristige Bindung – trotz hoher zeitlicher Anforderungen.
-        <hr>
-        - Planung, Produktion und Veröffentlichung von Content unter Berücksichtigung von Instagram-Algorithmen, Performance-Analyse und effizientem Zeitmanagement.
-        <hr>
-
-        Hier gehts zum Projekt
-        <a href="/project23d" class="btn btn-outline-light" role="button">Projektlink</a>
-        <a href="https://www.instagram.com/blenderlifehacks/" class="btn btn-outline-light" role="button">Insta Link</a>
-
-    </div>
-
-</div>
-
-<div class="row-mapper  projects ganzrechts">
-    <div class="p-5 glass linki tres">
-        <h3>
-            Projekt 3: 3D Brand-Projekte
-        </h3>
-        <hr>
-        - Erstellung hochwertiger 3D-Visuals zur gezielten Kommunikation von Markenbotschaften und zur Erfüllung individueller Kundenanforderungen – mit hoher Anpassungsfähigkeit durch konstruktives Feedback.
-        <hr>
-        - Professionelle Kundenkommunikation kombiniert mit markenorientierter Visual Storytelling-Kompetenz zur Entwicklung ästhetisch und strategisch wirkungsvoller Designs.
-        <hr>
-
-        Hier gehts zum Projekt
-        <a href="/project33d" class="btn btn-outline-light" role="button">Projektlink</a>
-
-
-    </div>
-
-    <div class="p-5 glass rechti tres">
-        <h3>
-            Difficulty
-        </h3>
-    </div>
-</div>
-
-<div class="center-wrapper">
+<div class="center-wrapper reveal">
     <div class="p-6 glass">
         <div class="container-fluid py-6">
-            <h1>
+            <h1 data-i18n="stackPage.future.headline">
                 Jetzt
             </h1>
 
-            <p>
-                In Zukunft möchte ich meine 3D-Visuals gezielt in Kundenprojekten einsetzen und die Schnittstelle zwischen computergenerierten Inhalten und realer Welt erkunden.
+            <p data-i18n="stackPage.future.paragraph1">
+                In Zukunft möchte ich meine <span class="highlight">3D-Visuals</span> gezielt in <span class="highlight">Kundenprojekten</span> einsetzen – mit Fokus auf die <span class="highlight">Schnittstelle zwischen CGI und Realfilm</span>.
             </p>
 
-            <p>
-                Besonders interessiert mich die Kombination von Blender mit Motion Tracking und Compositing-Tools wie After Effects, um reale Aufnahmen mit 3D-Elementen zu verschmelzen und immersive Visuals zu schaffen.
+            <p data-i18n="stackPage.future.paragraph2">
+                Besonders interessiert mich die Kombination von <span class="highlight">Blender</span> mit <span class="highlight">Motion Tracking</span> und <span class="highlight">Compositing-Tools</span> wie <span class="highlight">After Effects</span>, um reale Aufnahmen mit 3D-Elementen zu verschmelzen und <span class="highlight">immersive Visuals</span> zu erzeugen.
             </p>
 
             <br>
 
-            <p>
-                Gleichzeitig setze ich einen starken Fokus auf Wissensvermittlung – über meinen Instagram-Kanal unterrichte ich 3D-Content und arbeite daran, komplexe Themen wie Simulationen, Partikeleffekte oder prozedurale Systeme in Blender verständlich und zugänglich aufzubereiten.
-
+            <p data-i18n="stackPage.future.paragraph3">
+                Gleichzeitig verfolge ich einen starken <span class="highlight">Wissensvermittlungsansatz</span> über <span class="highlight">Instagram</span> – mit dem Ziel, komplexe Themen wie <span class="highlight">Simulation</span>, <span class="highlight">Partikeleffekte</span> oder <span class="highlight">prozedurale Systeme</span> in Blender <span class="highlight">zugänglich</span> und <span class="highlight">verständlich</span> zu machen.
             </p>
-            <p>
-                Mein Ziel ist es, technisches Wissen so zu strukturieren, dass es nicht nur für Experten, sondern auch für eine breite Community greifbar und nutzbar wird.
+
+            <p data-i18n="stackPage.future.paragraph4">
+                Mein Ziel: <span class="highlight">Technisches Wissen</span> so aufzubereiten, dass es <span class="highlight">praktisch anwendbar</span> ist – für Einsteiger wie für Profis.
             </p>
         </div>
     </div>
 </div>
 
-<div class="container footer">
+<div class="container footer reveal">
     <footer class="d-flex justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">

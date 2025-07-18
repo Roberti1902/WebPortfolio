@@ -1,9 +1,35 @@
 body {
-    background-image: url("../Dateien/14421.png");
-    background-position: center;
-    background-repeat: round;
+    background-image: url("../Dateien/backgroundfinal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     font-family: sans-serif;
 }
+
+.custom-cursor,
+.ghost-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.custom-cursor {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.ghost-cursor {
+    z-index: 9998;
+    opacity: 0.08;
+    filter: blur(5px);
+}
+
 .glass {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -119,7 +145,7 @@ h3 {
 .about-image {
     flex: 0 0 200px;
     max-width: 100%;
-    height: auto;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -143,4 +169,84 @@ h3 {
 /* Neuer Stil speziell für oberen Text rechtsbündig im Block */
 .about-section.top .text {
     text-align: right;
+}
+
+
+*, *:hover {
+    cursor: none !important;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+    transition: all 1s ease-out;
+    will-change: transform, opacity, filter;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.highlight:hover {
+    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
+}
+
+
+.highlight {
+    color: #f5bc50 !important; /* z.B. Gold für Strahlkraft */
+    font-weight: 600;
+}
+
+h3 {
+    color: #00BFFF !important;
+}
+
+.hover-effect-5 {
+    position: relative;
+    overflow: hidden;
+}
+.hover-effect-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+.hover-effect-5:hover::before {
+    left: 100%;
+}
+
+
+.language-flags {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.lang-flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.lang-flag:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.lang-flag.active {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 3px white);
 }

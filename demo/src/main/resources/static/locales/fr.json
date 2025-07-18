@@ -1,0 +1,177 @@
+{
+  "location": {
+    "label": "Emplacement actuel : Allemagne",
+    "timezone": "(+2UTC)"
+  },
+  "hero": {
+    "title": "Développeur logiciel & CGI Généraliste",
+    "subtitle": "Avec ❤️ pour le code – m’améliorer de 1% chaque jour!",
+    "working": "Actuellement en poste chez AXA"
+  },
+  "availability": {
+    "title": "Ouvert à de nouveaux défis",
+    "text": "Freelance & projets annexes bienvenus – contactez-moi par e‑mail."
+  },
+  "about": {
+    "headline": "État d’esprit",
+    "paragraph1": "Je pense en <span class=\"highlight\">systèmes</span> et en <span class=\"highlight\">formes</span> – fasciné par l’intersection de la <span class=\"highlight\">technologie</span> et du <span class=\"highlight\">design</span>.",
+    "paragraph2": "Durant mes études d’<span class=\"highlight\">informatique</span>, j’enrichis mes compétences <span class=\"highlight\">3D</span> en autodidacte : <span class=\"highlight\">projets</span>, <span class=\"highlight\">tutoriels</span> et <span class=\"highlight\">essais/erreurs</span>.",
+    "paragraph3": "Pour moi, la <span class=\"highlight\">précision créative</span> et la <span class=\"highlight\">précision logique</span> vont de pair : je ne me contente pas d’<span class=\"highlight\">utiliser des outils</span> – je veux <span class=\"highlight\">comprendre</span>, <span class=\"highlight\">créer</span> et <span class=\"highlight\">innover</span>.",
+    "btn": "En savoir plus"
+  },
+  "logic": {
+    "headline": "Côté logique",
+    "paragraph": "<span class=\"highlight\">L’IT</span> est le socle de l’<span class=\"highlight\">avenir</span>. <span class=\"highlight\">Automatisation</span> et <span class=\"highlight\">IA</span> transforment les processus – et repoussent les limites de nos capacités.<br><br>Je développe en <span class=\"highlight\">Java</span>, <span class=\"highlight\">C</span> et <span class=\"highlight\">Python</span> – avec un focus sur l’<span class=\"highlight\">architecture logicielle orientée objet</span> et des frameworks modernes tels que <span class=\"highlight\">Spring</span>, <span class=\"highlight\">React</span> et <span class=\"highlight\">Angular</span>.<br><br>Mon moteur : comprendre les principes des <span class=\"highlight\">technologies</span> pour façonner activement le <span class=\"highlight\">monde numérique</span>.",
+    "btn": "Tech & Projets"
+  },
+  "creative": {
+    "headline": "Côté créatif",
+    "paragraph": "<span class=\"highlight\">Le design 3D</span> est mon univers pour créer des <span class=\"highlight\">mondes digitaux</span>. Inspiré par <span class=\"highlight\">Ghibli</span>, j’ai débuté avec <span class=\"highlight\">Blender</span> puis enrichi mon toolkit avec <span class=\"highlight\">Cinema 4D</span> et <span class=\"highlight\">Marvelous Designer</span>.<br><br>J’adore l’alliance de la <span class=\"highlight\">technologie</span> et de l’<span class=\"highlight\">esthétique</span> : <span class=\"highlight\">textures procédurales</span>, <span class=\"highlight\">modélisation précise</span> et <span class=\"highlight\">pensée systémique</span>.<br><br>Sur <span class=\"highlight\">les réseaux sociaux</span>, je partage mes progrès – pour augmenter ma visibilité et progresser continuellement.",
+    "btn": "Portefeuille 3D"
+  },
+  "aboutPage": {
+    "headline": "À propos de moi",
+    "greetingTitle": "Merci de votre visite !",
+    "greetingText": "Faites défiler pour découvrir ma méthode de travail et mon parcours.",
+    "section1": {
+      "paragraph1": "Depuis toujours, ma <span class=\"highlight\">curiosité technique</span> me pousse : je veux <span class=\"highlight\">maîtriser</span> les <span class=\"highlight\">systèmes</span> dans les moindres détails.",
+      "paragraph2": "Entre <span class=\"highlight\">informatique</span> et <span class=\"highlight\">design 3D</span>, j’ai trouvé l’alliance parfaite entre <span class=\"highlight\">pensée analytique</span> et <span class=\"highlight\">créativité</span>.",
+      "paragraph3": "Mon ambition : développer des <span class=\"highlight\">compétences digitales</span> en profondeur, de façon <span class=\"highlight\">pratique</span> et <span class=\"highlight\">durable</span>."
+    },
+    "section2": {
+      "paragraph1": "J’ai appris le <span class=\"highlight\">design 3D</span> en autodidacte : <span class=\"highlight\">cours en ligne</span>, <span class=\"highlight\">projets pratiques</span> et expérimentations constantes.",
+      "paragraph2": "Pendant mes études, j’ai approfondi mon <span class=\"highlight\">expertise IT</span> en me concentrant sur l’<span class=\"highlight\">architecture logicielle</span> et la <span class=\"highlight\">connaissance des systèmes</span>.",
+      "paragraph3": "Ma force réside dans l’alliance de la <span class=\"highlight\">précision technique</span> et de la <span class=\"highlight\">vision créative</span>."
+    },
+    "section3": {
+      "paragraph1": "Je m’efforce de grandir à chaque projet – grâce à un <span class=\"highlight\">compréhension approfondie</span> des systèmes et un <span class=\"highlight\">raisonnement méthodique</span>.",
+      "paragraph2": "Dans un monde toujours plus <span class=\"highlight\">piloté par l’IA</span> et numérisé, ma mission est de concevoir des solutions <span class=\"highlight\">responsables</span> et <span class=\"highlight\">durables</span>.",
+      "paragraph3": "Pour moi, l’équilibre entre <span class=\"highlight\">logique</span> et <span class=\"highlight\">créativité</span> constitue la clé d’un ensemble fonctionnel."
+    }
+  },
+  "stackPage": {
+    "headline": "Stack 3D",
+    "programsTitle": "Programmes",
+    "programList": {
+      "blender": "Blender",
+      "cinema": "Cinema 4D",
+      "marvelous": "Marvelous Designer"
+    },
+    "creativeTitle": "Outils de création",
+    "creativeList": {
+      "photoshop": "Photoshop",
+      "premiere": "Premiere Pro",
+      "afterEffects": "After Effects"
+    },
+    "section1": {
+      "headline": "Développé par apprentissage continu",
+      "paragraph1": "En quête d’un contrepoint créatif à ma rigueur analytique, j’ai découvert via ma passion pour <span class=\"highlight\">Studio Ghibli</span> le logiciel <span class=\"highlight\">Blender</span>.",
+      "paragraph2": "L’alchimie entre <span class=\"highlight\">technologie</span> et <span class=\"highlight\">esthétique</span> m’a immédiatement captivé : surtout <span class=\"highlight\">textures procédurales</span>, <span class=\"highlight\">shading physique</span> et la création de scènes réalistes par la <span class=\"highlight\">gestion de la lumière</span> et la <span class=\"highlight\">composition caméra</span>.",
+      "paragraph3": "Grâce à des <span class=\"highlight\">cours en ligne</span>, <span class=\"highlight\">tutoriels</span> et projets pratiques, j’ai acquis une maîtrise poussée de la <span class=\"highlight\">visualisation 3D</span>."
+    },
+    "section2": {
+      "headline": "Vidéos YouTube / Cours en ligne",
+      "paragraph1": "Focus sur le <span class=\"highlight\">rendu photoréaliste</span>, les <span class=\"highlight\">flux de travail shader</span>, le <span class=\"highlight\">mouvement cinématique</span> et les <span class=\"highlight\">systèmes de matériaux procéduraux</span> – de la <span class=\"highlight\">phase conceptuelle</span> au <span class=\"highlight\">rendu final</span>.",
+      "paragraph2": "Approfondissement en <span class=\"highlight\">motion design</span>, <span class=\"highlight\">visualisation produit</span>, <span class=\"highlight\">Redshift</span> et <span class=\"highlight\">animations stylisées</span> pour des projets 3D orientés marque.",
+      "paragraph3": "<span class=\"highlight\">Simulation de tissu</span> basée sur des propriétés physiques, <span class=\"highlight\">patrons de couture</span> et <span class=\"highlight\">visuels mode</span> à haute fidélité."
+    },
+    "projects": {
+      "project1": {
+        "title": "Projet 1 : Série de modélisation produit",
+        "paragraph1": "Création de <span class='highlight'>3D-Visuals</span> haut de gamme pour une <span class='highlight'>communication de marque</span> ciblée et une <span class='highlight'>réponse aux besoins clients</span>.",
+        "paragraph2": "Utilisation de <span class='highlight'>textures superposées</span>, <span class='highlight'>compositing</span> et du <span class='highlight'>post‑processing</span> interne de Blender pour contrôler précisément l’<span class='highlight'>impact visuel</span> et la <span class='highlight'>profondeur matérielle</span>.",
+        "description": "Voir le projet :",
+        "button": "Lien du projet",
+        "status": "En ligne !"
+      },
+      "project2": {
+        "title": "Projet 2 : Blenderlifehacks",
+        "paragraph1": "Développement d’une <span class='highlight'>identité visuelle</span> par le <span class='highlight'>storytelling</span>, un langage <span class='highlight'>design</span> clair et une <span class='highlight'>composition</span> affinée – adapté à la culture visuelle de la plateforme.",
+        "paragraph2": "Mise en œuvre de <span class='highlight'>tests A/B</span>, de <span class='highlight'>plannings de publication</span> et de <span class='highlight'>formats variés</span> pour maximiser les KPIs et la portée organique.",
+        "description": "Voir le projet :",
+        "button1": "Lien du projet",
+        "button2": "Lien Instagram",
+        "status": "En ligne !"
+      },
+      "project3": {
+        "title": "Projet 3 : Projets de marque 3D",
+        "paragraph1": "Création de <span class='highlight'>3D-Visuals</span> haut de gamme pour communiquer efficacement les messages de marque et répondre aux besoins spécifiques des clients.",
+        "paragraph2": "Association de la <span class='highlight'>communication centrée client</span> et du <span class='highlight'>visual storytelling</span> pour concevoir des designs à la fois <span class='highlight'>esthétique</span> et <span class='highlight'>stratégiquement pertinents</span>.",
+        "description": "Voir le projet :",
+        "button": "Lien du projet",
+        "status": "En ligne !"
+      }
+    },
+    "future": {
+      "headline": "À venir",
+      "paragraph1": "À l’avenir, je souhaite déployer mes <span class='highlight'>3D-Visuals</span> dans des projets clients, en m’appuyant sur l’intégration entre le <span class='highlight'>CGI et le film réel</span>.",
+      "paragraph2": "Je m’intéresse particulièrement à la combinaison de <span class='highlight'>Blender</span> avec le <span class='highlight'>motion tracking</span> et des outils de <span class='highlight'>compositing</span> tels qu’<span class='highlight'>After Effects</span> pour fusionner images réelles et éléments 3D et créer des visuels immersifs.",
+      "paragraph3": "Parallèlement, je poursuis un solide <span class='highlight'>approche pédagogique</span> sur <span class='highlight'>Instagram</span> pour rendre accessibles des sujets complexes comme la <span class='highlight'>simulation</span>, les <span class='highlight'>effets particulaires</span> ou les <span class='highlight'>systèmes procéduraux</span> dans Blender.",
+      "paragraph4": "Mon objectif : rendre le <span class='highlight'>savoir technique</span> <span class='highlight'>pratiquement applicable</span> – tant pour les débutants que pour les professionnels."
+    }
+  },
+  "technicalPage": {
+    "headline": "Techstack",
+    "programmingLanguagesTitle": "Langages de programmation",
+    "frameworksTitle": "Frameworks & Bibliothèques",
+    "toolsTitle": "Outils & Plateformes",
+    "section1": {
+      "headline1": "Cours suivis",
+      "content1": "<span class=\"highlight\">Programmation I–III</span> (<span class=\"highlight\">Java</span>, incluant <span class=\"highlight\">développement web</span>) (2023–2024)",
+      "content2": "<span class=\"highlight\">Architecture des ordinateurs</span> et <span class=\"highlight\">réseaux</span> (<span class=\"highlight\">Computer Architecture</span>) (2023–2024)",
+      "content3": "<span class=\"highlight\">Systèmes de bases de données</span>, <span class=\"highlight\">programmation en C</span> et <span class=\"highlight\">fondamentaux de la data science</span> (2023)"
+    },
+    "section2": {
+      "headline2": "Université Heinrich Heine Düsseldorf (2023–présent)",
+      "content1": "À l’<span class=\"highlight\">Université Heinrich‑Heine</span>, j’ai approfondi mes connaissances en <span class=\"highlight\">Java</span> grâce à des <span class=\"highlight\">frameworks</span> et <span class=\"highlight\">outils modernes</span>.",
+      "content2": "J’ai exploré le <span class=\"highlight\">cycle de vie logiciel</span>, résolu des problèmes de manière <span class=\"highlight\">autonome</span>, documenté de façon <span class=\"highlight\">claire</span> et travaillé en <span class=\"highlight\">équipe</span> – alliant <span class=\"highlight\">code hérité</span>, <span class=\"highlight\">innovation</span> et <span class=\"highlight\">amélioration continue</span>."
+    },
+    "section3": {
+      "headline3": "Auto‑formation Udemy (2024–présent)",
+      "content1": "En parallèle de mes études, j’ai cherché des <span class=\"highlight\">formats d’apprentissage pratiques</span>.",
+      "content2": "De <span class=\"highlight\">tutoriels YouTube</span> à des <span class=\"highlight\">cours Udemy haut de gamme</span> – j’ai structuré mon apprentissage avec un focus sur la <span class=\"highlight\">pensée logique</span>, la <span class=\"highlight\">compréhension des systèmes</span> et la <span class=\"highlight\">pratique du développement</span>.",
+      "content3": "J’ai appliqué ces connaissances dans <span class=\"highlight\">mes propres projets</span> – de petites applications web aux architectures backend plus complexes.",
+      "content4": "J’ai pratiqué le <span class=\"highlight\">Clean Code</span>, la <span class=\"highlight\">gestion de versions avec Git</span> et le <span class=\"highlight\">debugging</span> dans des scénarios réalistes, visant la <span class=\"highlight\">professionnalisation</span>."
+    },
+    "section4": {
+      "headline4": "Certifications acquises",
+      "content1": "<span class=\"highlight\">FullStack Web Development</span> : <span class=\"highlight\">React</span>, <span class=\"highlight\">Angular</span>, <span class=\"highlight\">JavaScript</span>, <span class=\"highlight\">HTML</span>, <span class=\"highlight\">CSS</span>, <span class=\"highlight\">Node.js</span>, <span class=\"highlight\">PostgreSQL</span>, <span class=\"highlight\">Web3</span>, <span class=\"highlight\">DApps</span>",
+      "content2": "<span class=\"highlight\">Machine Learning & Deep Learning avec Python</span> : <span class=\"highlight\">NumPy</span>, <span class=\"highlight\">Pandas</span>, <span class=\"highlight\">Matplotlib</span>, <span class=\"highlight\">PyTorch</span>, <span class=\"highlight\">TensorFlow</span>",
+      "content3": "<span class=\"highlight\">Structures de données & Algorithmes</span>, <span class=\"highlight\">Linux avancé</span>, <span class=\"highlight\">compréhension système</span>."
+    },
+    "projects": {
+      "project1": {
+        "title": "Projet 1 : Système IA pour l’analyse de données (Python, TensorFlow, PyTorch)",
+        "paragraph1": "– Conception de <span class=\"highlight\">data pipelines</span> robustes et compréhension approfondie de modèles complexes de <span class=\"highlight\">machine learning</span> pour extraire des motifs pertinents de grands ensembles de données hétérogènes.",
+        "paragraph2": "– Utilisation efficace de <span class=\"highlight\">TensorFlow</span> et <span class=\"highlight\">PyTorch</span> pour l’<span class=\"highlight\">implémentation</span>, l’<span class=\"highlight\">optimisation</span> et la <span class=\"highlight\">validation</span> de réseaux neuronaux, en gérant le <span class=\"highlight\">temps d’entraînement</span>, le <span class=\"highlight\">surapprentissage</span> et la <span class=\"highlight\">généralisation</span> des modèles.",
+        "description": "Voir le projet :",
+        "button1": "Processus de programmation",
+        "badge1": "En cours !"
+      },
+      "project2": {
+        "title": "Projet 2 : Portfolio Web Personnel (CSS, HTML, JavaScript)",
+        "paragraph1": "– Réalisation technique précise d’un <span class=\"highlight\">frontend modulaire</span> avec <span class=\"highlight\">design responsive</span>, <span class=\"highlight\">architecture component‑based</span> et <span class=\"highlight\">stratégie UI/UX</span> cohérente.",
+        "paragraph2": "– Approfondissement de la <span class=\"highlight\">typage TypeScript</span> et de la gestion d’<span class=\"highlight\">état structurée</span> pour garantir la <span class=\"highlight\">maintenabilité</span> et la <span class=\"highlight\">scalabilité</span>.",
+        "description": "Voir le projet :",
+        "button1": "Processus de programmation",
+        "badge1": "En ligne !"
+      },
+      "project3": {
+        "title": "Projet 3 : API REST avec Spring Boot (Spring Boot, Java, JUnit, REST)",
+        "paragraph1": "– Architecture d’une <span class=\"highlight\">API REST conforme</span> avec un <span class=\"highlight\">modèle de domaine</span> réfléchi, gestion des <span class=\"highlight\">exceptions</span> et connexion persistante via <span class=\"highlight\">Spring Data JPA</span>.",
+        "paragraph2": "– <span class=\"highlight\">Développement piloté par les tests</span> (TDD) avec <span class=\"highlight\">JUnit</span> et tests d’intégration pour garantir la <span class=\"highlight\">stabilité</span>, la <span class=\"highlight\">résilience</span> et des <span class=\"highlight\">interfaces claires</span>.",
+        "description": "Voir le projet :",
+        "button1": "Processus de programmation",
+        "badge1": "En cours !"
+      }
+    },
+    "future": {
+      "headline": "À venir",
+      "paragraph5": "Je prévois prochainement d’explorer intensivement les <span class='highlight'>technologies modernes</span> et les <span class='highlight'>langages</span> : ",
+      "paragraph6": "<span class='highlight'>Rust</span> : focus sur la <span class='highlight'>sécurité mémoire</span> et <span class='highlight'>concurrence</span> sans garbage collector",
+      "paragraph7": "<span class='highlight'>Golang</span> : langage léger et efficace pour des services backend <span class='highlight'>scalables</span>",
+      "paragraph8": "<span class='highlight'>TypeScript</span> : sur-ensemble de JavaScript avec <span class='highlight'>typage statique</span> pour un code <span class='highlight'>robuste</span> et <span class='highlight'>maintenable</span>",
+      "paragraph9": "Je souhaite également approfondir mes connaissances en <span class='highlight'>cloud computing</span> (Azure, AWS) et maîtriser des <span class='highlight'>frameworks d’automatisation</span> comme <span class='highlight'>Selenium</span>."
+    }
+  }
+}

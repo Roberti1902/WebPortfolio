@@ -8,7 +8,7 @@
     <script src="/javascript/main.js" defer></script>
 </head>
 <body>
-    <div class="containers">
+    <div class="containers reveal">
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="/3d" class="nav-link active">3D-Portfolio</a></li>
@@ -20,32 +20,75 @@
 
 
     <div class="center-wrapper">
-        <div class="p-5 glass">
+        <div class="p-5 glass reveal">
             <div class="container-fluid py-5">
+
+                <div class="language-flags d-flex justify-content-center align-items-center gap-3">
+                    <img src="/Dateien/ger2.png" alt="Deutsch" class="lang-flag" data-lang="de">
+                    <img src="/Dateien/eng2.png" alt="English" class="lang-flag" data-lang="en">
+                    <img src="/Dateien/fr2.png" alt="Français" class="lang-flag" data-lang="fr">
+                </div>
+
                 <img src="/Dateien/facelogo.png" class="bild" alt="Gesicht" height="200px">
-                <h1 class="display-5 fw-bold">About Me</h1>
+                <h1 class="display-5 fw-bold" data-i18n="aboutPage.headline">About Me</h1>
+
+                <div class="available-section text-center my-0 px-3 reveal">
+                    <span class="status-dot"></span>
+                    <h2 class="mt-3 fw-bold text-white" data-i18n="aboutPage.greetingTitle">Danke fürs Vorbeischauen!</h2>
+                    <p class="text-white-50 mb-0" data-i18n="aboutPage.greetingText">Lese unten weiter um mich und meine Person besser kennenzulernen!</p>
+                </div>
 
                 <br>
 
-                <div class="about-section top">
+                <div class="about-section top reveal">
                     <div class="text">
-                        Neugier ist seit jeher mein Antrieb – die Frage, wie Dinge funktionieren und welche Mechanismen hinter alltäglichen Abläufen stecken, hat mich früh fasziniert. Diese Faszination führte mich in zwei eng miteinander verwobene Welten: die IT und das 3D-Design. In einer Zeit, in der digitale Kompetenzen immer wichtiger werden, habe ich mich bewusst entschieden, beide Bereiche nicht nur oberflächlich zu kennen, sondern tiefgehend zu beherrschen.
+                        <p data-i18n="aboutPage.section1.paragraph1">
+                        Seit jeher treibt mich <span class="highlight">technische Neugier</span> an – mit dem Anspruch, <span class="highlight">Systeme</span> nicht nur zu nutzen, sondern bis ins Detail zu <span class="highlight">verstehen</span>.
+                        </p>
+
+                        <p data-i18n="aboutPage.section1.paragraph2">
+                        Zwischen <span class="highlight">Informatik</span> und <span class="highlight">3D-Design</span> habe ich zwei Welten gefunden, in denen sich <span class="highlight">analytisches Denken</span> und <span class="highlight">kreative Gestaltung</span> perfekt ergänzen.
+                        </p>
+
+                        <p data-i18n="aboutPage.section1.paragraph3">
+                        Mein Ziel war von Anfang an klar: <span class="highlight">digitale Kompetenz</span> nicht oberflächlich, sondern <span class="highlight">tiefgreifend</span> und <span class="highlight">anwendungsnah</span> zu entwickeln.
+                        </p>
                     </div>
-                    <img src="../Dateien/apo.jpg" alt="Oben rechts" class="about-image right">
+                    <img src="../Dateien/erstesbild.png" alt="Oben rechts" class="about-image right">
                 </div>
 
                 <hr>
 
-                <div class="text aligncenter">
-                    Bereits während meines Abiturs begann ich, mich autodidaktisch in 3D-Design zu vertiefen – durch intensive Online-Kurse, Tutorials und unzählige Stunden praktischer Arbeit. Parallel dazu habe ich mein IT-Wissen im Studium systematisch ausgebaut und kontinuierlich erweitert. Für mich ergänzen sich technische Präzision und kreative Gestaltung ideal: Diese Kombination erlaubt es mir, komplexe Systeme nicht nur zu bedienen, sondern zu verstehen und weiterzuentwickeln.
+                <div class="text aligncenter reveal">
+                    <p data-i18n="aboutPage.section2.paragraph1">
+                    Schon früh habe ich mir <span class="highlight">3D-Design</span> autodidaktisch angeeignet – über <span class="highlight">Online-Kurse</span>, <span class="highlight">Praxisprojekte</span> und <span class="highlight">kontinuierliches Experimentieren</span>.
+                    </p>
+
+                    <p data-i18n="aboutPage.section2.paragraph2">
+                    Gleichzeitig vertiefte ich im Studium mein <span class="highlight">IT-Know-how</span> mit Fokus auf <span class="highlight">Programmierung</span>, <span class="highlight">Systemverständnis</span> und <span class="highlight">Softwarearchitektur</span>.
+                    </p>
+
+                    <p data-i18n="aboutPage.section2.paragraph3">
+                    Für mich entsteht echte Stärke aus der <span class="highlight">Verbindung von technischer Präzision</span> und <span class="highlight">visuellem Denken</span> – um Systeme <span class="highlight">weiterzuentwickeln</span> statt nur zu bedienen.
+                    </p>
                 </div>
 
                 <hr>
 
-                <div class="about-section bottom">
-                    <img src="/Dateien/apo.jpg" alt="Unten links" class="about-image left">
+                <div class="about-section bottom reveal">
+                    <img src="/Dateien/zweitesbild.png" alt="Unten links" class="about-image left">
                     <div class="text">
-                        Mein Ziel ist es, bei jedem Projekt nicht nur fachliche Fähigkeiten einzusetzen, sondern auch inhaltlich zu wachsen und neue Konzepte tief zu durchdringen. Gerade in einer Welt, die von Künstlicher Intelligenz und fortschreitender Digitalisierung geprägt ist, sehe ich es als meine Aufgabe, aktiv mitzugestalten und innovative Lösungen zu entwickeln. Dabei motiviert mich die Balance zwischen Logik und Kreativität, neue Herausforderungen anzunehmen, mich stetig weiterzuentwickeln und mit Leidenschaft technische wie gestalterische Welten zu verbinden.
+                        <p data-i18n="aboutPage.section3.paragraph1">
+                        Ich strebe danach, in jedem Projekt <span class="highlight">fachlich</span> und <span class="highlight">konzeptionell</span> zu wachsen – durch <span class="highlight">tiefes Systemverständnis</span> und <span class="highlight">methodisches Denken</span>.
+                        </p>
+
+                        <p data-i18n="aboutPage.section3.paragraph2">
+                        In einer zunehmend <span class="highlight">KI-getriebenen</span> und <span class="highlight">digitalisierten Welt</span> sehe ich es als meine Aufgabe, <span class="highlight">verantwortungsvoll</span> mitzugestalten und <span class="highlight">nachhaltige Lösungen</span> zu entwickeln.
+                        </p>
+
+                        <p data-i18n="aboutPage.section3.paragraph3">
+                        Mich motiviert die Balance aus <span class="highlight">Logik</span> und <span class="highlight">Kreativität</span> – mit dem Ziel, Technik und Gestaltung zu einem <span class="highlight">funktionalen Gesamtbild</span> zu vereinen.
+                        </p>
                     </div>
                 </div>
 
@@ -77,7 +120,5 @@
             </ul>
         </footer>
     </div>
-
-
 </body>
 </html>
