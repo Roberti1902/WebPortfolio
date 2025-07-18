@@ -34,15 +34,11 @@ A technically robust and visually elegant **personal web portfolio**, built from
 
 ## 🚀 View Project
 
-🔗 [Click here to explore the live version »](https://your-live-link.com)
+🔗 [Click here to explore the live version »](https://robertionescu.de)
 
 ---
 
 ## 🧰 Technologies Used
 
-> HTML · CSS · JavaScript · TypeScript  
-> Responsive Layouts · Component Design · Git · VS Code  
-
----
-
-## 📁 Folder Structure (Simplified)
+> HTML · CSS · JavaScript 
+> Responsive Layouts · Component Design · Git  
