@@ -67,7 +67,7 @@
 
             <div class="hero-actions">
                 <a class="btn btn-primary hover-effect-5" href="#contact" data-i18n="hero.cta">Get in touch</a>
-                <a class="btn btn-outline-light hover-effect-5" href="#work" data-i18n="hero.ctaWork">See my work</a>
+                <a class="btn btn-outline-light hover-effect-5" href="#work" data-scroll="center" data-i18n="hero.ctaWork">See my work</a>
             </div>
 
         </div>
@@ -118,14 +118,13 @@
         <img src="/Dateien/openbook.webp" class="buch" alt="" loading="lazy" decoding="async">
     </div>
 
-    <div class="p-5 glass reveal mind-card">
+    <div class="p-5 glass accent-card accent-dual reveal mind-card">
+        <span class="glow-ring" aria-hidden="true"></span>
         <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold" data-i18n="about.headline">State of Mind</h1>
-                <p class="col-md-8 fs-4" data-i18n="about.paragraph1">I think in <span class='highlight'>systems</span> and <span class='highlight'>shapes</span> – with a fascination for <span class='highlight'>technology</span> and <span class='highlight'>design</span> that started early.</p>
-                <br><br>
-                <p class="col-md-8 fs-4" data-i18n="about.paragraph2">While studying <span class='highlight'>computer science</span>, I continue to develop my <span class='highlight'>3D skills autodidactically</span> – through <span class='highlight'>projects</span>, <span class='highlight'>tutorials</span> and <span class='highlight'>trial & error</span>.</p>
-                <br><br>
-                <p class="col-md-8 fs-4" data-i18n="about.paragraph3">For me, <span class='highlight'>creativity</span> and <span class='highlight'>logical precision</span> belong together. I don’t just want to <span class='highlight'>use tools</span> – I want to <span class='highlight'>understand</span>, <span class='highlight'>shape</span> and <span class='highlight'>rethink</span>.</p>
+                <p class="col-md-8 mind-text" data-i18n="about.paragraph1">I think in <span class='highlight'>systems</span> and <span class='highlight'>shapes</span> – with a fascination for <span class='highlight'>technology</span> and <span class='highlight'>design</span> that started early.</p>
+                <p class="col-md-8 mind-text" data-i18n="about.paragraph2">While studying <span class='highlight'>computer science</span>, I continue to develop my <span class='highlight'>3D skills autodidactically</span> – through <span class='highlight'>projects</span>, <span class='highlight'>tutorials</span> and <span class='highlight'>trial & error</span>.</p>
+                <p class="col-md-8 mind-text" data-i18n="about.paragraph3">For me, <span class='highlight'>creativity</span> and <span class='highlight'>logical precision</span> belong together. I don’t just want to <span class='highlight'>use tools</span> – I want to <span class='highlight'>understand</span>, <span class='highlight'>shape</span> and <span class='highlight'>rethink</span>.</p>
             <div class="text-center reveal">
                 <a class="btn btn-primary d-inline-block px-4 py-2 hover-effect-5" href="/about" role="button" data-i18n="about.btn">About Me</a>
             </div>
@@ -139,7 +138,8 @@
     <div class="row align-items-md-stretch" id="work">
 
         <div class="col-md-6 reveal">
-            <div class="h-100 p-5 glass rounded-3 creative">
+            <div class="h-100 p-5 glass accent-card accent-it creative">
+                <span class="glow-ring" aria-hidden="true"></span>
                 <h2 data-i18n="logic.headline">Logical Side</h2>
                 <p data-i18n="logic.paragraph"><span class="highlight">IT</span> is the foundation of the <span class="highlight">future</span>. <span class="highlight">Automation</span> and <span class="highlight">AI</span> are transforming workflows – and expanding what humans can achieve.<br><br>I develop in <span class="highlight">Java</span>, <span class="highlight">C</span>, and <span class="highlight">Python</span> – with a focus on <span class="highlight">object-oriented software architecture</span> and <span class="highlight">modern frameworks</span> like <span class="highlight">Spring</span>, <span class="highlight">React</span>, and <span class="highlight">Angular</span>.<br><br>I'm driven to understand the principles behind <span class="highlight">technologies</span> – to actively shape the <span class="highlight">digital future</span>.</p>
                 <a href="/technical" class="btn btn-primary hover-effect-5" role="button" data-i18n="logic.btn">Tech Portfolio & Projects</a>
@@ -147,7 +147,8 @@
         </div>
 
         <div class="col-md-6 reveal">
-            <div class="h-100 p-5 glass rounded-3">
+            <div class="h-100 p-5 glass accent-card accent-3d">
+                <span class="glow-ring" aria-hidden="true"></span>
                 <h2 data-i18n="creative.headline">Creative Side</h2>
                 <p data-i18n="creative.paragraph"><span class="highlight">3D design</span> is my creative space for <span class="highlight">digital worlds</span>. Inspired by <span class="highlight">Ghibli</span>, I started with <span class="highlight">Blender</span> – and expanded my toolkit with <span class="highlight">Cinema 4D</span> and <span class="highlight">Marvelous Designer</span>.<br><br>I'm fascinated by the fusion of <span class="highlight">technology</span> and <span class="highlight">design</span>: <span class="highlight">procedural textures</span>, <span class="highlight">precise modeling</span>, and <span class="highlight">systemic thinking</span> in the creative process.<br><br>On <span class="highlight">social media</span>, I share progress – to make my style visible and grow continuously.</p>
                 <a href="/3d" class="btn btn-primary hover-effect-5" role="button" data-i18n="creative.btn">3D Portfolio & Projects</a>
@@ -160,7 +161,7 @@
 
 <section class="container contact-section reveal" id="contact">
     <div class="contact-card">
-        <span class="contact-glow" aria-hidden="true"></span>
+        <span class="glow-ring" aria-hidden="true"></span>
 
         <form id="contact-form" action="/contact.php" method="post" novalidate>
             <div class="row g-3 align-items-end contact-head">

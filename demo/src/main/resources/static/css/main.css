@@ -128,7 +128,7 @@ span {
 }
 
 .mind-card .container-fluid {
-    padding-bottom: 7rem !important; /* Platz, damit das Gehirn den About-Button nicht verdeckt */
+    padding-bottom: 6.5rem !important; /* Platz, damit das Gehirn den About-Button nicht verdeckt */
 }
 
 @media (max-width: 767.98px) {
@@ -605,13 +605,14 @@ div .h-100 > h2 {
     --accent-rgb: 0, 191, 255;
 }
 
-.contact-card > *:not(.contact-glow) {
+.contact-card > *:not(.glow-ring),
+.accent-card > *:not(.glow-ring) {
     position: relative;
     z-index: 1;
 }
 
 /* umlaufender Lichtrahmen: Gradient im Kartenformat, per Maske auf einen 1.5px-Rand reduziert */
-.contact-glow {
+.glow-ring {
     position: absolute;
     inset: 0;
     padding: 1.5px;
@@ -626,10 +627,10 @@ div .h-100 > h2 {
     -webkit-mask-composite: xor;
     mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     mask-composite: exclude;
-    animation: contact-glow-spin 6s linear infinite;
+    animation: glow-spin 6s linear infinite;
 }
 
-@keyframes contact-glow-spin {
+@keyframes glow-spin {
     to { --glow-angle: 360deg; }
 }
 
@@ -903,7 +904,7 @@ div .h-100 > h2 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .contact-glow {
+    .glow-ring {
         animation: none;
         background: rgba(var(--accent-rgb), 0.5);
     }
@@ -915,4 +916,92 @@ div .h-100 > h2 {
 
 .form-status:empty {
     display: none;
+}
+
+/* ---------- Karten im Stil des Formulars (State of Mind, Logische/Kreative Seite) ---------- */
+
+.glass.accent-card {
+    --accent-rgb: 0, 191, 255;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 24px;
+    background-image: none;
+    background-color: rgba(8, 8, 16, 0.55);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 50px -20px rgba(var(--accent-rgb), 0.45);
+}
+
+.glass.accent-card.accent-3d {
+    --accent-rgb: 245, 188, 80;
+}
+
+.glass.accent-card .glow-ring {
+    animation-duration: 8s;
+}
+
+/* State of Mind verbindet beide Seiten: Blau und Gold laufen gemeinsam um den Rand */
+.accent-dual {
+    box-shadow: -30px 0 60px -30px rgba(0, 191, 255, 0.35), 30px 0 60px -30px rgba(245, 188, 80, 0.35) !important;
+}
+
+.accent-dual .glow-ring {
+    background: conic-gradient(from var(--glow-angle),
+            rgba(0, 191, 255, 0.12) 0deg,
+            rgba(0, 191, 255, 1) 70deg,
+            rgba(255, 255, 255, 0.08) 140deg 180deg,
+            rgba(245, 188, 80, 1) 250deg,
+            rgba(245, 188, 80, 0.12) 320deg,
+            rgba(0, 191, 255, 0.12) 360deg);
+}
+
+.glass.accent-3d > h2 {
+    color: #f5bc50 !important;
+}
+
+/* Buttons in den Karten wie der Formular-Button: Pille in der Akzentfarbe */
+.accent-card .btn {
+    border: none;
+    border-radius: 999px;
+    padding: 0.6rem 1.4rem;
+    background: rgb(var(--accent-rgb));
+    color: #0b0b12;
+    font-weight: 700;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.accent-card .btn:hover,
+.accent-card .btn:focus-visible {
+    background: rgb(var(--accent-rgb));
+    color: #0b0b12;
+    transform: translateY(-1px);
+    box-shadow: 0 0 22px rgba(var(--accent-rgb), 0.5);
+}
+
+.accent-dual .btn {
+    --accent-rgb: 0, 191, 255;
+}
+
+/* State of Mind kompakter */
+.mind-card .container-fluid {
+    padding-top: 1.5rem !important;
+}
+
+.mind-text {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.mind-card h1 {
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 767.98px) {
+    #work {
+        --bs-gutter-y: 1rem; /* gestapelte Karten nicht direkt aneinander */
+    }
+
+    .mind-text {
+        font-size: 1.05rem;
+    }
 }
