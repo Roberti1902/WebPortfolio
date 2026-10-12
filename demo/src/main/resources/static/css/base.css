@@ -153,3 +153,13 @@ a:focus-visible,
 .nav-pills .nav-link:not(.active):hover {
     color: #00BFFF;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

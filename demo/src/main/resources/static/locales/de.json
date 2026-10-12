@@ -13,13 +13,15 @@
     "timezone": "(+2 UTC)"
   },
   "hero": {
+    "cta": "Kontakt aufnehmen",
+    "ctaWork": "Meine Arbeit ansehen",
     "title": "Softwareentwickler & CGI Generalist",
     "subtitle": "Mit ❤️ für Code – täglich 1% besser!",
     "working": "Derzeit bei AXA tätig"
   },
   "availability": {
-    "title": "Offen für neue  Herausforderungen",
-    "text": "Freelance & Nebenprojekte willkommen – erreichen Sie mich gerne per E-Mail."
+    "title": "Offen für neue Herausforderungen",
+    "text": "Freelance & Nebenprojekte willkommen – schreiben Sie mir gern auf <a href='https://www.linkedin.com/in/robert-ionescu-228228265/' target='_blank' rel='noopener'>LinkedIn</a>."
   },
   "about": {
     "headline": "State of Mind",
@@ -41,6 +43,8 @@
 
 
   "aboutPage": {
+    "ctaText": "Neugierig, was wir gemeinsam umsetzen könnten? Vernetzen wir uns.",
+    "ctaButton": "Auf LinkedIn vernetzen",
     "headline": "Über mich",
     "greetingTitle": "Danke fürs Vorbeischauen!",
     "greetingText": "Scroll nach unten, um mich und meine Arbeitsweise kennenzulernen!",
@@ -169,9 +173,9 @@
         "badge1": "In Arbeit!"
       },
       "project2": {
-        "title": "Projekt 2: Personal Web-Portfolio (CSS, HTML, JavaScript)",
-        "paragraph1": "– Technisch präzise Umsetzung eines <span class=\"highlight\">modularen Frontends</span> mit <span class=\"highlight\">responsivem Design</span>, <span class=\"highlight\">component-based Architecture</span> und konsistenter <span class=\"highlight\">UI/UX-Strategie</span>.",
-        "paragraph2": "– Tiefer Einstieg in <span class=\"highlight\">TypeScript-Typisierung</span> und strukturiertes <span class=\"highlight\">State-Handling</span> zur Gewährleistung von <span class=\"highlight\">Wartbarkeit</span> und <span class=\"highlight\">Skalierbarkeit</span>.",
+        "title": "Projekt 2: Personal Web-Portfolio (Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript)",
+        "paragraph1": "– Serverseitig gerendert mit <span class='highlight'>Spring Boot</span> und <span class='highlight'>Thymeleaf</span>: gemeinsame <span class='highlight'>Layout-Fragmente</span> statt Copy & Paste, eine Codebasis für 8 Seiten.",
+        "paragraph2": "– Eigenes Frontend ohne Framework: <span class='highlight'>responsives Design</span>, Glassmorphism-UI, drei Sprachen (DE/EN/FR) in <span class='highlight'>Vanilla JavaScript</span> und optimierte WebP-Bilder.",
         "description": "Hier gehts zum Projekt:",
         "button1": "Programmierprozess",
         "badge1": "Online!"
@@ -235,14 +239,14 @@
     }
   },
   "project2Portfolio": {
-    "headline": "Project 2: Persönliches Web-Portfolio",
+    "headline": "Projekt 2: Persönliches Web-Portfolio",
     "section1": {
-      "paragraph1": "Mit dem persönlichen <span class=\"highlight\">Web-Portfolio</span> schuf ich ein modular aufgebautes Frontend, das <span class=\"highlight\">responsives Design</span>, <span class=\"highlight\">component-based Architecture</span> und eine konsistente <span class=\"highlight\">UI/UX-Strategie</span> nahtlos verbindet.",
-      "paragraph2": "Jedes Modul wurde technisch präzise in <span class=\"highlight\">HTML</span>, <span class=\"highlight\">CSS</span> und <span class=\"highlight\">JavaScript</span> umgesetzt und an verschiedenen Viewport-Größen auf <span class=\"highlight\">Barrierefreiheit</span> und <span class=\"highlight\">Performance</span> geprüft."
+      "paragraph1": "Dieses Portfolio ist eine <span class='highlight'>Spring-Boot</span>-Anwendung: <span class='highlight'>Thymeleaf</span> rendert die Seiten aus gemeinsamen <span class='highlight'>Layout-Fragmenten</span> (Head, Navigation, Footer), statische Dateien liefert der eingebettete Server direkt aus. Gebaut mit <span class='highlight'>Java 21</span> und <span class='highlight'>Gradle</span>.",
+      "paragraph2": "Das Frontend kommt bewusst ohne Framework aus: handgeschriebenes <span class='highlight'>HTML</span>, <span class='highlight'>CSS</span> und <span class='highlight'>JavaScript</span> mit <span class='highlight'>responsivem Layout</span> vom Smartphone bis zum Desktop, eigenem Cursor, Scroll-Animationen per <span class='highlight'>IntersectionObserver</span> und Glassmorphism-Design."
     },
     "section2": {
-      "paragraph1": "Durch den tiefen Einstieg in <span class=\"highlight\">TypeScript-Typisierung</span> und strukturiertes <span class=\"highlight\">State-Handling</span> etablierte ich robuste <span class=\"highlight\">Architektur-Patterns</span> mit <span class=\"highlight\">Interfaces</span>, <span class=\"highlight\">Generics</span> und <span class=\"highlight\">State-Management-Patterns</span>.",
-      "paragraph2": "Um Codequalität sicherzustellen, integrierte ich <span class=\"highlight\">Unit-Tests</span>, <span class=\"highlight\">Linting-Regeln</span> und automatisierte <span class=\"highlight\">Build-Prozesse</span> – für maximale Wartbarkeit und Skalierbarkeit."
+      "paragraph1": "Die Inhalte gibt es in <span class='highlight'>drei Sprachen</span> (DE/EN/FR): Die Texte liegen in JSON-Dateien und werden clientseitig eingesetzt; die Sprache folgt der <span class='highlight'>Browsereinstellung</span> und lässt sich jederzeit wechseln, fehlende Übersetzungen fallen auf Englisch zurück.",
+      "paragraph2": "Auf <span class='highlight'>Performance</span> und <span class='highlight'>Barrierefreiheit</span> habe ich geachtet: Bilder als <span class='highlight'>WebP</span> (74 MB → 3 MB), Unterstützung für reduzierte Bewegung, per Tastatur bedienbare Elemente und <span class='highlight'>SEO</span>-Grundlagen wie Meta-Tags, Sitemap und Open Graph."
     }
   }
 }

@@ -11,39 +11,31 @@
         <div th:replace="~{fragments/layout :: flags}"></div>
 
         <div class="container-fluid py-3">
-            <img src="../../Dateien/facelogo.webp" class="bild" alt="Gesicht" height="200px">
-            <h1 class="display-5 fw-bold" data-i18n="project2Portfolio.headline">Project 2: Personal Web-Portfolio</h1>
+            <img src="/Dateien/facelogo.webp" class="bild" alt="Portrait of Robert Ionescu" width="200" height="199">
+            <h1 class="display-5 fw-bold" data-i18n="project2Portfolio.headline">Projekt 2: Persönliches Web-Portfolio</h1>
 
 
             <div class="row-mapper">
                 <div class="textblock text-left">
-                    <p data-i18n="project2Portfolio.section1.paragraph1">
-                        Mit dem persönlichen <span class="highlight">Web-Portfolio</span> schuf ich ein modular aufgebautes Frontend, das <span class="highlight">responsives Design</span>, <span class="highlight">component-based Architecture</span> und eine konsistente <span class="highlight">UI/UX-Strategie</span> nahtlos verbindet. Jedes Modul wurde technisch präzise in <span class="highlight">HTML</span>, <span class="highlight">CSS</span> und <span class="highlight">JavaScript</span> umgesetzt.
-                    </p>
+                    <p data-i18n="project2Portfolio.section1.paragraph1">Dieses Portfolio ist eine <span class='highlight'>Spring-Boot</span>-Anwendung: <span class='highlight'>Thymeleaf</span> rendert die Seiten aus gemeinsamen <span class='highlight'>Layout-Fragmenten</span> (Head, Navigation, Footer), statische Dateien liefert der eingebettete Server direkt aus. Gebaut mit <span class='highlight'>Java 21</span> und <span class='highlight'>Gradle</span>.</p>
 
 
-                    <p data-i18n="project2Portfolio.section1.paragraph2">
-                        Das Layout wurde an verschiedenen Viewport-Größen optimiert, um **<span class="highlight">Barrierefreiheit</span>** und **<span class="highlight">Performance</span>** zu maximieren. Ein durchgängiges <span class="highlight">Design-System</span> und wiederverwendbare <span class="highlight">UI-Komponenten</span> garantieren eine einheitliche Nutzererfahrung und effiziente Wartungszyklen.
-                    </p>
+                    <p data-i18n="project2Portfolio.section1.paragraph2">Das Frontend kommt bewusst ohne Framework aus: handgeschriebenes <span class='highlight'>HTML</span>, <span class='highlight'>CSS</span> und <span class='highlight'>JavaScript</span> mit <span class='highlight'>responsivem Layout</span> vom Smartphone bis zum Desktop, eigenem Cursor, Scroll-Animationen per <span class='highlight'>IntersectionObserver</span> und Glassmorphism-Design.</p>
 
                 </div>
-                <img class="beschreibung" src="../../Dateien/port1.webp" alt="Bild 1" height="400px">
+                <img class="beschreibung" src="/Dateien/port1.webp" alt="Bild 1" height="400" loading="lazy" decoding="async">
             </div>
 
             <hr>
 
             <div class="row-mapper">
 
-                <img class="beschreibung" src="../../Dateien/port2.webp" alt="Bild 2" height="400px">
+                <img class="beschreibung" src="/Dateien/port2.webp" alt="Bild 2" height="400" loading="lazy" decoding="async">
 
                 <div class="textblock text-right">
-                    <p data-i18n="project2Portfolio.section2.paragraph1">
-                        Durch den tiefen Einstieg in <span class="highlight">TypeScript-Typisierung</span> und strukturiertes <span class="highlight">State-Handling</span> etablierte ich robuste Architektur-Patterns. Der Einsatz von <span class="highlight">Interfaces</span>, <span class="highlight">Generics</span> und <span class="highlight">State-Management-Patterns</span> (beispielsweise Redux-ähnliche Stores) sorgt für langfristige <span class="highlight">Wartbarkeit</span> und <span class="highlight">Skalierbarkeit</span>.
-                    </p>
+                    <p data-i18n="project2Portfolio.section2.paragraph1">Die Inhalte gibt es in <span class='highlight'>drei Sprachen</span> (DE/EN/FR): Die Texte liegen in JSON-Dateien und werden clientseitig eingesetzt; die Sprache folgt der <span class='highlight'>Browsereinstellung</span> und lässt sich jederzeit wechseln, fehlende Übersetzungen fallen auf Englisch zurück.</p>
 
-                    <p data-i18n="project2Portfolio.section2.paragraph2">
-                        Zur Sicherung der Codequalität integrierte ich umfassende <span class="highlight">Unit-Tests</span>, <span class="highlight">Linting-Regeln</span> und automatisierte <span class="highlight">Build-Prozesse</span>. Dieser workflowoptimierte Ansatz hält das Projekt flexibel und bereitet es ideal auf zukünftige Erweiterungen und Teamkollaborationen vor.
-                    </p>
+                    <p data-i18n="project2Portfolio.section2.paragraph2">Auf <span class='highlight'>Performance</span> und <span class='highlight'>Barrierefreiheit</span> habe ich geachtet: Bilder als <span class='highlight'>WebP</span> (74 MB → 3 MB), Unterstützung für reduzierte Bewegung, per Tastatur bedienbare Elemente und <span class='highlight'>SEO</span>-Grundlagen wie Meta-Tags, Sitemap und Open Graph.</p>
                 </div>
             </div>
         </div>

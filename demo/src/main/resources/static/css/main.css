@@ -326,3 +326,15 @@ div .h-100 > h2 {
     position: relative;
     z-index: 10;
 }
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.available-section a {
+    color: #00BFFF;
+    text-decoration: underline;
+}

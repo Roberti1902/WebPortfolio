@@ -1,4 +1,15 @@
 {
+  "project2Portfolio": {
+    "headline": "Projet 2 : Portfolio Web Personnel",
+    "section1": {
+      "paragraph1": "Ce portfolio est une application <span class='highlight'>Spring Boot</span> : <span class='highlight'>Thymeleaf</span> génère les pages à partir de <span class='highlight'>fragments de mise en page</span> partagés (en-tête, navigation, pied de page), les fichiers statiques sont servis directement par le serveur intégré. Développé avec <span class='highlight'>Java 21</span> et <span class='highlight'>Gradle</span>.",
+      "paragraph2": "Le frontend se passe volontairement de framework : <span class='highlight'>HTML</span>, <span class='highlight'>CSS</span> et <span class='highlight'>JavaScript</span> écrits à la main, avec une <span class='highlight'>mise en page responsive</span> du smartphone au bureau, un curseur personnalisé, des animations au défilement via <span class='highlight'>IntersectionObserver</span> et un design glassmorphism."
+    },
+    "section2": {
+      "paragraph1": "Le contenu existe en <span class='highlight'>trois langues</span> (DE/EN/FR) : les textes sont stockés dans des fichiers JSON et appliqués côté client ; la langue suit les <span class='highlight'>paramètres du navigateur</span> et peut être changée à tout moment, avec repli sur l’anglais pour les traductions manquantes.",
+      "paragraph2": "J’ai soigné la <span class='highlight'>performance</span> et l’<span class='highlight'>accessibilité</span> : images en <span class='highlight'>WebP</span> (74 Mo → 3 Mo), prise en charge de la réduction des animations, éléments utilisables au clavier et bases du <span class='highlight'>SEO</span> comme les balises meta, le sitemap et Open Graph."
+    }
+  },
   "nav": {
     "home": "Accueil",
     "technical": "Portfolio technique",
@@ -13,13 +24,15 @@
     "timezone": "(+2UTC)"
   },
   "hero": {
+    "cta": "Me contacter",
+    "ctaWork": "Voir mon travail",
     "title": "Développeur logiciel & CGI Généraliste",
     "subtitle": "Avec ❤️ pour le code – m’améliorer de 1% chaque jour!",
     "working": "Actuellement en poste chez AXA"
   },
   "availability": {
     "title": "Ouvert à de nouveaux défis",
-    "text": "Freelance & projets annexes bienvenus – contactez-moi par e‑mail."
+    "text": "Freelance & projets annexes bienvenus – écrivez-moi sur <a href='https://www.linkedin.com/in/robert-ionescu-228228265/' target='_blank' rel='noopener'>LinkedIn</a>."
   },
   "about": {
     "headline": "État d’esprit",
@@ -39,6 +52,8 @@
     "btn": "Portefeuille 3D"
   },
   "aboutPage": {
+    "ctaText": "Curieux de savoir ce que nous pourrions construire ensemble ? Connectons-nous.",
+    "ctaButton": "Se connecter sur LinkedIn",
     "headline": "À propos de moi",
     "greetingTitle": "Merci de votre visite !",
     "greetingText": "Faites défiler pour découvrir ma méthode de travail et mon parcours.",
@@ -158,9 +173,9 @@
         "badge1": "En cours !"
       },
       "project2": {
-        "title": "Projet 2 : Portfolio Web Personnel (CSS, HTML, JavaScript)",
-        "paragraph1": "– Réalisation technique précise d’un <span class=\"highlight\">frontend modulaire</span> avec <span class=\"highlight\">design responsive</span>, <span class=\"highlight\">architecture component‑based</span> et <span class=\"highlight\">stratégie UI/UX</span> cohérente.",
-        "paragraph2": "– Approfondissement de la <span class=\"highlight\">typage TypeScript</span> et de la gestion d’<span class=\"highlight\">état structurée</span> pour garantir la <span class=\"highlight\">maintenabilité</span> et la <span class=\"highlight\">scalabilité</span>.",
+        "title": "Projet 2 : Portfolio Web Personnel (Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript)",
+        "paragraph1": "– Rendu côté serveur avec <span class='highlight'>Spring Boot</span> et <span class='highlight'>Thymeleaf</span> : <span class='highlight'>fragments de mise en page</span> partagés au lieu du copier-coller, une base de code pour 8 pages.",
+        "paragraph2": "– Frontend sur mesure sans framework : <span class='highlight'>design responsive</span>, interface glassmorphism, trois langues (DE/EN/FR) en <span class='highlight'>JavaScript natif</span> et images WebP optimisées.",
         "description": "Voir le projet :",
         "button1": "Processus de programmation",
         "badge1": "En ligne !"
