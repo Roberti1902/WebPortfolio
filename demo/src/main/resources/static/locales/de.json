@@ -1,4 +1,9 @@
 {
+  "error": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "button": "Zurück zur Startseite"
+  },
   "nav": {
     "home": "Start",
     "technical": "Tech-Portfolio",

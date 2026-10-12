@@ -1,4 +1,9 @@
 {
+  "error": {
+    "title": "Page introuvable",
+    "text": "La page que vous recherchez n’existe pas ou a été déplacée.",
+    "button": "Retour à l’accueil"
+  },
   "project2Portfolio": {
     "headline": "Projet 2 : Portfolio Web Personnel",
     "section1": {

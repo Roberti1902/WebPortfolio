@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Page not found – Robert Ionescu', 'This page does not exist.', 'about', '/')}"></head>
+<body>
+<div th:replace="~{fragments/layout :: nav('')}"></div>
+
+<div class="center-wrapper reveal">
+    <div class="p-5 glass">
+        <div class="container-fluid py-5 text-center">
+            <h1 class="display-5 fw-bold" th:text="${status} ?: 404">404</h1>
+            <h2 class="fw-bold" data-i18n="error.title">Page not found</h2>
+            <p data-i18n="error.text">The page you are looking for does not exist or has moved.</p>
+            <a class="btn btn-primary hover-effect-5" href="/" data-i18n="error.button">Back to home</a>
+        </div>
+    </div>
+</div>
+
+<div th:replace="~{fragments/layout :: footer}"></div>
+</body>
+</html>

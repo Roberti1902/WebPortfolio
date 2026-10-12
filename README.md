@@ -1,44 +1,51 @@
-# 🌐 Project 2: Personal Web Portfolio  
-**Tech Stack:** HTML • CSS • JavaScript • TypeScript  
+# Personal Web Portfolio
 
-![Status](https://img.shields.io/badge/status-complete-2ecc71?style=flat-square)  
-![Responsive](https://img.shields.io/badge/responsive-yes-3498db?style=flat-square)  
-![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)
+![Java](https://img.shields.io/badge/Java-21-orange?style=flat-square)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5-6db33f?style=flat-square)
+![Thymeleaf](https://img.shields.io/badge/Thymeleaf-templates-005f0f?style=flat-square)
+![i18n](https://img.shields.io/badge/languages-DE%20%7C%20EN%20%7C%20FR-3498db?style=flat-square)
 
----
+Live: **[robertionescu.de](https://robertionescu.de)**
 
-## ✨ Overview
+My personal portfolio: a landing page plus a tech portfolio, a 3D portfolio, an about page and project detail pages.
+Server-rendered with Spring Boot and Thymeleaf, with a hand-written frontend (HTML, CSS, vanilla JavaScript) – no frontend framework.
 
-A technically robust and visually elegant **personal web portfolio**, built from the ground up with modern frontend standards and a clear architectural vision.
+## Highlights
 
----
+- **Shared layout fragments** (`templates/fragments/layout.html`): head/SEO tags, navigation, language switch and footer are defined once and reused by every page.
+- **Three languages (DE/EN/FR)**: texts live in `static/locales/*.json`; the language follows the browser setting, can be switched at any time and falls back to English for missing keys.
+- **Responsive** from phone to desktop, `prefers-reduced-motion` respected, keyboard-operable controls.
+- **Performance**: images served as WebP (74 MB → 3 MB), gzip compression, cache headers, lazy-loaded images.
+- **SEO & sharing**: page titles, meta descriptions, canonical URLs, Open Graph image, `robots.txt`, `sitemap.xml`.
+- **Security headers** (CSP, `nosniff`, referrer and permissions policy, HSTS over HTTPS) via a small servlet filter; custom 404 page.
+- **UI details**: glassmorphism design, custom cursor with trail (mouse devices only), scroll reveal via `IntersectionObserver`, CSS-driven meteor background.
 
-## 💡 Key Features
+## Run locally
 
-- ⚙️ **Modular Frontend Architecture**  
-  Structured layout with reusable components for maintainability and clarity.
+```bash
+cd demo
+./gradlew bootRun      # http://localhost:8080
+./gradlew test         # page rendering, security headers, 404 page, translation keys
+```
 
-- 📱 **Responsive Design**  
-  Mobile-first implementation ensuring smooth user experience across all devices.
+Requires JDK 21.
 
-- 🧠 **Consistent UI/UX Strategy**  
-  Clean, intuitive design with consistent user flows and interactive feedback elements.
+## Project structure
 
-- 🛡️ **TypeScript Integration**  
-  Precise static typing and strict linting enhance code safety and refactorability.
+```
+demo/src/main
+├── java/com/example/demo       WebController (routes), SecurityHeadersFilter
+└── resources
+    ├── templates               one Thymeleaf template per page + fragments/layout.html
+    └── static
+        ├── css                 base.css (shared), one stylesheet per page, responsive.css
+        ├── javascript/main.js  i18n, cursor, scroll reveal, clock, meteors
+        ├── locales             de.json, en.json, fr.json
+        └── Dateien             images (WebP)
+```
 
-- 🧩 **Structured State Handling**  
-  Thoughtful state management enables clean logic separation and scalability.
+### Adding a page
 
----
-
-## 🚀 View Project
-
-🔗 [Click here to explore the live version »](https://robertionescu.de)
-
----
-
-## 🧰 Technologies Used
-
-> HTML · CSS · JavaScript 
-> Responsive Layouts · Component Design · Git  
+1. Create `templates/<name>.html` and include the fragments (`head`, `nav`, `flags`, `footer`) like the existing pages.
+2. Add a route in `WebController` and an entry in `static/sitemap.xml`.
+3. Put texts into the three `locales/*.json` files and reference them with `data-i18n="section.key"`. The test suite fails if a key is missing in `de.json` or `en.json`.
