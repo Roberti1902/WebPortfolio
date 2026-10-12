@@ -10,7 +10,7 @@
 <div class="contact-bar glass-box d-flex justify-content-between align-items-center px-4 py-3 fade-container">
 
     <span class="fs-4">
-        Portfolio v1.0
+        Portfolio v2.0
     </span>
 
     <div th:replace="~{fragments/layout :: flags}"></div>
@@ -62,7 +62,7 @@
 
             <div class="available-badge">
                 <span class="status-dot"></span>
-                <span class="status-text" data-i18n="hero.working">Currently working for AXA</span>
+                <span class="status-text" data-i18n="hero.working">Currently in software development at <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a></span>
             </div>
 
             <div class="hero-actions">
@@ -78,11 +78,38 @@
     </div>
 </div>
 
-<div class="available-section text-center my-0 px-3 reveal">
-    <span class="status-dot"></span>
-    <h2 class="mt-3 fw-bold text-white" data-i18n="availability.title">Open to new opportunities</h2>
-    <p class="text-white-50 mb-0" data-i18n="availability.text">Available for freelance & side projects – <a href='#contact'>send me a request</a>.</p>
-</div>
+<section class="container service-teaser reveal" aria-labelledby="service-title">
+    <div class="service-card">
+        <!-- Vorschau des Angebots: bewusst unscharf, nur als Andeutung -->
+        <div class="service-preview" aria-hidden="true">
+            <div class="service-item">
+                <span class="service-num">01</span>
+                <span class="service-name">3D × AI</span>
+                <span class="service-line"></span><span class="service-line short"></span>
+            </div>
+            <div class="service-item">
+                <span class="service-num">02</span>
+                <span class="service-name">Stills &amp; Motion</span>
+                <span class="service-line"></span><span class="service-line short"></span>
+            </div>
+            <div class="service-item">
+                <span class="service-num">03</span>
+                <span class="service-name">Editing</span>
+                <span class="service-line"></span><span class="service-line short"></span>
+            </div>
+            <div class="service-item">
+                <span class="service-num">04</span>
+                <span class="service-name">Ad Pack</span>
+                <span class="service-line"></span><span class="service-line short"></span>
+            </div>
+        </div>
+
+        <div class="service-overlay">
+            <span class="service-status"><span class="service-dot" aria-hidden="true"></span><span data-i18n="service.status">In the works</span></span>
+            <h2 class="service-title" id="service-title" data-i18n="service.title">1 product. 30 visuals.</h2>
+        </div>
+    </div>
+</section>
 
 
 <div class="container py-4 reveal">
@@ -91,7 +118,7 @@
         <img src="/Dateien/openbook.webp" class="buch" alt="" loading="lazy" decoding="async">
     </div>
 
-    <div class="p-5 glass reveal">
+    <div class="p-5 glass reveal mind-card">
         <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold" data-i18n="about.headline">State of Mind</h1>
                 <p class="col-md-8 fs-4" data-i18n="about.paragraph1">I think in <span class='highlight'>systems</span> and <span class='highlight'>shapes</span> – with a fascination for <span class='highlight'>technology</span> and <span class='highlight'>design</span> that started early.</p>
@@ -105,8 +132,8 @@
         </div>
     </div>
 
-    <div class="bild-container reveal">
-    <img src="/Dateien/brain2.webp" class="brain" alt="" loading="lazy" decoding="async">
+    <div class="brain-seam" aria-hidden="true">
+        <img src="/Dateien/brain2.webp" class="brain" alt="" loading="lazy" decoding="async">
     </div>
 
     <div class="row align-items-md-stretch" id="work">
@@ -135,74 +162,63 @@
     <div class="contact-card">
         <span class="contact-glow" aria-hidden="true"></span>
 
-        <h2 class="contact-title" data-i18n="contact.title">Ready for real results?</h2>
-        <p class="contact-lead" data-i18n="contact.lead">Tell me briefly what you need – I'll get back to you within two working days.</p>
-
         <form id="contact-form" action="/contact.php" method="post" novalidate>
-            <p class="contact-label" id="cf-topic-label" data-i18n="contact.topicLegend">What do you need me for?</p>
-            <div class="topic-switch" role="radiogroup" aria-labelledby="cf-topic-label">
-                <input type="radio" id="cf-topic-3d" name="topic" value="3d" required>
-                <label for="cf-topic-3d" data-i18n="contact.topic3d">3D &amp; Motion</label>
-                <input type="radio" id="cf-topic-it" name="topic" value="it">
-                <label for="cf-topic-it" data-i18n="contact.topicIt">IT &amp; Software</label>
-                <span class="topic-slider" aria-hidden="true"></span>
+            <div class="row g-3 align-items-end contact-head">
+                <div class="col-lg-6">
+                    <h2 class="contact-title" data-i18n="contact.title">Ready for real results?</h2>
+                    <p class="contact-lead" data-i18n="contact.lead">Tell me briefly what you need – I'll get back to you within two working days.</p>
+                </div>
+                <div class="col-lg-6 contact-topic">
+                    <p class="contact-label" id="cf-topic-label" data-i18n="contact.topicLegend">What do you need me for?</p>
+                    <div class="topic-switch" role="radiogroup" aria-labelledby="cf-topic-label">
+                        <input type="radio" id="cf-topic-3d" name="topic" value="3d" required>
+                        <label for="cf-topic-3d" data-i18n="contact.topic3d">3D &amp; Motion</label>
+                        <input type="radio" id="cf-topic-it" name="topic" value="it">
+                        <label for="cf-topic-it" data-i18n="contact.topicIt">IT &amp; Software</label>
+                        <span class="topic-slider" aria-hidden="true"></span>
+                    </div>
+                    <p class="topic-hint" data-hint="none" data-i18n="contact.hintDefault">Choose an area – the form adapts to it.</p>
+                    <p class="topic-hint" data-hint="3d" data-i18n="contact.topic3dDesc" hidden>Product visuals, animations, ad creatives</p>
+                    <p class="topic-hint" data-hint="it" data-i18n="contact.topicItDesc" hidden>Web apps, backend (Java/Spring), automation – or a job offer</p>
+                </div>
             </div>
-            <p class="topic-hint" data-hint="none" data-i18n="contact.hintDefault">Choose an area – the form adapts to it.</p>
-            <p class="topic-hint" data-hint="3d" data-i18n="contact.topic3dDesc" hidden>Product visuals, animations, ad creatives</p>
-            <p class="topic-hint" data-hint="it" data-i18n="contact.topicItDesc" hidden>Web apps, backend (Java/Spring), automation – or a job offer</p>
 
             <div class="row g-3">
-                <div class="col-md-6">
+                <div class="col-sm-6 col-lg-3">
                     <label class="form-label" for="cf-first"><span data-i18n="contact.firstName">First name</span> *</label>
                     <input class="form-control" id="cf-first" name="firstName" required maxlength="80" autocomplete="given-name">
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-lg-3">
                     <label class="form-label" for="cf-last"><span data-i18n="contact.lastName">Last name</span> *</label>
                     <input class="form-control" id="cf-last" name="lastName" required maxlength="80" autocomplete="family-name">
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-lg-3">
                     <label class="form-label" for="cf-email"><span data-i18n="contact.email">Email</span> *</label>
                     <input class="form-control" id="cf-email" name="email" type="email" required maxlength="200" autocomplete="email">
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 col-lg-3">
                     <label class="form-label" for="cf-company" data-i18n="contact.company">Company (optional)</label>
                     <input class="form-control" id="cf-company" name="company" maxlength="120" autocomplete="organization">
                 </div>
-                <div class="col-12 need-field" hidden>
-                    <label class="form-label" id="cf-need-label"><span data-i18n="contact.need">What is it about?</span> *</label>
-                    <select class="form-select need-select" name="need" data-topic="3d" aria-labelledby="cf-need-label" disabled>
-                        <option value="" data-i18n="contact.choose">Please choose</option>
-                        <option value="Produktvisualisierung" data-i18n="contact.need3dProduct">Product visualization</option>
-                        <option value="3D-Animation / Motion" data-i18n="contact.need3dAnimation">3D animation / motion</option>
-                        <option value="Ad-Creatives / Kampagne" data-i18n="contact.need3dAds">Ad creatives / campaign</option>
-                        <option value="Etwas anderes" data-i18n="contact.needOther">Something else</option>
-                    </select>
-                    <select class="form-select need-select" name="need" data-topic="it" aria-labelledby="cf-need-label" disabled hidden>
-                        <option value="" data-i18n="contact.choose">Please choose</option>
-                        <option value="Website / Web-App" data-i18n="contact.needItWeb">Website / web app</option>
-                        <option value="Backend / API" data-i18n="contact.needItBackend">Backend / API (Java, Spring)</option>
-                        <option value="Automatisierung / Daten" data-i18n="contact.needItAutomation">Automation / data</option>
-                        <option value="Jobangebot / Werkstudentenstelle" data-i18n="contact.needItJob">Job or internship offer</option>
-                        <option value="Etwas anderes" data-i18n="contact.needOther">Something else</option>
-                    </select>
+                <div class="col-lg-3 contact-side">
+                    <div>
+                        <label class="form-label" for="cf-phone" data-i18n="contact.phone">Phone (optional)</label>
+                        <input class="form-control" id="cf-phone" name="phone" type="tel" maxlength="40" autocomplete="tel">
+                    </div>
+                    <div>
+                        <label class="form-label" for="cf-budget" data-i18n="contact.budget">Budget (optional)</label>
+                        <select class="form-select" id="cf-budget" name="budget">
+                            <option value="" data-i18n="contact.budgetOpen">Not sure yet</option>
+                            <option value="unter 500 €">&lt; 500 €</option>
+                            <option value="500 – 1.500 €">500 – 1.500 €</option>
+                            <option value="1.500 – 5.000 €">1.500 – 5.000 €</option>
+                            <option value="über 5.000 €">5.000 € +</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <label class="form-label" for="cf-phone" data-i18n="contact.phone">Phone (optional)</label>
-                    <input class="form-control" id="cf-phone" name="phone" type="tel" maxlength="40" autocomplete="tel">
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label" for="cf-budget" data-i18n="contact.budget">Budget (optional)</label>
-                    <select class="form-select" id="cf-budget" name="budget">
-                        <option value="" data-i18n="contact.budgetOpen">Not sure yet</option>
-                        <option value="unter 1.000 €">&lt; 1.000 €</option>
-                        <option value="1.000 – 3.000 €">1.000 – 3.000 €</option>
-                        <option value="3.000 – 10.000 €">3.000 – 10.000 €</option>
-                        <option value="über 10.000 €">&gt; 10.000 €</option>
-                    </select>
-                </div>
-                <div class="col-12">
+                <div class="col-lg-9 contact-message">
                     <label class="form-label" for="cf-message"><span data-i18n="contact.message">Your project</span> *</label>
-                    <textarea class="form-control" id="cf-message" name="message" rows="5" required maxlength="5000"
+                    <textarea class="form-control" id="cf-message" name="message" rows="4" required maxlength="5000"
                               placeholder="Goals, timeline, links – anything that helps me understand your project."
                               data-i18n-placeholder="contact.messagePlaceholder"></textarea>
                 </div>
@@ -212,17 +228,17 @@
                     <input id="cf-website" name="website" tabindex="-1" autocomplete="off">
                 </div>
                 <input type="hidden" name="started" value="">
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="cf-consent" name="consent" value="yes" required>
-                        <label class="form-check-label" for="cf-consent" data-i18n="contact.consent">I have read the <a href='/datenschutz' target='_blank'>privacy policy</a> and agree that my details are used to answer my request.</label>
-                    </div>
-                </div>
             </div>
 
-            <div class="contact-actions">
-                <button type="submit" class="contact-submit" data-i18n="contact.submit">Send request</button>
-                <small class="contact-required" data-i18n="contact.required">* required</small>
+            <div class="contact-footer">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cf-consent" name="consent" value="yes" required>
+                    <label class="form-check-label" for="cf-consent" data-i18n="contact.consent">I have read the <a href='/datenschutz' target='_blank'>privacy policy</a> and agree that my details are used to answer my request.</label>
+                </div>
+                <div class="contact-actions">
+                    <small class="contact-required" data-i18n="contact.required">* required</small>
+                    <button type="submit" class="contact-submit" data-i18n="contact.submit">Send request</button>
+                </div>
             </div>
             <p class="form-status" role="status" aria-live="polite"></p>
 

@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Kontaktformular: Bereich 3D/IT wählen (färbt Glow und Akzente), passende Auswahl einblenden, per fetch an contact.php senden
+// Kontaktformular: Bereich 3D/IT wählen (färbt Glow und Akzente), per fetch an contact.php senden
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
     if (!form) return;
@@ -185,20 +185,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const card = form.closest(".contact-card");
     const status = form.querySelector(".form-status");
     const submit = form.querySelector(".contact-submit");
-    const needField = form.querySelector(".need-field");
     const msg = key => form.querySelector(`[data-msg="${key}"]`).textContent;
 
     function selectTopic(topic) {
         if (topic) card.dataset.topic = topic;
         else delete card.dataset.topic;
         form.querySelectorAll(".topic-hint").forEach(hint => { hint.hidden = hint.dataset.hint !== (topic || "none"); });
-        needField.hidden = !topic;
-        form.querySelectorAll(".need-select").forEach(select => {
-            const active = select.dataset.topic === topic;
-            select.hidden = !active;
-            select.disabled = !active; // deaktivierte Felder werden nicht mitgeschickt
-            select.required = active;
-        });
     }
 
     form.querySelectorAll('input[name="topic"]').forEach(radio =>

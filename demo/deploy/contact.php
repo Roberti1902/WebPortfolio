@@ -110,7 +110,6 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 $company = oneLine(field('company', 120, false));
 $phone   = oneLine(field('phone', 40, false));
-$need    = oneLine(field('need', 120));
 $budget  = oneLine(field('budget', 40, false));
 $message = field('message', 5000);
 if (!isset($_POST['consent']) || $_POST['consent'] !== 'yes') {
@@ -123,7 +122,6 @@ $body = implode("\n", array(
     'Neue Anfrage über robertionescu.de',
     '',
     "Bereich:     $area",
-    "Thema:       $need",
     "Name:        $firstName $lastName",
     "E-Mail:      $email",
     'Unternehmen: ' . ($company !== '' ? $company : '–'),

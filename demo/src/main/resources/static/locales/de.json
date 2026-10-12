@@ -1,4 +1,8 @@
 {
+  "service": {
+    "status": "In Arbeit",
+    "title": "1 Produkt. 30 Visuals."
+  },
   "contact": {
     "hintDefault": "Wählen Sie einen Bereich – das Formular passt sich an.",
     "title": "Bereit für echte Ergebnisse?",
@@ -13,16 +17,6 @@
     "company": "Unternehmen (optional)",
     "email": "E-Mail",
     "phone": "Telefon (optional)",
-    "need": "Worum geht es?",
-    "choose": "Bitte wählen",
-    "need3dProduct": "Produktvisualisierung",
-    "need3dAnimation": "3D-Animation / Motion",
-    "need3dAds": "Ad-Creatives / Kampagne",
-    "needItWeb": "Website / Web-App",
-    "needItBackend": "Backend / API (Java, Spring)",
-    "needItAutomation": "Automatisierung / Daten",
-    "needItJob": "Jobangebot / Werkstudentenstelle",
-    "needOther": "Etwas anderes",
     "budget": "Budget (optional)",
     "budgetOpen": "Noch offen",
     "message": "Ihr Projekt",
@@ -65,7 +59,7 @@
     "ctaWork": "Meine Arbeit ansehen",
     "title": "Softwareentwickler & CGI Generalist",
     "subtitle": "Mit ❤️ für Code – täglich 1% besser!",
-    "working": "Derzeit bei AXA tätig"
+    "working": "Derzeit in der Softwareentwicklung bei der <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>"
   },
   "availability": {
     "title": "Offen für neue Herausforderungen",

@@ -109,11 +109,41 @@ span {
     pointer-events: none;
 }
 
+/* Gehirn sitzt genau auf der Naht zwischen "State of Mind" und den beiden Karten */
+.brain-seam {
+    position: relative;
+    z-index: 5;
+    height: 0;
+    margin: 0.35rem 0;
+}
+
 .brain {
-    width: 260px;
-    height: 260px;
-    margin-bottom: -2rem; /* ragt leicht zwischen die beiden Karten, verdeckt aber keine Überschriften */
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    transform: translate(-50%, -62%);
     pointer-events: none;
+}
+
+.mind-card .container-fluid {
+    padding-bottom: 7rem !important; /* Platz, damit das Gehirn den About-Button nicht verdeckt */
+}
+
+@media (max-width: 767.98px) {
+    .brain {
+        width: 200px;
+        height: 200px;
+    }
+
+    .mind-card .container-fluid {
+        padding-bottom: 4rem !important;
+    }
+
+    #work > .col-md-6:first-child .glass {
+        padding-top: 4.5rem !important; /* Überschrift unter dem Gehirn */
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -334,9 +364,210 @@ div .h-100 > h2 {
     margin-top: 1.5rem;
 }
 
-.available-section a {
-    color: #00BFFF;
+.available-badge a {
+    color: inherit;
+    font-weight: 700;
     text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+    text-underline-offset: 3px;
+}
+
+.available-badge a:hover {
+    color: #00BFFF;
+}
+
+/* ---------- Dienstleistung (Teaser, noch in Arbeit) ---------- */
+
+.service-teaser {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.service-card {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 220px;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(8, 8, 16, 0.45);
+}
+
+/* atmendes Licht: Gold (3D) und Blau (IT) im Wechsel */
+.service-card::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    z-index: -1;
+    background:
+            radial-gradient(closest-side at 35% 50%, rgba(245, 188, 80, 0.22), transparent 70%),
+            radial-gradient(closest-side at 65% 50%, rgba(0, 191, 255, 0.18), transparent 70%);
+    animation: service-breathe 5s ease-in-out infinite;
+}
+
+/* Scan-Linie: "hier wird gerade gearbeitet" */
+.service-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.07), transparent);
+    transform: translateX(-100%);
+    animation: service-scan 4.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.service-preview {
+    grid-area: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+    filter: blur(8px);
+    opacity: 0.55;
+    user-select: none;
+    pointer-events: none;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.25rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.service-num {
+    font-size: 0.8rem;
+    color: #f5bc50 !important;
+}
+
+.service-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.service-line {
+    display: block;
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.service-line.short {
+    width: 60%;
+}
+
+.service-overlay {
+    grid-area: 1 / 1;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.service-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(0, 0, 0, 0.35);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.service-status span {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.service-dot {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #f5bc50;
+}
+
+.service-dot::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid #f5bc50;
+    animation: service-ping 1.8s ease-out infinite;
+}
+
+.service-title {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+/* dezenter Lichtschimmer, der über die Schrift läuft */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .service-title {
+        background: linear-gradient(100deg, #fff 0%, #fff 42%, #f5bc50 50%, #fff 58%, #fff 100%);
+        background-size: 250% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: service-shine 6s ease-in-out infinite;
+    }
+}
+
+@keyframes service-breathe {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.06); }
+}
+
+@keyframes service-scan {
+    0% { transform: translateX(-100%); }
+    60%, 100% { transform: translateX(300%); }
+}
+
+@keyframes service-ping {
+    0% { transform: scale(1); opacity: 0.9; }
+    100% { transform: scale(2.8); opacity: 0; }
+}
+
+@keyframes service-shine {
+    0%, 100% { background-position: 100% 0; }
+    50% { background-position: 0% 0; }
+}
+
+@media (max-width: 767.98px) {
+    .service-preview {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1.25rem;
+    }
+
+    .service-card {
+        min-height: 260px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .service-card::before,
+    .service-card::after,
+    .service-dot::after,
+    .service-title {
+        animation: none;
+    }
 }
 
 /* ---------- Kontaktformular ---------- */
@@ -357,9 +588,7 @@ div .h-100 > h2 {
 .contact-card {
     --accent-rgb: 214, 222, 255; /* neutral, bis ein Bereich gewählt ist */
     position: relative;
-    max-width: 880px;
-    margin: 0 auto;
-    padding: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(1.25rem, 3vw, 2.25rem);
     border-radius: 24px;
     background: rgba(8, 8, 16, 0.55);
     -webkit-backdrop-filter: blur(8px);
@@ -407,14 +636,63 @@ div .h-100 > h2 {
 .contact-title {
     color: #fff;
     font-weight: 700;
-    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
     letter-spacing: -0.01em;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 }
 
 .contact-lead {
     color: rgba(255, 255, 255, 0.65) !important;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+}
+
+.contact-head {
+    margin-bottom: 1.5rem;
+}
+
+/* auf breiten Bildschirmen: Schalter rechtsbündig neben dem Titel */
+@media (min-width: 992px) {
+    .contact-topic {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .contact-topic .topic-switch {
+        width: 100%;
+    }
+}
+
+.contact-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-message textarea {
+    flex: 1;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-top: 1.25rem;
+}
+
+.contact-footer .form-check {
+    flex: 1 1 380px;
+    margin: 0;
 }
 
 .contact-label {
@@ -505,7 +783,7 @@ div .h-100 > h2 {
 }
 
 .topic-hint {
-    margin: 0.75rem 0 1.75rem;
+    margin: 0.6rem 0 0;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6) !important;
 }
@@ -579,10 +857,8 @@ div .h-100 > h2 {
 
 .contact-actions {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    margin-top: 1.75rem;
 }
 
 .contact-submit {
@@ -614,8 +890,7 @@ div .h-100 > h2 {
 }
 
 .form-status {
-    min-height: 1.5em;
-    margin: 1rem 0 0;
+    margin: 0.75rem 0 0;
     font-weight: 600;
 }
 
@@ -636,4 +911,8 @@ div .h-100 > h2 {
     .topic-slider {
         transition: none;
     }
+}
+
+.form-status:empty {
+    display: none;
 }

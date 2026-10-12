@@ -1,4 +1,8 @@
 {
+  "service": {
+    "status": "En préparation",
+    "title": "1 produit. 30 visuels."
+  },
   "contact": {
     "hintDefault": "Choisissez un domaine – le formulaire s’adapte.",
     "title": "Prêt pour de vrais résultats ?",
@@ -13,16 +17,6 @@
     "company": "Entreprise (facultatif)",
     "email": "E-mail",
     "phone": "Téléphone (facultatif)",
-    "need": "De quoi s’agit-il ?",
-    "choose": "Veuillez choisir",
-    "need3dProduct": "Visualisation produit",
-    "need3dAnimation": "Animation 3D / motion",
-    "need3dAds": "Créations publicitaires / campagne",
-    "needItWeb": "Site web / application web",
-    "needItBackend": "Backend / API (Java, Spring)",
-    "needItAutomation": "Automatisation / données",
-    "needItJob": "Offre d’emploi ou de stage",
-    "needOther": "Autre chose",
     "budget": "Budget (facultatif)",
     "budgetOpen": "Pas encore défini",
     "message": "Votre projet",
@@ -76,7 +70,7 @@
     "ctaWork": "Voir mon travail",
     "title": "Développeur logiciel & CGI Généraliste",
     "subtitle": "Avec ❤️ pour le code – m’améliorer de 1% chaque jour!",
-    "working": "Actuellement en poste chez AXA"
+    "working": "Actuellement en développement logiciel chez <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>"
   },
   "availability": {
     "title": "Ouvert à de nouveaux défis",
