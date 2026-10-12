@@ -53,27 +53,6 @@ body {
     margin-top: 1rem;
 }
 
-.center-wrapper .links {
-    display: flex;
-    justify-content: left;
-    margin-top: 1rem;
-}
-
-.center-wrapper .rechts {
-    display: flex;
-    justify-content: right;
-    margin-top: 1rem;
-}
-
-.row-mapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin: 2rem;
-}
-
-
-
 .bild {
     display: block;
     margin: 0 auto;
@@ -92,37 +71,8 @@ body {
     color: white !important;
 }
 
-h3 {
-    color: white !important;
-    font-size: 1.5rem;
-}
-
 .p-5 {
     color: white;
-}
-
-.py-6 h1,
-.py-6 p {
-    color: white;
-}
-
-.p-5 .rechts img {
-    color: white;
-}
-
-.elementi {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* zentriert vertikal */
-    align-items: center;     /* zentriert horizontal */
-    height: 100%;            /* falls nötig: Höhe anpassen */
-    padding: 1rem;
-}
-
-.elementi h3 {
-    align-self: flex-start;  /* h3 oben links */
-    margin-bottom: auto;     /* schiebt Bild nach unten */
 }
 
 .about-section {
@@ -141,7 +91,6 @@ h3 {
     text-align: left;
 }
 
-/* Bild bleibt wie gehabt */
 .about-image {
     flex: 0 0 200px;
     max-width: 100%;
@@ -157,7 +106,7 @@ h3 {
     order: 0;
 }
 
-/* Neuer Stil für mittleren Textblock */
+/* Mittlerer Textblock */
 .text.aligncenter {
     text-align: center;
     margin: 3rem auto;
@@ -166,11 +115,10 @@ h3 {
     font-size: 1rem;
 }
 
-/* Neuer Stil speziell für oberen Text rechtsbündig im Block */
+/* Oberer Text rechtsbündig im Block */
 .about-section.top .text {
     text-align: right;
 }
-
 
 *, *:hover {
     cursor: none !important;
@@ -190,38 +138,14 @@ h3 {
     filter: blur(0);
 }
 
-.highlight:hover {
-    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
-}
-
-
 .highlight {
-    color: #f5bc50 !important; /* z.B. Gold für Strahlkraft */
+    color: #f5bc50 !important; /* Gold für Strahlkraft */
     font-weight: 600;
 }
 
-h3 {
-    color: #00BFFF !important;
+.highlight:hover {
+    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
 }
-
-.hover-effect-5 {
-    position: relative;
-    overflow: hidden;
-}
-.hover-effect-5::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.6s ease;
-}
-.hover-effect-5:hover::before {
-    left: 100%;
-}
-
 
 .language-flags {
     position: absolute;
@@ -243,10 +167,4 @@ h3 {
 .lang-flag:hover {
     transform: scale(1.15);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-}
-
-.lang-flag.active {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 3px white);
 }

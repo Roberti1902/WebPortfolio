@@ -1,85 +1,24 @@
-
-console.log("Cursor-Script läuft");
-
-const fadeTexts = document.querySelectorAll(".fade-text");
-
-function showOnScroll() {
-    const triggerBottom = window.innerHeight * 0.45;
-
-    fadeTexts.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < triggerBottom) {
-            el.classList.add("visible");
-        }
-    });
-}
-
-window.addEventListener("scroll", showOnScroll);
-window.addEventListener("load", showOnScroll);
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector(".fade-container");
-
-    if (!container) return;
-
-    function showContainerOnScroll() {
-        const triggerBottom = window.innerHeight * 0.25;
-        const top = container.getBoundingClientRect().top;
-
-        if (top < triggerBottom) {
-            container.classList.add("visible");
-            window.removeEventListener("scroll", showContainerOnScroll);
-        }
+    const contactBar = document.querySelector(".fade-container");
+    if (contactBar) {
+        contactBar.getBoundingClientRect(); // Layout erzwingen, damit die Einblend-Transition startet
+        contactBar.classList.add("visible");
     }
-
-    window.addEventListener("scroll", showContainerOnScroll);
-    showContainerOnScroll();
 });
 
 function updateClock() {
-    const now = new Date();
-    const time = now.toLocaleTimeString('de-DE', { hour12: false });
-
     const clockEl = document.getElementById("clock");
-    if (clockEl) clockEl.textContent = time;
+    if (clockEl) clockEl.textContent = new Date().toLocaleTimeString('de-DE', { hour12: false });
 }
 
 setInterval(updateClock, 1000);
 updateClock();
 
-document.addEventListener("DOMContentLoaded", () => {
-    const copyBtn = document.getElementById("copyEmailBtn");
-    const msg = document.getElementById("copiedMessage");
-
-    if (copyBtn && msg) {
-        copyBtn.addEventListener("click", () => {
-            navigator.clipboard.writeText("ionescurobert117@yahoo.com").then(() => {
-                msg.classList.add("visible");
-                setTimeout(() => {
-                    msg.classList.remove("visible");
-                }, 2000);
-            });
-        });
-    }
-});
-
-function isSommerzeit(date = new Date()) {
-    const jahr = date.getFullYear();
-    const start = new Date(jahr, 2, 31);
-    while (start.getDay() !== 0) {
-        start.setDate(start.getDate() - 1);
-    }
-    const end = new Date(jahr, 9, 31);
-    while (end.getDay() !== 0) {
-        end.setDate(end.getDate() - 1);
-    }
-    return date >= start && date < end;
-}
-
 const utcSpan = document.getElementById("tester");
 if (utcSpan) {
-    utcSpan.textContent = `(${isSommerzeit() ? "+2 UTC" : "+1 UTC"})`;
+    const offset = new Intl.DateTimeFormat("en", { timeZone: "Europe/Berlin", timeZoneName: "shortOffset" })
+        .formatToParts().find(p => p.type === "timeZoneName").value; // z.B. "GMT+2"
+    utcSpan.textContent = `(${offset.replace("GMT", "")} UTC)`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -131,11 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animateTrail();
 });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    const revealElements = document.querySelectorAll('.reveal');
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -145,65 +80,45 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.23 });
 
-    revealElements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
 
-function createMeteor() {
-    const meteor = document.createElement("div");
-    meteor.classList.add("meteor");
+// Meteore: fester Pool, der endlos per CSS-Animation fällt (nur auf Seiten mit .meteor-field)
+document.addEventListener("DOMContentLoaded", () => {
+    const field = document.querySelector(".meteor-field");
+    if (!field) return;
 
-    // Zufällige Startposition
-    meteor.style.left = Math.random() * window.innerWidth + "px";
-    meteor.style.top = "-20px";
-
-    // Zufällige Dauer
-    const duration = 2 + Math.random() * 2;
-    meteor.style.animationDuration = duration + "s";
-
-    // In DOM einfügen
-    document.body.appendChild(meteor);
-
-    // Entfernen nach Animation
-    setTimeout(() => {
-        meteor.remove();
-    }, duration * 1000);
-}
-
-// Regelmäßig Meteore erzeugen
-setInterval(() => {
-    if (document.hasFocus()) {
-        createMeteor();
+    for (let i = 0; i < 30; i++) {
+        const meteor = document.createElement("div");
+        meteor.className = "meteor";
+        const duration = 2 + Math.random() * 2;
+        meteor.style.left = Math.random() * 100 + "%";
+        meteor.style.animationDuration = duration + "s";
+        meteor.style.animationDelay = -Math.random() * duration + "s"; // verteilt den Start
+        meteor.addEventListener("animationiteration", () => {
+            meteor.style.left = Math.random() * 100 + "%";
+        });
+        field.appendChild(meteor);
     }
-}, 100);
-
-
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-    const flagElements = document.querySelectorAll('.lang-flag');
-
     function loadLanguage(lang) {
         fetch(`/locales/${lang}.json`)
             .then(res => res.json())
             .then(data => {
                 document.querySelectorAll('[data-i18n]').forEach(el => {
-                    const key = el.getAttribute('data-i18n');
-                    const value = key.split('.').reduce((o, i) => o[i], data);
+                    const value = el.getAttribute('data-i18n').split('.').reduce((o, i) => o[i], data);
                     if (value) el.innerHTML = value;
                 });
 
-                // Flagge merken
                 localStorage.setItem("language", lang);
             });
     }
 
-    const savedLang = localStorage.getItem("language") || "en";
-    loadLanguage(savedLang);
+    loadLanguage(localStorage.getItem("language") || "en");
 
-    flagElements.forEach(flag => {
-        flag.addEventListener("click", () => {
-            const selectedLang = flag.getAttribute("data-lang");
-            loadLanguage(selectedLang);
-        });
+    document.querySelectorAll('.lang-flag').forEach(flag => {
+        flag.addEventListener("click", () => loadLanguage(flag.getAttribute("data-lang")));
     });
 });
-

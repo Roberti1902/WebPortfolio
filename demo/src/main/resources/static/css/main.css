@@ -9,8 +9,6 @@ body {
     background-size: cover;
     background-position: center top;
     font-family: sans-serif;
-    cursor: none;
-    overflow-x: hidden;
 }
 
 .custom-cursor,
@@ -63,18 +61,8 @@ body {
     margin-bottom: 2px;
 }
 
-.bi-person-circle {
-    margin-bottom: 8px;
-}
-
-.bi-heart-fill {
-    margin-bottom: 4px;
-    margin-left: 4px;
-}
-
 .glass .container-fluid h1,
-.glass .container-fluid p,
-.glass .container-fluid button {
+.glass .container-fluid p {
     text-align: center;
     display: block;
     margin-left: auto;
@@ -82,8 +70,7 @@ body {
 }
 
 .col-md-6 .creative h2,
-.col-md-6 .creative p,
-.col-md-6 .creative .btn-outline-light {
+.col-md-6 .creative p {
     text-align: right;
     display: block;
     margin-right: auto;
@@ -91,14 +78,6 @@ body {
 
 .col-md-6 .creative {
     text-align: right;
-}
-
-.col-md-6 .creative .btn-outline-light {
-    display: inline-block;
-}
-
-div .icon-links { /* Oben Icons */
-    margin-top: 10px;
 }
 
 div > div > h1 { /* Überschrift Main Seite */
@@ -163,15 +142,9 @@ span {
     pointer-events: none;
 }
 
-.custom-btn {
-    font-size: 1rem;
-    border-radius: 0.5rem;
-}
-
 #flagge {
     height: 30px;
     width: 30px;
-
 }
 
 .glass-box {
@@ -227,8 +200,6 @@ span {
     filter: blur(0);
 }
 
-
-
 .contact-bar {
     display: flex;
     justify-content: space-between;
@@ -237,12 +208,15 @@ span {
     min-height: 60px;
 }
 
-.btn-outline-light.btn-sm.glass-box {
-    padding: 8px 16px !important;
+.contact-bar > span,
+.icon-links { /* gleich breite Außenspalten halten die Flaggen mittig */
+    flex: 1;
 }
 
-.icon-links {
+.icon-links { /* Oben Icons */
+    margin-top: 10px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: clamp(0.5rem, 2vw, 1.2rem);
     transform: translateY(-4.5px);
@@ -253,30 +227,13 @@ span {
     align-items: center;
 }
 
-.icon-links .btn {
-    padding-top: 2px !important;
-    padding-bottom: 2px !important;
-    line-height: 1 !important;
-    height: auto;
-    display: flex;
-    align-items: center;
-}
-
-.resume-text {
-    margin-left: 4px;
-    line-height: 2;
-    font-size: 1rem;
-    transform: translateY(0px);
-}
-
 .icon-links img {
     height: clamp(1.2rem, 4vw, 2rem);
     width: auto;
     vertical-align: middle;
 }
 
-.icon-links img:hover,
-.icon-links svg:hover {
+.icon-links img:hover {
     transform: scale(1.15);
 }
 
@@ -289,17 +246,24 @@ span {
     }
 }
 
+/* Meteore: fixe Ebene hinter dem Inhalt, Meteore werden in main.js erzeugt */
+.meteor-field {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
 
 .meteor {
     position: absolute;
+    top: -20px;
     width: 2px;
     height: 12px;
     background: white;
     filter: blur(3px);
-    opacity: 0.2;
-    animation: fall linear forwards;
-    image-rendering: pixelated;
-    z-index: min(0);
+    opacity: 0;
+    animation: fall linear infinite;
 }
 
 @keyframes fall {
@@ -310,6 +274,12 @@ span {
     100% {
         transform: translateY(120vh) translateX(30vw) rotate(45deg);
         opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .meteor-field {
+        display: none;
     }
 }
 
@@ -377,10 +347,9 @@ div .h-100 > h2 {
 }
 
 .highlight {
-    color: #f5bc50 !important; /* z.B. Gold für Strahlkraft */
+    color: #f5bc50 !important; /* Gold für Strahlkraft */
     font-weight: 600;
 }
-
 
 .highlight:hover {
     filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
@@ -405,9 +374,7 @@ div .h-100 > h2 {
 }
 
 .language-flags {
-    position: relative; /* Kein absolutes Positionieren mehr */
-    left: auto;
-    transform: none;
+    position: relative;
     z-index: 10;
 }
 
@@ -423,33 +390,19 @@ div .h-100 > h2 {
 .lang-flag:hover {
     transform: scale(1.15);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-}
-
-.lang-flag.active {
-    transform: scale(1.2);
-    filter: drop-shadow(0 0 3px white);
 }
 
 @media (max-width: 768px) {
-    .flags-container {
-        display: flex;
-        flex-wrap: wrap;      /* Bei Platzmangel Zeilenumbruch erlauben:contentReference[oaicite:9]{index=9} */
-        justify-content: flex-start; /* statt center */
-        padding-left: 20px;
-    }
-    .flags-container img {
-        max-width: 24px;      /* Flags etwas kleiner machen bei kleinen Bildschirmen */
-        margin: 2px;          /* Abstand zwischen Flaggen */
-    }
-
     .language-flags {
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
+        flex-wrap: wrap;      /* Bei Platzmangel Zeilenumbruch erlauben */
+        padding-left: 20px;
         margin-top: 10px;
-
         left: -40px;
+    }
+
+    .language-flags img {
+        max-width: 24px;      /* Flags etwas kleiner bei kleinen Bildschirmen */
+        margin: 2px;
     }
 
     .lang-flag {
