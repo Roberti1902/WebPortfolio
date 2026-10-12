@@ -9,5 +9,5 @@
  */
 return [
     'to'   => 'deine-adresse@example.com',     // hierhin werden die Anfragen geschickt
-    'from' => 'kontakt@robertionescu.de',      // Absender: muss ein Postfach deiner IONOS-Domain sein
+    'from' => 'info@robertionescu.de',          // Absender: Adresse deiner Domain (am besten als Postfach in IONOS angelegt)
 ];

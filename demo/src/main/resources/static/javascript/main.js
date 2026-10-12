@@ -1,4 +1,6 @@
 const SUPPORTED_LANGS = ["de", "en", "fr"];
+// Version aus ?v=... des eigenen Script-Tags: Sprachdateien werden nach Änderungen neu geladen statt aus dem Cache
+const ASSET_VERSION = new URL(document.currentScript.src).searchParams.get("v") ?? "";
 
 // Kontaktleiste (nur Hauptseite) einblenden
 document.addEventListener("DOMContentLoaded", () => {
@@ -131,7 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cache = {};
 
     function loadJson(lang) {
-        cache[lang] ??= fetch(`/locales/${lang}.json`)
+        cache[lang] ??= fetch(`/locales/${lang}.json?v=${ASSET_VERSION}`)
             .then(res => (res.ok ? res.json() : {}))
             .catch(() => ({}));
         return cache[lang];
@@ -175,21 +177,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Kontaktformular: Bereich 3D/IT wählen, passende Auswahl einblenden, per fetch an contact.php senden
+// Kontaktformular: Bereich 3D/IT wählen (färbt Glow und Akzente), passende Auswahl einblenden, per fetch an contact.php senden
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
     if (!form) return;
 
+    const card = form.closest(".contact-card");
     const status = form.querySelector(".form-status");
     const submit = form.querySelector(".contact-submit");
     const needField = form.querySelector(".need-field");
     const msg = key => form.querySelector(`[data-msg="${key}"]`).textContent;
 
     function selectTopic(topic) {
-        form.dataset.topic = topic;
-        form.querySelectorAll(".topic-card").forEach(card =>
-            card.classList.toggle("is-selected", card.querySelector("input").value === topic));
-        needField.hidden = false;
+        if (topic) card.dataset.topic = topic;
+        else delete card.dataset.topic;
+        form.querySelectorAll(".topic-hint").forEach(hint => { hint.hidden = hint.dataset.hint !== (topic || "none"); });
+        needField.hidden = !topic;
         form.querySelectorAll(".need-select").forEach(select => {
             const active = select.dataset.topic === topic;
             select.hidden = !active;
@@ -199,7 +202,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     form.querySelectorAll('input[name="topic"]').forEach(radio =>
-        radio.addEventListener("change", () => selectTopic(radio.value)));
+        radio.addEventListener("change", () => {
+            selectTopic(radio.value);
+            status.textContent = "";
+            status.className = "form-status";
+        }));
 
     // Vorauswahl per Link, z. B. /?topic=3d#contact von der 3D-Seite
     const preset = new URLSearchParams(location.search).get("topic");
@@ -218,9 +225,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        if (!form.dataset.topic) {
+        if (!card.dataset.topic) {
             showStatus("chooseTopic", "error");
-            form.querySelector(".topic-card").scrollIntoView({ block: "center" });
+            form.querySelector(".topic-switch").scrollIntoView({ block: "center" });
             return;
         }
         if (!form.reportValidity()) return;
@@ -232,9 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const data = await res.json().catch(() => ({}));
             if (res.ok && data.ok) {
                 form.reset();
-                delete form.dataset.topic;
-                form.querySelectorAll(".topic-card").forEach(card => card.classList.remove("is-selected"));
-                needField.hidden = true;
+                selectTopic(null);
                 form.elements.started.value = Date.now();
                 showStatus("success", "success");
             } else {

@@ -132,24 +132,24 @@
 </div>
 
 <section class="container contact-section reveal" id="contact">
-    <div class="glass-box contact-card">
+    <div class="contact-card">
+        <span class="contact-glow" aria-hidden="true"></span>
+
         <h2 class="contact-title" data-i18n="contact.title">Ready for real results?</h2>
         <p class="contact-lead" data-i18n="contact.lead">Tell me briefly what you need – I'll get back to you within two working days.</p>
 
-        <form id="contact-form" action="/contact.php" method="post">
-            <fieldset class="topic-picker">
-                <legend data-i18n="contact.topicLegend">What do you need me for?</legend>
-                <label class="topic-card topic-3d">
-                    <input type="radio" name="topic" value="3d" required>
-                    <span class="topic-name" data-i18n="contact.topic3d">3D &amp; Motion</span>
-                    <span class="topic-desc" data-i18n="contact.topic3dDesc">Product visuals, animations, ad creatives</span>
-                </label>
-                <label class="topic-card topic-it">
-                    <input type="radio" name="topic" value="it" required>
-                    <span class="topic-name" data-i18n="contact.topicIt">IT &amp; Software</span>
-                    <span class="topic-desc" data-i18n="contact.topicItDesc">Web apps, backend (Java/Spring), automation – or a job offer</span>
-                </label>
-            </fieldset>
+        <form id="contact-form" action="/contact.php" method="post" novalidate>
+            <p class="contact-label" id="cf-topic-label" data-i18n="contact.topicLegend">What do you need me for?</p>
+            <div class="topic-switch" role="radiogroup" aria-labelledby="cf-topic-label">
+                <input type="radio" id="cf-topic-3d" name="topic" value="3d" required>
+                <label for="cf-topic-3d" data-i18n="contact.topic3d">3D &amp; Motion</label>
+                <input type="radio" id="cf-topic-it" name="topic" value="it">
+                <label for="cf-topic-it" data-i18n="contact.topicIt">IT &amp; Software</label>
+                <span class="topic-slider" aria-hidden="true"></span>
+            </div>
+            <p class="topic-hint" data-hint="none" data-i18n="contact.hintDefault">Choose an area – the form adapts to it.</p>
+            <p class="topic-hint" data-hint="3d" data-i18n="contact.topic3dDesc" hidden>Product visuals, animations, ad creatives</p>
+            <p class="topic-hint" data-hint="it" data-i18n="contact.topicItDesc" hidden>Web apps, backend (Java/Spring), automation – or a job offer</p>
 
             <div class="row g-3">
                 <div class="col-md-6">
@@ -167,20 +167,6 @@
                 <div class="col-md-6">
                     <label class="form-label" for="cf-company" data-i18n="contact.company">Company (optional)</label>
                     <input class="form-control" id="cf-company" name="company" maxlength="120" autocomplete="organization">
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label" for="cf-phone" data-i18n="contact.phone">Phone (optional)</label>
-                    <input class="form-control" id="cf-phone" name="phone" type="tel" maxlength="40" autocomplete="tel">
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label" for="cf-budget" data-i18n="contact.budget">Budget (optional)</label>
-                    <select class="form-select" id="cf-budget" name="budget">
-                        <option value="" data-i18n="contact.budgetOpen">Not sure yet</option>
-                        <option value="unter 1.000 €">&lt; 1.000 €</option>
-                        <option value="1.000 – 3.000 €">1.000 – 3.000 €</option>
-                        <option value="3.000 – 10.000 €">3.000 – 10.000 €</option>
-                        <option value="über 10.000 €">&gt; 10.000 €</option>
-                    </select>
                 </div>
                 <div class="col-12 need-field" hidden>
                     <label class="form-label" id="cf-need-label"><span data-i18n="contact.need">What is it about?</span> *</label>
@@ -200,14 +186,28 @@
                         <option value="Etwas anderes" data-i18n="contact.needOther">Something else</option>
                     </select>
                 </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-phone" data-i18n="contact.phone">Phone (optional)</label>
+                    <input class="form-control" id="cf-phone" name="phone" type="tel" maxlength="40" autocomplete="tel">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-budget" data-i18n="contact.budget">Budget (optional)</label>
+                    <select class="form-select" id="cf-budget" name="budget">
+                        <option value="" data-i18n="contact.budgetOpen">Not sure yet</option>
+                        <option value="unter 1.000 €">&lt; 1.000 €</option>
+                        <option value="1.000 – 3.000 €">1.000 – 3.000 €</option>
+                        <option value="3.000 – 10.000 €">3.000 – 10.000 €</option>
+                        <option value="über 10.000 €">&gt; 10.000 €</option>
+                    </select>
+                </div>
                 <div class="col-12">
                     <label class="form-label" for="cf-message"><span data-i18n="contact.message">Your project</span> *</label>
-                    <textarea class="form-control" id="cf-message" name="message" rows="6" required maxlength="5000"
+                    <textarea class="form-control" id="cf-message" name="message" rows="5" required maxlength="5000"
                               placeholder="Goals, timeline, links – anything that helps me understand your project."
                               data-i18n-placeholder="contact.messagePlaceholder"></textarea>
                 </div>
-                <!-- Honeypot gegen Spam-Bots: für Menschen unsichtbar -->
-                <div class="col-12 hp-field" aria-hidden="true">
+                <!-- Spam-Falle: für Menschen unsichtbar, Bots füllen sie aus -->
+                <div class="hp-field" hidden>
                     <label for="cf-website">Website</label>
                     <input id="cf-website" name="website" tabindex="-1" autocomplete="off">
                 </div>
@@ -221,7 +221,7 @@
             </div>
 
             <div class="contact-actions">
-                <button type="submit" class="btn contact-submit hover-effect-5" data-i18n="contact.submit">Send request</button>
+                <button type="submit" class="contact-submit" data-i18n="contact.submit">Send request</button>
                 <small class="contact-required" data-i18n="contact.required">* required</small>
             </div>
             <p class="form-status" role="status" aria-live="polite"></p>
