@@ -99,3 +99,36 @@ body {
     transform: translateX(-50%);
     z-index: 10;
 }
+
+/* Impressum / Datenschutz */
+.legal {
+    max-width: 900px;
+    color: whitesmoke;
+}
+
+.legal h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.legal h2 {
+    font-size: 1.2rem;
+    color: #00BFFF;
+    text-align: left;
+    margin-top: 1.75rem;
+    text-shadow: none;
+}
+
+.legal p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.legal a {
+    color: #00BFFF;
+}
+
+.legal-date {
+    margin-top: 2rem;
+    opacity: 0.7;
+}

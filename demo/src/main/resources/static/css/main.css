@@ -338,3 +338,254 @@ div .h-100 > h2 {
     color: #00BFFF;
     text-decoration: underline;
 }
+
+/* ---------- Kontaktformular ---------- */
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.contact-section {
+    margin-top: 3rem;
+    scroll-margin-top: 1.5rem;
+}
+
+.contact-card {
+    --accent: #00BFFF;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    background-image:
+            linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.contact-card:has(form[data-topic="3d"]) {
+    --accent: #f5bc50;
+}
+
+.contact-title {
+    color: #00BFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    line-height: 1.1;
+}
+
+.contact-lead {
+    margin-bottom: 2rem;
+}
+
+.topic-picker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+@media (max-width: 575.98px) {
+    .topic-picker {
+        grid-template-columns: 1fr;
+    }
+}
+
+.topic-picker legend {
+    grid-column: 1 / -1;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+.topic-card {
+    --accent: #00BFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1.4rem 1.5rem;
+    min-height: 120px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.topic-3d {
+    --accent: #f5bc50;
+}
+
+.topic-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.07);
+}
+
+/* umlaufender Lichtrahmen um die gewählte Karte */
+.topic-card::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    padding: 2px;
+    border-radius: inherit;
+    background: conic-gradient(from var(--angle), transparent 0 55%, var(--accent) 75%, #fff 80%, var(--accent) 85%, transparent 100%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: topic-spin 3s linear infinite;
+    pointer-events: none;
+}
+
+.topic-card.is-selected {
+    transform: translateY(-2px);
+    border-color: transparent;
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    box-shadow: 0 0 28px color-mix(in srgb, var(--accent) 40%, transparent);
+}
+
+.topic-card.is-selected::before {
+    opacity: 1;
+}
+
+@keyframes topic-spin {
+    to { --angle: 360deg; }
+}
+
+.topic-card input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.topic-card:has(input:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.topic-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--accent) !important;
+}
+
+.topic-desc {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.contact-card .form-label,
+.contact-card .form-check-label {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contact-card .form-check-label {
+    font-weight: 400;
+}
+
+.contact-card .form-check-label a {
+    color: var(--accent);
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    padding: 0.7rem 0.9rem;
+}
+
+.contact-card .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.contact-card .form-select option {
+    color: #111;
+}
+
+.contact-card .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.09);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+    color: white;
+}
+
+.contact-card .form-check-input:checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.hp-field {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+
+.contact-submit {
+    background: var(--accent);
+    color: #0b0b12;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 0.75rem 1.8rem;
+    border: none;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+    background: var(--accent);
+    color: #0b0b12;
+    transform: translateY(-1px);
+    box-shadow: 0 0 22px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+.contact-submit:disabled {
+    background: var(--accent);
+    opacity: 0.6;
+}
+
+.contact-required {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.form-status {
+    margin: 1rem 0 0;
+    min-height: 1.5em;
+    font-weight: 600;
+}
+
+.form-status.success {
+    color: #3ddc97 !important;
+}
+
+.form-status.error {
+    color: #ff8080 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .topic-card::before {
+        animation: none;
+        background: var(--accent);
+    }
+}

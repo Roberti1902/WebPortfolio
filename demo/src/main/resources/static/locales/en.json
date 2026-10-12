@@ -1,4 +1,44 @@
 {
+  "contact": {
+    "title": "Ready for real results?",
+    "lead": "Tell me briefly what you need – I'll get back to you within two working days.",
+    "topicLegend": "What do you need me for?",
+    "topic3d": "3D & Motion",
+    "topic3dDesc": "Product visuals, animations, ad creatives",
+    "topicIt": "IT & Software",
+    "topicItDesc": "Web apps, backend (Java/Spring), automation – or a job offer",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company (optional)",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "need": "What is it about?",
+    "choose": "Please choose",
+    "need3dProduct": "Product visualization",
+    "need3dAnimation": "3D animation / motion",
+    "need3dAds": "Ad creatives / campaign",
+    "needItWeb": "Website / web app",
+    "needItBackend": "Backend / API (Java, Spring)",
+    "needItAutomation": "Automation / data",
+    "needItJob": "Job or internship offer",
+    "needOther": "Something else",
+    "budget": "Budget (optional)",
+    "budgetOpen": "Not sure yet",
+    "message": "Your project",
+    "messagePlaceholder": "Goals, timeline, links – anything that helps me understand your project.",
+    "consent": "I have read the <a href='/datenschutz' target='_blank'>privacy policy</a> and agree that my details are used to answer my request.",
+    "required": "* required",
+    "submit": "Send request",
+    "sending": "Sending …",
+    "success": "Thank you! Your request has been sent – I'll get back to you soon.",
+    "error": "Sending failed. Please try again later or contact me on LinkedIn.",
+    "rate": "Too many requests – please try again in an hour.",
+    "chooseTopic": "Please choose 3D or IT first."
+  },
+  "cta": {
+    "request3d": "Request a 3D project",
+    "requestIt": "Start an IT project"
+  },
   "error": {
     "title": "Page not found",
     "text": "The page you are looking for does not exist or has moved.",
@@ -11,6 +51,8 @@
     "about": "About"
   },
   "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
     "rights": "All rights reserved."
   },
   "location": {
@@ -26,7 +68,7 @@
   },
   "availability": {
     "title": "Open to new opportunities",
-    "text": "Available for freelance & side projects – reach out on <a href='https://www.linkedin.com/in/robert-ionescu-228228265/' target='_blank' rel='noopener'>LinkedIn</a>."
+    "text": "Available for freelance & side projects – <a href='#contact'>send me a request</a>."
   },
   "about": {
     "headline": "State of Mind",
@@ -48,7 +90,7 @@
 
     "aboutPage": {
     "ctaText": "Curious what we could build together? Let's connect.",
-    "ctaButton": "Connect on LinkedIn",
+    "ctaButton": "Send a request",
       "headline": "About Me",
       "greetingTitle": "Thanks for stopping by!",
       "greetingText": "Scroll down to learn more about me and my journey!",

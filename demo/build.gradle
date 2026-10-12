@@ -28,3 +28,12 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+// Statische Website fuer das IONOS-Webhosting erzeugen: build/site -> nach htdocs hochladen
+tasks.register('exportSite', JavaExec) {
+	group = 'build'
+	description = 'Rendert alle Seiten als statisches HTML nach build/site (Upload nach IONOS htdocs)'
+	classpath = sourceSets.main.runtimeClasspath
+	mainClass = 'com.example.demo.SiteExporter'
+	args = [layout.buildDirectory.dir('site').get().asFile.path, projectDir.path]
+}

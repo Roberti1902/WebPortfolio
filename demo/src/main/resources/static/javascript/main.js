@@ -147,6 +147,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const value = lookup(data, key) ?? lookup(fallback, key);
             if (value) el.innerHTML = value;
         });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            const value = lookup(data, key) ?? lookup(fallback, key);
+            if (value) el.placeholder = value;
+        });
 
         document.documentElement.lang = lang;
         flags.forEach(flag => flag.classList.toggle("active", flag.dataset.lang === lang));
@@ -167,5 +172,78 @@ document.addEventListener("DOMContentLoaded", () => {
                 select();
             }
         });
+    });
+});
+
+// Kontaktformular: Bereich 3D/IT wählen, passende Auswahl einblenden, per fetch an contact.php senden
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contact-form");
+    if (!form) return;
+
+    const status = form.querySelector(".form-status");
+    const submit = form.querySelector(".contact-submit");
+    const needField = form.querySelector(".need-field");
+    const msg = key => form.querySelector(`[data-msg="${key}"]`).textContent;
+
+    function selectTopic(topic) {
+        form.dataset.topic = topic;
+        form.querySelectorAll(".topic-card").forEach(card =>
+            card.classList.toggle("is-selected", card.querySelector("input").value === topic));
+        needField.hidden = false;
+        form.querySelectorAll(".need-select").forEach(select => {
+            const active = select.dataset.topic === topic;
+            select.hidden = !active;
+            select.disabled = !active; // deaktivierte Felder werden nicht mitgeschickt
+            select.required = active;
+        });
+    }
+
+    form.querySelectorAll('input[name="topic"]').forEach(radio =>
+        radio.addEventListener("change", () => selectTopic(radio.value)));
+
+    // Vorauswahl per Link, z. B. /?topic=3d#contact von der 3D-Seite
+    const preset = new URLSearchParams(location.search).get("topic");
+    const presetRadio = form.querySelector(`input[name="topic"][value="${preset}"]`);
+    if (presetRadio) {
+        presetRadio.checked = true;
+        selectTopic(preset);
+    }
+
+    form.elements.started.value = Date.now(); // Bots schicken meist sofort ab, contact.php prüft die Zeit
+
+    function showStatus(key, type) {
+        status.textContent = msg(key);
+        status.className = `form-status ${type}`;
+    }
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (!form.dataset.topic) {
+            showStatus("chooseTopic", "error");
+            form.querySelector(".topic-card").scrollIntoView({ block: "center" });
+            return;
+        }
+        if (!form.reportValidity()) return;
+
+        submit.disabled = true;
+        showStatus("sending", "");
+        try {
+            const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+            const data = await res.json().catch(() => ({}));
+            if (res.ok && data.ok) {
+                form.reset();
+                delete form.dataset.topic;
+                form.querySelectorAll(".topic-card").forEach(card => card.classList.remove("is-selected"));
+                needField.hidden = true;
+                form.elements.started.value = Date.now();
+                showStatus("success", "success");
+            } else {
+                showStatus(res.status === 429 ? "rate" : "error", "error");
+            }
+        } catch {
+            showStatus("error", "error");
+        } finally {
+            submit.disabled = false;
+        }
     });
 });

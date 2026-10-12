@@ -66,7 +66,7 @@
             </div>
 
             <div class="hero-actions">
-                <a class="btn btn-primary hover-effect-5" href="https://www.linkedin.com/in/robert-ionescu-228228265/" target="_blank" rel="noopener" data-i18n="hero.cta">Get in touch</a>
+                <a class="btn btn-primary hover-effect-5" href="#contact" data-i18n="hero.cta">Get in touch</a>
                 <a class="btn btn-outline-light hover-effect-5" href="#work" data-i18n="hero.ctaWork">See my work</a>
             </div>
 
@@ -81,7 +81,7 @@
 <div class="available-section text-center my-0 px-3 reveal">
     <span class="status-dot"></span>
     <h2 class="mt-3 fw-bold text-white" data-i18n="availability.title">Open to new opportunities</h2>
-    <p class="text-white-50 mb-0" data-i18n="availability.text">Available for freelance & side projects – reach out on <a href='https://www.linkedin.com/in/robert-ionescu-228228265/' target='_blank' rel='noopener'>LinkedIn</a>.</p>
+    <p class="text-white-50 mb-0" data-i18n="availability.text">Available for freelance & side projects – <a href='#contact'>send me a request</a>.</p>
 </div>
 
 
@@ -130,6 +130,110 @@
     </div>
 
 </div>
+
+<section class="container contact-section reveal" id="contact">
+    <div class="glass-box contact-card">
+        <h2 class="contact-title" data-i18n="contact.title">Ready for real results?</h2>
+        <p class="contact-lead" data-i18n="contact.lead">Tell me briefly what you need – I'll get back to you within two working days.</p>
+
+        <form id="contact-form" action="/contact.php" method="post">
+            <fieldset class="topic-picker">
+                <legend data-i18n="contact.topicLegend">What do you need me for?</legend>
+                <label class="topic-card topic-3d">
+                    <input type="radio" name="topic" value="3d" required>
+                    <span class="topic-name" data-i18n="contact.topic3d">3D &amp; Motion</span>
+                    <span class="topic-desc" data-i18n="contact.topic3dDesc">Product visuals, animations, ad creatives</span>
+                </label>
+                <label class="topic-card topic-it">
+                    <input type="radio" name="topic" value="it" required>
+                    <span class="topic-name" data-i18n="contact.topicIt">IT &amp; Software</span>
+                    <span class="topic-desc" data-i18n="contact.topicItDesc">Web apps, backend (Java/Spring), automation – or a job offer</span>
+                </label>
+            </fieldset>
+
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-first"><span data-i18n="contact.firstName">First name</span> *</label>
+                    <input class="form-control" id="cf-first" name="firstName" required maxlength="80" autocomplete="given-name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-last"><span data-i18n="contact.lastName">Last name</span> *</label>
+                    <input class="form-control" id="cf-last" name="lastName" required maxlength="80" autocomplete="family-name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-email"><span data-i18n="contact.email">Email</span> *</label>
+                    <input class="form-control" id="cf-email" name="email" type="email" required maxlength="200" autocomplete="email">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-company" data-i18n="contact.company">Company (optional)</label>
+                    <input class="form-control" id="cf-company" name="company" maxlength="120" autocomplete="organization">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-phone" data-i18n="contact.phone">Phone (optional)</label>
+                    <input class="form-control" id="cf-phone" name="phone" type="tel" maxlength="40" autocomplete="tel">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="cf-budget" data-i18n="contact.budget">Budget (optional)</label>
+                    <select class="form-select" id="cf-budget" name="budget">
+                        <option value="" data-i18n="contact.budgetOpen">Not sure yet</option>
+                        <option value="unter 1.000 €">&lt; 1.000 €</option>
+                        <option value="1.000 – 3.000 €">1.000 – 3.000 €</option>
+                        <option value="3.000 – 10.000 €">3.000 – 10.000 €</option>
+                        <option value="über 10.000 €">&gt; 10.000 €</option>
+                    </select>
+                </div>
+                <div class="col-12 need-field" hidden>
+                    <label class="form-label" id="cf-need-label"><span data-i18n="contact.need">What is it about?</span> *</label>
+                    <select class="form-select need-select" name="need" data-topic="3d" aria-labelledby="cf-need-label" disabled>
+                        <option value="" data-i18n="contact.choose">Please choose</option>
+                        <option value="Produktvisualisierung" data-i18n="contact.need3dProduct">Product visualization</option>
+                        <option value="3D-Animation / Motion" data-i18n="contact.need3dAnimation">3D animation / motion</option>
+                        <option value="Ad-Creatives / Kampagne" data-i18n="contact.need3dAds">Ad creatives / campaign</option>
+                        <option value="Etwas anderes" data-i18n="contact.needOther">Something else</option>
+                    </select>
+                    <select class="form-select need-select" name="need" data-topic="it" aria-labelledby="cf-need-label" disabled hidden>
+                        <option value="" data-i18n="contact.choose">Please choose</option>
+                        <option value="Website / Web-App" data-i18n="contact.needItWeb">Website / web app</option>
+                        <option value="Backend / API" data-i18n="contact.needItBackend">Backend / API (Java, Spring)</option>
+                        <option value="Automatisierung / Daten" data-i18n="contact.needItAutomation">Automation / data</option>
+                        <option value="Jobangebot / Werkstudentenstelle" data-i18n="contact.needItJob">Job or internship offer</option>
+                        <option value="Etwas anderes" data-i18n="contact.needOther">Something else</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label class="form-label" for="cf-message"><span data-i18n="contact.message">Your project</span> *</label>
+                    <textarea class="form-control" id="cf-message" name="message" rows="6" required maxlength="5000"
+                              placeholder="Goals, timeline, links – anything that helps me understand your project."
+                              data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+                </div>
+                <!-- Honeypot gegen Spam-Bots: für Menschen unsichtbar -->
+                <div class="col-12 hp-field" aria-hidden="true">
+                    <label for="cf-website">Website</label>
+                    <input id="cf-website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                <input type="hidden" name="started" value="">
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cf-consent" name="consent" value="yes" required>
+                        <label class="form-check-label" for="cf-consent" data-i18n="contact.consent">I have read the <a href='/datenschutz' target='_blank'>privacy policy</a> and agree that my details are used to answer my request.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-actions">
+                <button type="submit" class="btn contact-submit hover-effect-5" data-i18n="contact.submit">Send request</button>
+                <small class="contact-required" data-i18n="contact.required">* required</small>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+
+            <span hidden data-msg="sending" data-i18n="contact.sending">Sending …</span>
+            <span hidden data-msg="success" data-i18n="contact.success">Thank you! Your request has been sent – I'll get back to you soon.</span>
+            <span hidden data-msg="error" data-i18n="contact.error">Sending failed. Please try again later or contact me on LinkedIn.</span>
+            <span hidden data-msg="rate" data-i18n="contact.rate">Too many requests – please try again in an hour.</span>
+            <span hidden data-msg="chooseTopic" data-i18n="contact.chooseTopic">Please choose 3D or IT first.</span>
+        </form>
+    </div>
+</section>
 
 <div th:replace="~{fragments/layout :: footer}"></div>
 </body>

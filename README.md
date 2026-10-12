@@ -20,6 +20,11 @@ Server-rendered with Spring Boot and Thymeleaf, with a hand-written frontend (HT
 - **Security headers** (CSP, `nosniff`, referrer and permissions policy, HSTS over HTTPS) via a small servlet filter; custom 404 page.
 - **UI details**: glassmorphism design, custom cursor with trail (mouse devices only), scroll reveal via `IntersectionObserver`, CSS-driven meteor background.
 
+## Contact form
+
+The landing page ends with a contact form: visitors choose **3D & Motion** or **IT & Software** (animated highlight in gold or blue), and the follow-up options adapt to that choice. Links like `/?topic=3d#contact` preselect an area.
+In production the form posts to `deploy/contact.php` (PHP on the web host), which validates the input, blocks spam (honeypot, timing check, rate limit) and sends the request by mail. The recipient address lives in `contact-config.php` outside the web root and is never committed.
+
 ## Run locally
 
 ```bash
@@ -28,7 +33,19 @@ cd demo
 ./gradlew test         # page rendering, security headers, 404 page, translation keys
 ```
 
-Requires JDK 21.
+Requires JDK 21. Locally the form is answered by a stub (`DevContactController`) that only logs the request.
+
+## Deploy (static web hosting, e.g. IONOS)
+
+The host serves plain files, so the pages are exported as static HTML:
+
+```bash
+cd demo
+./gradlew exportSite   # -> demo/build/site
+```
+
+Upload the **contents** of `demo/build/site` into `htdocs` (it includes `.htaccess` for clean URLs, security headers and caching, plus `contact.php`).
+Once: copy `deploy/contact-config.example.php` to `contact-config.php`, fill in the addresses and upload it to `/` – one level **above** `htdocs`.
 
 ## Project structure
 

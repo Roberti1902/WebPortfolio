@@ -1,4 +1,44 @@
 {
+  "contact": {
+    "title": "Bereit für echte Ergebnisse?",
+    "lead": "Erzählen Sie mir kurz, worum es geht – ich melde mich innerhalb von zwei Werktagen.",
+    "topicLegend": "Wofür brauchen Sie mich?",
+    "topic3d": "3D & Motion",
+    "topic3dDesc": "Produktvisualisierung, Animationen, Ad-Creatives",
+    "topicIt": "IT & Software",
+    "topicItDesc": "Web-Apps, Backend (Java/Spring), Automatisierung – oder ein Jobangebot",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "company": "Unternehmen (optional)",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "need": "Worum geht es?",
+    "choose": "Bitte wählen",
+    "need3dProduct": "Produktvisualisierung",
+    "need3dAnimation": "3D-Animation / Motion",
+    "need3dAds": "Ad-Creatives / Kampagne",
+    "needItWeb": "Website / Web-App",
+    "needItBackend": "Backend / API (Java, Spring)",
+    "needItAutomation": "Automatisierung / Daten",
+    "needItJob": "Jobangebot / Werkstudentenstelle",
+    "needOther": "Etwas anderes",
+    "budget": "Budget (optional)",
+    "budgetOpen": "Noch offen",
+    "message": "Ihr Projekt",
+    "messagePlaceholder": "Ziele, Zeitrahmen, Links – alles, was mir hilft, Ihr Projekt zu verstehen.",
+    "consent": "Ich habe die <a href='/datenschutz' target='_blank'>Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden.",
+    "required": "* Pflichtfeld",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet …",
+    "success": "Danke! Ihre Anfrage ist angekommen – ich melde mich zeitnah.",
+    "error": "Senden fehlgeschlagen. Bitte später erneut versuchen oder mich über LinkedIn kontaktieren.",
+    "rate": "Zu viele Anfragen – bitte in einer Stunde erneut versuchen.",
+    "chooseTopic": "Bitte zuerst 3D oder IT auswählen."
+  },
+  "cta": {
+    "request3d": "3D-Projekt anfragen",
+    "requestIt": "IT-Projekt anfragen"
+  },
   "error": {
     "title": "Seite nicht gefunden",
     "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
@@ -11,6 +51,8 @@
     "about": "Über mich"
   },
   "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
     "rights": "Alle Rechte vorbehalten."
   },
   "location": {
@@ -26,7 +68,7 @@
   },
   "availability": {
     "title": "Offen für neue Herausforderungen",
-    "text": "Freelance & Nebenprojekte willkommen – schreiben Sie mir gern auf <a href='https://www.linkedin.com/in/robert-ionescu-228228265/' target='_blank' rel='noopener'>LinkedIn</a>."
+    "text": "Freelance & Nebenprojekte willkommen – <a href='#contact'>schreiben Sie mir</a>."
   },
   "about": {
     "headline": "State of Mind",
@@ -49,7 +91,7 @@
 
   "aboutPage": {
     "ctaText": "Neugierig, was wir gemeinsam umsetzen könnten? Vernetzen wir uns.",
-    "ctaButton": "Auf LinkedIn vernetzen",
+    "ctaButton": "Anfrage senden",
     "headline": "Über mich",
     "greetingTitle": "Danke fürs Vorbeischauen!",
     "greetingText": "Scroll nach unten, um mich und meine Arbeitsweise kennenzulernen!",

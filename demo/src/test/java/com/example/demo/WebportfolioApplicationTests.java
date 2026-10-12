@@ -45,7 +45,7 @@ class WebportfolioApplicationTests {
     @Test
     void allPagesRenderWithTitleAndSecurityHeaders() throws Exception {
         for (String path : List.of("/", "/technical", "/3d", "/about",
-                "/project2tech", "/project13d", "/project23d", "/project33d")) {
+                "/project2tech", "/project13d", "/project23d", "/project33d", "/impressum", "/datenschutz")) {
             mvc.perform(get(path))
                     .andExpect(status().isOk())
                     .andExpect(header().exists("Content-Security-Policy"))
@@ -69,7 +69,7 @@ class WebportfolioApplicationTests {
         Matcher m;
         try (Stream<Path> files = Files.walk(RESOURCES.resolve("templates"))) {
             for (Path file : files.filter(f -> f.toString().endsWith(".html")).toList()) {
-                m = Pattern.compile("data-i18n=\"([^\"]+)\"").matcher(Files.readString(file));
+                m = Pattern.compile("data-i18n(?:-placeholder)?=\"([^\"]+)\"").matcher(Files.readString(file));
                 while (m.find()) keys.add(m.group(1));
             }
         }

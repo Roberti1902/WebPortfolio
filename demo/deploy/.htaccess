@@ -1,0 +1,47 @@
+# Apache-Konfiguration für das IONOS-Webhosting (liegt im Upload direkt in htdocs)
+
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Saubere URLs: /technical liefert technical.html aus
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+# Konfigurations- und Vorlagendateien niemals ausliefern
+<FilesMatch "^(contact-config.*\.php|\.ht.*)$">
+    Require all denied
+</FilesMatch>
+
+# Sicherheits-Header (gleiche Werte wie lokal im SecurityHeadersFilter)
+<IfModule mod_headers.c>
+    Header always set Content-Security-Policy "default-src 'self'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# Komprimierung
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# Browser-Cache: Bilder 7 Tage; HTML, CSS, JS und Texte immer kurz nachfragen (304, wenn unveraendert),
+# damit Aenderungen nach dem Upload sofort bei allen ankommen
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 7 days"
+    ExpiresByType image/png "access plus 7 days"
+    ExpiresByType image/jpeg "access plus 7 days"
+    ExpiresByType image/x-icon "access plus 7 days"
+</IfModule>
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|css|js|json|xml|txt)$">
+        Header set Cache-Control "no-cache"
+    </FilesMatch>
+</IfModule>
