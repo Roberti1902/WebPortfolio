@@ -27,19 +27,9 @@ public class WebController {
         return "about";
     }
 
-    @RequestMapping(path="/project1tech", method = RequestMethod.GET)
-    public String techproj1() {
-        return "project1tech";
-    }
-
     @RequestMapping(path="/project2tech", method = RequestMethod.GET)
     public String techproj2() {
         return "project2tech";
-    }
-
-    @RequestMapping(path="/project3tech", method = RequestMethod.GET)
-    public String techproj3() {
-        return "project3tech";
     }
 
     @RequestMapping(path="/project13d", method = RequestMethod.GET)

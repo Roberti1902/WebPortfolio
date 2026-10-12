@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<!-- Gemeinsame Bausteine aller Seiten, eingebunden per th:replace="~{fragments/layout :: name(...)}" -->
+
+<head th:fragment="head(title, description, css, path)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}">Robert Ionescu</title>
+    <meta name="description" th:content="${description}">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" th:href="${'https://robertionescu.de' + path}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Robert Ionescu">
+    <meta property="og:title" th:content="${title}">
+    <meta property="og:description" th:content="${description}">
+    <meta property="og:url" th:content="${'https://robertionescu.de' + path}">
+    <meta property="og:image" content="https://robertionescu.de/Dateien/og.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" href="/Dateien/favicon.png">
+    <link rel="apple-touch-icon" href="/Dateien/apple-touch-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="/css/base.css" rel="stylesheet">
+    <link th:href="${'/css/' + css + '.css'}" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
+    <script src="/javascript/main.js" defer></script>
+    <noscript><style>.reveal, .fade-container { opacity: 1; transform: none; filter: none; }</style></noscript>
+</head>
+
+<body>
+
+<div class="reveal" th:fragment="nav(active)">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link" data-i18n="nav.home">Home</a></li>
+            <li class="nav-item"><a href="/technical" class="nav-link" th:classappend="${active == 'technical'} ? 'active'" data-i18n="nav.technical">Tech-Portfolio</a></li>
+            <li class="nav-item"><a href="/3d" class="nav-link" th:classappend="${active == '3d'} ? 'active'" data-i18n="nav.threeD">3D-Portfolio</a></li>
+            <li class="nav-item"><a href="/about" class="nav-link" th:classappend="${active == 'about'} ? 'active'" data-i18n="nav.about">About</a></li>
+        </ul>
+    </header>
+</div>
+
+<div class="language-flags d-flex justify-content-center align-items-center gap-3" th:fragment="flags">
+    <img src="/Dateien/ger2.png" alt="Deutsch" class="lang-flag" data-lang="de" role="button" tabindex="0">
+    <img src="/Dateien/eng2.png" alt="English" class="lang-flag" data-lang="en" role="button" tabindex="0">
+    <img src="/Dateien/fr2.png" alt="Français" class="lang-flag" data-lang="fr" role="button" tabindex="0">
+</div>
+
+<div class="container footer reveal" th:fragment="footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <span class="text-body-secondary">© <span th:text="${#dates.year(#dates.createNow())}">2026</span> Robert Andreas Ionescu. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <span class="social-links">
+            <a href="https://github.com/Roberti1902" target="_blank" rel="noopener" aria-label="GitHub"><img src="/Dateien/github.webp" alt="" width="24" height="24"></a>
+            <a href="https://www.linkedin.com/in/robert-ionescu-228228265/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="/Dateien/linkedin.webp" alt="" width="24" height="24"></a>
+        </span>
+    </footer>
+</div>
+
+</body>
+</html>

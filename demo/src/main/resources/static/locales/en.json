@@ -1,4 +1,13 @@
 {
+  "nav": {
+    "home": "Home",
+    "technical": "Tech Portfolio",
+    "threeD": "3D Portfolio",
+    "about": "About"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
   "location": {
     "label": "Current Location: Germany",
     "timezone": "(+2 UTC)"

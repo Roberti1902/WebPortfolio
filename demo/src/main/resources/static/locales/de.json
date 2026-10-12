@@ -1,4 +1,13 @@
 {
+  "nav": {
+    "home": "Start",
+    "technical": "Tech-Portfolio",
+    "threeD": "3D-Portfolio",
+    "about": "Über mich"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
   "location": {
     "label": "Aktueller Standort: Deutschland",
     "timezone": "(+2 UTC)"

@@ -1,3 +1,6 @@
+const SUPPORTED_LANGS = ["de", "en", "fr"];
+
+// Kontaktleiste (nur Hauptseite) einblenden
 document.addEventListener("DOMContentLoaded", () => {
     const contactBar = document.querySelector(".fade-container");
     if (contactBar) {
@@ -6,13 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Uhr: immer deutsche Zeit, unabhängig vom Standort des Besuchers
+const berlinTime = new Intl.DateTimeFormat("de-DE", { timeZone: "Europe/Berlin", hour12: false, timeStyle: "medium" });
+
 function updateClock() {
     const clockEl = document.getElementById("clock");
-    if (clockEl) clockEl.textContent = new Date().toLocaleTimeString('de-DE', { hour12: false });
+    if (clockEl) clockEl.textContent = berlinTime.format(new Date());
 }
 
-setInterval(updateClock, 1000);
-updateClock();
+if (document.getElementById("clock")) {
+    setInterval(updateClock, 1000);
+    updateClock();
+}
 
 const utcSpan = document.getElementById("tester");
 if (utcSpan) {
@@ -21,16 +29,19 @@ if (utcSpan) {
     utcSpan.textContent = `(${offset.replace("GMT", "")} UTC)`;
 }
 
+// Eigener Cursor mit Schweif: nur bei Maus/Trackpad, Schweif nicht bei reduzierter Bewegung
 document.addEventListener("DOMContentLoaded", () => {
-    const trailLength = 8;
-    const ghosts = [];
+    if (!matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+    document.documentElement.classList.add("has-custom-cursor");
+    console.log("Sehr interessant dich hier im Quellcode anzutreffen, willkommen auch an dich auf meinem Portfolio ;)");
 
     const mainCursor = document.createElement("div");
     mainCursor.classList.add("custom-cursor");
     document.body.appendChild(mainCursor);
 
-    console.log("Sehr interessant dich hier im Quellcode anzutreffen, willkommen auch an dich auf meinem Portfolio ;)");
-
+    const trailLength = matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 8;
+    const ghosts = [];
     for (let i = 0; i < trailLength; i++) {
         const ghost = document.createElement("div");
         ghost.classList.add("ghost-cursor");
@@ -40,23 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let mouseX = 0;
     let mouseY = 0;
-
-    document.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
+    let running = false;
 
     function animateTrail() {
         mainCursor.style.transform = `translate(${mouseX - 10}px, ${mouseY - 10}px)`;
 
         let prevX = mouseX;
         let prevY = mouseY;
+        let moving = false;
 
         ghosts.forEach((ghost, index) => {
             const delay = 0.45 - index * 0.02; // sanftere Verzögerung
 
             ghost.x += (prevX - ghost.x) * delay;
             ghost.y += (prevY - ghost.y) * delay;
+            if (Math.abs(prevX - ghost.x) > 0.1 || Math.abs(prevY - ghost.y) > 0.1) moving = true;
 
             ghost.el.style.transform = `translate(${ghost.x - 10}px, ${ghost.y - 10}px)`;
 
@@ -64,12 +73,26 @@ document.addEventListener("DOMContentLoaded", () => {
             prevY = ghost.y;
         });
 
-        requestAnimationFrame(animateTrail);
+        // Schleife läuft nur, solange sich etwas bewegt (spart CPU/Akku)
+        if (moving) requestAnimationFrame(animateTrail);
+        else running = false;
     }
 
-    animateTrail();
+    document.addEventListener("mousemove", (e) => {
+        if (!mainCursor.classList.contains("visible")) {
+            mainCursor.classList.add("visible");
+            ghosts.forEach(g => { g.x = e.clientX; g.y = e.clientY; g.el.classList.add("visible"); });
+        }
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        if (!running) {
+            running = true;
+            requestAnimationFrame(animateTrail);
+        }
+    });
 });
 
+// Einblend-Animation beim Scrollen
 document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -78,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.23 });
+    }, { threshold: 0, rootMargin: "0px 0px -12% 0px" }); // threshold 0: auch sehr hohe Blöcke werden auf dem Handy sichtbar
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 });
@@ -102,23 +125,47 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Mehrsprachigkeit: Browsersprache als Standard, Auswahl wird gemerkt, fehlende Keys fallen auf Englisch zurück
 document.addEventListener("DOMContentLoaded", () => {
-    function loadLanguage(lang) {
-        fetch(`/locales/${lang}.json`)
-            .then(res => res.json())
-            .then(data => {
-                document.querySelectorAll('[data-i18n]').forEach(el => {
-                    const value = el.getAttribute('data-i18n').split('.').reduce((o, i) => o[i], data);
-                    if (value) el.innerHTML = value;
-                });
+    const flags = document.querySelectorAll('.lang-flag');
+    const cache = {};
 
-                localStorage.setItem("language", lang);
-            });
+    function loadJson(lang) {
+        cache[lang] ??= fetch(`/locales/${lang}.json`)
+            .then(res => (res.ok ? res.json() : {}))
+            .catch(() => ({}));
+        return cache[lang];
     }
 
-    loadLanguage(localStorage.getItem("language") || "en");
+    const lookup = (data, key) => key.split('.').reduce((o, k) => o?.[k], data);
 
-    document.querySelectorAll('.lang-flag').forEach(flag => {
-        flag.addEventListener("click", () => loadLanguage(flag.getAttribute("data-lang")));
+    async function loadLanguage(lang) {
+        const [data, fallback] = await Promise.all([loadJson(lang), loadJson("en")]);
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const value = lookup(data, key) ?? lookup(fallback, key);
+            if (value) el.innerHTML = value;
+        });
+
+        document.documentElement.lang = lang;
+        flags.forEach(flag => flag.classList.toggle("active", flag.dataset.lang === lang));
+        try { localStorage.setItem("language", lang); } catch { /* Speicher gesperrt (z. B. privater Modus) */ }
+    }
+
+    let saved = null;
+    try { saved = localStorage.getItem("language"); } catch { /* s. o. */ }
+    const browserLang = navigator.language?.slice(0, 2);
+    loadLanguage([saved, browserLang].find(l => SUPPORTED_LANGS.includes(l)) ?? "en");
+
+    flags.forEach(flag => {
+        const select = () => loadLanguage(flag.dataset.lang);
+        flag.addEventListener("click", select);
+        flag.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                select();
+            }
+        });
     });
 });

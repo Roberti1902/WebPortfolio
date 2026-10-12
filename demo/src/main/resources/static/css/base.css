@@ -1,0 +1,155 @@
+/* Gemeinsame Styles aller Seiten: Cursor, Einblend-Animation, Highlights, Sprachflaggen, Footer */
+
+.custom-cursor,
+.ghost-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+}
+
+.custom-cursor {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    opacity: 0; /* sichtbar erst nach der ersten Mausbewegung */
+}
+
+.custom-cursor.visible {
+    opacity: 1;
+}
+
+.ghost-cursor {
+    z-index: 9998;
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.ghost-cursor.visible {
+    opacity: 0.08;
+}
+
+.has-custom-cursor,
+.has-custom-cursor *,
+.has-custom-cursor *:hover {
+    cursor: none !important;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+    transition: all 1s ease-out;
+    will-change: transform, opacity, filter;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.highlight {
+    color: #f5bc50 !important; /* Gold für Strahlkraft */
+    font-weight: 600;
+}
+
+.highlight:hover {
+    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
+}
+
+.hover-effect-5 {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-effect-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.hover-effect-5:hover::before {
+    left: 100%;
+}
+
+.lang-flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+.lang-flag:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.footer span {
+    color: white !important;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links img {
+    display: block;
+    height: 24px;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.15);
+}
+
+.lang-flag.active {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 3px white);
+}
+
+a:focus-visible,
+.lang-flag:focus-visible,
+.btn:focus-visible {
+    outline: 2px solid #00BFFF;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .fade-container {
+        transition: none;
+    }
+
+    .top-skill,
+    .status-dot,
+    .status-dot2 {
+        animation: none;
+    }
+}
+
+.nav-pills {
+    justify-content: center;
+}
+
+.nav-pills .nav-link:not(.active) {
+    color: #e8e8e8; /* besserer Kontrast als das Standard-Blau auf dunklem Hintergrund */
+}
+
+.nav-pills .nav-link:not(.active):hover {
+    color: #00BFFF;
+}

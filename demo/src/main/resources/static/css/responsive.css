@@ -1,0 +1,57 @@
+/* Anpassungen für kleine Bildschirme – wird nach dem Seiten-CSS geladen */
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .row-mapper {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .textblock {
+        max-width: 100%;
+    }
+
+    .beschreibung {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .zweitetech {
+        padding-top: 2rem;
+    }
+
+    .glass.p-5 {
+        padding: 1.5rem !important;
+    }
+
+    .center-wrapper {
+        padding-inline: 0.5rem;
+    }
+
+    .about-section .text,
+    .about-section.top .text {
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    h1.display-5 {
+        font-size: 1.9rem;
+    }
+
+    .projects-container {
+        padding-inline: 0.5rem;
+    }
+
+    .coni {
+        padding-inline: 0;
+    }
+}

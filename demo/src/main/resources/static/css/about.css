@@ -6,30 +6,6 @@ body {
     font-family: sans-serif;
 }
 
-.custom-cursor,
-.ghost-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    mix-blend-mode: difference;
-}
-
-.custom-cursor {
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
-}
-
-.ghost-cursor {
-    z-index: 9998;
-    opacity: 0.08;
-    filter: blur(5px);
-}
-
 .glass {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -65,10 +41,6 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     text-align: center;
     margin-top: 20px;
-}
-
-.footer span {
-    color: white !important;
 }
 
 .p-5 {
@@ -120,51 +92,10 @@ body {
     text-align: right;
 }
 
-*, *:hover {
-    cursor: none !important;
-}
-
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    filter: blur(10px);
-    transition: all 1s ease-out;
-    will-change: transform, opacity, filter;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
-}
-
-.highlight {
-    color: #f5bc50 !important; /* Gold für Strahlkraft */
-    font-weight: 600;
-}
-
-.highlight:hover {
-    filter: drop-shadow(0 0 2px rgba(255, 215, 0, 0.3));
-}
-
 .language-flags {
     position: absolute;
     top: 1rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-}
-
-.lang-flag {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
-}
-
-.lang-flag:hover {
-    transform: scale(1.15);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
