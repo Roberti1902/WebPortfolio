@@ -924,8 +924,12 @@ div .h-100 > h2 {
     --accent-rgb: 0, 191, 255;
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 24px;
-    background-image: none;
-    background-color: rgba(8, 8, 16, 0.55);
+    /* Gitternetz wie bei den alten Glas-Karten, über dunklem, unscharfem Hintergrund */
+    background-image:
+            linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: rgba(8, 8, 16, 0.5);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     box-shadow: 0 0 50px -20px rgba(var(--accent-rgb), 0.45);
