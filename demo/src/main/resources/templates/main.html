@@ -159,96 +159,90 @@
 
 </div>
 
-<section class="container contact-section reveal" id="contact">
-    <div class="contact-card">
+<section class="container contact-zone reveal" id="contact">
+    <div class="contact-stage">
         <span class="glow-ring" aria-hidden="true"></span>
+        <span class="contact-ghost" aria-hidden="true" data-i18n="contact.ghost">Contact</span>
 
-        <form id="contact-form" action="/contact.php" method="post" novalidate>
-            <div class="row g-3 align-items-end contact-head">
-                <div class="col-lg-6">
-                    <h2 class="contact-title" data-i18n="contact.title">Ready for real results?</h2>
-                    <p class="contact-lead" data-i18n="contact.lead">Tell me briefly what you need – I'll get back to you within two working days.</p>
-                </div>
-                <div class="col-lg-6 contact-topic">
-                    <p class="contact-label" id="cf-topic-label" data-i18n="contact.topicLegend">What do you need me for?</p>
-                    <div class="topic-switch" role="radiogroup" aria-labelledby="cf-topic-label">
-                        <input type="radio" id="cf-topic-3d" name="topic" value="3d" required>
-                        <label for="cf-topic-3d" data-i18n="contact.topic3d">3D &amp; Motion</label>
-                        <input type="radio" id="cf-topic-it" name="topic" value="it">
-                        <label for="cf-topic-it" data-i18n="contact.topicIt">IT &amp; Software</label>
-                        <span class="topic-slider" aria-hidden="true"></span>
-                    </div>
-                    <p class="topic-hint" data-hint="none" data-i18n="contact.hintDefault">Choose an area – the form adapts to it.</p>
-                    <p class="topic-hint" data-hint="3d" data-i18n="contact.topic3dDesc" hidden>Product visuals, animations, ad creatives</p>
-                    <p class="topic-hint" data-hint="it" data-i18n="contact.topicItDesc" hidden>Web apps, backend (Java/Spring), automation – or a job offer</p>
-                </div>
+        <div class="row g-4 g-lg-5">
+            <div class="col-lg-5 contact-intro">
+                <span class="contact-pill"><span class="contact-pill-dot" aria-hidden="true"></span><span data-i18n="contact.pill">Contact</span></span>
+                <h2 class="contact-headline" data-i18n="contact.title">Tell me about your project.</h2>
+                <p class="contact-lead" data-i18n="contact.lead">Choose an area – your direct line to me appears instantly. I'll get back to you within two working days.</p>
+
+                <p class="contact-label" data-i18n="contact.infoLabel">So I can help you quickly, please include:</p>
+                <ol class="contact-info">
+                    <li><span class="info-num">01</span><span class="info-text" data-i18n="contact.info1">Project &amp; goals</span></li>
+                    <li><span class="info-num">02</span><span class="info-text" data-i18n="contact.info2">Timeline</span></li>
+                    <li><span class="info-num">03</span><span class="info-text" data-i18n="contact.info3">Budget range</span></li>
+                    <li><span class="info-num">04</span><span class="info-text" data-i18n="contact.info4">Links &amp; references</span></li>
+                </ol>
             </div>
 
-            <div class="row g-3">
-                <div class="col-sm-6 col-lg-3">
-                    <label class="form-label" for="cf-first"><span data-i18n="contact.firstName">First name</span> *</label>
-                    <input class="form-control" id="cf-first" name="firstName" required maxlength="80" autocomplete="given-name">
+            <div class="col-lg-7 contact-choice">
+                <p class="contact-label" id="contact-topic-label" data-i18n="contact.topicLegend">What do you need me for?</p>
+                <div class="topic-options" role="radiogroup" aria-labelledby="contact-topic-label">
+                    <label class="topic-option topic-3d">
+                        <input type="radio" name="topic" value="3d">
+                        <span class="glow-ring" aria-hidden="true"></span>
+                        <span class="topic-index">01</span>
+                        <span class="topic-name" data-i18n="contact.topic3d">3D &amp; Motion</span>
+                        <span class="topic-desc" data-i18n="contact.topic3dDesc">Product visualizations · Animations · Ad creatives</span>
+                    </label>
+                    <label class="topic-option topic-it">
+                        <input type="radio" name="topic" value="it">
+                        <span class="glow-ring" aria-hidden="true"></span>
+                        <span class="topic-index">02</span>
+                        <span class="topic-name" data-i18n="contact.topicIt">IT &amp; Software</span>
+                        <span class="topic-desc" data-i18n="contact.topicItDesc">Web apps · Backend (Java/Spring) · Automation – or a job offer</span>
+                    </label>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <label class="form-label" for="cf-last"><span data-i18n="contact.lastName">Last name</span> *</label>
-                    <input class="form-control" id="cf-last" name="lastName" required maxlength="80" autocomplete="family-name">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <label class="form-label" for="cf-email"><span data-i18n="contact.email">Email</span> *</label>
-                    <input class="form-control" id="cf-email" name="email" type="email" required maxlength="200" autocomplete="email">
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <label class="form-label" for="cf-company" data-i18n="contact.company">Company (optional)</label>
-                    <input class="form-control" id="cf-company" name="company" maxlength="120" autocomplete="organization">
-                </div>
-                <div class="col-lg-3 contact-side">
-                    <div>
-                        <label class="form-label" for="cf-phone" data-i18n="contact.phone">Phone (optional)</label>
-                        <input class="form-control" id="cf-phone" name="phone" type="tel" maxlength="40" autocomplete="tel">
-                    </div>
-                    <div>
-                        <label class="form-label" for="cf-budget" data-i18n="contact.budget">Budget (optional)</label>
-                        <select class="form-select" id="cf-budget" name="budget">
-                            <option value="" data-i18n="contact.budgetOpen">Not sure yet</option>
-                            <option value="unter 500 €">&lt; 500 €</option>
-                            <option value="500 – 1.500 €">500 – 1.500 €</option>
-                            <option value="1.500 – 5.000 €">1.500 – 5.000 €</option>
-                            <option value="über 5.000 €">5.000 € +</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-lg-9 contact-message">
-                    <label class="form-label" for="cf-message"><span data-i18n="contact.message">Your project</span> *</label>
-                    <textarea class="form-control" id="cf-message" name="message" rows="4" required maxlength="5000"
-                              placeholder="Goals, timeline, links – anything that helps me understand your project."
-                              data-i18n-placeholder="contact.messagePlaceholder"></textarea>
-                </div>
-                <!-- Spam-Falle: für Menschen unsichtbar, Bots füllen sie aus -->
-                <div class="hp-field" hidden>
-                    <label for="cf-website">Website</label>
-                    <input id="cf-website" name="website" tabindex="-1" autocomplete="off">
-                </div>
-                <input type="hidden" name="started" value="">
-            </div>
 
-            <div class="contact-footer">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="cf-consent" name="consent" value="yes" required>
-                    <label class="form-check-label" for="cf-consent" data-i18n="contact.consent">I have read the <a href='/datenschutz' target='_blank'>privacy policy</a> and agree that my details are used to answer my request.</label>
-                </div>
-                <div class="contact-actions">
-                    <small class="contact-required" data-i18n="contact.required">* required</small>
-                    <button type="submit" class="contact-submit" data-i18n="contact.submit">Send request</button>
+                <div class="channel-slot" aria-live="polite">
+                    <p class="channel-placeholder"><span class="channel-placeholder-dot" aria-hidden="true"></span><span data-i18n="contact.hintDefault">Choose an area – your direct line appears here.</span></p>
+
+                    <!-- Adresse wird erst im Browser zusammengesetzt (Schutz vor Spam-Bots) -->
+                    <div class="channel channel-mail" data-channel="3d" data-user="rionescu336" data-domain="gmail.com" hidden>
+                        <a class="channel-card" href="#contact">
+                            <span class="channel-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+                            </span>
+                            <span class="channel-text">
+                                <span class="channel-label" data-i18n="contact.viaMail">Write me an email</span>
+                                <span class="channel-value"></span>
+                            </span>
+                            <span class="channel-arrow" aria-hidden="true">↗</span>
+                        </a>
+                        <p class="channel-hint" data-i18n="contact.mailHint">Opens your mail app with a short template.</p>
+                    </div>
+
+                    <div class="channel channel-linkedin" data-channel="it" data-value="Robert Ionescu" hidden>
+                        <a class="channel-card" href="https://www.linkedin.com/in/robert-ionescu-228228265/" target="_blank" rel="noopener">
+                            <span class="channel-icon" aria-hidden="true"><img src="/Dateien/linkedin.webp" alt="" width="22" height="22"></span>
+                            <span class="channel-text">
+                                <span class="channel-label" data-i18n="contact.viaLinkedIn">Message me on LinkedIn</span>
+                                <span class="channel-value"></span>
+                            </span>
+                            <span class="channel-arrow" aria-hidden="true">↗</span>
+                        </a>
+                        <p class="channel-hint" data-i18n="contact.linkedInHint">Opens my profile – just send me a message.</p>
+                    </div>
                 </div>
             </div>
-            <p class="form-status" role="status" aria-live="polite"></p>
+        </div>
 
-            <span hidden data-msg="sending" data-i18n="contact.sending">Sending …</span>
-            <span hidden data-msg="success" data-i18n="contact.success">Thank you! Your request has been sent – I'll get back to you soon.</span>
-            <span hidden data-msg="error" data-i18n="contact.error">Sending failed. Please try again later or contact me on LinkedIn.</span>
-            <span hidden data-msg="rate" data-i18n="contact.rate">Too many requests – please try again in an hour.</span>
-            <span hidden data-msg="chooseTopic" data-i18n="contact.chooseTopic">Please choose 3D or IT first.</span>
-        </form>
+        <span hidden data-msg="mailSubject" data-i18n="contact.mailSubject">Project request: 3D &amp; Motion</span>
+        <span hidden data-msg="mailBody" data-i18n="contact.mailBody">Hi Robert,
+
+Project &amp; goals:
+
+Timeline:
+
+Budget range:
+
+Links &amp; references:
+
+Best regards</span>
     </div>
 </section>
 

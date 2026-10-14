@@ -47,14 +47,4 @@ public class WebController {
         return "project33d";
     }
 
-    @RequestMapping(path="/impressum", method = RequestMethod.GET)
-    public String impressum() {
-        return "impressum";
-    }
-
-    @RequestMapping(path="/datenschutz", method = RequestMethod.GET)
-    public String datenschutz() {
-        return "datenschutz";
-    }
-
 }

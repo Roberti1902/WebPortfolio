@@ -45,7 +45,7 @@ class WebportfolioApplicationTests {
     @Test
     void allPagesRenderWithTitleAndSecurityHeaders() throws Exception {
         for (String path : List.of("/", "/technical", "/3d", "/about",
-                "/project2tech", "/project13d", "/project23d", "/project33d", "/impressum", "/datenschutz")) {
+                "/project2tech", "/project13d", "/project23d", "/project33d")) {
             mvc.perform(get(path))
                     .andExpect(status().isOk())
                     .andExpect(header().exists("Content-Security-Policy"))

@@ -1,34 +1,30 @@
 {
+  "contact": {
+    "pill": "Kontakt",
+    "ghost": "Kontakt",
+    "title": "Erzählen Sie mir von Ihrem Projekt.",
+    "lead": "Wählen Sie einen Bereich – Ihr direkter Draht zu mir erscheint sofort. Ich melde mich innerhalb von zwei Werktagen.",
+    "infoLabel": "Damit ich schnell helfen kann, gerne mit:",
+    "info1": "Projekt & Ziele",
+    "info2": "Zeitrahmen",
+    "info3": "Budgetgröße",
+    "info4": "Links & Referenzen",
+    "topicLegend": "Wofür brauchen Sie mich?",
+    "topic3d": "3D & Motion",
+    "topic3dDesc": "Produktvisualisierungen · Animationen · Ad Creatives",
+    "topicIt": "IT & Software",
+    "topicItDesc": "Web-Apps · Backend (Java/Spring) · Automatisierungen – oder ein Jobangebot",
+    "hintDefault": "Wählen Sie einen Bereich – hier erscheint Ihr direkter Kontakt.",
+    "viaMail": "Schreiben Sie mir eine E-Mail",
+    "mailHint": "Öffnet Ihr Mailprogramm mit einer kurzen Vorlage.",
+    "viaLinkedIn": "Schreiben Sie mir auf LinkedIn",
+    "linkedInHint": "Öffnet mein Profil – schreiben Sie mir einfach eine Nachricht.",
+    "mailSubject": "Projektanfrage: 3D & Motion",
+    "mailBody": "Hallo Robert,\n\nProjekt & Ziele:\n\nZeitrahmen:\n\nBudgetgröße:\n\nLinks & Referenzen:\n\nViele Grüße"
+  },
   "service": {
     "status": "In Arbeit",
     "title": "1 Produkt. 30 Visuals."
-  },
-  "contact": {
-    "hintDefault": "Wählen Sie einen Bereich – das Formular passt sich an.",
-    "title": "Bereit für echte Ergebnisse?",
-    "lead": "Erzählen Sie mir kurz, worum es geht – ich melde mich innerhalb von zwei Werktagen.",
-    "topicLegend": "Wofür brauchen Sie mich?",
-    "topic3d": "3D & Motion",
-    "topic3dDesc": "Produktvisualisierung, Animationen, Ad-Creatives",
-    "topicIt": "IT & Software",
-    "topicItDesc": "Web-Apps, Backend (Java/Spring), Automatisierung – oder ein Jobangebot",
-    "firstName": "Vorname",
-    "lastName": "Nachname",
-    "company": "Unternehmen (optional)",
-    "email": "E-Mail",
-    "phone": "Telefon (optional)",
-    "budget": "Budget (optional)",
-    "budgetOpen": "Noch offen",
-    "message": "Ihr Projekt",
-    "messagePlaceholder": "Ziele, Zeitrahmen, Links – alles, was mir hilft, Ihr Projekt zu verstehen.",
-    "consent": "Ich habe die <a href='/datenschutz' target='_blank'>Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden.",
-    "required": "* Pflichtfeld",
-    "submit": "Anfrage senden",
-    "sending": "Wird gesendet …",
-    "success": "Danke! Ihre Anfrage ist angekommen – ich melde mich zeitnah.",
-    "error": "Senden fehlgeschlagen. Bitte später erneut versuchen oder mich über LinkedIn kontaktieren.",
-    "rate": "Zu viele Anfragen – bitte in einer Stunde erneut versuchen.",
-    "chooseTopic": "Bitte zuerst 3D oder IT auswählen."
   },
   "cta": {
     "request3d": "3D-Projekt anfragen",
@@ -46,8 +42,6 @@
     "about": "Über mich"
   },
   "footer": {
-    "imprint": "Impressum",
-    "privacy": "Datenschutz",
     "rights": "Alle Rechte vorbehalten."
   },
   "location": {
@@ -86,7 +80,7 @@
 
   "aboutPage": {
     "ctaText": "Neugierig, was wir gemeinsam umsetzen könnten? Vernetzen wir uns.",
-    "ctaButton": "Anfrage senden",
+    "ctaButton": "Kontakt aufnehmen",
     "headline": "Über mich",
     "greetingTitle": "Danke fürs Vorbeischauen!",
     "greetingText": "Scroll nach unten, um mich und meine Arbeitsweise kennenzulernen!",

@@ -1,34 +1,30 @@
 {
+  "contact": {
+    "pill": "Contact",
+    "ghost": "Contact",
+    "title": "Parlez-moi de votre projet.",
+    "lead": "Choisissez un domaine – votre lien direct avec moi apparaît aussitôt. Je vous réponds sous deux jours ouvrés.",
+    "infoLabel": "Pour que je puisse vous aider rapidement, indiquez :",
+    "info1": "Projet & objectifs",
+    "info2": "Délais",
+    "info3": "Fourchette de budget",
+    "info4": "Liens & références",
+    "topicLegend": "Pour quoi avez-vous besoin de moi ?",
+    "topic3d": "3D & Motion",
+    "topic3dDesc": "Visualisations produit · Animations · Créations publicitaires",
+    "topicIt": "IT & Logiciel",
+    "topicItDesc": "Applications web · Backend (Java/Spring) · Automatisations – ou une offre d’emploi",
+    "hintDefault": "Choisissez un domaine – votre contact direct apparaît ici.",
+    "viaMail": "Écrivez-moi un e-mail",
+    "mailHint": "Ouvre votre messagerie avec un court modèle.",
+    "viaLinkedIn": "Écrivez-moi sur LinkedIn",
+    "linkedInHint": "Ouvre mon profil – envoyez-moi simplement un message.",
+    "mailSubject": "Demande de projet : 3D & Motion",
+    "mailBody": "Bonjour Robert,\n\nProjet & objectifs :\n\nDélais :\n\nFourchette de budget :\n\nLiens & références :\n\nCordialement"
+  },
   "service": {
     "status": "En préparation",
     "title": "1 produit. 30 visuels."
-  },
-  "contact": {
-    "hintDefault": "Choisissez un domaine – le formulaire s’adapte.",
-    "title": "Prêt pour de vrais résultats ?",
-    "lead": "Dites-moi brièvement de quoi vous avez besoin – je vous réponds sous deux jours ouvrés.",
-    "topicLegend": "Pour quoi avez-vous besoin de moi ?",
-    "topic3d": "3D & Motion",
-    "topic3dDesc": "Visuels produits, animations, créations publicitaires",
-    "topicIt": "IT & Logiciel",
-    "topicItDesc": "Applications web, backend (Java/Spring), automatisation – ou une offre d’emploi",
-    "firstName": "Prénom",
-    "lastName": "Nom",
-    "company": "Entreprise (facultatif)",
-    "email": "E-mail",
-    "phone": "Téléphone (facultatif)",
-    "budget": "Budget (facultatif)",
-    "budgetOpen": "Pas encore défini",
-    "message": "Votre projet",
-    "messagePlaceholder": "Objectifs, délais, liens – tout ce qui m’aide à comprendre votre projet.",
-    "consent": "J’ai lu la <a href='/datenschutz' target='_blank'>politique de confidentialité</a> et j’accepte que mes données soient utilisées pour répondre à ma demande.",
-    "required": "* obligatoire",
-    "submit": "Envoyer la demande",
-    "sending": "Envoi en cours …",
-    "success": "Merci ! Votre demande a bien été envoyée – je reviens vers vous rapidement.",
-    "error": "L’envoi a échoué. Veuillez réessayer plus tard ou me contacter sur LinkedIn.",
-    "rate": "Trop de demandes – veuillez réessayer dans une heure.",
-    "chooseTopic": "Veuillez d’abord choisir 3D ou IT."
   },
   "cta": {
     "request3d": "Demander un projet 3D",
@@ -57,8 +53,6 @@
     "about": "À propos"
   },
   "footer": {
-    "imprint": "Mentions légales",
-    "privacy": "Confidentialité",
     "rights": "Tous droits réservés."
   },
   "location": {
@@ -95,7 +89,7 @@
   },
   "aboutPage": {
     "ctaText": "Curieux de savoir ce que nous pourrions construire ensemble ? Connectons-nous.",
-    "ctaButton": "Envoyer une demande",
+    "ctaButton": "Me contacter",
     "headline": "À propos de moi",
     "greetingTitle": "Merci de votre visite !",
     "greetingText": "Faites défiler pour découvrir ma méthode de travail et mon parcours.",

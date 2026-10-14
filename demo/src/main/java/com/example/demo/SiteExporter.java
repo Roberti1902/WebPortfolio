@@ -59,18 +59,10 @@ public class SiteExporter {
             System.out.println("  Seite   404 -> 404.html");
 
             copyRecursively(projectDir.resolve("src/main/resources/static"), out);
-            for (String name : List.of(".htaccess", "contact.php")) {
+            for (String name : List.of(".htaccess")) {
                 Files.copy(projectDir.resolve("deploy").resolve(name), out.resolve(name), StandardCopyOption.REPLACE_EXISTING);
             }
 
-            try (Stream<Path> files = Files.list(out)) {
-                List<String> unfinished = files.filter(f -> f.toString().endsWith(".html"))
-                        .filter(f -> read(f).contains("BITTE AUSFÜLLEN")).map(f -> f.getFileName().toString()).toList();
-                if (!unfinished.isEmpty()) {
-                    System.out.println("\n  WARNUNG: Platzhalter noch nicht ausgefuellt in " + unfinished
-                            + " - vor dem Hochladen in den Templates ergaenzen!");
-                }
-            }
             System.out.println("\nFertig: " + out.toAbsolutePath() + "  ->  kompletten Inhalt nach IONOS /htdocs hochladen.");
         } finally {
             ctx.close();
@@ -88,13 +80,6 @@ public class SiteExporter {
         return response.body();
     }
 
-    private static String read(Path file) {
-        try {
-            return Files.readString(file);
-        } catch (IOException e) {
-            throw new IllegalStateException(e);
-        }
-    }
 
     private static void copyRecursively(Path from, Path to) throws IOException {
         try (Stream<Path> paths = Files.walk(from)) {

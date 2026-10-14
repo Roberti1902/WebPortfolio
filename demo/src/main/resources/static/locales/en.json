@@ -1,34 +1,30 @@
 {
+  "contact": {
+    "pill": "Contact",
+    "ghost": "Contact",
+    "title": "Tell me about your project.",
+    "lead": "Choose an area – your direct line to me appears instantly. I'll get back to you within two working days.",
+    "infoLabel": "So I can help you quickly, please include:",
+    "info1": "Project & goals",
+    "info2": "Timeline",
+    "info3": "Budget range",
+    "info4": "Links & references",
+    "topicLegend": "What do you need me for?",
+    "topic3d": "3D & Motion",
+    "topic3dDesc": "Product visualizations · Animations · Ad creatives",
+    "topicIt": "IT & Software",
+    "topicItDesc": "Web apps · Backend (Java/Spring) · Automation – or a job offer",
+    "hintDefault": "Choose an area – your direct line appears here.",
+    "viaMail": "Write me an email",
+    "mailHint": "Opens your mail app with a short template.",
+    "viaLinkedIn": "Message me on LinkedIn",
+    "linkedInHint": "Opens my profile – just send me a message.",
+    "mailSubject": "Project request: 3D & Motion",
+    "mailBody": "Hi Robert,\n\nProject & goals:\n\nTimeline:\n\nBudget range:\n\nLinks & references:\n\nBest regards"
+  },
   "service": {
     "status": "In the works",
     "title": "1 product. 30 visuals."
-  },
-  "contact": {
-    "hintDefault": "Choose an area – the form adapts to it.",
-    "title": "Ready for real results?",
-    "lead": "Tell me briefly what you need – I'll get back to you within two working days.",
-    "topicLegend": "What do you need me for?",
-    "topic3d": "3D & Motion",
-    "topic3dDesc": "Product visuals, animations, ad creatives",
-    "topicIt": "IT & Software",
-    "topicItDesc": "Web apps, backend (Java/Spring), automation – or a job offer",
-    "firstName": "First name",
-    "lastName": "Last name",
-    "company": "Company (optional)",
-    "email": "Email",
-    "phone": "Phone (optional)",
-    "budget": "Budget (optional)",
-    "budgetOpen": "Not sure yet",
-    "message": "Your project",
-    "messagePlaceholder": "Goals, timeline, links – anything that helps me understand your project.",
-    "consent": "I have read the <a href='/datenschutz' target='_blank'>privacy policy</a> and agree that my details are used to answer my request.",
-    "required": "* required",
-    "submit": "Send request",
-    "sending": "Sending …",
-    "success": "Thank you! Your request has been sent – I'll get back to you soon.",
-    "error": "Sending failed. Please try again later or contact me on LinkedIn.",
-    "rate": "Too many requests – please try again in an hour.",
-    "chooseTopic": "Please choose 3D or IT first."
   },
   "cta": {
     "request3d": "Request a 3D project",
@@ -46,8 +42,6 @@
     "about": "About"
   },
   "footer": {
-    "imprint": "Imprint",
-    "privacy": "Privacy",
     "rights": "All rights reserved."
   },
   "location": {
@@ -85,7 +79,7 @@
 
     "aboutPage": {
     "ctaText": "Curious what we could build together? Let's connect.",
-    "ctaButton": "Send a request",
+    "ctaButton": "Get in touch",
       "headline": "About Me",
       "greetingTitle": "Thanks for stopping by!",
       "greetingText": "Scroll down to learn more about me and my journey!",

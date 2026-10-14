@@ -192,70 +192,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Kontaktformular: Bereich 3D/IT wählen (färbt Glow und Akzente), per fetch an contact.php senden
+// Kontakt: Bereich wählen -> passender direkter Kanal erscheint (3D: E-Mail mit Vorlage, IT: LinkedIn)
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("contact-form");
-    if (!form) return;
+    const stage = document.querySelector(".contact-stage");
+    if (!stage) return;
 
-    const card = form.closest(".contact-card");
-    const status = form.querySelector(".form-status");
-    const submit = form.querySelector(".contact-submit");
-    const msg = key => form.querySelector(`[data-msg="${key}"]`).textContent;
+    const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const text = key => stage.querySelector(`[data-msg="${key}"]`).textContent;
 
-    function selectTopic(topic) {
-        if (topic) card.dataset.topic = topic;
-        else delete card.dataset.topic;
-        form.querySelectorAll(".topic-hint").forEach(hint => { hint.hidden = hint.dataset.hint !== (topic || "none"); });
+    // Adresse erst im Browser zusammensetzen: Bots, die den Quelltext durchsuchen, finden keine fertige Adresse
+    const mailChannel = stage.querySelector(".channel-mail");
+    const address = `${mailChannel.dataset.user}@${mailChannel.dataset.domain}`;
+    const mailLink = mailChannel.querySelector(".channel-card");
+    const updateMailLink = () => {
+        mailLink.href = `mailto:${address}?subject=${encodeURIComponent(text("mailSubject"))}&body=${encodeURIComponent(text("mailBody"))}`;
+    };
+    mailLink.addEventListener("click", updateMailLink); // aktuelle Sprache der Vorlage verwenden
+
+    let typing;
+    function typeInto(el, value) {
+        clearInterval(typing);
+        if (reduceMotion) {
+            el.textContent = value;
+            return;
+        }
+        let i = 0;
+        el.textContent = "";
+        typing = setInterval(() => {
+            el.textContent = value.slice(0, ++i);
+            if (i >= value.length) clearInterval(typing);
+        }, 32);
     }
 
-    form.querySelectorAll('input[name="topic"]').forEach(radio =>
-        radio.addEventListener("change", () => {
-            selectTopic(radio.value);
-            status.textContent = "";
-            status.className = "form-status";
-        }));
+    function select(topic) {
+        stage.dataset.topic = topic;
+        stage.querySelectorAll(".topic-option").forEach(option =>
+            option.classList.toggle("is-selected", option.querySelector("input").value === topic));
+        stage.querySelector(".channel-placeholder").hidden = true;
+        stage.querySelectorAll(".channel").forEach(channel => {
+            const active = channel.dataset.channel === topic;
+            channel.hidden = !active;
+            if (!active) return;
+            channel.classList.remove("is-in");
+            void channel.offsetWidth; // Animation bei jedem Wechsel neu starten
+            channel.classList.add("is-in");
+            typeInto(channel.querySelector(".channel-value"), channel.dataset.value ?? address);
+        });
+        updateMailLink();
+    }
+
+    stage.querySelectorAll('input[name="topic"]').forEach(radio =>
+        radio.addEventListener("change", () => select(radio.value)));
 
     // Vorauswahl per Link, z. B. /?topic=3d#contact von der 3D-Seite
     const preset = new URLSearchParams(location.search).get("topic");
-    const presetRadio = form.querySelector(`input[name="topic"][value="${preset}"]`);
+    const presetRadio = stage.querySelector(`input[name="topic"][value="${preset}"]`);
     if (presetRadio) {
         presetRadio.checked = true;
-        selectTopic(preset);
+        select(preset);
     }
-
-    form.elements.started.value = Date.now(); // Bots schicken meist sofort ab, contact.php prüft die Zeit
-
-    function showStatus(key, type) {
-        status.textContent = msg(key);
-        status.className = `form-status ${type}`;
-    }
-
-    form.addEventListener("submit", async (e) => {
-        e.preventDefault();
-        if (!card.dataset.topic) {
-            showStatus("chooseTopic", "error");
-            form.querySelector(".topic-switch").scrollIntoView({ block: "center" });
-            return;
-        }
-        if (!form.reportValidity()) return;
-
-        submit.disabled = true;
-        showStatus("sending", "");
-        try {
-            const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
-            const data = await res.json().catch(() => ({}));
-            if (res.ok && data.ok) {
-                form.reset();
-                selectTopic(null);
-                form.elements.started.value = Date.now();
-                showStatus("success", "success");
-            } else {
-                showStatus(res.status === 429 ? "rate" : "error", "error");
-            }
-        } catch {
-            showStatus("error", "error");
-        } finally {
-            submit.disabled = false;
-        }
-    });
 });

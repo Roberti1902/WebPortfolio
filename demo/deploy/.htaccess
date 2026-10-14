@@ -12,11 +12,6 @@ ErrorDocument 404 /404.html
     RewriteRule ^(.+)$ $1.html [L]
 </IfModule>
 
-# Konfigurations- und Vorlagendateien niemals ausliefern
-<FilesMatch "^(contact-config.*\.php|\.ht.*)$">
-    Require all denied
-</FilesMatch>
-
 # Sicherheits-Header (gleiche Werte wie lokal im SecurityHeadersFilter)
 <IfModule mod_headers.c>
     Header always set Content-Security-Policy "default-src 'self'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
