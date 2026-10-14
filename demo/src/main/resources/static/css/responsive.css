@@ -203,3 +203,68 @@ img {
         text-align: left !important;
     }
 }
+
+/* Porträt: festes Seitenverhältnis, kann nie oval werden (egal welche Breite/Höhe von außen kommt) */
+.rounded-lg-3 {
+    aspect-ratio: 765 / 762;
+    object-fit: contain;
+}
+
+/* Touch-Geräte (iPhone, iPad): kein Hover -> Glanz-Streifen blieb nach dem Antippen schräg stehen */
+@media (hover: none) {
+    .glass-box::before,
+    .hover-effect-5::before {
+        display: none;
+    }
+
+    .glass-box:hover {
+        box-shadow: none;
+    }
+}
+
+/* Handy: alles kompakter, damit mehr auf den Bildschirm passt */
+@media (max-width: 575.98px) {
+    .display-4 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h1.display-5 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .lead #flagge {
+        width: 20px;
+        height: 20px;
+    }
+
+    .available-badge {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    .hero-actions {
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .hero-actions .btn {
+        padding: 0.45rem 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .rounded-lg-3 {
+        max-width: 230px;
+        margin-bottom: 24px;
+    }
+
+    body {
+        font-size: 0.95rem;
+    }
+}
