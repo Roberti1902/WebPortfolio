@@ -47,3 +47,159 @@ img {
         padding-inline: 0;
     }
 }
+
+/* ===================== Geräte-Anpassungen (PC ab 1200 px bleibt unverändert) ===================== */
+
+/* Hero-Porträt: Seitenverhältnis immer erhalten (war bei schmalerer Spalte oval) */
+.rounded-lg-3,
+.beschreibung {
+    height: auto;
+}
+
+/* iPad quer und kleiner */
+@media (max-width: 1199.98px) {
+    /* Hintergrund als feste Ebene in Bildschirmgröße: bleibt scharf, statt über die
+       ganze (auf Tablets/Handys sehr lange) Seite gestreckt zu werden */
+    body {
+        background-image: none !important;
+        background-color: #05050b;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        background: url("../Dateien/backgroundfinal.webp") center top / cover no-repeat;
+        pointer-events: none;
+    }
+
+    /* Gehirn zwischen den beiden schmaleren Karten kleiner, damit es keine Überschrift berührt */
+    .brain {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Buch: mehr Abstand zur Überschrift "State of Mind" */
+    .mind-card .container-fluid {
+        padding-top: 2.75rem !important;
+    }
+}
+
+/* iPad hochkant und kleiner */
+@media (max-width: 991.98px) {
+    /* Glanz-Streifen der Hero-Karte stand hier dauerhaft schräg über dem Text (kein Hover auf Touch) */
+    .glass-box::before {
+        display: none;
+    }
+
+    /* Porträt unter dem Text mittig */
+    .col-lg-4.offset-lg-1 {
+        text-align: center;
+    }
+
+    .contact-ghost {
+        opacity: 0.6;
+    }
+}
+
+/* Handy */
+@media (max-width: 767.98px) {
+    .buch {
+        width: 220px;
+        height: 220px;
+    }
+
+    .mind-card .container-fluid {
+        padding-top: 3.5rem !important;
+    }
+
+    /* Logische Seite: auf schmalem Bildschirm linksbündig lesbarer */
+    #work .creative,
+    #work .creative h2,
+    #work .creative p {
+        text-align: left !important;
+    }
+
+    /* Tech-/3D-Seite: rechtsbündige Absätze linksbündig */
+    .glass.linksalign p,
+    .glass.rechtsalign p {
+        text-align: left !important;
+    }
+
+    .hero-actions .btn {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* Kopfleiste kompakt in einer Zeile */
+    .contact-bar {
+        margin: 14px 12px;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        gap: 0.75rem;
+    }
+
+    .contact-bar > span {
+        font-size: 0.95rem !important;
+        white-space: nowrap;
+    }
+
+    .contact-bar .lang-flag {
+        width: 22px;
+        height: 22px;
+    }
+
+    .contact-bar .language-flags {
+        gap: 0.45rem !important;
+    }
+
+    .icon-links {
+        gap: 0.6rem;
+    }
+
+    .icon-links img {
+        height: 22px;
+    }
+
+    /* Hero */
+    .display-4 {
+        font-size: 2.1rem;
+    }
+
+    .rounded-lg-3 {
+        max-width: 300px;
+    }
+
+    .service-title {
+        font-size: 1.6rem;
+    }
+
+    /* großer Kontur-Schriftzug überlagert auf dem Handy das kleine Label */
+    .contact-ghost {
+        display: none;
+    }
+}
+
+/* Große Bildschirme / Fernseher: gleiche Optik wie am PC, nur proportional größer */
+@media (min-width: 2400px) {
+    html {
+        zoom: 1.3;
+    }
+}
+
+@media (min-width: 3200px) {
+    html {
+        zoom: 1.75;
+    }
+}
+
+/* Projektseiten auf dem Handy: rechtsbündige Textblöcke linksbündig */
+@media (max-width: 767.98px) {
+    .textblock.text-right,
+    .textblock.text-right p {
+        text-align: left !important;
+    }
+}
