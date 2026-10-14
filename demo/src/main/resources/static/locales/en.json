@@ -38,8 +38,7 @@
   "nav": {
     "home": "Home",
     "technical": "Tech Portfolio",
-    "threeD": "3D Portfolio",
-    "about": "About"
+    "threeD": "3D Portfolio"
   },
   "footer": {
     "rights": "All rights reserved."
@@ -63,8 +62,7 @@
     "headline": "State of Mind",
     "paragraph1": "I've always thought in <span class='highlight'>logical systems</span> – and want to understand where <span class='highlight'>technology</span> turns into <span class='highlight'>design</span>.",
     "paragraph2": "I study <span class='highlight'>computer science</span> full-time and work as a <span class='highlight'>developer</span> alongside. I found my counterbalance in <span class='highlight'>3D design</span> – where I truly thrive creatively.",
-    "paragraph3": "To me, <span class='highlight'>logic</span> and <span class='highlight'>creativity</span> belong together. I look at projects <span class='highlight'>holistically</span> – and want to do more than use tools: I want to <span class='highlight'>rethink</span> them.",
-    "btn": "About Me"
+    "paragraph3": "To me, <span class='highlight'>logic</span> and <span class='highlight'>creativity</span> belong together. I look at projects <span class='highlight'>holistically</span> – and want to do more than use tools: I want to <span class='highlight'>rethink</span> them."
   },
   "logic": {
     "headline": "Logical Side",
@@ -77,31 +75,6 @@
     "btn": "3D Portfolio & Projects"
   },
 
-    "aboutPage": {
-    "ctaText": "Curious what we could build together? Let's connect.",
-    "ctaButton": "Get in touch",
-      "headline": "About Me",
-      "greetingTitle": "Thanks for stopping by!",
-      "greetingText": "Scroll down to learn more about me and my journey!",
-
-      "section1": {
-        "paragraph1": "I've always been driven by <span class='highlight'>technical curiosity</span> – with the ambition to not just use <span class='highlight'>systems</span>, but to <span class='highlight'>understand</span> them in depth.",
-        "paragraph2": "Between <span class='highlight'>computer science</span> and <span class='highlight'>3D design</span>, I’ve found two worlds where <span class='highlight'>analytical thinking</span> and <span class='highlight'>creative expression</span> perfectly complement each other.",
-        "paragraph3": "From the beginning, my goal was clear: to develop <span class='highlight'>digital skills</span> not superficially, but <span class='highlight'>deeply</span> and in a <span class='highlight'>practical</span> way."
-      },
-
-      "section2": {
-        "paragraph1": "Early on, I taught myself <span class='highlight'>3D design</span> – through <span class='highlight'>online courses</span>, <span class='highlight'>real-world projects</span>, and constant <span class='highlight'>experimentation</span>.",
-        "paragraph2": "At the same time, I deepened my <span class='highlight'>IT expertise</span> through academic studies focused on <span class='highlight'>programming</span>, <span class='highlight'>systems thinking</span>, and <span class='highlight'>software architecture</span>.",
-        "paragraph3": "I believe true strength comes from combining <span class='highlight'>technical precision</span> with <span class='highlight'>visual thinking</span> – to <span class='highlight'>improve systems</span>, not just operate them."
-      },
-
-      "section3": {
-        "paragraph1": "In every project, I strive to grow both <span class='highlight'>professionally</span> and <span class='highlight'>conceptually</span> – through <span class='highlight'>system-level understanding</span> and <span class='highlight'>methodical thinking</span>.",
-        "paragraph2": "In an increasingly <span class='highlight'>AI-driven</span> and <span class='highlight'>digitalized world</span>, I see it as my responsibility to contribute <span class='highlight'>mindfully</span> and create <span class='highlight'>sustainable solutions</span>.",
-        "paragraph3": "What motivates me is the balance between <span class='highlight'>logic</span> and <span class='highlight'>creativity</span> – with the aim of merging technology and design into a <span class='highlight'>coherent whole</span>."
-      }
-    },
 
 
 

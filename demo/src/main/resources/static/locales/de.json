@@ -38,8 +38,7 @@
   "nav": {
     "home": "Start",
     "technical": "Tech-Portfolio",
-    "threeD": "3D-Portfolio",
-    "about": "Über mich"
+    "threeD": "3D-Portfolio"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
@@ -63,8 +62,7 @@
     "headline": "State of Mind",
     "paragraph1": "Ich denke seit jeher in <span class='highlight'>logischen Systemen</span> – und will verstehen, wo <span class='highlight'>Technik</span> in <span class='highlight'>Design</span> übergeht.",
     "paragraph2": "Ich studiere <span class='highlight'>Informatik</span> in Vollzeit und arbeite parallel als <span class='highlight'>Developer</span>. Meinen Kontrast fand ich im <span class='highlight'>3D-Design</span> – dort blühe ich kreativ auf.",
-    "paragraph3": "Für mich gehören <span class='highlight'>Logik</span> und <span class='highlight'>Kreativität</span> zusammen. Ich betrachte Projekte <span class='highlight'>ganzheitlich</span> – und will nicht nur Tools bedienen, sondern <span class='highlight'>neu denken</span>.",
-    "btn": "Über mich"
+    "paragraph3": "Für mich gehören <span class='highlight'>Logik</span> und <span class='highlight'>Kreativität</span> zusammen. Ich betrachte Projekte <span class='highlight'>ganzheitlich</span> – und will nicht nur Tools bedienen, sondern <span class='highlight'>neu denken</span>."
   },
   "logic": {
     "headline": "Logische Seite",
@@ -78,31 +76,6 @@
   },
 
 
-  "aboutPage": {
-    "ctaText": "Neugierig, was wir gemeinsam umsetzen könnten? Vernetzen wir uns.",
-    "ctaButton": "Kontakt aufnehmen",
-    "headline": "Über mich",
-    "greetingTitle": "Danke fürs Vorbeischauen!",
-    "greetingText": "Scroll nach unten, um mich und meine Arbeitsweise kennenzulernen!",
-
-    "section1": {
-      "paragraph1": "Seit jeher treibt mich <span class='highlight'>technische Neugier</span> an – ich will <span class='highlight'>Systeme</span> nicht nur nutzen, sondern bis ins Detail <span class='highlight'>verstehen</span>.",
-      "paragraph2": "Zwischen <span class='highlight'>Informatik</span> und <span class='highlight'>3D-Design</span> habe ich zwei Welten gefunden, in denen sich <span class='highlight'>analytisches Denken</span> und <span class='highlight'>kreative Gestaltung</span> perfekt ergänzen.",
-      "paragraph3": "Mein Ziel war von Anfang an klar: <span class='highlight'>digitale Kompetenz</span> nicht oberflächlich, sondern <span class='highlight'>tiefgreifend</span> und <span class='highlight'>anwendungsnah</span> zu entwickeln."
-    },
-
-    "section2": {
-      "paragraph1": "Schon früh habe ich mir <span class='highlight'>3D-Design</span> autodidaktisch angeeignet – über <span class='highlight'>Online-Kurse</span>, <span class='highlight'>Praxisprojekte</span> und <span class='highlight'>kontinuierliches Experimentieren</span>.",
-      "paragraph2": "Gleichzeitig vertiefte ich im Studium mein <span class='highlight'>IT-Know-how</span> mit Fokus auf <span class='highlight'>Programmierung</span>, <span class='highlight'>Systemverständnis</span> und <span class='highlight'>Softwarearchitektur</span>.",
-      "paragraph3": "Für mich entsteht echte Stärke aus der <span class='highlight'>Verbindung von technischer Präzision</span> und <span class='highlight'>visuellem Denken</span> – um Systeme <span class='highlight'>weiterzuentwickeln</span> statt nur zu bedienen."
-    },
-
-    "section3": {
-      "paragraph1": "Ich strebe danach, in jedem Projekt <span class='highlight'>fachlich</span> und <span class='highlight'>konzeptionell</span> zu wachsen – durch <span class='highlight'>tiefes Systemverständnis</span> und <span class='highlight'>methodisches Denken</span>.",
-      "paragraph2": "In einer zunehmend <span class='highlight'>KI-getriebenen</span> und <span class='highlight'>digitalisierten Welt</span> sehe ich es als meine Aufgabe, <span class='highlight'>verantwortungsvoll</span> mitzugestalten und <span class='highlight'>nachhaltige Lösungen</span> zu entwickeln.",
-      "paragraph3": "Mich motiviert die Balance aus <span class='highlight'>Logik</span> und <span class='highlight'>Kreativität</span> – mit dem Ziel, Technik und Gestaltung zu einem <span class='highlight'>funktionalen Gesamtbild</span> zu vereinen."
-    }
-  },
 
 
 

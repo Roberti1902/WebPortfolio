@@ -49,8 +49,11 @@
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
+    /* nach dem Einblenden keine Effekte mehr: "blur(0)", Transformation und will-change
+       liessen Chrome den Inhalt als Bild-Ebene rendern – Schrift wurde dadurch unscharf */
+    transform: none;
+    filter: none;
+    will-change: auto;
 }
 
 .highlight {
@@ -448,7 +451,7 @@ html {
 }
 
 .future-board.visible .future-tile {
-    animation: tile-in 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation: tile-in 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards; /* backwards: nach der Animation bleibt keine Transformation */
 }
 
 .future-board.visible .future-tile:nth-child(2) { animation-delay: 0.12s; }

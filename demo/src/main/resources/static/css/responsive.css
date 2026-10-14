@@ -32,14 +32,6 @@ img {
         padding-inline: 0.5rem;
     }
 
-    .about-section .text,
-    .about-section.top .text {
-        text-align: center;
-    }
-
-    .about-image {
-        margin: 0 auto;
-    }
 }
 
 @media (max-width: 575.98px) {

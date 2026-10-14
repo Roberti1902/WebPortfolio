@@ -49,8 +49,7 @@
   "nav": {
     "home": "Accueil",
     "technical": "Portfolio technique",
-    "threeD": "Portfolio 3D",
-    "about": "À propos"
+    "threeD": "Portfolio 3D"
   },
   "footer": {
     "rights": "Tous droits réservés."
@@ -74,8 +73,7 @@
     "headline": "État d’esprit",
     "paragraph1": "Je pense depuis toujours en <span class='highlight'>systèmes logiques</span> – et je veux comprendre où la <span class='highlight'>technique</span> devient <span class='highlight'>design</span>.",
     "paragraph2": "J'étudie l'<span class='highlight'>informatique</span> à temps plein et travaille en parallèle comme <span class='highlight'>développeur</span>. J'ai trouvé mon contrepoint dans le <span class='highlight'>design 3D</span> – là où je m'épanouis.",
-    "paragraph3": "Pour moi, <span class='highlight'>logique</span> et <span class='highlight'>créativité</span> vont ensemble. J'aborde les projets de façon <span class='highlight'>globale</span> – et ne veux pas seulement utiliser des outils, mais les <span class='highlight'>repenser</span>.",
-    "btn": "En savoir plus"
+    "paragraph3": "Pour moi, <span class='highlight'>logique</span> et <span class='highlight'>créativité</span> vont ensemble. J'aborde les projets de façon <span class='highlight'>globale</span> – et ne veux pas seulement utiliser des outils, mais les <span class='highlight'>repenser</span>."
   },
   "logic": {
     "headline": "Côté logique",
@@ -86,28 +84,6 @@
     "headline": "Côté créatif",
     "paragraph": "Pour moi, le <span class='highlight'>design 3D</span> relie la <span class='highlight'>réalité</span> et l'<span class='highlight'>espace numérique</span>. Inspiré par le <span class='highlight'>Studio Ghibli</span>, j'ai commencé avec <span class='highlight'>Blender</span> – puis ajouté <span class='highlight'>Cinema 4D</span> et <span class='highlight'>Marvelous Designer</span>.<br><br>J’adore l’alliance de la <span class=\"highlight\">technologie</span> et de l’<span class=\"highlight\">esthétique</span> : <span class=\"highlight\">textures procédurales</span>, <span class=\"highlight\">modélisation précise</span> et <span class=\"highlight\">pensée systémique</span>.<br><br>L'<span class='highlight'>IA</span> transforme le processus créatif – je la combine avec les <span class='highlight'>MCP Blender</span> pour un maximum de valeur et partage mon savoir sur les <span class='highlight'>réseaux sociaux</span> pour inspirer les autres.",
     "btn": "Portefeuille 3D"
-  },
-  "aboutPage": {
-    "ctaText": "Curieux de savoir ce que nous pourrions construire ensemble ? Connectons-nous.",
-    "ctaButton": "Me contacter",
-    "headline": "À propos de moi",
-    "greetingTitle": "Merci de votre visite !",
-    "greetingText": "Faites défiler pour découvrir ma méthode de travail et mon parcours.",
-    "section1": {
-      "paragraph1": "Depuis toujours, ma <span class=\"highlight\">curiosité technique</span> me pousse : je veux <span class=\"highlight\">maîtriser</span> les <span class=\"highlight\">systèmes</span> dans les moindres détails.",
-      "paragraph2": "Entre <span class=\"highlight\">informatique</span> et <span class=\"highlight\">design 3D</span>, j’ai trouvé l’alliance parfaite entre <span class=\"highlight\">pensée analytique</span> et <span class=\"highlight\">créativité</span>.",
-      "paragraph3": "Mon ambition : développer des <span class=\"highlight\">compétences digitales</span> en profondeur, de façon <span class=\"highlight\">pratique</span> et <span class=\"highlight\">durable</span>."
-    },
-    "section2": {
-      "paragraph1": "J’ai appris le <span class=\"highlight\">design 3D</span> en autodidacte : <span class=\"highlight\">cours en ligne</span>, <span class=\"highlight\">projets pratiques</span> et expérimentations constantes.",
-      "paragraph2": "Pendant mes études, j’ai approfondi mon <span class=\"highlight\">expertise IT</span> en me concentrant sur l’<span class=\"highlight\">architecture logicielle</span> et la <span class=\"highlight\">connaissance des systèmes</span>.",
-      "paragraph3": "Ma force réside dans l’alliance de la <span class=\"highlight\">précision technique</span> et de la <span class=\"highlight\">vision créative</span>."
-    },
-    "section3": {
-      "paragraph1": "Je m’efforce de grandir à chaque projet – grâce à un <span class=\"highlight\">compréhension approfondie</span> des systèmes et un <span class=\"highlight\">raisonnement méthodique</span>.",
-      "paragraph2": "Dans un monde toujours plus <span class=\"highlight\">piloté par l’IA</span> et numérisé, ma mission est de concevoir des solutions <span class=\"highlight\">responsables</span> et <span class=\"highlight\">durables</span>.",
-      "paragraph3": "Pour moi, l’équilibre entre <span class=\"highlight\">logique</span> et <span class=\"highlight\">créativité</span> constitue la clé d’un ensemble fonctionnel."
-    }
   },
   "stackPage": {
     "headline": "Stack 3D",

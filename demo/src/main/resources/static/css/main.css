@@ -128,7 +128,7 @@ span {
 }
 
 .mind-card .container-fluid {
-    padding-bottom: 6.5rem !important; /* Platz, damit das Gehirn den About-Button nicht verdeckt */
+    padding-bottom: 6.5rem !important; /* Platz, damit das Gehirn den letzten Absatz nicht verdeckt */
 }
 
 @media (max-width: 767.98px) {
