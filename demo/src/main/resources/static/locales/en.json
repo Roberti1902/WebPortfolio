@@ -23,7 +23,7 @@
     "mailBody": "Hi Robert,\n\nProject & goals:\n\nTimeline:\n\nBudget range:\n\nLinks & references:\n\nBest regards"
   },
   "service": {
-    "status": "In the works",
+    "status": "Coming soon",
     "title": "1 product. 30 visuals."
   },
   "cta": {
@@ -61,19 +61,19 @@
   },
   "about": {
     "headline": "State of Mind",
-    "paragraph1": "I think in <span class='highlight'>systems</span> and <span class='highlight'>shapes</span> – with a fascination for <span class='highlight'>technology</span> and <span class='highlight'>design</span> that started early.",
-    "paragraph2": "While studying <span class='highlight'>computer science</span>, I continue to develop my <span class='highlight'>3D skills autodidactically</span> – through <span class='highlight'>projects</span>, <span class='highlight'>tutorials</span> and <span class='highlight'>trial & error</span>.",
-    "paragraph3": "For me, <span class='highlight'>creativity</span> and <span class='highlight'>logical precision</span> belong together. I don’t just want to <span class='highlight'>use tools</span> – I want to <span class='highlight'>understand</span>, <span class='highlight'>shape</span> and <span class='highlight'>rethink</span>.",
+    "paragraph1": "I've always thought in <span class='highlight'>logical systems</span> – and want to understand where <span class='highlight'>technology</span> turns into <span class='highlight'>design</span>.",
+    "paragraph2": "I study <span class='highlight'>computer science</span> full-time and work as a <span class='highlight'>developer</span> alongside. I found my counterbalance in <span class='highlight'>3D design</span> – where I truly thrive creatively.",
+    "paragraph3": "To me, <span class='highlight'>logic</span> and <span class='highlight'>creativity</span> belong together. I look at projects <span class='highlight'>holistically</span> – and want to do more than use tools: I want to <span class='highlight'>rethink</span> them.",
     "btn": "About Me"
   },
   "logic": {
     "headline": "Logical Side",
-    "paragraph": "<span class=\"highlight\">IT</span> is the foundation of the <span class=\"highlight\">future</span>. <span class=\"highlight\">Automation</span> and <span class=\"highlight\">AI</span> are transforming workflows – and expanding what humans can achieve.<br><br>I develop in <span class=\"highlight\">Java</span>, <span class=\"highlight\">C</span>, and <span class=\"highlight\">Python</span> – with a focus on <span class=\"highlight\">object-oriented software architecture</span> and <span class=\"highlight\">modern frameworks</span> like <span class=\"highlight\">Spring</span>, <span class=\"highlight\">React</span>, and <span class=\"highlight\">Angular</span>.<br><br>I'm driven to understand the principles behind <span class=\"highlight\">technologies</span> – to actively shape the <span class=\"highlight\">digital future</span>.",
+    "paragraph": "<span class=\"highlight\">IT</span> is the foundation of the <span class=\"highlight\">future</span>. <span class=\"highlight\">Automation</span> and <span class=\"highlight\">AI</span> are transforming workflows – and expanding what humans can achieve.<br><br>Broadly skilled in <span class='highlight'>Java</span>, <span class='highlight'>C</span>, <span class='highlight'>TypeScript</span> and <span class='highlight'>Python</span> – but what really counts is the <span class='highlight'>logic behind software</span>: understanding <span class='highlight'>concepts</span> means being tied to no language. Plus <span class='highlight'>Spring</span>, <span class='highlight'>React</span> and <span class='highlight'>Angular</span>.<br><br>I'm driven to understand the principles behind <span class=\"highlight\">technologies</span> – to actively shape the <span class=\"highlight\">digital future</span>.",
     "btn": "Tech Portfolio & Projects"
   },
   "creative": {
     "headline": "Creative Side",
-    "paragraph": "<span class=\"highlight\">3D design</span> is my creative space for <span class=\"highlight\">digital worlds</span>. Inspired by <span class=\"highlight\">Ghibli</span>, I started with <span class=\"highlight\">Blender</span> – and expanded my toolkit with <span class=\"highlight\">Cinema 4D</span> and <span class=\"highlight\">Marvelous Designer</span>.<br><br>I'm fascinated by the fusion of <span class=\"highlight\">technology</span> and <span class=\"highlight\">design</span>: <span class=\"highlight\">procedural textures</span>, <span class=\"highlight\">precise modeling</span>, and <span class=\"highlight\">systemic thinking</span> in the creative process.<br><br>On <span class=\"highlight\">social media</span>, I share progress – to make my style visible and grow continuously.",
+    "paragraph": "To me, <span class='highlight'>3D design</span> connects <span class='highlight'>reality</span> and <span class='highlight'>digital space</span>. Inspired by <span class='highlight'>Studio Ghibli</span>, I started with <span class='highlight'>Blender</span> – later adding <span class='highlight'>Cinema 4D</span> and <span class='highlight'>Marvelous Designer</span>.<br><br>I'm fascinated by the fusion of <span class=\"highlight\">technology</span> and <span class=\"highlight\">design</span>: <span class=\"highlight\">procedural textures</span>, <span class=\"highlight\">precise modeling</span>, and <span class=\"highlight\">systemic thinking</span> in the creative process.<br><br><span class='highlight'>AI</span> is changing the creative process – I combine it with <span class='highlight'>Blender MCPs</span> for maximum value and share my knowledge on <span class='highlight'>social media</span> to inspire others.",
     "btn": "3D Portfolio & Projects"
   },
 
@@ -112,9 +112,9 @@
 
     "section1": {
       "headline": "Developed through consistent self-study",
-      "paragraph1": "In search of a creative balance to my analytical side, I discovered <span class='highlight'>Blender</span> through my fascination with <span class='highlight'>Studio Ghibli</span>.",
+      "paragraph1": "Creative work has driven me since childhood – from editing videos in <span class='highlight'>Windows Movie Maker</span> to <span class='highlight'>Adobe</span>. <span class='highlight'>Studio Ghibli</span> led me to <span class='highlight'>3D</span>: <span class='highlight'>computing</span> light, shadow and motion digitally – it's all <span class='highlight'>data</span> and <span class='highlight'>vectors</span>.",
       "paragraph2": "The blend of <span class='highlight'>technology</span> and <span class='highlight'>aesthetics</span> captivated me immediately – especially <span class='highlight'>procedural textures</span>, <span class='highlight'>physics-based shading</span>, and the <span class='highlight'>construction of realistic scenes</span> through targeted <span class='highlight'>lighting</span> and <span class='highlight'>camera composition</span>.",
-      "paragraph3": "Through <span class='highlight'>online courses</span>, <span class='highlight'>tutorials</span>, and hands-on projects, I developed a deep understanding of <span class='highlight'>3D visualization</span> with design precision."
+      "paragraph3": "Through <span class='highlight'>online courses</span>, <span class='highlight'>tutorials</span> and my own projects, I built a deep understanding of <span class='highlight'>3D visualization</span> – technically sound, creatively precise."
     },
     "section2": {
       "headline": "YouTube videos / Web courses:",
@@ -148,13 +148,30 @@
         "button": "Project link",
         "status": "Online!"
       }
-    },
+    },
     "future": {
-      "headline": "Now",
-      "paragraph1": "In the future, I aim to use my <span class='highlight'>3D visuals</span> in <span class='highlight'>client projects</span> – focusing on the <span class='highlight'>intersection of CGI and live-action</span>.",
-      "paragraph2": "I'm especially interested in combining <span class='highlight'>Blender</span> with <span class='highlight'>motion tracking</span> and <span class='highlight'>compositing tools</span> like <span class='highlight'>After Effects</span> to merge real footage with 3D elements and create <span class='highlight'>immersive visuals</span>.",
-      "paragraph3": "At the same time, I pursue a strong <span class='highlight'>educational approach</span> via <span class='highlight'>Instagram</span> – aiming to make complex topics like <span class='highlight'>simulation</span>, <span class='highlight'>particle effects</span>, and <span class='highlight'>procedural systems</span> in Blender <span class='highlight'>accessible</span> and <span class='highlight'>understandable</span>.",
-      "paragraph4": "My goal: to prepare <span class='highlight'>technical knowledge</span> in a way that makes it <span class='highlight'>practically applicable</span> – for beginners and pros alike."
+      "headline": "What's next",
+      "pill": "In the pipeline",
+      "lead": "The interface of <span class='highlight'>design</span>, <span class='highlight'>3D</span> and <span class='highlight'>IT</span> is not yet fully explored – that's exactly where I'm looking for the middle ground that creates real <span class='highlight'>value</span>.",
+      "step1Time": "Now",
+      "step1Name": "BlenderLifeHacks",
+      "step1Note": "Pushing content again",
+      "step2Time": "Next",
+      "step2Name": "AI workflows",
+      "step2Note": "Claude Design & automation",
+      "step3Time": "In parallel",
+      "step3Name": "YouTube",
+      "step3Note": "Blender videos & editing",
+      "step4Time": "Vision",
+      "step4Name": "Tech × 3D",
+      "step4Note": "Value for companies",
+      "tile1Title": "AI as an amplifier",
+      "tile1Text": "Maximize output with AI – while staying 100% involved in the creative process.",
+      "tile2Title": "Socials & YouTube",
+      "tile2Text": "The medium changes, I adapt: expanding video editing and producing Blender videos.",
+      "tile3Title": "Tech × 3D",
+      "tile3Text": "Developing projects and researching a method that combines IT and 3D into value for companies.",
+      "ctaService": "Tech × 3D: 1 product. 30 visuals."
     }
   },
 
@@ -169,21 +186,21 @@
     "toolsTitle": "Tools & Platforms",
     "section1": {
       "headline1": "Selected Courses",
-      "content1": "<span class=\"highlight\">Programming I–III</span> (<span class=\"highlight\">Java</span>, including <span class=\"highlight\">web development</span>) (2023–2024)",
-      "content2": "<span class=\"highlight\">Computer Architecture</span> and <span class=\"highlight\">Computer Networks</span> (<span class=\"highlight\">Computer Systems</span>) (2023–2024)",
-      "content3": "<span class=\"highlight\">Database Systems</span>, <span class=\"highlight\">Programming in C</span>, and <span class=\"highlight\">Fundamentals of Data Science</span> (2023)"
+      "content1": "<span class='highlight'>Programming I–III</span> (<span class='highlight'>Java</span>, incl. <span class='highlight'>web development</span>) (2023)",
+      "content2": "<span class='highlight'>Algorithms & Data Structures</span> (2023)",
+      "content3": "<span class='highlight'>Deep Learning</span> and <span class='highlight'>Python for NLP</span> (2024)"
     },
     "section2": {
       "headline2": "Heinrich Heine University Düsseldorf (2023–present)",
-      "content1": "At <span class=\"highlight\">Heinrich Heine University</span>, I deepened my <span class=\"highlight\">Java skills</span> through the use of <span class=\"highlight\">modern frameworks</span> and <span class=\"highlight\">tools</span>.",
-      "content2": "I strengthened my understanding of the <span class=\"highlight\">software lifecycle</span>, solved problems <span class=\"highlight\">independently</span>, documented <span class=\"highlight\">clearly</span>, and worked <span class=\"highlight\">collaboratively</span> – open to <span class=\"highlight\">legacy code</span>, <span class=\"highlight\">innovation</span>, and <span class=\"highlight\">continuous improvement</span>."
+      "content1": "University lays the <span class='highlight'>foundation</span> – but computer science lives on staying <span class='highlight'>current</span>. So I keep deepening and expanding my knowledge <span class='highlight'>on my own</span>.",
+      "content2": "Alongside, I work as a <span class='highlight'>developer</span>: I deepen my grasp of the <span class='highlight'>software lifecycle</span>, solve problems <span class='highlight'>independently</span>, document <span class='highlight'>clearly</span> and work <span class='highlight'>as a team</span> – from <span class='highlight'>legacy code</span> to <span class='highlight'>further development</span>."
     },
     "section3": {
-      "headline3": "Udemy – Self-taught (2024–present)",
-      "content1": "In addition to my studies, I went a step further by seeking out <span class=\"highlight\">practical learning formats</span>.",
-      "content2": "From <span class=\"highlight\">YouTube tutorials</span> to <span class=\"highlight\">high-quality Udemy courses</span> – I expanded my knowledge in a structured way, focusing on <span class=\"highlight\">logical thinking</span>, <span class=\"highlight\">system understanding</span>, and real <span class=\"highlight\">developer practice</span>.",
-      "content3": "I applied what I learned directly in <span class=\"highlight\">personal projects</span> – from small <span class=\"highlight\">web applications</span> to more complex <span class=\"highlight\">backend structures</span>.",
-      "content4": "During this, I practiced <span class=\"highlight\">clean code</span>, <span class=\"highlight\">version control with Git</span>, and <span class=\"highlight\">debugging</span> in realistic scenarios – with the goal of not just understanding, but <span class=\"highlight\">implementing professionally</span>."
+      "headline3": "Udemy – self-taught (2024–present)",
+      "content1": "University doesn't fully prepare you for practice – so I looked for <span class='highlight'>higher-quality learning formats</span> and found them on <span class='highlight'>Udemy</span>.",
+      "content2": "There I built up <span class='highlight'>logical thinking</span>, <span class='highlight'>system understanding</span> and real <span class='highlight'>developer practice</span> in a structured way – course by course, focused on <span class='highlight'>application</span>.",
+      "content3": "I apply what I learn directly in <span class='highlight'>my own projects</span> – from <span class='highlight'>web applications</span> to complex <span class='highlight'>backend structures</span>.",
+      "content4": "With <span class='highlight'>clean code</span>, <span class='highlight'>Git versioning</span> and <span class='highlight'>debugging</span> in realistic scenarios – not just understanding, but <span class='highlight'>delivering professionally</span>."
     },
     "section4": {
       "headline4": "Completed Courses",
@@ -216,14 +233,30 @@
         "button1": "programming process",
         "badge1": "Currently in work!"
       }
-    },
+    },
     "future": {
-      "headline": "Now",
-      "paragraph5": "In the near future, I plan to dive deeply into <span class='highlight'>modern technologies</span> and <span class='highlight'>programming languages</span>. This includes:",
-      "paragraph6": "<span class='highlight'>Rust</span>: Focus on <span class='highlight'>memory</span> and <span class='highlight'>thread safety</span> without a <span class='highlight'>garbage collector</span>",
-      "paragraph7": "<span class='highlight'>Golang</span>: Efficient, lightweight language for <span class='highlight'>scalable backend services</span>",
-      "paragraph8": "<span class='highlight'>TypeScript</span>: A superset of JavaScript with <span class='highlight'>static typing</span> for <span class='highlight'>robust</span> and <span class='highlight'>maintainable code</span>",
-      "paragraph9": "Additionally, I want to expand my knowledge in <span class='highlight'>cloud computing</span> with <span class='highlight'>Azure</span> and <span class='highlight'>AWS</span>, and learn <span class='highlight'>automation frameworks</span> like <span class='highlight'>Selenium</span>."
+      "headline": "What's next",
+      "pill": "In the pipeline",
+      "lead": "My focus: integrating <span class='highlight'>AI tools</span> into everyday development – more <span class='highlight'>output</span>, same <span class='highlight'>quality</span>. Companies pay for value, and I want to deliver it with AI faster than ever.",
+      "step1Time": "End of 2026",
+      "step1Name": "Bachelor's",
+      "step1Note": "Finishing now",
+      "step2Time": "2027",
+      "step2Name": "Master's",
+      "step2Note": "Admission secured",
+      "step3Time": "During the Master's",
+      "step3Name": "Specialization",
+      "step3Note": "Certificates & enterprise workflows",
+      "step4Time": "Vision",
+      "step4Name": "Tech × 3D",
+      "step4Note": "as my own service",
+      "tile1Title": "AI in everyday development",
+      "tile1Text": "Increase output without losing quality – AI as a fixed part of my coding workflow.",
+      "tile2Title": "Enterprise & CI/CD",
+      "tile2Text": "Build up enterprise workflows during my Master's – and earn certificates in specializations.",
+      "tile3Title": "Languages & automation",
+      "tile3Text": "Deepen TypeScript, Java and Python, build automation software for my daily work – and ship more of my own projects.",
+      "ctaService": "Tech × 3D: 1 product. 30 visuals."
     }
   },
 

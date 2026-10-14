@@ -94,19 +94,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Links mit data-scroll="center" (z. B. "Meine Arbeit ansehen") rollen das Ziel mittig in den Bildschirm statt an die Oberkante
+// Ziel mittig in den Bildschirm rollen (oder an den Anfang, wenn es höher als der Bildschirm ist).
+// Layout-Position über offsetTop: ignoriert die 50px-Verschiebung der Einblend-Animation.
+function scrollToTarget(target, smooth) {
+    let top = 0;
+    for (let el = target; el; el = el.offsetParent) top += el.offsetTop;
+    const offset = Math.max(0, (innerHeight - target.offsetHeight) / 2);
+    const animate = smooth && !matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: top - offset, behavior: animate ? "smooth" : "instant" }); // "auto" wäre wegen CSS scroll-behavior ebenfalls weich
+}
+
+// Links mit data-scroll="center" (z. B. "Meine Arbeit ansehen")
 document.addEventListener("click", (e) => {
     const link = e.target.closest('a[data-scroll="center"]');
     const target = link && document.querySelector(link.getAttribute("href"));
     if (!target) return;
     e.preventDefault();
-    // Layout-Position über offsetTop: ignoriert die 50px-Verschiebung der Einblend-Animation
-    let top = 0;
-    for (let el = target; el; el = el.offsetParent) top += el.offsetTop;
-    const offset = Math.max(0, (innerHeight - target.offsetHeight) / 2);
-    const smooth = !matchMedia("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({ top: top - offset, behavior: smooth ? "smooth" : "auto" });
+    scrollToTarget(target, true);
     history.replaceState(null, "", link.getAttribute("href"));
+});
+
+// Aufruf mit Anker von einer anderen Seite (z. B. /#service, /?topic=3d#contact): nach dem Laden gezielt hinscrollen
+window.addEventListener("load", () => {
+    const target = location.hash && document.querySelector(location.hash);
+    if (target) scrollToTarget(target, false);
 });
 
 // Einblend-Animation beim Scrollen

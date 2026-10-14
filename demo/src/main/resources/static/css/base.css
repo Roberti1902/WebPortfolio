@@ -164,3 +164,446 @@ html {
     }
 }
 
+/* ---------- Lichtrahmen (gemeinsam für alle Seiten) ---------- */
+
+/* Winkel als echte Eigenschaft registrieren, damit der Glow flüssig rotiert.
+   Browser ohne @property zeigen den Rahmen einfach statisch an. */
+@property --glow-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* Gradient im Kartenformat, per Maske auf einen 1.5px-Rand reduziert */
+.glow-ring {
+    position: absolute;
+    inset: 0;
+    padding: 1.5px;
+    border-radius: inherit;
+    pointer-events: none;
+    background: conic-gradient(from var(--glow-angle),
+            rgba(var(--accent-rgb), 0.12) 0deg,
+            rgba(var(--accent-rgb), 0.12) 210deg,
+            rgba(var(--accent-rgb), 1) 300deg,
+            rgba(var(--accent-rgb), 0.12) 360deg);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    animation: glow-spin 6s linear infinite;
+}
+
+@keyframes glow-spin {
+    to { --glow-angle: 360deg; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glow-ring {
+        animation: none;
+        background: rgba(var(--accent-rgb), 0.5);
+    }
+}
+
+/* ---------- Zukunfts-Block (Tech-Seite blau, 3D-Seite gold) ---------- */
+
+.future-board {
+    --accent-rgb: 0, 191, 255;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 4vw, 3.5rem);
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background-color: rgba(6, 7, 14, 0.7);
+    background-image:
+            linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 24px 24px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 70px -25px rgba(var(--accent-rgb), 0.5);
+    color: #fff;
+}
+
+.future-3d {
+    --accent-rgb: 245, 188, 80;
+}
+
+.future-board > *:not(.glow-ring):not(.future-horizon) {
+    position: relative;
+    z-index: 1;
+}
+
+/* Horizont: Licht, das vom unteren Rand aufsteigt und langsam atmet */
+.future-horizon {
+    position: absolute;
+    left: 50%;
+    bottom: -55%;
+    z-index: 0;
+    width: 140%;
+    aspect-ratio: 2.2;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(var(--accent-rgb), 0.38), rgba(var(--accent-rgb), 0.08) 55%, transparent 75%);
+    transform: translateX(-50%);
+    animation: horizon-breathe 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes horizon-breathe {
+    0%, 100% { opacity: 0.7; transform: translateX(-50%) scale(1); }
+    50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+}
+
+.future-head {
+    max-width: 46rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.future-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.35rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid rgba(var(--accent-rgb), 0.35);
+    background: rgba(var(--accent-rgb), 0.08);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.future-pill-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgb(var(--accent-rgb));
+    box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.9);
+    animation: future-blink 1.6s ease-in-out infinite;
+}
+
+@keyframes future-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.future-board .future-title {
+    margin: 1.1rem 0 0.9rem;
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-shadow: 0 0 40px rgba(var(--accent-rgb), 0.35);
+}
+
+.future-board .future-lead {
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    text-align: center;
+    text-shadow: none;
+}
+
+/* Roadmap: Linie, Fortschritt bis zur aktuellen Station, Lichtstrahl wie ein Ladebalken */
+.roadmap {
+    position: relative;
+    margin: clamp(2.25rem, 5vw, 3.5rem) 0;
+}
+
+.roadmap-track {
+    position: absolute;
+    top: 7px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 2px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.roadmap-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 12%;
+    background: linear-gradient(90deg, rgb(var(--accent-rgb)), rgba(var(--accent-rgb), 0.2));
+}
+
+.roadmap-beam {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20%;
+    width: 18%;
+    background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb), 0.9), #fff, rgba(var(--accent-rgb), 0.9), transparent);
+    box-shadow: 0 0 14px 3px rgba(var(--accent-rgb), 0.7);
+    animation: roadmap-beam 3.2s cubic-bezier(0.45, 0, 0.25, 1) infinite;
+}
+
+@keyframes roadmap-beam {
+    from { left: -20%; }
+    to { left: 102%; }
+}
+
+.roadmap-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.roadmap-steps li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.step-dot {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgba(var(--accent-rgb), 0.55);
+    background: #06070e;
+    transform: translateX(-50%);
+}
+
+.roadmap-steps li.is-active .step-dot {
+    border-color: rgb(var(--accent-rgb));
+    background: rgb(var(--accent-rgb));
+    box-shadow: 0 0 16px rgba(var(--accent-rgb), 0.9);
+}
+
+.roadmap-steps li.is-active .step-dot::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--accent-rgb), 0.8);
+    animation: step-ping 1.8s ease-out infinite;
+}
+
+@keyframes step-ping {
+    from { transform: scale(0.6); opacity: 1; }
+    to { transform: scale(1.8); opacity: 0; }
+}
+
+.step-time {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-rgb));
+}
+
+.step-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.step-note {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* Kacheln: glasig, von innen leuchtend */
+.future-tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.future-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.5rem;
+    border-radius: 22px;
+    border: 1px solid rgba(var(--accent-rgb), 0.3);
+    background:
+            radial-gradient(ellipse 90% 70% at 15% 0%, rgba(var(--accent-rgb), 0.22), transparent 70%),
+            rgba(255, 255, 255, 0.025);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 24px 50px -30px rgba(var(--accent-rgb), 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.future-tile:hover {
+    transform: translateY(-4px);
+    border-color: rgba(var(--accent-rgb), 0.6);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 30px 60px -28px rgba(var(--accent-rgb), 0.9);
+}
+
+.future-board.visible .future-tile {
+    animation: tile-in 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.future-board.visible .future-tile:nth-child(2) { animation-delay: 0.12s; }
+.future-board.visible .future-tile:nth-child(3) { animation-delay: 0.24s; }
+
+@keyframes tile-in {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tile-num {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: rgb(var(--accent-rgb));
+}
+
+.future-tile h3 {
+    margin: 0;
+    color: #fff !important;
+    font-size: 1.15rem !important;
+    font-weight: 600;
+}
+
+.future-board .future-tile p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.93rem;
+    line-height: 1.55;
+    text-align: left;
+    text-shadow: none;
+}
+
+.tile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.4rem;
+}
+
+.tile-tags span {
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(0, 0, 0, 0.25);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.future-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem;
+    margin-top: clamp(2rem, 4vw, 2.75rem);
+}
+
+.future-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.6rem;
+    border-radius: 999px;
+    background: rgb(var(--accent-rgb));
+    color: #06070e;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.future-btn:hover,
+.future-btn:focus-visible {
+    color: #06070e;
+    transform: translateY(-2px);
+    box-shadow: 0 0 26px rgba(var(--accent-rgb), 0.6);
+}
+
+.future-btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(var(--accent-rgb), 0.55);
+    color: #fff;
+}
+
+.future-btn-ghost:hover,
+.future-btn-ghost:focus-visible {
+    color: #fff;
+    background: rgba(var(--accent-rgb), 0.12);
+}
+
+@media (max-width: 991.98px) {
+    .future-tiles {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Handy: Roadmap senkrecht, der Strahl läuft von oben nach unten */
+@media (max-width: 767.98px) {
+    .roadmap-track {
+        top: 8px;
+        bottom: 8px;
+        left: 7px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .roadmap-fill {
+        inset: 0 0 auto 0;
+        width: auto;
+        height: 12%;
+        background: linear-gradient(180deg, rgb(var(--accent-rgb)), rgba(var(--accent-rgb), 0.2));
+    }
+
+    .roadmap-beam {
+        left: 0;
+        right: 0;
+        top: -20%;
+        width: auto;
+        height: 18%;
+        background: linear-gradient(180deg, transparent, rgba(var(--accent-rgb), 0.9), #fff, rgba(var(--accent-rgb), 0.9), transparent);
+        animation-name: roadmap-beam-v;
+    }
+
+    @keyframes roadmap-beam-v {
+        from { top: -20%; }
+        to { top: 102%; }
+    }
+
+    .roadmap-steps {
+        grid-template-columns: 1fr;
+        gap: 1.4rem;
+    }
+
+    .roadmap-steps li {
+        align-items: flex-start;
+        padding: 0 0 0 2.25rem;
+        text-align: left;
+    }
+
+    .step-dot {
+        left: 0;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .future-horizon,
+    .future-pill-dot,
+    .roadmap-beam,
+    .roadmap-steps li.is-active .step-dot::after,
+    .future-board.visible .future-tile {
+        animation: none;
+    }
+
+    .roadmap-beam {
+        display: none;
+    }
+}

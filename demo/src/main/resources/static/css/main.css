@@ -570,43 +570,12 @@ div .h-100 > h2 {
     }
 }
 
-/* ---------- Lichtrahmen (gemeinsam für Karten und Kontaktbereich) ---------- */
-
-/* Winkel als echte Eigenschaft registrieren, damit der Glow flüssig rotiert.
-   Browser ohne @property zeigen den Rahmen einfach statisch an. */
-@property --glow-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
+/* ---------- Ebenen über dem Lichtrahmen ---------- */
 
 .accent-card > *:not(.glow-ring),
 .contact-stage > *:not(.glow-ring):not(.contact-ghost) {
     position: relative;
     z-index: 1;
-}
-
-/* Gradient im Kartenformat, per Maske auf einen 1.5px-Rand reduziert */
-.glow-ring {
-    position: absolute;
-    inset: 0;
-    padding: 1.5px;
-    border-radius: inherit;
-    pointer-events: none;
-    background: conic-gradient(from var(--glow-angle),
-            rgba(var(--accent-rgb), 0.12) 0deg,
-            rgba(var(--accent-rgb), 0.12) 210deg,
-            rgba(var(--accent-rgb), 1) 300deg,
-            rgba(var(--accent-rgb), 0.12) 360deg);
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    mask-composite: exclude;
-    animation: glow-spin 6s linear infinite;
-}
-
-@keyframes glow-spin {
-    to { --glow-angle: 360deg; }
 }
 
 /* ---------- Kontakt: Bereich wählen, direkter Kanal erscheint ---------- */
@@ -1007,11 +976,6 @@ div .h-100 > h2 {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .glow-ring {
-        animation: none;
-        background: rgba(var(--accent-rgb), 0.5);
-    }
-
     .contact-ghost,
     .channel-placeholder-dot,
     .contact-zone.visible .contact-headline,
