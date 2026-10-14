@@ -268,3 +268,70 @@ img {
         font-size: 0.95rem;
     }
 }
+
+/* Handy: alles eine Stufe kleiner (alle rem-Größen von Bootstrap und den Seiten skalieren mit) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 14px;
+    }
+
+    .row.p-4 {
+        padding: 0.75rem !important;
+    }
+
+    .display-4 {
+        font-size: 1.6rem;
+    }
+
+    h1.display-5 {
+        font-size: 1.35rem;
+    }
+
+    .available-badge {
+        font-size: 11px;
+    }
+
+    .hero-actions .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .rounded-lg-3 {
+        max-width: 180px;
+        margin-bottom: 16px;
+    }
+
+    /* Footer: mittig, kleine Schrift, Icons darunter */
+    .footer footer {
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 0.6rem;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .footer .social-links img {
+        height: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-headline {
+        font-size: 1.6rem;
+    }
+}
+
+/* Tech-/3D-/Projektseiten auf dem Handy: Porträt und Skill-Icons kleiner */
+@media (max-width: 575.98px) {
+    .bild {
+        max-width: 140px;
+        height: auto;
+    }
+
+    .skill img,
+    .top-skill img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+}
