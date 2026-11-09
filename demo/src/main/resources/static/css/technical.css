@@ -826,14 +826,6 @@ h3 {
     }
 }
 
-/* Nebenbei im Studium: bewusst klein und zurückhaltend */
-.glass p.course-also {
-    margin: 1.1rem 0 0;
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 0.85rem;
-    text-align: left;
-    text-shadow: none;
-}
 
 /* Evals: jeder Baustein prüft sich selbst */
 .quant-evals {

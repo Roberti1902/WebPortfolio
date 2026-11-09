@@ -179,8 +179,7 @@
       "c4": "Data Science 2",
       "c5": "Introduction au NLP",
       "c6": "Python pour le NLP",
-      "c7": "Deep Learning",
-      "alsoUsed": "Aussi abordés à l'université : RAG, bases de données vectorielles, LangGraph, FastAPI, Pydantic et Langfuse."
+      "c7": "Deep Learning"
     },
     "section2": {
       "headline2": "Université Heinrich Heine Düsseldorf (2023–présent)",
