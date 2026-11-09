@@ -55,16 +55,14 @@
     "title": "Softwareentwickler für KI-Agents & ML-Pipelines",
     "subtitle": "Mit ❤️ am Bauen – täglich 1% besser!",
     "working": "Derzeit in der Softwareentwicklung bei der <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>",
-    "latestLabel": "Mein neuestes Projekt",
-    "latestTitle": "IonQuant – meine persönliche Investment-Pipeline",
-    "latestSub": "Statistik, Regeln und ein Push aufs iPhone."
+    "latestLabel": "Mein neuestes Projekt"
   },
   "availability": {
     "title": "Offen für neue Herausforderungen",
     "text": "Freelance & Nebenprojekte willkommen – <a href='#contact'>schreiben Sie mir</a>."
   },
   "about": {
-    "headline": "KI ist mein Instrument.",
+    "headline": "Mit KI programmieren. Selbst denken.",
     "paragraph1": "Ich entwickle Software mit <span class='highlight'>KI</span> – jeden Tag, als festen Teil meiner Arbeit. Für mich ist das der nächste logische Schritt: Sie lässt Entwickler <span class='highlight'>mehr leisten</span>, <span class='highlight'>schneller lernen</span> und Dinge bauen, die vorher <span class='highlight'>nicht möglich</span> waren.",
     "paragraph2": "Dabei lerne ich <span class='highlight'>mit</span> KI, statt <span class='highlight'>durch</span> sie ersetzt zu werden. Mit Agent-Harness-Plugins lasse ich mich beim Programmieren <span class='highlight'>abfragen</span> – damit ich ihr nie blind folge. Wer die KI und den <span class='highlight'>Kontext</span> versteht, ist nicht aufzuhalten.",
     "paragraph3": "Mein Antrieb: mit KI <span class='highlight'>echten Mehrwert</span> schaffen – für Unternehmen und für Menschen. Meiner Meinung nach sind erst <span class='highlight'>0,01 %</span> ihres Potenzials ausgeschöpft, auf jeder Ebene."
@@ -191,7 +189,8 @@
     },
     "section3": {
       "headline3": "Udemy – autodidaktisch (2024–jetzt)",
-      "content1": "Das Studium legt die Theorie – <span class='highlight'>Udemy</span> lieferte die <span class='highlight'>Praxis</span>. Kurs für Kurs habe ich sie in <span class='highlight'>eigenen Projekten</span> angewendet: Clean Code, Git, Debugging, echte Backends."
+      "content1": "Das Studium legt die Theorie – <span class='highlight'>Udemy</span> lieferte die <span class='highlight'>Praxis</span>. Kurs für Kurs habe ich <span class='highlight'>Systemverständnis</span> und echte Entwicklerpraxis aufgebaut – immer mit Fokus auf Anwendung.",
+      "content2": "Das Gelernte floss direkt in <span class='highlight'>eigene Projekte</span>, von Web-Anwendungen bis zu Backends: <span class='highlight'>Clean Code</span>, Git und Debugging in realistischen Szenarien – nicht nur verstehen, sondern <span class='highlight'>umsetzen</span>."
     },
     "section4": {
       "headline4": "Erworbene Kurse",
@@ -199,25 +198,25 @@
       "content2": "<span class='highlight'>Machine & Deep Learning mit Python</span>: NumPy, Pandas, PyTorch, TensorFlow",
       "content3": "<span class='highlight'>Datenstrukturen & Algorithmen</span>, Linux-Konzepte"
     },
-    "stackLegend": "Leuchtend: meine Big 4",
+    "stackLegend": "Leuchtend: mein Kern-Stack",
     "aiTitle": "KI & Automatisierung",
     "quant": {
       "pill": "Projekt 01 · In Arbeit",
       "kicker": "Meine persönliche Investment-Pipeline",
-      "lead": "Drei Bausteine, eine Frage: Hat diese Aktie Potenzial – <span class='highlight'>und belüge ich mich gerade selbst?</span>",
-      "s1Time": "01 · Statistik",
+      "lead": "Vier Bausteine, eine Frage: Hat diese Aktie Potenzial – <span class='highlight'>und belüge ich mich gerade selbst?</span>",
+      "s1Time": "02 · Statistik",
       "s1Note": "Wahrscheinlichkeit & Risiko",
-      "s2Time": "02 · Entscheidung",
+      "s2Time": "03 · Entscheidung",
       "s2Note": "Regeln, keine KI",
-      "s3Time": "03 · Push",
+      "s3Time": "04 · Push",
       "s3Note": "Direkt aufs iPhone",
       "disclaimer": "<strong>Keine Anlageberatung.</strong> Es werden keine Orders gesendet. Backtests nutzen das heutige Aktien-Universum (<strong>Survivorship Bias</strong>) – Ergebnisse wirken eher besser als die Realität.",
-      "c1Num": "01 · Statistik",
+      "c1Num": "02 · Statistik",
       "c1Sub": "Aktien-Analysetool mit statistischem Modell",
       "c1Text": "Wertet eine Aktie aus ihrer eigenen Kursgeschichte aus: <span class='highlight'>Bullish/Bearish-Wahrscheinlichkeit</span> und <span class='highlight'>Risiko</span> von 1 Tag bis 1 Jahr – dazu <span class='highlight'>S&P-500-Rang</span>, Fundamentaldaten, Backtest und ein Papier-Portfolio.",
       "c1Honest": "Das ehrliche Ergebnis: Bei META und NVDA ist keine Richtung belegt – und das Tool zeigt das, statt es zu verstecken.",
       "snapshot": "Live-Momentaufnahme ↗",
-      "c2Num": "02 · Entscheidung",
+      "c2Num": "03 · Entscheidung",
       "c2Sub": "Regel-Engine mit Walk-forward-Backtest",
       "c2Text": "Indikatoren – SMA 20/200, RSI, ATR, relative Stärke – speisen einen <span class='highlight'>deterministischen Entscheider</span>. Keine KI in der Entscheidung. Er zeigt in <span class='highlight'>%</span>, wie nah eine Aktie am Kaufsignal ist, setzt ein <span class='highlight'>dynamisches Verkaufsziel</span> aus vergangenen Signalen und braucht nichts außer Kursdaten.",
       "c2Check1": "Walk-forward: Regeln fest auf Trainingsdaten, nur der Testzeitraum zählt",
@@ -225,7 +224,7 @@
       "c2Check3": "Overfitting-Warnung, sobald zu viele Varianten getestet werden",
       "c2Quote": "„Ich baue Werkzeuge, die verhindern, dass ich mich im Backtest selbst belüge.“",
       "repoSoon": "Repo folgt bald",
-      "c3Num": "03 · Push",
+      "c3Num": "04 · Push",
       "c3Sub": "Push-Nachrichten fürs iPhone",
       "c3Text": "Schickt Signale mit <span class='highlight'>Aktions-Buttons</span> aufs iPhone. Befehle kommen über ein <span class='highlight'>Antwort-Topic</span> zurück – status, top, gekauft, verkauft, pause –, eine <span class='highlight'>Outbox</span> hält Nachrichten bis zur Zustellung, und verarbeitete IDs verhindern <span class='highlight'>Duplikate</span>.",
       "skillTag": "+ Skill",
@@ -237,13 +236,19 @@
       "priv2": "Aufgabenplanung",
       "priv3": "Journal & Signal-CHECK",
       "priv4": "Scalable-Liste",
-      "priv5": "News-Scraper",
       "curNext": "Nächste Schritte",
       "next1": "Pipeline verbessern und neue Programme einbinden",
       "next2": "Testen auf Trainingsdaten und Out-of-Sample",
       "next3": "Weitere Märkte erschließen",
       "next4": "Indikator-Kombinationen per Backtest und ML auf eigener GPU auswerten",
-      "next5": "News-Scraper mit Sentiment-Bewertung"
+      "next5": "Die bewerteten News-Ereignisse in die Entscheidungs-Reports einspeisen",
+      "s0Time": "01 · News",
+      "s0Note": "Vom LLM bewertete Ereignisse",
+      "c0Num": "01 · News",
+      "c0Sub": "News-Scraper mit LLM-Triage",
+      "c0Text": "Holt alle 30 Minuten Marktnachrichten aus RSS-Feeds, führt Duplikate zusammen und ordnet sie Tickern zu. Ein LLM <span class='highlight'>sortiert</span> jedes Ereignis vor und bewertet den <span class='highlight'>Impact</span> je Ticker – als JSON, mit <span class='highlight'>Pydantic</span> validiert; ungültige Antworten werden verworfen und protokolliert.",
+      "c0Check1": "Läuft lokal auf Ollama (meine RTX 3060) oder auf Claude mit Prompt Caching und Tagesbudget",
+      "c0Check2": "Eingebaute Auswertung: Trefferquote nach 1, 5 und 20 Handelstagen"
     },
     "p2": {
       "num": "Projekt 02 · NLP",

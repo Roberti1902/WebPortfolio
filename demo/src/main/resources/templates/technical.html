@@ -13,7 +13,7 @@
             <div class="container-fluid py-5">
                 <img src="/Dateien/facelogo.webp" class="bild" alt="Portrait of Robert Ionescu" width="200" height="199">
                 <h1 class="display-5 fw-bold" data-i18n="technicalPage.headline">Tech Stack</h1>
-                <p class="stack-legend"><span class="stack-legend-dot" aria-hidden="true"></span><span data-i18n="technicalPage.stackLegend">Glowing: my Big 4</span></p>
+                <p class="stack-legend"><span class="stack-legend-dot" aria-hidden="true"></span><span data-i18n="technicalPage.stackLegend">Glowing: my core stack</span></p>
 
                 <div>
                     <h2 class="fw-bold" data-i18n="technicalPage.programmingLanguagesTitle">Programming Languages</h2>
@@ -26,8 +26,8 @@
                             <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/python.png" alt="" loading="lazy" decoding="async"></span>
                             <span class="stack-name">Python</span>
                         </li>
-                        <li class="stack-item is-core">
-                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/typescript.svg" alt="" loading="lazy" decoding="async"></span>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/typescript.svg" alt="" loading="lazy" decoding="async"></span>
                             <span class="stack-name">TypeScript</span>
                         </li>
                         <li class="stack-item">
@@ -70,12 +70,12 @@
                 <div>
                     <h2 class="fw-bold" data-i18n="technicalPage.aiTitle">AI & Automation</h2>
                     <ul class="stack-list">
-                        <li class="stack-item">
-                            <span class="stack-icon"><img src="/Dateien/techlogos/claude.svg" alt="" loading="lazy" decoding="async"></span>
+                        <li class="stack-item is-core">
+                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/claude.svg" alt="" loading="lazy" decoding="async"></span>
                             <span class="stack-name">Claude / Claude Code</span>
                         </li>
-                        <li class="stack-item">
-                            <span class="stack-icon"><img src="/Dateien/techlogos/modelcontextprotocol.svg" alt="" loading="lazy" decoding="async"></span>
+                        <li class="stack-item is-core">
+                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/modelcontextprotocol.svg" alt="" loading="lazy" decoding="async"></span>
                             <span class="stack-name">MCP</span>
                         </li>
                         <li class="stack-item">
@@ -110,13 +110,13 @@
         <div class="p-5 glass links reveal">
             <h3 data-i18n="technicalPage.section1.headline1">Selected Courses</h3>
             <ul class="course-chips">
-                <li data-i18n="technicalPage.section1.c1">Programming I–III</li>
-                <li data-i18n="technicalPage.section1.c2">ALDAT – Algorithms & Data Structures</li>
-                <li data-i18n="technicalPage.section1.c3">Data Science 1</li>
-                <li data-i18n="technicalPage.section1.c4">Data Science 2</li>
-                <li data-i18n="technicalPage.section1.c5">Introduction to NLP</li>
-                <li data-i18n="technicalPage.section1.c6">Python for NLP</li>
-                <li data-i18n="technicalPage.section1.c7">Deep Learning</li>
+                <li><span class="course-num" aria-hidden="true">01</span><span data-i18n="technicalPage.section1.c1">Programming I–III</span></li>
+                <li><span class="course-num" aria-hidden="true">02</span><span data-i18n="technicalPage.section1.c2">ALDAT – Algorithms & Data Structures</span></li>
+                <li><span class="course-num" aria-hidden="true">03</span><span data-i18n="technicalPage.section1.c3">Data Science 1</span></li>
+                <li><span class="course-num" aria-hidden="true">04</span><span data-i18n="technicalPage.section1.c4">Data Science 2</span></li>
+                <li><span class="course-num" aria-hidden="true">05</span><span data-i18n="technicalPage.section1.c5">Introduction to NLP</span></li>
+                <li><span class="course-num" aria-hidden="true">06</span><span data-i18n="technicalPage.section1.c6">Python for NLP</span></li>
+                <li><span class="course-num" aria-hidden="true">07</span><span data-i18n="technicalPage.section1.c7">Deep Learning</span></li>
             </ul>
         </div>
         <div class="p-5 glass rechts reveal linksalign">
@@ -129,7 +129,8 @@
     <div class="row-mapper edu-second">
         <div class="p-5 glass links reveal rechtsalign">
             <h3 data-i18n="technicalPage.section3.headline3">Udemy – self-taught (2024–present)</h3>
-            <p data-i18n="technicalPage.section3.content1">University lays the theory – <span class='highlight'>Udemy</span> filled in the <span class='highlight'>practice</span>. Course by course I applied it in <span class='highlight'>my own projects</span>: clean code, Git, debugging, real backends.</p>
+            <p data-i18n="technicalPage.section3.content1">University lays the theory – <span class='highlight'>Udemy</span> filled in the <span class='highlight'>practice</span>. Course by course I built up <span class='highlight'>system understanding</span> and real developer habits – always focused on application.</p>
+            <p data-i18n="technicalPage.section3.content2">What I learned went straight into <span class='highlight'>my own projects</span>, from web apps to backends: <span class='highlight'>clean code</span>, Git and debugging in realistic scenarios – not just understanding, but <span class='highlight'>shipping</span>.</p>
         </div>
         <div class="p-5 glass rechts reveal">
             <h3 data-i18n="technicalPage.section4.headline4">Completed Courses</h3>
@@ -163,28 +164,34 @@
             <span class="future-pill"><span class="future-pill-dot" aria-hidden="true"></span><span data-i18n="technicalPage.quant.pill">Project 01 · In work</span></span>
             <h2 class="future-title" id="quant-title">IonQuant</h2>
             <p class="quant-kicker" data-i18n="technicalPage.quant.kicker">My personal investment pipeline</p>
-            <p class="future-lead" data-i18n="technicalPage.quant.lead">Three building blocks, one question: does this stock have potential – <span class='highlight'>and am I fooling myself?</span></p>
+            <p class="future-lead" data-i18n="technicalPage.quant.lead">Four building blocks, one question: does this stock have potential – <span class='highlight'>and am I fooling myself?</span></p>
         </div>
 
         <!-- Pipeline: drei Stationen, Strahl läuft wie ein Ladebalken hindurch -->
-        <div class="roadmap roadmap-3 quant-pipeline">
+        <div class="roadmap quant-pipeline">
             <div class="roadmap-track" aria-hidden="true"><span class="roadmap-fill"></span><span class="roadmap-beam"></span></div>
             <ol class="roadmap-steps">
                 <li>
                     <span class="step-dot" aria-hidden="true"></span>
-                    <span class="step-time" data-i18n="technicalPage.quant.s1Time">01 · Statistics</span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s0Time">01 · News</span>
+                    <span class="step-name">News Radar</span>
+                    <span class="step-note" data-i18n="technicalPage.quant.s0Note">LLM-rated events</span>
+                </li>
+                <li>
+                    <span class="step-dot" aria-hidden="true"></span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s1Time">02 · Statistics</span>
                     <span class="step-name">IonTrader</span>
                     <span class="step-note" data-i18n="technicalPage.quant.s1Note">Probability & risk</span>
                 </li>
                 <li class="is-active is-gold">
                     <span class="step-dot" aria-hidden="true"></span>
-                    <span class="step-time" data-i18n="technicalPage.quant.s2Time">02 · Decision</span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s2Time">03 · Decision</span>
                     <span class="step-name">Swing Rule Engine</span>
                     <span class="step-note" data-i18n="technicalPage.quant.s2Note">Rules, no AI</span>
                 </li>
                 <li>
                     <span class="step-dot" aria-hidden="true"></span>
-                    <span class="step-time" data-i18n="technicalPage.quant.s3Time">03 · Push</span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s3Time">04 · Push</span>
                     <span class="step-name">ntfy Bot</span>
                     <span class="step-note" data-i18n="technicalPage.quant.s3Note">Straight to my iPhone</span>
                 </li>
@@ -198,7 +205,21 @@
 
         <div class="quant-cards">
             <article class="quant-card">
-                <span class="tile-num" data-i18n="technicalPage.quant.c1Num">01 · Statistics</span>
+                <span class="tile-num" data-i18n="technicalPage.quant.c0Num">01 · News</span>
+                <h3>News Radar</h3>
+                <p class="quant-sub" data-i18n="technicalPage.quant.c0Sub">News scraper with LLM triage</p>
+                <p data-i18n="technicalPage.quant.c0Text">Pulls market news from RSS feeds every 30 minutes, merges duplicates and maps them to tickers. An LLM <span class='highlight'>triages</span> each event and rates its <span class='highlight'>impact</span> per ticker – as JSON, validated with <span class='highlight'>Pydantic</span>; invalid answers are discarded and logged.</p>
+                <ul class="quant-checks">
+                    <li data-i18n="technicalPage.quant.c0Check1">Runs locally on Ollama (my RTX 3060) or on Claude with prompt caching and a daily budget</li>
+                    <li data-i18n="technicalPage.quant.c0Check2">Built-in evaluation: hit rate after 1, 5 and 20 trading days</li>
+                </ul>
+                <div class="tile-tags"><span>Python</span><span>Ollama</span><span>Claude API</span><span>Pydantic</span><span>SQLite</span></div>
+                <div class="quant-links">
+                    <span class="quant-btn is-disabled" aria-disabled="true" data-i18n="technicalPage.quant.repoSoon">Repo coming soon</span>
+                </div>
+            </article>
+            <article class="quant-card">
+                <span class="tile-num" data-i18n="technicalPage.quant.c1Num">02 · Statistics</span>
                 <h3>IonTrader</h3>
                 <p class="quant-sub" data-i18n="technicalPage.quant.c1Sub">Stock analysis tool with a statistical model</p>
                 <p data-i18n="technicalPage.quant.c1Text">Analyses a stock from its own price history: <span class='highlight'>bullish/bearish probability</span> and <span class='highlight'>risk</span> from 1 day to 1 year – plus <span class='highlight'>S&P 500 rank</span>, fundamentals, backtest and a paper portfolio.</p>
@@ -212,7 +233,7 @@
 
             <article class="quant-card is-featured">
                 <span class="glow-ring" aria-hidden="true"></span>
-                <span class="tile-num" data-i18n="technicalPage.quant.c2Num">02 · Decision</span>
+                <span class="tile-num" data-i18n="technicalPage.quant.c2Num">03 · Decision</span>
                 <h3>Swing Rule Engine</h3>
                 <p class="quant-sub" data-i18n="technicalPage.quant.c2Sub">Rule engine with walk-forward backtest</p>
                 <p data-i18n="technicalPage.quant.c2Text">Indicators – SMA 20/200, RSI, ATR, relative strength – feed a <span class='highlight'>deterministic decider</span>. No AI in the decision. It shows how close a stock is to a buy signal in <span class='highlight'>%</span>, sets a <span class='highlight'>dynamic sell target</span> from past signals and needs nothing but price data.</p>
@@ -229,7 +250,7 @@
             </article>
 
             <article class="quant-card">
-                <span class="tile-num" data-i18n="technicalPage.quant.c3Num">03 · Push</span>
+                <span class="tile-num" data-i18n="technicalPage.quant.c3Num">04 · Push</span>
                 <h3>ntfy Bot</h3>
                 <p class="quant-sub" data-i18n="technicalPage.quant.c3Sub">Push notifications for iPhone</p>
                 <p data-i18n="technicalPage.quant.c3Text">Sends signals to my iPhone with <span class='highlight'>action buttons</span>. Commands come back through a <span class='highlight'>reply topic</span> – status, top, bought, sold, pause – an <span class='highlight'>outbox</span> holds messages until they're delivered, and processed IDs block <span class='highlight'>duplicates</span>.</p>
@@ -260,7 +281,6 @@
                         <li data-i18n="technicalPage.quant.priv2">Task scheduling</li>
                         <li data-i18n="technicalPage.quant.priv3">Journal & signal CHECK</li>
                         <li data-i18n="technicalPage.quant.priv4">Scalable list</li>
-                        <li data-i18n="technicalPage.quant.priv5">News scraper</li>
                     </ul>
                 </div>
                 <div>
@@ -270,7 +290,7 @@
                         <li data-i18n="technicalPage.quant.next2">Test on training data and out-of-sample</li>
                         <li data-i18n="technicalPage.quant.next3">Expand to more markets</li>
                         <li data-i18n="technicalPage.quant.next4">Evaluate indicator combinations via backtest and ML on my own GPU</li>
-                        <li data-i18n="technicalPage.quant.next5">News scraper with sentiment scoring</li>
+                        <li data-i18n="technicalPage.quant.next5">Feed the rated news events into the decision reports</li>
                     </ol>
                 </div>
             </div>

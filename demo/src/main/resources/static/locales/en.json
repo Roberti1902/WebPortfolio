@@ -55,16 +55,14 @@
     "title": "Software Developer for AI Agents & ML Pipelines",
     "subtitle": "Building with ❤️, improving 1% daily!",
     "working": "Currently in software development at <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>",
-    "latestLabel": "My latest project",
-    "latestTitle": "IonQuant – my personal investment pipeline",
-    "latestSub": "Statistics, rules and a push to my iPhone."
+    "latestLabel": "My latest project"
   },
   "availability": {
     "title": "Open to new opportunities",
     "text": "Available for freelance & side projects – <a href='#contact'>send me a request</a>."
   },
   "about": {
-    "headline": "AI is my instrument.",
+    "headline": "Code with AI. Think for yourself.",
     "paragraph1": "I build software with <span class='highlight'>AI</span> – every day, as a fixed part of how I work. To me it's the next logical step: it lets a developer <span class='highlight'>ship more</span>, <span class='highlight'>learn faster</span> and build things that simply <span class='highlight'>weren't possible</span> before.",
     "paragraph2": "But I learn <span class='highlight'>with</span> AI instead of being replaced <span class='highlight'>by</span> it. With agent-harness plugins I get <span class='highlight'>quizzed</span> while I code – so I never follow it blindly. Whoever understands both the AI and the <span class='highlight'>context</span> can't be stopped.",
     "paragraph3": "What drives me: creating <span class='highlight'>real value</span> with AI – for companies and for people. In my view we've tapped maybe <span class='highlight'>0.01 %</span> of its potential, on every level."
@@ -180,7 +178,8 @@
     },
     "section3": {
       "headline3": "Udemy – self-taught (2024–present)",
-      "content1": "University lays the theory – <span class='highlight'>Udemy</span> filled in the <span class='highlight'>practice</span>. Course by course I applied it in <span class='highlight'>my own projects</span>: clean code, Git, debugging, real backends."
+      "content1": "University lays the theory – <span class='highlight'>Udemy</span> filled in the <span class='highlight'>practice</span>. Course by course I built up <span class='highlight'>system understanding</span> and real developer habits – always focused on application.",
+      "content2": "What I learned went straight into <span class='highlight'>my own projects</span>, from web apps to backends: <span class='highlight'>clean code</span>, Git and debugging in realistic scenarios – not just understanding, but <span class='highlight'>shipping</span>."
     },
     "section4": {
       "headline4": "Completed Courses",
@@ -188,25 +187,25 @@
       "content2": "<span class='highlight'>Machine & Deep Learning with Python</span>: NumPy, Pandas, PyTorch, TensorFlow",
       "content3": "<span class='highlight'>Data Structures & Algorithms</span>, Linux concepts"
     },
-    "stackLegend": "Glowing: my Big 4",
+    "stackLegend": "Glowing: my core stack",
     "aiTitle": "AI & Automation",
     "quant": {
       "pill": "Project 01 · In work",
       "kicker": "My personal investment pipeline",
-      "lead": "Three building blocks, one question: does this stock have potential – <span class='highlight'>and am I fooling myself?</span>",
-      "s1Time": "01 · Statistics",
+      "lead": "Four building blocks, one question: does this stock have potential – <span class='highlight'>and am I fooling myself?</span>",
+      "s1Time": "02 · Statistics",
       "s1Note": "Probability & risk",
-      "s2Time": "02 · Decision",
+      "s2Time": "03 · Decision",
       "s2Note": "Rules, no AI",
-      "s3Time": "03 · Push",
+      "s3Time": "04 · Push",
       "s3Note": "Straight to my iPhone",
       "disclaimer": "<strong>Not financial advice.</strong> No orders are sent. Backtests use today's stock universe (<strong>survivorship bias</strong>) – results tend to look better than reality.",
-      "c1Num": "01 · Statistics",
+      "c1Num": "02 · Statistics",
       "c1Sub": "Stock analysis tool with a statistical model",
       "c1Text": "Analyses a stock from its own price history: <span class='highlight'>bullish/bearish probability</span> and <span class='highlight'>risk</span> from 1 day to 1 year – plus <span class='highlight'>S&P 500 rank</span>, fundamentals, backtest and a paper portfolio.",
       "c1Honest": "The honest result: for META and NVDA no direction is proven – and the tool shows that instead of hiding it.",
       "snapshot": "Live snapshot ↗",
-      "c2Num": "02 · Decision",
+      "c2Num": "03 · Decision",
       "c2Sub": "Rule engine with walk-forward backtest",
       "c2Text": "Indicators – SMA 20/200, RSI, ATR, relative strength – feed a <span class='highlight'>deterministic decider</span>. No AI in the decision. It shows how close a stock is to a buy signal in <span class='highlight'>%</span>, sets a <span class='highlight'>dynamic sell target</span> from past signals and needs nothing but price data.",
       "c2Check1": "Walk-forward: rules fixed on training data, only the test period counts",
@@ -214,7 +213,7 @@
       "c2Check3": "Overfitting warning once too many variants are tested",
       "c2Quote": "“I build tools that stop me from fooling myself in a backtest.”",
       "repoSoon": "Repo coming soon",
-      "c3Num": "03 · Push",
+      "c3Num": "04 · Push",
       "c3Sub": "Push notifications for iPhone",
       "c3Text": "Sends signals to my iPhone with <span class='highlight'>action buttons</span>. Commands come back through a <span class='highlight'>reply topic</span> – status, top, buy and sell reports, pause – an <span class='highlight'>outbox</span> holds messages until they're delivered, and processed IDs block <span class='highlight'>duplicates</span>.",
       "skillTag": "+ Skill",
@@ -226,13 +225,19 @@
       "priv2": "Task scheduling",
       "priv3": "Journal & signal CHECK",
       "priv4": "Scalable list",
-      "priv5": "News scraper",
       "curNext": "Next steps",
       "next1": "Improve the pipeline and integrate new programs",
       "next2": "Test on training data and out-of-sample",
       "next3": "Expand to more markets",
       "next4": "Evaluate indicator combinations via backtest and ML on my own GPU",
-      "next5": "News scraper with sentiment scoring"
+      "next5": "Feed the rated news events into the decision reports",
+      "s0Time": "01 · News",
+      "s0Note": "LLM-rated events",
+      "c0Num": "01 · News",
+      "c0Sub": "News scraper with LLM triage",
+      "c0Text": "Pulls market news from RSS feeds every 30 minutes, merges duplicates and maps them to tickers. An LLM <span class='highlight'>triages</span> each event and rates its <span class='highlight'>impact</span> per ticker – as JSON, validated with <span class='highlight'>Pydantic</span>; invalid answers are discarded and logged.",
+      "c0Check1": "Runs locally on Ollama (my RTX 3060) or on Claude with prompt caching and a daily budget",
+      "c0Check2": "Built-in evaluation: hit rate after 1, 5 and 20 trading days"
     },
     "p2": {
       "num": "Project 02 · NLP",

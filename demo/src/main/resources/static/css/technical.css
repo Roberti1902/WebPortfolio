@@ -170,18 +170,69 @@ h3 {
 }
 
 .course-chips {
-    gap: 0.55rem;
-    margin: 1.25rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 0.65rem;
+    margin: 1.4rem 0 0;
 }
 
 .course-chips li {
-    padding: 0.45rem 0.95rem;
-    border-radius: 999px;
-    border: 1px solid rgba(0, 191, 255, 0.3);
-    background: rgba(0, 191, 255, 0.06);
-    color: rgba(255, 255, 255, 0.88);
-    font-size: 0.92rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 191, 255, 0.22);
+    background:
+            radial-gradient(ellipse 80% 90% at 0% 0%, rgba(0, 191, 255, 0.14), transparent 70%),
+            rgba(255, 255, 255, 0.02);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Lichtstreif, der beim Überfahren durch die Kachel läuft */
+.course-chips li::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.12) 50%, transparent 70%);
+    transform: translateX(-110%);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+
+.course-chips li:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 191, 255, 0.65);
+    box-shadow: 0 14px 34px -14px rgba(0, 191, 255, 0.8);
+}
+
+.course-chips li:hover::after {
+    transform: translateX(110%);
+}
+
+.course-num {
+    flex: none;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    color: #00bfff;
+}
+
+/* Kacheln erscheinen nacheinander, sobald der Block eingeblendet wird */
+.visible .course-chips li {
+    animation: tile-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+
+.visible .course-chips li:nth-child(2) { animation-delay: 0.07s; }
+.visible .course-chips li:nth-child(3) { animation-delay: 0.14s; }
+.visible .course-chips li:nth-child(4) { animation-delay: 0.21s; }
+.visible .course-chips li:nth-child(5) { animation-delay: 0.28s; }
+.visible .course-chips li:nth-child(6) { animation-delay: 0.35s; }
+.visible .course-chips li:nth-child(7) { animation-delay: 0.42s; }
 
 /* ---------- Projekt 1: IonQuant (nutzt den Zukunfts-Block als Bühne) ---------- */
 
@@ -228,24 +279,17 @@ h3 {
     text-align: center;
 }
 
-/* Pipeline mit drei Stationen: Linie füllt sich, Stationen gehen nacheinander an */
-.roadmap-3 .roadmap-track {
-    left: 16.66%;
-    right: 16.66%;
-}
+/* Pipeline mit vier Stationen: Linie füllt sich, Stationen gehen nacheinander an */
 
-.roadmap-3 .roadmap-steps {
-    grid-template-columns: repeat(3, 1fr);
-}
 
-.roadmap-3 .roadmap-fill {
+.quant-pipeline .roadmap-fill {
     width: 100%;
     background: linear-gradient(90deg, rgba(0, 191, 255, 0.8), rgba(245, 188, 80, 0.9), rgba(0, 191, 255, 0.8));
     transform: scaleX(0);
     transform-origin: left;
 }
 
-.quant-board.visible .roadmap-3 .roadmap-fill {
+.quant-board.visible .quant-pipeline .roadmap-fill {
     animation: fill-load 1.6s cubic-bezier(0.45, 0, 0.25, 1) 0.2s forwards;
 }
 
@@ -253,17 +297,18 @@ h3 {
     to { transform: scaleX(1); }
 }
 
-.roadmap-3 li.is-gold {
+.quant-pipeline li.is-gold {
     --accent-rgb: 245, 188, 80;
 }
 
-.quant-board.visible .roadmap-3 li .step-dot {
+.quant-board.visible .quant-pipeline li .step-dot {
     animation: station-on 0.5s ease forwards;
 }
 
-.quant-board.visible .roadmap-3 li:nth-child(1) .step-dot { animation-delay: 0.3s; }
-.quant-board.visible .roadmap-3 li:nth-child(2) .step-dot { animation-delay: 0.95s; }
-.quant-board.visible .roadmap-3 li:nth-child(3) .step-dot { animation-delay: 1.6s; }
+.quant-board.visible .quant-pipeline li:nth-child(1) .step-dot { animation-delay: 0.25s; }
+.quant-board.visible .quant-pipeline li:nth-child(2) .step-dot { animation-delay: 0.7s; }
+.quant-board.visible .quant-pipeline li:nth-child(3) .step-dot { animation-delay: 1.15s; }
+.quant-board.visible .quant-pipeline li:nth-child(4) .step-dot { animation-delay: 1.6s; }
 
 @keyframes station-on {
     to {
@@ -273,7 +318,7 @@ h3 {
     }
 }
 
-.roadmap-3 .step-name {
+.quant-pipeline .step-name {
     font-size: 1.2rem;
 }
 
@@ -314,8 +359,8 @@ h3 {
 /* Karten der drei Bausteine (auch für Projekt 2 und 3) */
 .quant-cards {
     display: grid;
-    grid-template-columns: 1fr 1.15fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
     align-items: stretch;
 }
 
@@ -352,18 +397,19 @@ h3 {
 
 .quant-board.visible .quant-card:nth-child(2) { animation-delay: 0.12s; }
 .quant-board.visible .quant-card:nth-child(3) { animation-delay: 0.24s; }
+.quant-board.visible .quant-card:nth-child(4) { animation-delay: 0.36s; }
 
 .quant-card h3 {
     margin: 0;
     color: #fff !important;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .quant-card p {
     margin: 0;
     color: rgba(255, 255, 255, 0.72);
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
     text-align: left;
 }
@@ -722,22 +768,13 @@ h3 {
 
 /* Handy: Pipeline senkrecht, Füllung läuft von oben nach unten */
 @media (max-width: 767.98px) {
-    .roadmap-3 .roadmap-track {
-        left: 7px;
-        right: auto;
-    }
-
-    .roadmap-3 .roadmap-steps {
-        grid-template-columns: 1fr;
-    }
-
-    .roadmap-3 .roadmap-fill {
+    .quant-pipeline .roadmap-fill {
         height: 100%;
         transform: scaleY(0);
         transform-origin: top;
     }
 
-    .quant-board.visible .roadmap-3 .roadmap-fill {
+    .quant-board.visible .quant-pipeline .roadmap-fill {
         animation-name: fill-load-v;
     }
 
@@ -762,22 +799,23 @@ h3 {
         stroke-dashoffset: 0;
     }
 
-    .roadmap-3 .roadmap-fill,
-    .quant-board.visible .roadmap-3 .roadmap-fill {
+    .quant-pipeline .roadmap-fill,
+    .quant-board.visible .quant-pipeline .roadmap-fill {
         animation: none;
         transform: none;
     }
 
-    .quant-board.visible .roadmap-3 li .step-dot,
+    .quant-board.visible .quant-pipeline li .step-dot,
     .quant-board.visible .quant-card,
     .quant-currently::after,
     .currently-bar span,
     .thesis-pulse::after,
-    .thesis-pulse span {
+    .thesis-pulse span,
+    .visible .course-chips li {
         animation: none;
     }
 
-    .roadmap-3 li .step-dot {
+    .quant-pipeline li .step-dot {
         border-color: rgb(var(--accent-rgb));
         background: rgb(var(--accent-rgb));
     }

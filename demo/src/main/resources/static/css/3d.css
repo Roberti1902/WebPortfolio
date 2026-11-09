@@ -173,17 +173,35 @@ h3 {
 /* Creative Stack: wenige Logos, daher größere Kacheln */
 @media (min-width: 576px) {
     .stack-gold .stack-item {
-        width: 132px;
+        width: 160px;
     }
 
     .stack-gold .stack-icon {
-        width: 108px;
-        height: 108px;
-        border-radius: 28px;
+        width: 138px;
+        height: 138px;
+        border-radius: 32px;
     }
 
     .stack-gold .stack-icon img {
-        width: 70px;
-        height: 70px;
+        width: 96px;
+        height: 96px;
+    }
+}
+
+/* Content-Pipeline: Schritte 1–3 stehen, die Linie ist bis Schritt 3 gefüllt */
+.blh-auto .roadmap-fill {
+    width: 66.67%;
+}
+
+.roadmap-steps li.is-done .step-dot {
+    border-color: rgb(var(--accent-rgb));
+    background: rgb(var(--accent-rgb));
+    box-shadow: 0 0 14px rgba(var(--accent-rgb), 0.8);
+}
+
+@media (max-width: 767.98px) {
+    .blh-auto .roadmap-fill {
+        width: auto;
+        height: 66.67%;
     }
 }

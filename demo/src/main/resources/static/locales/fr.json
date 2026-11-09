@@ -66,16 +66,14 @@
     "title": "Développeur logiciel – agents IA & pipelines ML",
     "subtitle": "Je construis avec ❤️ – 1% de mieux chaque jour !",
     "working": "Actuellement en développement logiciel chez <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>",
-    "latestLabel": "Mon dernier projet",
-    "latestTitle": "IonQuant – mon pipeline d'investissement personnel",
-    "latestSub": "Statistiques, règles et une notification sur mon iPhone."
+    "latestLabel": "Mon dernier projet"
   },
   "availability": {
     "title": "Ouvert à de nouveaux défis",
     "text": "Freelance & projets annexes bienvenus – <a href='#contact'>écrivez-moi</a>."
   },
   "about": {
-    "headline": "L'IA est mon instrument.",
+    "headline": "Coder avec l'IA. Penser par soi-même.",
     "paragraph1": "Je développe des logiciels avec l'<span class='highlight'>IA</span> – chaque jour, comme partie intégrante de mon travail. Pour moi, c'est la suite logique : elle permet à un développeur de <span class='highlight'>produire plus</span>, d'<span class='highlight'>apprendre plus vite</span> et de construire ce qui était <span class='highlight'>impossible</span> avant.",
     "paragraph2": "Mais j'apprends <span class='highlight'>avec</span> l'IA au lieu d'être remplacé <span class='highlight'>par</span> elle. Grâce à des plugins d'agent harness, je me fais <span class='highlight'>interroger</span> pendant que je code – pour ne jamais la suivre aveuglément. Qui comprend l'IA et son <span class='highlight'>contexte</span> devient inarrêtable.",
     "paragraph3": "Ce qui me motive : créer une <span class='highlight'>vraie valeur</span> avec l'IA – pour les entreprises et pour les gens. À mon avis, nous n'avons exploité que <span class='highlight'>0,01 %</span> de son potentiel, à tous les niveaux."
@@ -202,7 +200,8 @@
     },
     "section3": {
       "headline3": "Udemy – en autodidacte (2024–aujourd'hui)",
-      "content1": "L'université pose la théorie – <span class='highlight'>Udemy</span> a apporté la <span class='highlight'>pratique</span>. Cours après cours, je l'ai appliquée dans <span class='highlight'>mes propres projets</span> : clean code, Git, débogage, vrais backends."
+      "content1": "L'université pose la théorie – <span class='highlight'>Udemy</span> a apporté la <span class='highlight'>pratique</span>. Cours après cours, j'ai développé ma <span class='highlight'>compréhension des systèmes</span> et de vrais réflexes de développeur – toujours orienté application.",
+      "content2": "Ce que j'apprenais passait directement dans <span class='highlight'>mes propres projets</span>, des applications web aux backends : <span class='highlight'>clean code</span>, Git et débogage en conditions réelles – pas seulement comprendre, mais <span class='highlight'>livrer</span>."
     },
     "section4": {
       "headline4": "Certifications acquises",
@@ -210,25 +209,25 @@
       "content2": "<span class='highlight'>Machine & Deep Learning avec Python</span> : NumPy, Pandas, PyTorch, TensorFlow",
       "content3": "<span class='highlight'>Structures de données & algorithmes</span>, concepts Linux"
     },
-    "stackLegend": "En lumière : mon Big 4",
+    "stackLegend": "En lumière : mon stack principal",
     "aiTitle": "IA & automatisation",
     "quant": {
       "pill": "Projet 01 · En cours",
       "kicker": "Mon pipeline d'investissement personnel",
-      "lead": "Trois briques, une question : cette action a-t-elle du potentiel – <span class='highlight'>et est-ce que je me fais des illusions ?</span>",
-      "s1Time": "01 · Statistiques",
+      "lead": "Quatre briques, une question : cette action a-t-elle du potentiel – <span class='highlight'>et est-ce que je me fais des illusions ?</span>",
+      "s1Time": "02 · Statistiques",
       "s1Note": "Probabilité & risque",
-      "s2Time": "02 · Décision",
+      "s2Time": "03 · Décision",
       "s2Note": "Des règles, pas d'IA",
-      "s3Time": "03 · Push",
+      "s3Time": "04 · Push",
       "s3Note": "Directement sur mon iPhone",
       "disclaimer": "<strong>Ceci n'est pas un conseil en investissement.</strong> Aucun ordre n'est envoyé. Les backtests utilisent l'univers d'actions actuel (<strong>biais du survivant</strong>) – les résultats paraissent plutôt meilleurs que la réalité.",
-      "c1Num": "01 · Statistiques",
+      "c1Num": "02 · Statistiques",
       "c1Sub": "Outil d'analyse d'actions avec modèle statistique",
       "c1Text": "Analyse une action à partir de son propre historique de cours : <span class='highlight'>probabilité haussière/baissière</span> et <span class='highlight'>risque</span> de 1 jour à 1 an – plus le <span class='highlight'>rang S&P 500</span>, les fondamentaux, un backtest et un portefeuille fictif.",
       "c1Honest": "Le résultat honnête : pour META et NVDA, aucune direction n'est prouvée – et l'outil le montre au lieu de le cacher.",
       "snapshot": "Instantané en ligne ↗",
-      "c2Num": "02 · Décision",
+      "c2Num": "03 · Décision",
       "c2Sub": "Moteur de règles avec backtest walk-forward",
       "c2Text": "Des indicateurs – SMA 20/200, RSI, ATR, force relative – alimentent un <span class='highlight'>décideur déterministe</span>. Aucune IA dans la décision. Il indique en <span class='highlight'>%</span> à quel point une action est proche d'un signal d'achat, fixe un <span class='highlight'>objectif de vente dynamique</span> à partir des signaux passés et n'a besoin que des cours.",
       "c2Check1": "Walk-forward : règles fixées sur les données d'entraînement, seule la période de test compte",
@@ -236,7 +235,7 @@
       "c2Check3": "Alerte d'overfitting dès que trop de variantes sont testées",
       "c2Quote": "« Je construis des outils qui m'empêchent de me mentir dans un backtest. »",
       "repoSoon": "Repo bientôt disponible",
-      "c3Num": "03 · Push",
+      "c3Num": "04 · Push",
       "c3Sub": "Notifications push pour iPhone",
       "c3Text": "Envoie les signaux sur mon iPhone avec des <span class='highlight'>boutons d'action</span>. Les commandes reviennent via un <span class='highlight'>topic de réponse</span> – status, top, achats et ventes, pause –, une <span class='highlight'>outbox</span> conserve les messages jusqu'à leur livraison et les ID déjà traités bloquent les <span class='highlight'>doublons</span>.",
       "skillTag": "+ Skill",
@@ -248,13 +247,19 @@
       "priv2": "Tâches planifiées",
       "priv3": "Journal & CHECK des signaux",
       "priv4": "Liste Scalable",
-      "priv5": "Scraper d'actualités",
       "curNext": "Prochaines étapes",
       "next1": "Améliorer le pipeline et intégrer de nouveaux programmes",
       "next2": "Tester sur les données d'entraînement et hors échantillon",
       "next3": "Ouvrir à d'autres marchés",
       "next4": "Évaluer des combinaisons d'indicateurs par backtest et ML sur mon propre GPU",
-      "next5": "Scraper d'actualités avec analyse de sentiment"
+      "next5": "Intégrer les actualités évaluées dans les rapports de décision",
+      "s0Time": "01 · Actualités",
+      "s0Note": "Événements évalués par LLM",
+      "c0Num": "01 · Actualités",
+      "c0Sub": "Scraper d'actualités avec triage par LLM",
+      "c0Text": "Récupère toutes les 30 minutes les actualités de marché via des flux RSS, fusionne les doublons et les associe aux tickers. Un LLM <span class='highlight'>trie</span> chaque événement et évalue son <span class='highlight'>impact</span> par ticker – en JSON, validé avec <span class='highlight'>Pydantic</span> ; les réponses invalides sont rejetées et journalisées.",
+      "c0Check1": "Tourne en local sur Ollama (ma RTX 3060) ou sur Claude avec prompt caching et budget journalier",
+      "c0Check2": "Évaluation intégrée : taux de réussite après 1, 5 et 20 jours de bourse"
     },
     "p2": {
       "num": "Projet 02 · NLP",
