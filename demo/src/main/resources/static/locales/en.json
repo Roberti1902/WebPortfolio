@@ -24,7 +24,9 @@
   },
   "service": {
     "status": "Coming soon",
-    "title": "1 product. 30 visuals."
+    "title": "Cutless",
+    "question": "Why still cut it yourself?",
+    "sub": "Automated, personalised content editing – and process automation for companies."
   },
   "cta": {
     "request3d": "Request a 3D project",
@@ -50,28 +52,31 @@
   "hero": {
     "cta": "Get in touch",
     "ctaWork": "See my work",
-    "title": "Software Developer & CGI Generalist",
-    "subtitle": "Coding with ❤️, improving 1% daily!",
-    "working": "Currently in software development at <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>"
+    "title": "Software Developer for AI Agents & ML Pipelines",
+    "subtitle": "Building with ❤️, improving 1% daily!",
+    "working": "Currently in software development at <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>",
+    "latestLabel": "My latest project",
+    "latestTitle": "IonQuant – my personal investment pipeline",
+    "latestSub": "Statistics, rules and a push to my iPhone."
   },
   "availability": {
     "title": "Open to new opportunities",
     "text": "Available for freelance & side projects – <a href='#contact'>send me a request</a>."
   },
   "about": {
-    "headline": "State of Mind",
-    "paragraph1": "I've always thought in <span class='highlight'>logical systems</span> – and want to understand where <span class='highlight'>technology</span> turns into <span class='highlight'>design</span>.",
-    "paragraph2": "I study <span class='highlight'>computer science</span> full-time and work as a <span class='highlight'>developer</span> alongside. I found my counterbalance in <span class='highlight'>3D design</span> – where I truly thrive creatively.",
-    "paragraph3": "To me, <span class='highlight'>logic</span> and <span class='highlight'>creativity</span> belong together. I look at projects <span class='highlight'>holistically</span> – and want to do more than use tools: I want to <span class='highlight'>rethink</span> them."
+    "headline": "AI is my instrument.",
+    "paragraph1": "I build software with <span class='highlight'>AI</span> – every day, as a fixed part of how I work. To me it's the next logical step: it lets a developer <span class='highlight'>ship more</span>, <span class='highlight'>learn faster</span> and build things that simply <span class='highlight'>weren't possible</span> before.",
+    "paragraph2": "But I learn <span class='highlight'>with</span> AI instead of being replaced <span class='highlight'>by</span> it. With agent-harness plugins I get <span class='highlight'>quizzed</span> while I code – so I never follow it blindly. Whoever understands both the AI and the <span class='highlight'>context</span> can't be stopped.",
+    "paragraph3": "What drives me: creating <span class='highlight'>real value</span> with AI – for companies and for people. In my view we've tapped maybe <span class='highlight'>0.01 %</span> of its potential, on every level."
   },
   "logic": {
     "headline": "Logical Side",
-    "paragraph": "<span class=\"highlight\">IT</span> is the foundation of the <span class=\"highlight\">future</span>. <span class=\"highlight\">Automation</span> and <span class=\"highlight\">AI</span> are transforming workflows – and expanding what humans can achieve.<br><br>Broadly skilled in <span class='highlight'>Java</span>, <span class='highlight'>C</span>, <span class='highlight'>TypeScript</span> and <span class='highlight'>Python</span> – but what really counts is the <span class='highlight'>logic behind software</span>: understanding <span class='highlight'>concepts</span> means being tied to no language. Plus <span class='highlight'>Spring</span>, <span class='highlight'>React</span> and <span class='highlight'>Angular</span>.<br><br>I'm driven to understand the principles behind <span class=\"highlight\">technologies</span> – to actively shape the <span class=\"highlight\">digital future</span>.",
+    "paragraph": "My <span class='highlight'>Big 4</span>: <span class='highlight'>Java</span>, <span class='highlight'>Python</span>, <span class='highlight'>TypeScript</span> and <span class='highlight'>React</span> – plus <span class='highlight'>Spring</span> for the backend. What really counts is the <span class='highlight'>logic behind software</span>, not the language.<br><br>Alongside university I build <span class='highlight'>finance-driven projects</span>: ML/DL on market data, AI automation, a <span class='highlight'>portfolio optimiser</span> and an <span class='highlight'>investment pipeline</span> that runs on rules, not gut feeling.<br><br>I build <span class='highlight'>agents</span> and put them to work in my own pipelines – and I want to know exactly <span class='highlight'>why</span> they do what they do.",
     "btn": "Tech Portfolio & Projects"
   },
   "creative": {
     "headline": "Creative Side",
-    "paragraph": "To me, <span class='highlight'>3D design</span> connects <span class='highlight'>reality</span> and <span class='highlight'>digital space</span>. Inspired by <span class='highlight'>Studio Ghibli</span>, I started with <span class='highlight'>Blender</span> – later adding <span class='highlight'>Cinema 4D</span> and <span class='highlight'>Marvelous Designer</span>.<br><br>I'm fascinated by the fusion of <span class=\"highlight\">technology</span> and <span class=\"highlight\">design</span>: <span class=\"highlight\">procedural textures</span>, <span class=\"highlight\">precise modeling</span>, and <span class=\"highlight\">systemic thinking</span> in the creative process.<br><br><span class='highlight'>AI</span> is changing the creative process – I combine it with <span class='highlight'>Blender MCPs</span> for maximum value and share my knowledge on <span class='highlight'>social media</span> to inspire others.",
+    "paragraph": "To me, <span class='highlight'>3D design</span> connects <span class='highlight'>reality</span> and <span class='highlight'>digital space</span>. Inspired by <span class='highlight'>Studio Ghibli</span>, I started with <span class='highlight'>Blender</span> – later adding <span class='highlight'>Cinema 4D</span> and <span class='highlight'>Marvelous Designer</span>.<br><br><span class='highlight'>Creative work</span> matters enormously to me. AI shouldn't replace it – it should take the <span class='highlight'>repetitive tasks</span> off the table and give people <span class='highlight'>more room to create</span>. More output – and art stays art.<br><br><span class='highlight'>AI</span> is changing the creative process – I combine it with <span class='highlight'>Blender MCPs</span> for maximum value and share my knowledge on <span class='highlight'>social media</span> to inspire others.",
     "btn": "3D Portfolio & Projects"
   },
   "stackPage": {

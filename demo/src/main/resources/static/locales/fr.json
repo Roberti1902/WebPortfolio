@@ -24,7 +24,9 @@
   },
   "service": {
     "status": "Bientôt disponible",
-    "title": "1 produit. 30 visuels."
+    "title": "Cutless",
+    "question": "Pourquoi monter soi-même ?",
+    "sub": "Montage de contenu automatisé et personnalisé – et automatisation des processus pour les entreprises."
   },
   "cta": {
     "request3d": "Demander un projet 3D",
@@ -61,28 +63,31 @@
   "hero": {
     "cta": "Me contacter",
     "ctaWork": "Voir mon travail",
-    "title": "Développeur logiciel & CGI Généraliste",
-    "subtitle": "Avec ❤️ pour le code – m’améliorer de 1% chaque jour!",
-    "working": "Actuellement en développement logiciel chez <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>"
+    "title": "Développeur logiciel – agents IA & pipelines ML",
+    "subtitle": "Je construis avec ❤️ – 1% de mieux chaque jour !",
+    "working": "Actuellement en développement logiciel chez <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>",
+    "latestLabel": "Mon dernier projet",
+    "latestTitle": "IonQuant – mon pipeline d'investissement personnel",
+    "latestSub": "Statistiques, règles et une notification sur mon iPhone."
   },
   "availability": {
     "title": "Ouvert à de nouveaux défis",
     "text": "Freelance & projets annexes bienvenus – <a href='#contact'>écrivez-moi</a>."
   },
   "about": {
-    "headline": "État d’esprit",
-    "paragraph1": "Je pense depuis toujours en <span class='highlight'>systèmes logiques</span> – et je veux comprendre où la <span class='highlight'>technique</span> devient <span class='highlight'>design</span>.",
-    "paragraph2": "J'étudie l'<span class='highlight'>informatique</span> à temps plein et travaille en parallèle comme <span class='highlight'>développeur</span>. J'ai trouvé mon contrepoint dans le <span class='highlight'>design 3D</span> – là où je m'épanouis.",
-    "paragraph3": "Pour moi, <span class='highlight'>logique</span> et <span class='highlight'>créativité</span> vont ensemble. J'aborde les projets de façon <span class='highlight'>globale</span> – et ne veux pas seulement utiliser des outils, mais les <span class='highlight'>repenser</span>."
+    "headline": "L'IA est mon instrument.",
+    "paragraph1": "Je développe des logiciels avec l'<span class='highlight'>IA</span> – chaque jour, comme partie intégrante de mon travail. Pour moi, c'est la suite logique : elle permet à un développeur de <span class='highlight'>produire plus</span>, d'<span class='highlight'>apprendre plus vite</span> et de construire ce qui était <span class='highlight'>impossible</span> avant.",
+    "paragraph2": "Mais j'apprends <span class='highlight'>avec</span> l'IA au lieu d'être remplacé <span class='highlight'>par</span> elle. Grâce à des plugins d'agent harness, je me fais <span class='highlight'>interroger</span> pendant que je code – pour ne jamais la suivre aveuglément. Qui comprend l'IA et son <span class='highlight'>contexte</span> devient inarrêtable.",
+    "paragraph3": "Ce qui me motive : créer une <span class='highlight'>vraie valeur</span> avec l'IA – pour les entreprises et pour les gens. À mon avis, nous n'avons exploité que <span class='highlight'>0,01 %</span> de son potentiel, à tous les niveaux."
   },
   "logic": {
     "headline": "Côté logique",
-    "paragraph": "<span class=\"highlight\">L’IT</span> est le socle de l’<span class=\"highlight\">avenir</span>. <span class=\"highlight\">Automatisation</span> et <span class=\"highlight\">IA</span> transforment les processus – et repoussent les limites de nos capacités.<br><br>Polyvalent avec <span class='highlight'>Java</span>, <span class='highlight'>C</span>, <span class='highlight'>TypeScript</span> et <span class='highlight'>Python</span> – mais l'essentiel, c'est la <span class='highlight'>logique derrière le logiciel</span> : comprendre les <span class='highlight'>concepts</span>, c'est n'être lié à aucun langage. S'y ajoutent <span class='highlight'>Spring</span>, <span class='highlight'>React</span> et <span class='highlight'>Angular</span>.<br><br>Mon moteur : comprendre les principes des <span class=\"highlight\">technologies</span> pour façonner activement le <span class=\"highlight\">monde numérique</span>.",
+    "paragraph": "Mon <span class='highlight'>Big 4</span> : <span class='highlight'>Java</span>, <span class='highlight'>Python</span>, <span class='highlight'>TypeScript</span> et <span class='highlight'>React</span> – plus <span class='highlight'>Spring</span> pour le backend. Ce qui compte vraiment, c'est la <span class='highlight'>logique derrière le logiciel</span>, pas le langage.<br><br>En parallèle de l'université, je mène des <span class='highlight'>projets liés à la finance</span> : ML/DL sur des données de marché, automatisation par l'IA, un <span class='highlight'>optimiseur de portefeuille</span> et un <span class='highlight'>pipeline d'investissement</span> qui suit des règles, pas l'intuition.<br><br>Je construis des <span class='highlight'>agents</span> et je les fais travailler dans mes propres pipelines – en voulant savoir exactement <span class='highlight'>pourquoi</span> ils font ce qu'ils font.",
     "btn": "Tech & Projets"
   },
   "creative": {
     "headline": "Côté créatif",
-    "paragraph": "Pour moi, le <span class='highlight'>design 3D</span> relie la <span class='highlight'>réalité</span> et l'<span class='highlight'>espace numérique</span>. Inspiré par le <span class='highlight'>Studio Ghibli</span>, j'ai commencé avec <span class='highlight'>Blender</span> – puis ajouté <span class='highlight'>Cinema 4D</span> et <span class='highlight'>Marvelous Designer</span>.<br><br>J’adore l’alliance de la <span class=\"highlight\">technologie</span> et de l’<span class=\"highlight\">esthétique</span> : <span class=\"highlight\">textures procédurales</span>, <span class=\"highlight\">modélisation précise</span> et <span class=\"highlight\">pensée systémique</span>.<br><br>L'<span class='highlight'>IA</span> transforme le processus créatif – je la combine avec les <span class='highlight'>MCP Blender</span> pour un maximum de valeur et partage mon savoir sur les <span class='highlight'>réseaux sociaux</span> pour inspirer les autres.",
+    "paragraph": "Pour moi, le <span class='highlight'>design 3D</span> relie la <span class='highlight'>réalité</span> et l'<span class='highlight'>espace numérique</span>. Inspiré par le <span class='highlight'>Studio Ghibli</span>, j'ai commencé avec <span class='highlight'>Blender</span> – puis ajouté <span class='highlight'>Cinema 4D</span> et <span class='highlight'>Marvelous Designer</span>.<br><br>Le <span class='highlight'>travail créatif</span> compte énormément pour moi. L'IA ne doit pas le remplacer, mais éliminer les <span class='highlight'>tâches répétitives</span> et laisser aux humains <span class='highlight'>plus de place pour créer</span>. Plus de production – et l'art reste de l'art.<br><br>L'<span class='highlight'>IA</span> transforme le processus créatif – je la combine avec les <span class='highlight'>MCP Blender</span> pour un maximum de valeur et partage mon savoir sur les <span class='highlight'>réseaux sociaux</span> pour inspirer les autres.",
     "btn": "Portefeuille 3D"
   },
   "stackPage": {

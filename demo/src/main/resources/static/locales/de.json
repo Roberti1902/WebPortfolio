@@ -24,7 +24,9 @@
   },
   "service": {
     "status": "Bald verfügbar",
-    "title": "1 Produkt. 30 Visuals."
+    "title": "Cutless",
+    "question": "Warum noch selbst cutten?",
+    "sub": "Automatisierter, personalisierter Content-Schnitt – und Prozessautomatisierung für Unternehmen."
   },
   "cta": {
     "request3d": "3D-Projekt anfragen",
@@ -50,28 +52,31 @@
   "hero": {
     "cta": "Kontakt aufnehmen",
     "ctaWork": "Meine Arbeit ansehen",
-    "title": "Softwareentwickler & CGI Generalist",
-    "subtitle": "Mit ❤️ für Code – täglich 1% besser!",
-    "working": "Derzeit in der Softwareentwicklung bei der <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>"
+    "title": "Softwareentwickler für KI-Agents & ML-Pipelines",
+    "subtitle": "Mit ❤️ am Bauen – täglich 1% besser!",
+    "working": "Derzeit in der Softwareentwicklung bei der <a href='https://www.linkedin.com/company/axa/' target='_blank' rel='noopener'>AXA</a>",
+    "latestLabel": "Mein neuestes Projekt",
+    "latestTitle": "IonQuant – meine persönliche Investment-Pipeline",
+    "latestSub": "Statistik, Regeln und ein Push aufs iPhone."
   },
   "availability": {
     "title": "Offen für neue Herausforderungen",
     "text": "Freelance & Nebenprojekte willkommen – <a href='#contact'>schreiben Sie mir</a>."
   },
   "about": {
-    "headline": "State of Mind",
-    "paragraph1": "Ich denke seit jeher in <span class='highlight'>logischen Systemen</span> – und will verstehen, wo <span class='highlight'>Technik</span> in <span class='highlight'>Design</span> übergeht.",
-    "paragraph2": "Ich studiere <span class='highlight'>Informatik</span> in Vollzeit und arbeite parallel als <span class='highlight'>Developer</span>. Meinen Kontrast fand ich im <span class='highlight'>3D-Design</span> – dort blühe ich kreativ auf.",
-    "paragraph3": "Für mich gehören <span class='highlight'>Logik</span> und <span class='highlight'>Kreativität</span> zusammen. Ich betrachte Projekte <span class='highlight'>ganzheitlich</span> – und will nicht nur Tools bedienen, sondern <span class='highlight'>neu denken</span>."
+    "headline": "KI ist mein Instrument.",
+    "paragraph1": "Ich entwickle Software mit <span class='highlight'>KI</span> – jeden Tag, als festen Teil meiner Arbeit. Für mich ist das der nächste logische Schritt: Sie lässt Entwickler <span class='highlight'>mehr leisten</span>, <span class='highlight'>schneller lernen</span> und Dinge bauen, die vorher <span class='highlight'>nicht möglich</span> waren.",
+    "paragraph2": "Dabei lerne ich <span class='highlight'>mit</span> KI, statt <span class='highlight'>durch</span> sie ersetzt zu werden. Mit Agent-Harness-Plugins lasse ich mich beim Programmieren <span class='highlight'>abfragen</span> – damit ich ihr nie blind folge. Wer die KI und den <span class='highlight'>Kontext</span> versteht, ist nicht aufzuhalten.",
+    "paragraph3": "Mein Antrieb: mit KI <span class='highlight'>echten Mehrwert</span> schaffen – für Unternehmen und für Menschen. Meiner Meinung nach sind erst <span class='highlight'>0,01 %</span> ihres Potenzials ausgeschöpft, auf jeder Ebene."
   },
   "logic": {
     "headline": "Logische Seite",
-    "paragraph": "<span class=\"highlight\">IT</span> ist für mich das Fundament der <span class=\"highlight\">Zukunft</span>. <span class=\"highlight\">Automatisierung</span> und <span class=\"highlight\">KI</span> verändern Arbeitsprozesse – und erweitern, was Menschen leisten können.<br><br>Breit aufgestellt mit <span class='highlight'>Java</span>, <span class='highlight'>C</span>, <span class='highlight'>TypeScript</span> und <span class='highlight'>Python</span> – doch entscheidend ist die <span class='highlight'>Logik hinter Software</span>: Wer <span class='highlight'>Konzepte</span> versteht, ist an keine Sprache gebunden. Dazu <span class='highlight'>Spring</span>, <span class='highlight'>React</span> und <span class='highlight'>Angular</span>.<br><br>Mich treibt an, die Prinzipien hinter <span class=\"highlight\">Technologien</span> zu verstehen – um die <span class=\"highlight\">digitale Zukunft</span> aktiv mitzugestalten.",
+    "paragraph": "Meine <span class='highlight'>Big 4</span>: <span class='highlight'>Java</span>, <span class='highlight'>Python</span>, <span class='highlight'>TypeScript</span> und <span class='highlight'>React</span> – dazu <span class='highlight'>Spring</span> fürs Backend. Was wirklich zählt, ist die <span class='highlight'>Logik hinter der Software</span>, nicht die Sprache.<br><br>Neben der Uni baue ich <span class='highlight'>finanzgestützte Projekte</span>: ML/DL auf Marktdaten, KI-Automatisierung, einen <span class='highlight'>Portfolio-Optimierer</span> und eine <span class='highlight'>Investment-Pipeline</span>, die nach Regeln läuft statt nach Bauchgefühl.<br><br>Ich baue <span class='highlight'>Agents</span> und setze sie in meinen eigenen Pipelines ein – und will genau wissen, <span class='highlight'>warum</span> sie tun, was sie tun.",
     "btn": "Tech Portfolio & Projekte"
   },
   "creative": {
     "headline": "Kreative Seite",
-    "paragraph": "<span class='highlight'>3D-Design</span> verbindet für mich <span class='highlight'>Realität</span> und <span class='highlight'>digitalen Raum</span>. Inspiriert von <span class='highlight'>Studio Ghibli</span> startete ich mit <span class='highlight'>Blender</span> – später kamen <span class='highlight'>Cinema 4D</span> und <span class='highlight'>Marvelous Designer</span> dazu.<br><br>Mich begeistert die Verbindung von <span class=\"highlight\">Technik</span> und <span class=\"highlight\">Gestaltung</span>: <span class=\"highlight\">prozedurale Texturen</span>, <span class=\"highlight\">präzises Modelling</span> und <span class=\"highlight\">systemisches Denken</span> im kreativen Prozess.<br><br><span class='highlight'>KI</span> verändert den kreativen Prozess – ich verbinde sie mit <span class='highlight'>Blender-MCPs</span> für maximalen Mehrwert und teile mein Wissen auf <span class='highlight'>Social Media</span>, um andere zu inspirieren.",
+    "paragraph": "<span class='highlight'>3D-Design</span> verbindet für mich <span class='highlight'>Realität</span> und <span class='highlight'>digitalen Raum</span>. Inspiriert von <span class='highlight'>Studio Ghibli</span> startete ich mit <span class='highlight'>Blender</span> – später kamen <span class='highlight'>Cinema 4D</span> und <span class='highlight'>Marvelous Designer</span> dazu.<br><br><span class='highlight'>Kreative Arbeit</span> ist mir enorm wichtig. KI soll sie nicht ersetzen, sondern <span class='highlight'>repetitive Aufgaben</span> abnehmen und dem Menschen <span class='highlight'>mehr Raum für Kreativität</span> geben. Mehr Output – und Kunst bleibt Kunst.<br><br><span class='highlight'>KI</span> verändert den kreativen Prozess – ich verbinde sie mit <span class='highlight'>Blender-MCPs</span> für maximalen Mehrwert und teile mein Wissen auf <span class='highlight'>Social Media</span>, um andere zu inspirieren.",
     "btn": "3D Portfolio & Projekte"
   },
   "stackPage": {
