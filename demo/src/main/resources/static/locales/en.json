@@ -74,15 +74,9 @@
     "paragraph": "To me, <span class='highlight'>3D design</span> connects <span class='highlight'>reality</span> and <span class='highlight'>digital space</span>. Inspired by <span class='highlight'>Studio Ghibli</span>, I started with <span class='highlight'>Blender</span> – later adding <span class='highlight'>Cinema 4D</span> and <span class='highlight'>Marvelous Designer</span>.<br><br>I'm fascinated by the fusion of <span class=\"highlight\">technology</span> and <span class=\"highlight\">design</span>: <span class=\"highlight\">procedural textures</span>, <span class=\"highlight\">precise modeling</span>, and <span class=\"highlight\">systemic thinking</span> in the creative process.<br><br><span class='highlight'>AI</span> is changing the creative process – I combine it with <span class='highlight'>Blender MCPs</span> for maximum value and share my knowledge on <span class='highlight'>social media</span> to inspire others.",
     "btn": "3D Portfolio & Projects"
   },
-
-
-
-
-
   "stackPage": {
     "headline": "3D Stack",
     "programsTitle": "Programs",
-
     "section1": {
       "headline": "Developed through consistent self-study",
       "paragraph1": "Creative work has driven me since childhood – from editing videos in <span class='highlight'>Windows Movie Maker</span> to <span class='highlight'>Adobe</span>. <span class='highlight'>Studio Ghibli</span> led me to <span class='highlight'>3D</span>: <span class='highlight'>computing</span> light, shadow and motion digitally – it's all <span class='highlight'>data</span> and <span class='highlight'>vectors</span>.",
@@ -121,7 +115,7 @@
         "button": "Project link",
         "status": "Online!"
       }
-    },
+    },
     "future": {
       "headline": "What's next",
       "pill": "In the pipeline",
@@ -147,21 +141,19 @@
       "ctaService": "Tech × 3D: 1 product. 30 visuals."
     }
   },
-
-
-
-
-
   "technicalPage": {
     "headline": "Tech Stack",
     "programmingLanguagesTitle": "Programming Languages",
     "frameworksTitle": "Frameworks & Libraries",
-    "toolsTitle": "Tools & Platforms",
     "section1": {
       "headline1": "Selected Courses",
-      "content1": "<span class='highlight'>Programming I–III</span> (<span class='highlight'>Java</span>, incl. <span class='highlight'>web development</span>) (2023)",
-      "content2": "<span class='highlight'>Algorithms & Data Structures</span> (2023)",
-      "content3": "<span class='highlight'>Deep Learning</span> and <span class='highlight'>Python for NLP</span> (2024)"
+      "c1": "Programming I–III",
+      "c2": "ALDAT – Algorithms & Data Structures",
+      "c3": "Data Science 1",
+      "c4": "Data Science 2",
+      "c5": "Introduction to NLP",
+      "c6": "Python for NLP",
+      "c7": "Deep Learning"
     },
     "section2": {
       "headline2": "Heinrich Heine University Düsseldorf (2023–present)",
@@ -170,69 +162,99 @@
     },
     "section3": {
       "headline3": "Udemy – self-taught (2024–present)",
-      "content1": "University doesn't fully prepare you for practice – so I looked for <span class='highlight'>higher-quality learning formats</span> and found them on <span class='highlight'>Udemy</span>.",
-      "content2": "There I built up <span class='highlight'>logical thinking</span>, <span class='highlight'>system understanding</span> and real <span class='highlight'>developer practice</span> in a structured way – course by course, focused on <span class='highlight'>application</span>.",
-      "content3": "I apply what I learn directly in <span class='highlight'>my own projects</span> – from <span class='highlight'>web applications</span> to complex <span class='highlight'>backend structures</span>.",
-      "content4": "With <span class='highlight'>clean code</span>, <span class='highlight'>Git versioning</span> and <span class='highlight'>debugging</span> in realistic scenarios – not just understanding, but <span class='highlight'>delivering professionally</span>."
+      "content1": "University lays the theory – <span class='highlight'>Udemy</span> filled in the <span class='highlight'>practice</span>. Course by course I applied it in <span class='highlight'>my own projects</span>: clean code, Git, debugging, real backends."
     },
     "section4": {
       "headline4": "Completed Courses",
-      "content1": "<span class=\"highlight\">FullStack Web Development</span>: <span class=\"highlight\">React</span>, <span class=\"highlight\">Angular</span>, <span class=\"highlight\">JavaScript</span>, <span class=\"highlight\">HTML</span>, <span class=\"highlight\">CSS</span>, <span class=\"highlight\">Node.js</span>, <span class=\"highlight\">PostgreSQL</span>, <span class=\"highlight\">Web3</span>, <span class=\"highlight\">DApps</span>",
-      "content2": "<span class=\"highlight\">Machine Learning & Deep Learning with Python</span>: <span class=\"highlight\">Numpy</span>, <span class=\"highlight\">Pandas</span>, <span class=\"highlight\">Matplotlib</span>, <span class=\"highlight\">PyTorch</span>, <span class=\"highlight\">TensorFlow</span>",
-      "content3": "<span class=\"highlight\">Data Structures & Algorithms</span>, <span class=\"highlight\">Linux concepts</span>, and advanced-level <span class=\"highlight\">system understanding</span>."
+      "content1": "<span class='highlight'>FullStack Web Development</span>: React, Node.js, PostgreSQL, Web3",
+      "content2": "<span class='highlight'>Machine & Deep Learning with Python</span>: NumPy, Pandas, PyTorch, TensorFlow",
+      "content3": "<span class='highlight'>Data Structures & Algorithms</span>, Linux concepts"
     },
-    "projects": {
-      "project1": {
-        "title": "Project 1: Building an AI system for data analysis (Python, TensorFlow, PyTorch)",
-        "paragraph1": "– Development of robust <span class=\"highlight\">data pipelines</span> and deep understanding of complex <span class=\"highlight\">machine learning models</span> to extract relevant patterns from large, heterogeneous <span class=\"highlight\">datasets</span>.",
-        "paragraph2": "– Efficient use of <span class=\"highlight\">TensorFlow</span> and <span class=\"highlight\">PyTorch</span> for <span class=\"highlight\">implementing</span>, <span class=\"highlight\">optimizing</span>, and <span class=\"highlight\">validating neural networks</span> considering <span class=\"highlight\">training time</span>, <span class=\"highlight\">overfitting</span>, and <span class=\"highlight\">model generalization</span>.",
-        "description": "View project:",
-        "button1": "programming process",
-        "badge1": "Currently in work!"
-      },
-      "project2": {
-        "title": "Project 2: Personal Web Portfolio (Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript)",
-        "paragraph1": "– Server-rendered with <span class='highlight'>Spring Boot</span> and <span class='highlight'>Thymeleaf</span>: shared <span class='highlight'>layout fragments</span> instead of copy-paste, one codebase for 8 pages.",
-        "paragraph2": "– Custom frontend without a framework: <span class='highlight'>responsive design</span>, glassmorphism UI, three languages (DE/EN/FR) in <span class='highlight'>vanilla JavaScript</span> and optimized WebP images.",
-        "description": "View project:",
-        "button1": "programming process",
-        "badge1": "Online!"
-      },
-      "project3": {
-        "title": "Project 3: REST API with Spring Boot (Spring (Boot), Java, JUnit, REST)",
-        "paragraph1": "– Architecture of a <span class=\"highlight\">REST-compliant API</span> with thoughtful <span class=\"highlight\">domain model</span>, <span class=\"highlight\">exception handling</span>, and persistent <span class=\"highlight\">data integration</span> via <span class=\"highlight\">Spring Data JPA</span>.",
-        "paragraph2": "– <span class=\"highlight\">Test-driven development</span> with <span class=\"highlight\">JUnit</span> and <span class=\"highlight\">integration tests</span> to ensure <span class=\"highlight\">stability</span>, <span class=\"highlight\">error resilience</span>, and clean <span class=\"highlight\">interfaces</span>.",
-        "description": "View project:",
-        "button1": "programming process",
-        "badge1": "Currently in work!"
-      }
-    },
+    "stackLegend": "Glowing: my Big 4",
+    "aiTitle": "AI & Automation",
+    "quant": {
+      "pill": "Project 01 · In work",
+      "kicker": "My personal investment pipeline",
+      "lead": "Three building blocks, one question: does this stock have potential – <span class='highlight'>and am I fooling myself?</span>",
+      "s1Time": "01 · Statistics",
+      "s1Note": "Probability & risk",
+      "s2Time": "02 · Decision",
+      "s2Note": "Rules, no AI",
+      "s3Time": "03 · Push",
+      "s3Note": "Straight to my iPhone",
+      "disclaimer": "<strong>Not financial advice.</strong> No orders are sent. Backtests use today's stock universe (<strong>survivorship bias</strong>) – results tend to look better than reality.",
+      "c1Num": "01 · Statistics",
+      "c1Sub": "Stock analysis tool with a statistical model",
+      "c1Text": "Analyses a stock from its own price history: <span class='highlight'>bullish/bearish probability</span> and <span class='highlight'>risk</span> from 1 day to 1 year – plus <span class='highlight'>S&P 500 rank</span>, fundamentals, backtest and a paper portfolio.",
+      "c1Honest": "The honest result: for META and NVDA no direction is proven – and the tool shows that instead of hiding it.",
+      "snapshot": "Live snapshot ↗",
+      "c2Num": "02 · Decision",
+      "c2Sub": "Rule engine with walk-forward backtest",
+      "c2Text": "Indicators – SMA 20/200, RSI, ATR, relative strength – feed a <span class='highlight'>deterministic decider</span>. No AI in the decision. It shows how close a stock is to a buy signal in <span class='highlight'>%</span>, sets a <span class='highlight'>dynamic sell target</span> from past signals and needs nothing but price data.",
+      "c2Check1": "Walk-forward: rules fixed on training data, only the test period counts",
+      "c2Check2": "Trading costs included in every result",
+      "c2Check3": "Overfitting warning once too many variants are tested",
+      "c2Quote": "“I build tools that stop me from fooling myself in a backtest.”",
+      "repoSoon": "Repo coming soon",
+      "c3Num": "03 · Push",
+      "c3Sub": "Push notifications for iPhone",
+      "c3Text": "Sends signals to my iPhone with <span class='highlight'>action buttons</span>. Commands come back through a <span class='highlight'>reply topic</span> – status, top, buy and sell reports, pause – an <span class='highlight'>outbox</span> holds messages until they're delivered, and processed IDs block <span class='highlight'>duplicates</span>.",
+      "skillTag": "+ Skill",
+      "skillText": "LLM-based fundamental rating with separate fundamental and execution gates. It shows my prompt design – in the pipeline the LLM rates, it never decides.",
+      "curPill": "Currently",
+      "curTitle": "Behind the scenes, the full pipeline is loading.",
+      "curPrivate": "Stays private – named, never shown",
+      "priv1": "Scheduler & orchestrator",
+      "priv2": "Task scheduling",
+      "priv3": "Journal & signal CHECK",
+      "priv4": "Scalable list",
+      "priv5": "News scraper",
+      "curNext": "Next steps",
+      "next1": "Improve the pipeline and integrate new programs",
+      "next2": "Test on training data and out-of-sample",
+      "next3": "Expand to more markets",
+      "next4": "Evaluate indicator combinations via backtest and ML on my own GPU",
+      "next5": "News scraper with sentiment scoring"
+    },
+    "p2": {
+      "num": "Project 02 · NLP",
+      "title": "When does fine-tuning pay off?",
+      "sub": "DistilBERT · AG News · University NLP final project",
+      "text": "Frozen, partial or full fine-tuning – which one wins depends on how much labelled data you have. I tested all three across <span class='highlight'>five data budgets</span> (250–4,000 examples) and three seeds: <span class='highlight'>45 controlled, resumable runs</span> with leakage-free splits and a learning-rate sweep per strategy.",
+      "result": "Result: partial fine-tuning wins from 250 to 1,000 examples, full fine-tuning only takes over from 2,000 – frozen never wins.",
+      "status": "Completed"
+    },
+    "p3": {
+      "num": "Project 03 · Bachelor's thesis",
+      "title": "Density-based clustering of S&P 500 stocks by technical features – out-of-sample vs. the GICS classification",
+      "text": "Do stocks that move alike also share a sector? I group S&P 500 stocks by how they actually trade and test <span class='highlight'>out-of-sample</span> whether those clusters say more than the official <span class='highlight'>GICS sectors</span>.",
+      "status": "In work · Coming soon"
+    },
     "future": {
-      "headline": "What's next",
       "pill": "In the pipeline",
-      "lead": "My focus: integrating <span class='highlight'>AI tools</span> into everyday development – more <span class='highlight'>output</span>, same <span class='highlight'>quality</span>. Companies pay for value, and I want to deliver it with AI faster than ever.",
-      "step1Time": "End of 2026",
+      "headline": "What's next",
+      "lead": "Next: building <span class='highlight'>agents</span> that create <span class='highlight'>real value</span> – for companies, for people and for my own work.",
+      "step1Time": "Now",
       "step1Name": "Bachelor's",
-      "step1Note": "Finishing now",
-      "step2Time": "2027",
-      "step2Name": "Master's",
-      "step2Note": "Admission secured",
-      "step3Time": "During the Master's",
-      "step3Name": "Specialization",
-      "step3Note": "Certificates & enterprise workflows",
+      "step1Note": "Thesis & electives",
+      "step2Time": "Next",
+      "step2Name": "Junior role or Master's",
+      "step2Note": "Still open – both excite me",
+      "step3Time": "Then",
+      "step3Name": "Automation services",
+      "step3Note": "As a UG or small business",
       "step4Time": "Vision",
-      "step4Name": "Tech × 3D",
-      "step4Note": "as my own service",
-      "tile1Title": "AI in everyday development",
-      "tile1Text": "Increase output without losing quality – AI as a fixed part of my coding workflow.",
-      "tile2Title": "Enterprise & CI/CD",
-      "tile2Text": "Build up enterprise workflows during my Master's – and earn certificates in specializations.",
-      "tile3Title": "Languages & automation",
-      "tile3Text": "Deepen TypeScript, Java and Python, build automation software for my daily work – and ship more of my own projects.",
-      "ctaService": "Tech × 3D: 1 product. 30 visuals."
+      "step4Name": "Personal brand",
+      "step4Note": "Content & community",
+      "tile1Title": "Agents in production",
+      "tile1Text": "Agents that do real work inside my pipelines – tested and traceable, not just demos.",
+      "tile2Title": "Local AI",
+      "tile2Text": "Kimi and DeepSeek on my own home server – to unlock even more possibilities of my own.",
+      "tile3Title": "Personal content",
+      "tile3Text": "Automated, of course – content that grows a community where people share knowledge.",
+      "ctaService": "Cutless: why still cut it yourself?"
     }
   },
-
   "projectprodukt": {
     "headline": "Project 1: Product Modelling Series",
     "section1": {

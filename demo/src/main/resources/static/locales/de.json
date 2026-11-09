@@ -74,12 +74,6 @@
     "paragraph": "<span class='highlight'>3D-Design</span> verbindet für mich <span class='highlight'>Realität</span> und <span class='highlight'>digitalen Raum</span>. Inspiriert von <span class='highlight'>Studio Ghibli</span> startete ich mit <span class='highlight'>Blender</span> – später kamen <span class='highlight'>Cinema 4D</span> und <span class='highlight'>Marvelous Designer</span> dazu.<br><br>Mich begeistert die Verbindung von <span class=\"highlight\">Technik</span> und <span class=\"highlight\">Gestaltung</span>: <span class=\"highlight\">prozedurale Texturen</span>, <span class=\"highlight\">präzises Modelling</span> und <span class=\"highlight\">systemisches Denken</span> im kreativen Prozess.<br><br><span class='highlight'>KI</span> verändert den kreativen Prozess – ich verbinde sie mit <span class='highlight'>Blender-MCPs</span> für maximalen Mehrwert und teile mein Wissen auf <span class='highlight'>Social Media</span>, um andere zu inspirieren.",
     "btn": "3D Portfolio & Projekte"
   },
-
-
-
-
-
-
   "stackPage": {
     "headline": "3D-Stack",
     "programsTitle": "Programme",
@@ -132,7 +126,7 @@
         "button": "Projektlink",
         "status": "Online!"
       }
-    },
+    },
     "future": {
       "headline": "In der Zukunft",
       "pill": "In der Pipeline",
@@ -158,18 +152,19 @@
       "ctaService": "Tech × 3D: 1 Produkt. 30 Visuals."
     }
   },
-
-
   "technicalPage": {
-    "headline": "Techstack",
+    "headline": "Tech-Stack",
     "programmingLanguagesTitle": "Programmiersprachen",
     "frameworksTitle": "Frameworks & Libraries",
-    "toolsTitle": "Tools & Plattformen",
     "section1": {
       "headline1": "Gewählte Kurse",
-      "content1": "<span class='highlight'>Programmierung I–III</span> (<span class='highlight'>Java</span>, inkl. <span class='highlight'>Webentwicklung</span>) (2023)",
-      "content2": "<span class='highlight'>Algorithmen & Datenstrukturen</span> (2023)",
-      "content3": "<span class='highlight'>Deep Learning</span> und <span class='highlight'>Python für NLP</span> (2024)"
+      "c1": "Programmierung I–III",
+      "c2": "ALDAT – Algorithmen & Datenstrukturen",
+      "c3": "Data Science 1",
+      "c4": "Data Science 2",
+      "c5": "Einführung in NLP",
+      "c6": "Python für NLP",
+      "c7": "Deep Learning"
     },
     "section2": {
       "headline2": "Heinrich Heine Universität Düsseldorf (2023-jetzt)",
@@ -178,71 +173,99 @@
     },
     "section3": {
       "headline3": "Udemy – autodidaktisch (2024–jetzt)",
-      "content1": "Das Studium bereitet nicht vollständig auf die Praxis vor – also suchte ich <span class='highlight'>hochwertigere Lernformate</span> und fand sie bei <span class='highlight'>Udemy</span>.",
-      "content2": "Dort vertiefte ich strukturiert <span class='highlight'>logisches Denken</span>, <span class='highlight'>Systemverständnis</span> und echte <span class='highlight'>Entwicklerpraxis</span> – Kurs für Kurs, mit klarem Fokus auf <span class='highlight'>Anwendung</span>.",
-      "content3": "Das Gelernte setze ich direkt in <span class='highlight'>eigenen Projekten</span> um – von <span class='highlight'>Web-Anwendungen</span> bis zu komplexen <span class='highlight'>Backend-Strukturen</span>.",
-      "content4": "Mit <span class='highlight'>Clean Code</span>, <span class='highlight'>Git-Versionierung</span> und <span class='highlight'>Debugging</span> in realistischen Szenarien – nicht nur verstehen, sondern <span class='highlight'>professionell umsetzen</span>."
+      "content1": "Das Studium legt die Theorie – <span class='highlight'>Udemy</span> lieferte die <span class='highlight'>Praxis</span>. Kurs für Kurs habe ich sie in <span class='highlight'>eigenen Projekten</span> angewendet: Clean Code, Git, Debugging, echte Backends."
     },
     "section4": {
       "headline4": "Erworbene Kurse",
-      "content1": "<span class=\"highlight\">FullStack Web-Development</span>: <span class=\"highlight\">React</span>, <span class=\"highlight\">Angular</span>, <span class=\"highlight\">JavaScript</span>, <span class=\"highlight\">HTML</span>, <span class=\"highlight\">CSS</span>, <span class=\"highlight\">Node.js</span>, <span class=\"highlight\">PostgreSQL</span>, <span class=\"highlight\">Web3</span>, <span class=\"highlight\">DApps</span>",
-      "content2": "<span class=\"highlight\">Machine Learning & Deep Learning mit Python</span>: <span class=\"highlight\">Numpy</span>, <span class=\"highlight\">Pandas</span>, <span class=\"highlight\">Matplotlib</span>, <span class=\"highlight\">PyTorch</span>, <span class=\"highlight\">Tensorflow</span>",
-      "content3": "<span class=\"highlight\">Data Structures & Algorithms</span>, <span class=\"highlight\">Linux-Konzepte</span>, <span class=\"highlight\">Systemverständnis</span> auf fortgeschrittenem Level."
+      "content1": "<span class='highlight'>FullStack-Webentwicklung</span>: React, Node.js, PostgreSQL, Web3",
+      "content2": "<span class='highlight'>Machine & Deep Learning mit Python</span>: NumPy, Pandas, PyTorch, TensorFlow",
+      "content3": "<span class='highlight'>Datenstrukturen & Algorithmen</span>, Linux-Konzepte"
     },
-    "projects": {
-      "project1": {
-        "title": "Projekt 1: KI System bauen welches Daten analysieren kann (Python, Tensorflow, PyTorch)",
-        "paragraph1": "– Entwicklung robuster <span class=\"highlight\">Daten-Pipelines</span> und tiefes Verständnis komplexer <span class=\"highlight\">Machine-Learning-Modelle</span> zur Extraktion relevanter Muster aus großen, heterogenen <span class=\"highlight\">Datensätzen</span>.",
-        "paragraph2": "– Effiziente Nutzung von <span class=\"highlight\">TensorFlow</span> und <span class=\"highlight\">PyTorch</span> zur <span class=\"highlight\">Implementierung</span>, <span class=\"highlight\">Optimierung</span> und <span class=\"highlight\">Validierung neuronaler Netze</span> unter Berücksichtigung von <span class=\"highlight\">Trainingszeit</span>, <span class=\"highlight\">Overfitting</span> und <span class=\"highlight\">Modellgeneralität</span>.",
-        "description": "Hier gehts zum Projekt:",
-        "button1": "Programmierprozess",
-        "badge1": "In Arbeit!"
-      },
-      "project2": {
-        "title": "Projekt 2: Personal Web-Portfolio (Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript)",
-        "paragraph1": "– Serverseitig gerendert mit <span class='highlight'>Spring Boot</span> und <span class='highlight'>Thymeleaf</span>: gemeinsame <span class='highlight'>Layout-Fragmente</span> statt Copy & Paste, eine Codebasis für 8 Seiten.",
-        "paragraph2": "– Eigenes Frontend ohne Framework: <span class='highlight'>responsives Design</span>, Glassmorphism-UI, drei Sprachen (DE/EN/FR) in <span class='highlight'>Vanilla JavaScript</span> und optimierte WebP-Bilder.",
-        "description": "Hier gehts zum Projekt:",
-        "button1": "Programmierprozess",
-        "badge1": "Online!"
-      },
-      "project3": {
-        "title": "Projekt 3: REST-API mit Spring Boot (Spring (-Boot), Java, JUnit, Rest)",
-        "paragraph1": "– Architektur einer <span class=\"highlight\">REST-konformen API</span> mit durchdachtem <span class=\"highlight\">Domain-Modell</span>, <span class=\"highlight\">Exception-Handling</span> und persistenter <span class=\"highlight\">Datenanbindung</span> via <span class=\"highlight\">Spring Data JPA</span>.",
-        "paragraph2": "– <span class=\"highlight\">Testgetriebene Entwicklung</span> mit <span class=\"highlight\">JUnit</span> und <span class=\"highlight\">Integrationstests</span>, um <span class=\"highlight\">Stabilität</span>, <span class=\"highlight\">Fehlerresistenz</span> und saubere <span class=\"highlight\">Schnittstellen</span> sicherzustellen.",
-        "description": "Hier gehts zum Projekt:",
-        "button1": "Programmierprozess",
-        "badge1": "In Arbeit!"
-      }
-    },
+    "stackLegend": "Leuchtend: meine Big 4",
+    "aiTitle": "KI & Automatisierung",
+    "quant": {
+      "pill": "Projekt 01 · In Arbeit",
+      "kicker": "Meine persönliche Investment-Pipeline",
+      "lead": "Drei Bausteine, eine Frage: Hat diese Aktie Potenzial – <span class='highlight'>und belüge ich mich gerade selbst?</span>",
+      "s1Time": "01 · Statistik",
+      "s1Note": "Wahrscheinlichkeit & Risiko",
+      "s2Time": "02 · Entscheidung",
+      "s2Note": "Regeln, keine KI",
+      "s3Time": "03 · Push",
+      "s3Note": "Direkt aufs iPhone",
+      "disclaimer": "<strong>Keine Anlageberatung.</strong> Es werden keine Orders gesendet. Backtests nutzen das heutige Aktien-Universum (<strong>Survivorship Bias</strong>) – Ergebnisse wirken eher besser als die Realität.",
+      "c1Num": "01 · Statistik",
+      "c1Sub": "Aktien-Analysetool mit statistischem Modell",
+      "c1Text": "Wertet eine Aktie aus ihrer eigenen Kursgeschichte aus: <span class='highlight'>Bullish/Bearish-Wahrscheinlichkeit</span> und <span class='highlight'>Risiko</span> von 1 Tag bis 1 Jahr – dazu <span class='highlight'>S&P-500-Rang</span>, Fundamentaldaten, Backtest und ein Papier-Portfolio.",
+      "c1Honest": "Das ehrliche Ergebnis: Bei META und NVDA ist keine Richtung belegt – und das Tool zeigt das, statt es zu verstecken.",
+      "snapshot": "Live-Momentaufnahme ↗",
+      "c2Num": "02 · Entscheidung",
+      "c2Sub": "Regel-Engine mit Walk-forward-Backtest",
+      "c2Text": "Indikatoren – SMA 20/200, RSI, ATR, relative Stärke – speisen einen <span class='highlight'>deterministischen Entscheider</span>. Keine KI in der Entscheidung. Er zeigt in <span class='highlight'>%</span>, wie nah eine Aktie am Kaufsignal ist, setzt ein <span class='highlight'>dynamisches Verkaufsziel</span> aus vergangenen Signalen und braucht nichts außer Kursdaten.",
+      "c2Check1": "Walk-forward: Regeln fest auf Trainingsdaten, nur der Testzeitraum zählt",
+      "c2Check2": "Handelskosten in jedem Ergebnis eingerechnet",
+      "c2Check3": "Overfitting-Warnung, sobald zu viele Varianten getestet werden",
+      "c2Quote": "„Ich baue Werkzeuge, die verhindern, dass ich mich im Backtest selbst belüge.“",
+      "repoSoon": "Repo folgt bald",
+      "c3Num": "03 · Push",
+      "c3Sub": "Push-Nachrichten fürs iPhone",
+      "c3Text": "Schickt Signale mit <span class='highlight'>Aktions-Buttons</span> aufs iPhone. Befehle kommen über ein <span class='highlight'>Antwort-Topic</span> zurück – status, top, gekauft, verkauft, pause –, eine <span class='highlight'>Outbox</span> hält Nachrichten bis zur Zustellung, und verarbeitete IDs verhindern <span class='highlight'>Duplikate</span>.",
+      "skillTag": "+ Skill",
+      "skillText": "LLM-basierte Fundamentalbewertung mit getrenntem Fundamental- und Execution-Gate. Zeigt mein Prompt-Design – in der Pipeline bewertet das LLM, es entscheidet nie.",
+      "curPill": "Aktuell",
+      "curTitle": "Hinter den Kulissen lädt die Gesamt-Pipeline.",
+      "curPrivate": "Bleibt privat – nur benannt, nie gezeigt",
+      "priv1": "Zeitplan & Orchestrator",
+      "priv2": "Aufgabenplanung",
+      "priv3": "Journal & Signal-CHECK",
+      "priv4": "Scalable-Liste",
+      "priv5": "News-Scraper",
+      "curNext": "Nächste Schritte",
+      "next1": "Pipeline verbessern und neue Programme einbinden",
+      "next2": "Testen auf Trainingsdaten und Out-of-Sample",
+      "next3": "Weitere Märkte erschließen",
+      "next4": "Indikator-Kombinationen per Backtest und ML auf eigener GPU auswerten",
+      "next5": "News-Scraper mit Sentiment-Bewertung"
+    },
+    "p2": {
+      "num": "Projekt 02 · NLP",
+      "title": "Wann lohnt sich Fine-Tuning?",
+      "sub": "DistilBERT · AG News · Abschlussprojekt NLP an der Uni",
+      "text": "Frozen, partielles oder volles Fine-Tuning – welche Strategie gewinnt, hängt davon ab, wie viele gelabelte Daten man hat. Ich habe alle drei über <span class='highlight'>fünf Datenbudgets</span> (250–4.000 Beispiele) und drei Seeds getestet: <span class='highlight'>45 kontrollierte, fortsetzbare Läufe</span> mit leckagefreien Splits und einem Lernraten-Sweep je Strategie.",
+      "result": "Ergebnis: Partielles Fine-Tuning gewinnt von 250 bis 1.000 Beispielen, volles Fine-Tuning übernimmt erst ab 2.000 – Frozen gewinnt nie.",
+      "status": "Abgeschlossen"
+    },
+    "p3": {
+      "num": "Projekt 03 · Bachelorarbeit",
+      "title": "Dichtebasiertes Clustering von S&P-500-Aktien anhand technischer Merkmale im Out-of-Sample-Vergleich zur GICS-Klassifikation",
+      "text": "Gehören Aktien, die sich ähnlich bewegen, auch zur selben Branche? Ich gruppiere S&P-500-Aktien danach, wie sie tatsächlich handeln, und prüfe <span class='highlight'>Out-of-Sample</span>, ob diese Cluster mehr aussagen als die offiziellen <span class='highlight'>GICS-Sektoren</span>.",
+      "status": "In Arbeit · Coming soon"
+    },
     "future": {
-      "headline": "In der Zukunft",
       "pill": "In der Pipeline",
-      "lead": "Mein Fokus: <span class='highlight'>KI-Tools</span> in den Entwickleralltag integrieren – mehr <span class='highlight'>Output</span>, gleiche <span class='highlight'>Qualität</span>. Unternehmen zahlen für Mehrwert, und den will ich mit KI schneller liefern als je zuvor.",
-      "step1Time": "Ende 2026",
+      "headline": "Was als Nächstes kommt",
+      "lead": "Als Nächstes: <span class='highlight'>Agents</span> bauen, die <span class='highlight'>echten Mehrwert</span> schaffen – für Unternehmen, für Menschen und für meine eigene Arbeit.",
+      "step1Time": "Jetzt",
       "step1Name": "Bachelor",
-      "step1Note": "Abschluss in Arbeit",
-      "step2Time": "2027",
-      "step2Name": "Master",
-      "step2Note": "Übernahme gesichert",
-      "step3Time": "Im Master",
-      "step3Name": "Spezialisierung",
-      "step3Note": "Zertifikate & Enterprise-Workflows",
+      "step1Note": "Bachelorarbeit & Wahlmodule",
+      "step2Time": "Danach",
+      "step2Name": "Junior-Stelle oder Master",
+      "step2Note": "Noch offen – beides reizt mich",
+      "step3Time": "Dann",
+      "step3Name": "Automatisierungs-Dienstleistungen",
+      "step3Note": "Als UG oder Kleingewerbe",
       "step4Time": "Vision",
-      "step4Name": "Tech × 3D",
-      "step4Note": "als eigene Dienstleistung",
-      "tile1Title": "KI im Entwickleralltag",
-      "tile1Text": "Output erhöhen, ohne Qualität zu verlieren – KI als festen Teil meines Programmier-Workflows.",
-      "tile2Title": "Enterprise & CI/CD",
-      "tile2Text": "Unternehmensnahe Workflows im Master aufbauen – und Zertifikate in Spezialisierungen sammeln.",
-      "tile3Title": "Sprachen & Automatisierung",
-      "tile3Text": "TypeScript, Java und Python vertiefen, Automatisierungssoftware für meinen Alltag bauen – und mehr eigene Projekte umsetzen.",
-      "ctaService": "Tech × 3D: 1 Produkt. 30 Visuals."
+      "step4Name": "Personal Brand",
+      "step4Note": "Content & Community",
+      "tile1Title": "Agents im Einsatz",
+      "tile1Text": "Agents, die in meinen Pipelines echte Arbeit leisten – getestet und nachvollziehbar, keine Demos.",
+      "tile2Title": "Lokale KI",
+      "tile2Text": "Kimi und DeepSeek auf meinem eigenen Home-Server – um noch mehr eigene Möglichkeiten freizulegen.",
+      "tile3Title": "Personal Content",
+      "tile3Text": "Natürlich automatisiert – Content, der eine Community aufbaut, in der Wissen geteilt wird.",
+      "ctaService": "Cutless: Warum noch selbst cutten?"
     }
   },
-
-
-
   "projectprodukt": {
     "headline": "Project 1: Produkt Modellierungsserie",
     "section1": {

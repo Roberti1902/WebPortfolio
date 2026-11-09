@@ -75,25 +75,6 @@ ul {
     list-style: none;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.zweitetech {
-    padding-top: 5rem;
-}
-
-.zweitetech > .rechts  {
-    flex: 1.75;
-}
-
-.zweitetech > .links {
-    flex: 2.25;
-}
-
 h3 {
     color: #00BFFF !important;
     font-size: 1.5rem;
@@ -174,37 +155,635 @@ h3 {
     z-index: 1;
 }
 
-@keyframes heartbeat {
-    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px goldenrod); }
-    25% { transform: scale(1.02); filter: drop-shadow(0 0 10px goldenrod); }
-    50% { transform: scale(0.99); }
-    75% { transform: scale(1.01); }
-}
-
-.top-skill {
-    animation: heartbeat 1.5s infinite ease-in-out;
-}
-
-.projects-container {
-    width: 100%;
-    padding-inline: 5vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-}
-
-.coni {
-    max-width: 1800px !important;
-    margin: 0 auto;        /* zentriert den Container */
-    padding: 0 3vw;
-}
-
 .language-flags {
     position: absolute;
     top: 2rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+}
+
+/* ---------- Bildungsbereich ---------- */
+
+.edu-second {
+    margin-top: 0;
+}
+
+.course-chips {
+    gap: 0.55rem;
+    margin: 1.25rem 0 0;
+}
+
+.course-chips li {
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    background: rgba(0, 191, 255, 0.06);
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.92rem;
+}
+
+/* ---------- Projekt 1: IonQuant (nutzt den Zukunfts-Block als Bühne) ---------- */
+
+.quant-board {
+    margin-top: 4rem;
+}
+
+/* Kurslinie im Hintergrund */
+.quant-board.future-board > .quant-chart {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.quant-chart-line {
+    fill: none;
+    stroke: url(#quantLine);
+    stroke-width: 2;
+    vector-effect: non-scaling-stroke;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+
+.quant-board.visible .quant-chart-line {
+    animation: chart-draw 2.4s cubic-bezier(0.3, 0, 0.2, 1) 0.3s forwards;
+}
+
+@keyframes chart-draw {
+    to { stroke-dashoffset: 0; }
+}
+
+.quant-kicker {
+    margin: -0.3rem 0 1rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgb(var(--accent-rgb));
+    text-align: center;
+}
+
+/* Pipeline mit drei Stationen: Linie füllt sich, Stationen gehen nacheinander an */
+.roadmap-3 .roadmap-track {
+    left: 16.66%;
+    right: 16.66%;
+}
+
+.roadmap-3 .roadmap-steps {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.roadmap-3 .roadmap-fill {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 191, 255, 0.8), rgba(245, 188, 80, 0.9), rgba(0, 191, 255, 0.8));
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.quant-board.visible .roadmap-3 .roadmap-fill {
+    animation: fill-load 1.6s cubic-bezier(0.45, 0, 0.25, 1) 0.2s forwards;
+}
+
+@keyframes fill-load {
+    to { transform: scaleX(1); }
+}
+
+.roadmap-3 li.is-gold {
+    --accent-rgb: 245, 188, 80;
+}
+
+.quant-board.visible .roadmap-3 li .step-dot {
+    animation: station-on 0.5s ease forwards;
+}
+
+.quant-board.visible .roadmap-3 li:nth-child(1) .step-dot { animation-delay: 0.3s; }
+.quant-board.visible .roadmap-3 li:nth-child(2) .step-dot { animation-delay: 0.95s; }
+.quant-board.visible .roadmap-3 li:nth-child(3) .step-dot { animation-delay: 1.6s; }
+
+@keyframes station-on {
+    to {
+        border-color: rgb(var(--accent-rgb));
+        background: rgb(var(--accent-rgb));
+        box-shadow: 0 0 16px rgba(var(--accent-rgb), 0.9);
+    }
+}
+
+.roadmap-3 .step-name {
+    font-size: 1.2rem;
+}
+
+/* Hinweis: keine Anlageberatung, Survivorship Bias */
+.quant-disclaimer {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    max-width: 46rem;
+    margin: 0 auto 2.5rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(245, 188, 80, 0.35);
+    background: rgba(245, 188, 80, 0.07);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.55;
+    text-align: left;
+}
+
+.quant-disclaimer strong {
+    color: #f5bc50;
+}
+
+.quant-disclaimer-icon {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 188, 80, 0.7);
+    color: #f5bc50;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* Karten der drei Bausteine (auch für Projekt 2 und 3) */
+.quant-cards {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.quant-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.6rem;
+    border-radius: 22px;
+    border: 1px solid rgba(var(--accent-rgb), 0.25);
+    background:
+            radial-gradient(ellipse 90% 60% at 15% 0%, rgba(var(--accent-rgb), 0.16), transparent 70%),
+            rgba(255, 255, 255, 0.025);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 24px 50px -30px rgba(var(--accent-rgb), 0.6);
+    color: #fff;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.quant-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(var(--accent-rgb), 0.55);
+}
+
+.quant-card > *:not(.glow-ring) {
+    position: relative;
+    z-index: 1;
+}
+
+.quant-board.visible .quant-card {
+    animation: tile-in 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+
+.quant-board.visible .quant-card:nth-child(2) { animation-delay: 0.12s; }
+.quant-board.visible .quant-card:nth-child(3) { animation-delay: 0.24s; }
+
+.quant-card h3 {
+    margin: 0;
+    color: #fff !important;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.quant-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.quant-card p.quant-sub {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.quant-card p.quant-honest {
+    padding-left: 0.85rem;
+    border-left: 2px solid rgba(var(--accent-rgb), 0.7);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.quant-card .tile-tags {
+    margin-top: 0;
+}
+
+/* stärkster Baustein: Gold, Lichtrahmen */
+.quant-card.is-featured {
+    --accent-rgb: 245, 188, 80;
+    border-color: transparent;
+    background:
+            radial-gradient(ellipse 100% 70% at 50% 0%, rgba(245, 188, 80, 0.2), transparent 70%),
+            rgba(10, 9, 14, 0.75);
+    box-shadow: 0 0 60px -18px rgba(245, 188, 80, 0.55);
+}
+
+.quant-checks {
+    display: grid;
+    gap: 0.45rem;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+}
+
+.quant-checks li {
+    display: flex;
+    gap: 0.6rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.45;
+}
+
+.quant-checks li::before {
+    content: "✓";
+    color: #f5bc50;
+    font-weight: 700;
+}
+
+.quant-quote {
+    margin: 0.2rem 0 0;
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(245, 188, 80, 0.35);
+    background: rgba(245, 188, 80, 0.08);
+    color: #fff;
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.quant-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: auto;
+    padding-top: 0.4rem;
+}
+
+.quant-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    background: rgb(var(--accent-rgb));
+    color: #06070e;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.quant-btn:hover,
+.quant-btn:focus-visible {
+    color: #06070e;
+    transform: translateY(-2px);
+    box-shadow: 0 0 22px rgba(var(--accent-rgb), 0.6);
+}
+
+.quant-btn-ghost,
+.quant-btn-ghost:hover,
+.quant-btn-ghost:focus-visible {
+    background: transparent;
+    border-color: rgba(var(--accent-rgb), 0.55);
+    color: #fff;
+}
+
+.quant-btn.is-disabled {
+    background: transparent;
+    border: 1px dashed rgba(255, 255, 255, 0.28);
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+}
+
+/* Zusatz: Skill */
+.quant-skill {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 1.25rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 16px;
+    border: 1px dashed rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.quant-skill p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.92rem;
+    text-align: left;
+}
+
+.quant-skill strong {
+    color: #fff;
+}
+
+.quant-skill-tag {
+    flex: none;
+    padding: 0.25rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(var(--accent-rgb), 0.45);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    color: rgb(var(--accent-rgb));
+}
+
+/* Currently: Gesamt-Pipeline lädt hinter den Kulissen */
+.quant-currently {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2.5rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border-radius: 22px;
+    border: 1px solid rgba(0, 191, 255, 0.3);
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 50px -20px rgba(0, 191, 255, 0.5);
+}
+
+.quant-currently::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transform: translateX(-100%);
+    animation: currently-scan 4.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes currently-scan {
+    0% { transform: translateX(-100%); }
+    60%, 100% { transform: translateX(300%); }
+}
+
+.quant-currently h3 {
+    margin: 0.9rem 0 1.1rem;
+    color: #fff !important;
+    font-size: clamp(1.3rem, 3vw, 1.85rem);
+    font-weight: 300;
+}
+
+.currently-bar {
+    position: relative;
+    height: 3px;
+    overflow: hidden;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.currently-bar span {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 30%;
+    background: linear-gradient(90deg, transparent, #00bfff, #f5bc50, transparent);
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.7);
+    animation: currently-load 2.2s ease-in-out infinite;
+}
+
+@keyframes currently-load {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(340%); }
+}
+
+.currently-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+    margin-top: 1.6rem;
+}
+
+.currently-label {
+    margin: 0 0 0.8rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: left;
+}
+
+.currently-chips {
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.currently-chips li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.86rem;
+}
+
+.currently-chips li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f5bc50;
+    box-shadow: 0 0 8px rgba(245, 188, 80, 0.8);
+}
+
+.currently-next {
+    display: grid;
+    gap: 0.6rem;
+    justify-content: start;
+    margin: 0;
+    counter-reset: step;
+}
+
+.currently-next li {
+    display: flex;
+    gap: 0.75rem;
+    counter-increment: step;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.93rem;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.currently-next li::before {
+    content: counter(step, decimal-leading-zero);
+    padding-top: 0.15rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: #00bfff;
+}
+
+/* ---------- Projekt 2 und 3 ---------- */
+
+.project-pair {
+    --accent-rgb: 0, 191, 255;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    background-color: rgba(6, 7, 14, 0.65);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 0.82rem;
+}
+
+.project-card.is-thesis {
+    --accent-rgb: 245, 188, 80;
+}
+
+.is-thesis h3 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.thesis-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f5bc50;
+}
+
+/* leuchtender, pulsierender Kreis */
+.thesis-pulse {
+    position: relative;
+    flex: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f5bc50;
+    box-shadow: 0 0 16px rgba(245, 188, 80, 0.95);
+}
+
+.thesis-pulse::after,
+.thesis-pulse span {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 188, 80, 0.85);
+    animation: step-ping 2s ease-out infinite;
+}
+
+.thesis-pulse span {
+    animation-delay: 1s;
+}
+
+@media (max-width: 991.98px) {
+    .quant-cards,
+    .project-pair,
+    .currently-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Handy: Pipeline senkrecht, Füllung läuft von oben nach unten */
+@media (max-width: 767.98px) {
+    .roadmap-3 .roadmap-track {
+        left: 7px;
+        right: auto;
+    }
+
+    .roadmap-3 .roadmap-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-3 .roadmap-fill {
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    .quant-board.visible .roadmap-3 .roadmap-fill {
+        animation-name: fill-load-v;
+    }
+
+    @keyframes fill-load-v {
+        to { transform: scaleY(1); }
+    }
+
+    .future-board > .quant-chart {
+        height: 200px;
+    }
+
+    .quant-skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .quant-chart-line,
+    .quant-board.visible .quant-chart-line {
+        animation: none;
+        stroke-dashoffset: 0;
+    }
+
+    .roadmap-3 .roadmap-fill,
+    .quant-board.visible .roadmap-3 .roadmap-fill {
+        animation: none;
+        transform: none;
+    }
+
+    .quant-board.visible .roadmap-3 li .step-dot,
+    .quant-board.visible .quant-card,
+    .quant-currently::after,
+    .currently-bar span,
+    .thesis-pulse::after,
+    .thesis-pulse span {
+        animation: none;
+    }
+
+    .roadmap-3 li .step-dot {
+        border-color: rgb(var(--accent-rgb));
+        background: rgb(var(--accent-rgb));
+    }
+
+    .currently-bar span {
+        width: 100%;
+        opacity: 0.5;
+    }
 }

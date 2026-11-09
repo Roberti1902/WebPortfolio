@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/layout :: head('Tech-Portfolio – Robert Ionescu', 'Tech portfolio of Robert Ionescu: Java, Spring Boot, Python, React and machine learning – tech stack, courses and projects.', 'technical', '/technical')}"></head>
+<head th:replace="~{fragments/layout :: head('Tech-Portfolio – Robert Ionescu', 'Tech portfolio of Robert Ionescu: Java, Python, TypeScript and React, AI agents and automation – plus IonQuant, a personal investment pipeline, NLP research and a bachelor thesis on stock clustering.', 'technical', '/technical')}"></head>
 <body>
     <div th:replace="~{fragments/layout :: nav('technical')}"></div>
 
@@ -12,135 +12,95 @@
 
             <div class="container-fluid py-5">
                 <img src="/Dateien/facelogo.webp" class="bild" alt="Portrait of Robert Ionescu" width="200" height="199">
-                <h1 class="display-5 fw-bold">Techstack</h1>
+                <h1 class="display-5 fw-bold" data-i18n="technicalPage.headline">Tech Stack</h1>
+                <p class="stack-legend"><span class="stack-legend-dot" aria-hidden="true"></span><span data-i18n="technicalPage.stackLegend">Glowing: my Big 4</span></p>
 
                 <div>
-                    <h2 class="fw-bold" data-i18n="technicalPage.programmingLanguagesTitle">Programmiersprachen</h2>
-                        <ul>
-                            <li class="top-skill">
-                                <img src="/Dateien/techlogos/java.png" alt="Java" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        Java
-                                    </p>
-                            </li>
-
-                            <li class="skill">
-                                <img src="/Dateien/techlogos/cplus.png" alt="C / C++" height="100" loading="lazy" decoding="async">
-                                <p>
-                                    C / C++
-                                </p>
-                            </li>
-
-                            <li class="skill">
-                                <img src="/Dateien/techlogos/python.png" alt="Python" height="100" loading="lazy" decoding="async">
-                                <p>
-                                    Python
-                                </p>
-                            </li>
-
-                            <li class="skill">
-                                <img src="/Dateien/techlogos/postgresql.png" alt="PostgreSQL" height="100" loading="lazy" decoding="async">
-                                <p>
-                                    PostgreSQL
-                                </p>
-                            </li>
-
-                            <li class="skill">
-                                <img src="/Dateien/techlogos/css.png" alt="CSS" height="100" loading="lazy" decoding="async">
-                                <p>
-                                    CSS
-                                </p>
-                            </li>
-
-                            <li class="top-skill">
-                                <img src="/Dateien/techlogos/html.png" alt="HTML" height="100" loading="lazy" decoding="async">
-                                <p>
-                                    HTML
-                                </p>
-                            </li>
-
-                            <li class="skill">
-                                <img src="/Dateien/techlogos/javascript.png" alt="JavaScript" height="100" loading="lazy" decoding="async">
-                                <p>
-                                    JavaScript
-                                </p>
-                            </li>
-                        </ul>
+                    <h2 class="fw-bold" data-i18n="technicalPage.programmingLanguagesTitle">Programming Languages</h2>
+                    <ul class="stack-list">
+                        <li class="stack-item is-core">
+                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/java.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Java</span>
+                        </li>
+                        <li class="stack-item is-core">
+                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/python.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Python</span>
+                        </li>
+                        <li class="stack-item is-core">
+                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/typescript.svg" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">TypeScript</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/cplus.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">C / C++</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/postgresql.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">PostgreSQL</span>
+                        </li>
+                    </ul>
                 </div>
 
                 <div>
                     <h2 class="fw-bold" data-i18n="technicalPage.frameworksTitle">Frameworks & Libraries</h2>
-                        <ul>
-                                <li class="top-skill">
-                                    <img src="/Dateien/techlogos/react.png" alt="React" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        React
-                                    </p>
-                                </li>
-
-                                <li class="skill">
-                                    <img src="/Dateien/techlogos/angularneu.png" alt="Angular" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        Angular
-                                    </p>
-                                </li>
-
-                                <li class="top-skill">
-                                    <img src="/Dateien/techlogos/spring.png" alt="Spring(-Boot)" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        Spring(-Boot)
-                                    </p>
-                                </li>
-
-                                <li class="skill">
-                                    <img src="/Dateien/techlogos/numpy.png" alt="Numpy / Pandas" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        Numpy / Pandas
-                                    </p>
-                                </li>
-
-                                <li class="skill">
-                                    <img src="/Dateien/techlogos/tensorflow.png" alt="TensorFlow / PyTorch" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        TensorFlow / PyTorch
-                                    </p>
-                                </li>
-
-                                <li class="top-skill">
-                                    <img src="/Dateien/techlogos/junit.png" alt="JUnit / Mockito" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        JUnit / Mockito
-                                    </p>
-                                </li>
-                        </ul>
+                    <ul class="stack-list">
+                        <li class="stack-item is-core">
+                            <span class="stack-icon"><span class="glow-ring" aria-hidden="true"></span><img src="/Dateien/techlogos/react.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">React</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/spring.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Spring Boot</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/numpy.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">NumPy / Pandas</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/tensorflow.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">PyTorch / TensorFlow</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/huggingface.svg" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Hugging Face</span>
+                        </li>
+                    </ul>
                 </div>
 
                 <div>
-                    <h2 class="fw-bold" data-i18n="technicalPage.toolsTitle">Tools & Plattformen</h2>
-                        <ul>
-                                <li class="skill">
-                                    <img src="/Dateien/techlogos/githubneu.png" alt="Git / GitHub" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        Git / GitHub
-                                    </p>
-                                </li>
-
-                                <li class="skill">
-                                    <img src="/Dateien/techlogos/docker.png" alt="Docker" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        Docker
-                                    </p>
-                                </li>
-
-                                <li class="skill">
-                                    <img src="/Dateien/techlogos/restapineu.png" alt="REST-APIs" height="100" loading="lazy" decoding="async">
-                                    <p>
-                                        REST-APIs
-                                    </p>
-                                </li>
-                        </ul>
+                    <h2 class="fw-bold" data-i18n="technicalPage.aiTitle">AI & Automation</h2>
+                    <ul class="stack-list">
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/claude.svg" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Claude / Claude Code</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/modelcontextprotocol.svg" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">MCP</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/n8n.svg" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">n8n</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/zapier.svg" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Zapier</span>
+                        </li>
+                        <li class="stack-item">
+                            <!-- TODO: offizielles base44-Logo fehlt (nicht bei Simple Icons) -->
+                            <span class="stack-icon stack-icon-text" aria-hidden="true">b44</span>
+                            <span class="stack-name">base44</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/githubneu.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Git / GitHub</span>
+                        </li>
+                        <li class="stack-item">
+                            <span class="stack-icon"><img src="/Dateien/techlogos/docker.png" alt="" loading="lazy" decoding="async"></span>
+                            <span class="stack-name">Docker</span>
+                        </li>
+                    </ul>
                 </div>
-
 
             </div>
         </div>
@@ -148,91 +108,200 @@
 
     <div class="row-mapper">
         <div class="p-5 glass links reveal">
-            <h3 data-i18n="technicalPage.section1.headline1">Gewählte Kurse</h3>
-            <p data-i18n="technicalPage.section1.content1"><span class='highlight'>Programmierung I–III</span> (<span class='highlight'>Java</span>, inkl. <span class='highlight'>Webentwicklung</span>) (2023)</p>
-            <hr>
-            <p data-i18n="technicalPage.section1.content2"><span class='highlight'>Algorithmen & Datenstrukturen</span> (2023)</p>
-            <hr>
-            <p data-i18n="technicalPage.section1.content3"><span class='highlight'>Deep Learning</span> und <span class='highlight'>Python für NLP</span> (2024)</p>
+            <h3 data-i18n="technicalPage.section1.headline1">Selected Courses</h3>
+            <ul class="course-chips">
+                <li data-i18n="technicalPage.section1.c1">Programming I–III</li>
+                <li data-i18n="technicalPage.section1.c2">ALDAT – Algorithms & Data Structures</li>
+                <li data-i18n="technicalPage.section1.c3">Data Science 1</li>
+                <li data-i18n="technicalPage.section1.c4">Data Science 2</li>
+                <li data-i18n="technicalPage.section1.c5">Introduction to NLP</li>
+                <li data-i18n="technicalPage.section1.c6">Python for NLP</li>
+                <li data-i18n="technicalPage.section1.c7">Deep Learning</li>
+            </ul>
         </div>
         <div class="p-5 glass rechts reveal linksalign">
-            <h3 data-i18n="technicalPage.section2.headline2">Heinrich Heine Universität Düsseldorf (2023-jetzt)</h3>
-            <p data-i18n="technicalPage.section2.content1">Das Studium legt das <span class='highlight'>Fundament</span> – doch Informatik lebt davon, <span class='highlight'>aktuell</span> zu sein. Darum vertiefe und erweitere ich mein Wissen <span class='highlight'>privat</span> weiter.</p>
-            <p data-i18n="technicalPage.section2.content2">Parallel arbeite ich als <span class='highlight'>Developer</span>: Ich vertiefe den <span class='highlight'>Software-Lifecycle</span>, löse Probleme <span class='highlight'>eigenständig</span>, dokumentiere <span class='highlight'>nachvollziehbar</span> und arbeite <span class='highlight'>im Team</span> – vom <span class='highlight'>Legacy Code</span> bis zur <span class='highlight'>Weiterentwicklung</span>.</p>
+            <h3 data-i18n="technicalPage.section2.headline2">Heinrich Heine University Düsseldorf (2023–present)</h3>
+            <p data-i18n="technicalPage.section2.content1">University lays the <span class='highlight'>foundation</span> – but computer science lives on staying <span class='highlight'>current</span>. So I keep deepening and expanding my knowledge <span class='highlight'>on my own</span>.</p>
+            <p data-i18n="technicalPage.section2.content2">Alongside, I work as a <span class='highlight'>developer</span>: I deepen my grasp of the <span class='highlight'>software lifecycle</span>, solve problems <span class='highlight'>independently</span>, document <span class='highlight'>clearly</span> and work <span class='highlight'>as a team</span> – from <span class='highlight'>legacy code</span> to <span class='highlight'>further development</span>.</p>
         </div>
     </div>
 
-    <div class="row-mapper zweitetech">
+    <div class="row-mapper edu-second">
         <div class="p-5 glass links reveal rechtsalign">
-            <h3 data-i18n="technicalPage.section3.headline3">Udemy – autodidaktisch (2024–jetzt)</h3>
-            <p data-i18n="technicalPage.section3.content1">Das Studium bereitet nicht vollständig auf die Praxis vor – also suchte ich <span class='highlight'>hochwertigere Lernformate</span> und fand sie bei <span class='highlight'>Udemy</span>.</p>
-
-            <p data-i18n="technicalPage.section3.content2">Dort vertiefte ich strukturiert <span class='highlight'>logisches Denken</span>, <span class='highlight'>Systemverständnis</span> und echte <span class='highlight'>Entwicklerpraxis</span> – Kurs für Kurs, mit klarem Fokus auf <span class='highlight'>Anwendung</span>.</p>
-
-            <p data-i18n="technicalPage.section3.content3">Das Gelernte setze ich direkt in <span class='highlight'>eigenen Projekten</span> um – von <span class='highlight'>Web-Anwendungen</span> bis zu komplexen <span class='highlight'>Backend-Strukturen</span>.</p>
-
-            <p data-i18n="technicalPage.section3.content4">Mit <span class='highlight'>Clean Code</span>, <span class='highlight'>Git-Versionierung</span> und <span class='highlight'>Debugging</span> in realistischen Szenarien – nicht nur verstehen, sondern <span class='highlight'>professionell umsetzen</span>.</p>
+            <h3 data-i18n="technicalPage.section3.headline3">Udemy – self-taught (2024–present)</h3>
+            <p data-i18n="technicalPage.section3.content1">University lays the theory – <span class='highlight'>Udemy</span> filled in the <span class='highlight'>practice</span>. Course by course I applied it in <span class='highlight'>my own projects</span>: clean code, Git, debugging, real backends.</p>
         </div>
         <div class="p-5 glass rechts reveal">
-            <h3 data-i18n="technicalPage.section4.headline4">Erworbene Kurse</h3>
-            <p data-i18n="technicalPage.section4.content1"><span class="highlight">FullStack Web-Development</span>: <span class="highlight">React</span>, <span class="highlight">Angular</span>, <span class="highlight">JavaScript</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">Node.js</span>, <span class="highlight">PostgreSQL</span>, <span class="highlight">Web3</span>, <span class="highlight">DApps</span></p>
+            <h3 data-i18n="technicalPage.section4.headline4">Completed Courses</h3>
+            <p data-i18n="technicalPage.section4.content1"><span class="highlight">FullStack Web Development</span>: React, Node.js, PostgreSQL, Web3</p>
             <hr>
-            <p data-i18n="technicalPage.section4.content2"><span class="highlight">Machine Learning & Deep Learning mit Python</span>: <span class="highlight">Numpy</span>, <span class="highlight">Pandas</span>, <span class="highlight">Matplotlib</span>, <span class="highlight">PyTorch</span>, <span class="highlight">Tensorflow</span></p>
+            <p data-i18n="technicalPage.section4.content2"><span class="highlight">Machine & Deep Learning with Python</span>: NumPy, Pandas, PyTorch, TensorFlow</p>
             <hr>
-            <p data-i18n="technicalPage.section4.content3"><span class="highlight">Data Structures & Algorithms</span>, <span class="highlight">Linux-Konzepte</span>, <span class="highlight">Systemverständnis</span> auf fortgeschrittenem Level.</p>
+            <p data-i18n="technicalPage.section4.content3"><span class="highlight">Data Structures & Algorithms</span>, Linux concepts</p>
         </div>
     </div>
 
-    <div class="projects-container">
-        <div class="p-5 glass reveal coni rechtsalign">
-            <h3 data-i18n="technicalPage.projects.project1.title">Projekt 1: KI System bauen welches Daten analysieren kann (Python, Tensorflow, PyTorch)</h3>
-            <hr>
-            <p data-i18n="technicalPage.projects.project1.paragraph1">– Entwicklung robuster <span class="highlight">Daten-Pipelines</span> und tiefes Verständnis komplexer <span class="highlight">Machine-Learning-Modelle</span> zur Extraktion relevanter Muster aus großen, heterogenen <span class="highlight">Datensätzen</span>.</p>
-            <hr>
-            <p data-i18n="technicalPage.projects.project1.paragraph2">– Effiziente Nutzung von <span class="highlight">TensorFlow</span> und <span class="highlight">PyTorch</span> zur <span class="highlight">Implementierung</span>, <span class="highlight">Optimierung</span> und <span class="highlight">Validierung neuronaler Netze</span> unter Berücksichtigung von <span class="highlight">Trainingszeit</span>, <span class="highlight">Overfitting</span> und <span class="highlight">Modellgeneralität</span>.</p>
-            <hr>
-            <p data-i18n="technicalPage.projects.project1.description">Hier gehts zum Projekt:</p>
-            <a href="#" class="btn btn-primary disabled" role="button" aria-disabled="true" tabindex="-1" data-i18n="technicalPage.projects.project1.button1">Programmierprozess</a>
-            <a href="https://github.com/Roberti1902/KI-System" class="btn btn-info disabled" role="button" aria-disabled="true" tabindex="-1">Github Repo</a>
-            <div class="available-badge">
-                <span class="status-dot"></span>
-                <span class="status-text" data-i18n="technicalPage.projects.project1.badge1">In Arbeit!</span>
-            </div>
+    <!-- ===================== Projekt 1: IonQuant ===================== -->
+    <section class="container future-board quant-board reveal" id="ionquant" aria-labelledby="quant-title">
+        <span class="glow-ring" aria-hidden="true"></span>
+        <span class="future-horizon" aria-hidden="true"></span>
+
+        <!-- Kurslinie im Hintergrund: zeichnet sich einmal beim Einblenden -->
+        <svg class="quant-chart" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+                <linearGradient id="quantLine" x1="0" x2="1" y1="0" y2="0">
+                    <stop offset="0" stop-color="#00bfff" stop-opacity="0"/>
+                    <stop offset="0.25" stop-color="#00bfff" stop-opacity="0.55"/>
+                    <stop offset="0.75" stop-color="#f5bc50" stop-opacity="0.55"/>
+                    <stop offset="1" stop-color="#f5bc50" stop-opacity="0"/>
+                </linearGradient>
+            </defs>
+            <path class="quant-chart-line" pathLength="1" d="M0 230 L60 215 L110 240 L170 190 L220 205 L280 160 L330 175 L380 120 L430 150 L490 135 L540 170 L600 110 L650 125 L710 80 L760 100 L820 70 L870 95 L930 60 L990 85 L1050 45 L1110 65 L1200 30"/>
+        </svg>
+
+        <div class="future-head">
+            <span class="future-pill"><span class="future-pill-dot" aria-hidden="true"></span><span data-i18n="technicalPage.quant.pill">Project 01 · In work</span></span>
+            <h2 class="future-title" id="quant-title">IonQuant</h2>
+            <p class="quant-kicker" data-i18n="technicalPage.quant.kicker">My personal investment pipeline</p>
+            <p class="future-lead" data-i18n="technicalPage.quant.lead">Three building blocks, one question: does this stock have potential – <span class='highlight'>and am I fooling myself?</span></p>
         </div>
 
-
-
-        <div class="p-5 glass reveal coni rechtsalign">
-            <h3 data-i18n="technicalPage.projects.project2.title">Projekt 2: Personal Web-Portfolio (Java, Spring Boot, Thymeleaf, HTML, CSS, JavaScript)</h3>
-            <hr>
-            <p data-i18n="technicalPage.projects.project2.paragraph1">– Serverseitig gerendert mit <span class='highlight'>Spring Boot</span> und <span class='highlight'>Thymeleaf</span>: gemeinsame <span class='highlight'>Layout-Fragmente</span> statt Copy & Paste, eine Codebasis für 8 Seiten.</p>
-            <hr>
-            <p data-i18n="technicalPage.projects.project2.paragraph2">– Eigenes Frontend ohne Framework: <span class='highlight'>responsives Design</span>, Glassmorphism-UI, drei Sprachen (DE/EN/FR) in <span class='highlight'>Vanilla JavaScript</span> und optimierte WebP-Bilder.</p>
-            <hr>
-            <p data-i18n="technicalPage.projects.project2.description">Hier gehts zum Projekt:</p>
-            <a href="/project2tech" class="btn btn-primary hover-effect-5" role="button" data-i18n="technicalPage.projects.project2.button1">Programmierprozess</a>
-            <a href="https://github.com/Roberti1902/WebPortfolio" class="btn btn-info hover-effect-5" role="button">Github Repo</a>
-            <div class="available-badge">
-                <span class="status-dot2"></span>
-                <span class="status-text" data-i18n="technicalPage.projects.project2.badge1">Online!</span>
-            </div>
+        <!-- Pipeline: drei Stationen, Strahl läuft wie ein Ladebalken hindurch -->
+        <div class="roadmap roadmap-3 quant-pipeline">
+            <div class="roadmap-track" aria-hidden="true"><span class="roadmap-fill"></span><span class="roadmap-beam"></span></div>
+            <ol class="roadmap-steps">
+                <li>
+                    <span class="step-dot" aria-hidden="true"></span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s1Time">01 · Statistics</span>
+                    <span class="step-name">IonTrader</span>
+                    <span class="step-note" data-i18n="technicalPage.quant.s1Note">Probability & risk</span>
+                </li>
+                <li class="is-active is-gold">
+                    <span class="step-dot" aria-hidden="true"></span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s2Time">02 · Decision</span>
+                    <span class="step-name">Swing Rule Engine</span>
+                    <span class="step-note" data-i18n="technicalPage.quant.s2Note">Rules, no AI</span>
+                </li>
+                <li>
+                    <span class="step-dot" aria-hidden="true"></span>
+                    <span class="step-time" data-i18n="technicalPage.quant.s3Time">03 · Push</span>
+                    <span class="step-name">ntfy Bot</span>
+                    <span class="step-note" data-i18n="technicalPage.quant.s3Note">Straight to my iPhone</span>
+                </li>
+            </ol>
         </div>
 
-        <div class="p-5 glass reveal coni rechtsalign">
-            <h3 data-i18n="technicalPage.projects.project3.title">Projekt 3: REST-API mit Spring Boot (Spring (-Boot), Java, JUnit, Rest)</h3>
-            <hr>
-            <p data-i18n="technicalPage.projects.project3.paragraph1">– Architektur einer <span class="highlight">REST-konformen API</span> mit durchdachtem <span class="highlight">Domain-Modell</span>, <span class="highlight">Exception-Handling</span> und persistenter <span class="highlight">Datenanbindung</span> via <span class="highlight">Spring Data JPA</span>.</p>
-            <hr>
-            <p data-i18n="technicalPage.projects.project3.paragraph2">– <span class="highlight">Testgetriebene Entwicklung</span> mit <span class="highlight">JUnit</span> und <span class="highlight">Integrationstests</span>, um <span class="highlight">Stabilität</span>, <span class="highlight">Fehlerresistenz</span> und saubere <span class="highlight">Schnittstellen</span> sicherzustellen.</p>
-            <hr>
-            <p data-i18n="technicalPage.projects.project3.description">Hier gehts zum Projekt:</p>
-            <a href="#" class="btn btn-primary disabled" role="button" aria-disabled="true" tabindex="-1" data-i18n="technicalPage.projects.project3.button1">Programmierprozess</a>
-            <a href="https://github.com/Roberti1902/Rest-API" class="btn btn-info disabled" role="button" aria-disabled="true" tabindex="-1">Github Repo</a>
-            <div class="available-badge">
-                <span class="status-dot"></span>
-                <span class="status-text" data-i18n="technicalPage.projects.project3.badge1">In Arbeit!</span>
+        <p class="quant-disclaimer" role="note">
+            <span class="quant-disclaimer-icon" aria-hidden="true">!</span>
+            <span data-i18n="technicalPage.quant.disclaimer"><strong>Not financial advice.</strong> No orders are sent. Backtests use today's stock universe (<strong>survivorship bias</strong>) – results tend to look better than reality.</span>
+        </p>
+
+        <div class="quant-cards">
+            <article class="quant-card">
+                <span class="tile-num" data-i18n="technicalPage.quant.c1Num">01 · Statistics</span>
+                <h3>IonTrader</h3>
+                <p class="quant-sub" data-i18n="technicalPage.quant.c1Sub">Stock analysis tool with a statistical model</p>
+                <p data-i18n="technicalPage.quant.c1Text">Analyses a stock from its own price history: <span class='highlight'>bullish/bearish probability</span> and <span class='highlight'>risk</span> from 1 day to 1 year – plus <span class='highlight'>S&P 500 rank</span>, fundamentals, backtest and a paper portfolio.</p>
+                <p class="quant-honest" data-i18n="technicalPage.quant.c1Honest">The honest result: for META and NVDA no direction is proven – and the tool shows that instead of hiding it.</p>
+                <div class="tile-tags"><span>Python</span><span>PyTorch · CUDA</span><span>C++</span><span>Monte Carlo</span><span>Dash</span></div>
+                <div class="quant-links">
+                    <a class="quant-btn" href="https://github.com/Roberti1902/IonTrader" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a class="quant-btn quant-btn-ghost" href="https://roberti1902.github.io/IonTrader/" target="_blank" rel="noopener" data-i18n="technicalPage.quant.snapshot">Live snapshot ↗</a>
+                </div>
+            </article>
+
+            <article class="quant-card is-featured">
+                <span class="glow-ring" aria-hidden="true"></span>
+                <span class="tile-num" data-i18n="technicalPage.quant.c2Num">02 · Decision</span>
+                <h3>Swing Rule Engine</h3>
+                <p class="quant-sub" data-i18n="technicalPage.quant.c2Sub">Rule engine with walk-forward backtest</p>
+                <p data-i18n="technicalPage.quant.c2Text">Indicators – SMA 20/200, RSI, ATR, relative strength – feed a <span class='highlight'>deterministic decider</span>. No AI in the decision. It shows how close a stock is to a buy signal in <span class='highlight'>%</span>, sets a <span class='highlight'>dynamic sell target</span> from past signals and needs nothing but price data.</p>
+                <ul class="quant-checks">
+                    <li data-i18n="technicalPage.quant.c2Check1">Walk-forward: rules fixed on training data, only the test period counts</li>
+                    <li data-i18n="technicalPage.quant.c2Check2">Trading costs included in every result</li>
+                    <li data-i18n="technicalPage.quant.c2Check3">Overfitting warning once too many variants are tested</li>
+                </ul>
+                <blockquote class="quant-quote" data-i18n="technicalPage.quant.c2Quote">“I build tools that stop me from fooling myself in a backtest.”</blockquote>
+                <div class="tile-tags"><span>Python</span><span>JSON Schema</span><span>pytest</span><span>YAML config</span></div>
+                <div class="quant-links">
+                    <span class="quant-btn is-disabled" aria-disabled="true" data-i18n="technicalPage.quant.repoSoon">Repo coming soon</span>
+                </div>
+            </article>
+
+            <article class="quant-card">
+                <span class="tile-num" data-i18n="technicalPage.quant.c3Num">03 · Push</span>
+                <h3>ntfy Bot</h3>
+                <p class="quant-sub" data-i18n="technicalPage.quant.c3Sub">Push notifications for iPhone</p>
+                <p data-i18n="technicalPage.quant.c3Text">Sends signals to my iPhone with <span class='highlight'>action buttons</span>. Commands come back through a <span class='highlight'>reply topic</span> – status, top, bought, sold, pause – an <span class='highlight'>outbox</span> holds messages until they're delivered, and processed IDs block <span class='highlight'>duplicates</span>.</p>
+                <div class="tile-tags"><span>Python</span><span>ntfy</span><span>httpx</span></div>
+                <div class="quant-links">
+                    <span class="quant-btn is-disabled" aria-disabled="true" data-i18n="technicalPage.quant.repoSoon">Repo coming soon</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="quant-skill">
+            <span class="quant-skill-tag" data-i18n="technicalPage.quant.skillTag">+ Skill</span>
+            <p><strong>swing-stock-analyzer</strong> – <span data-i18n="technicalPage.quant.skillText">LLM-based fundamental rating with separate fundamental and execution gates. It shows my prompt design – in the pipeline the LLM rates, it never decides.</span></p>
+        </div>
+
+        <!-- Currently: Gesamt-Pipeline lädt hinter den Kulissen -->
+        <div class="quant-currently">
+            <div class="currently-head">
+                <span class="future-pill"><span class="future-pill-dot" aria-hidden="true"></span><span data-i18n="technicalPage.quant.curPill">Currently</span></span>
+                <h3 data-i18n="technicalPage.quant.curTitle">Behind the scenes, the full pipeline is loading.</h3>
+                <div class="currently-bar" aria-hidden="true"><span></span></div>
+            </div>
+            <div class="currently-grid">
+                <div>
+                    <p class="currently-label" data-i18n="technicalPage.quant.curPrivate">Stays private – named, never shown</p>
+                    <ul class="currently-chips">
+                        <li data-i18n="technicalPage.quant.priv1">Scheduler & orchestrator</li>
+                        <li data-i18n="technicalPage.quant.priv2">Task scheduling</li>
+                        <li data-i18n="technicalPage.quant.priv3">Journal & signal CHECK</li>
+                        <li data-i18n="technicalPage.quant.priv4">Scalable list</li>
+                        <li data-i18n="technicalPage.quant.priv5">News scraper</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="currently-label" data-i18n="technicalPage.quant.curNext">Next steps</p>
+                    <ol class="currently-next">
+                        <li data-i18n="technicalPage.quant.next1">Improve the pipeline and integrate new programs</li>
+                        <li data-i18n="technicalPage.quant.next2">Test on training data and out-of-sample</li>
+                        <li data-i18n="technicalPage.quant.next3">Expand to more markets</li>
+                        <li data-i18n="technicalPage.quant.next4">Evaluate indicator combinations via backtest and ML on my own GPU</li>
+                        <li data-i18n="technicalPage.quant.next5">News scraper with sentiment scoring</li>
+                    </ol>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- ===================== Projekte 2 und 3 ===================== -->
+    <div class="container project-pair">
+        <article class="quant-card project-card reveal">
+            <span class="tile-num" data-i18n="technicalPage.p2.num">Project 02 · NLP</span>
+            <h3 data-i18n="technicalPage.p2.title">When does fine-tuning pay off?</h3>
+            <p class="quant-sub" data-i18n="technicalPage.p2.sub">DistilBERT · AG News · University NLP final project</p>
+            <p data-i18n="technicalPage.p2.text">Frozen, partial or full fine-tuning – which one wins depends on how much labelled data you have. I tested all three across <span class='highlight'>five data budgets</span> (250–4,000 examples) and three seeds: <span class='highlight'>45 controlled, resumable runs</span> with leakage-free splits and a learning-rate sweep per strategy.</p>
+            <p class="quant-honest" data-i18n="technicalPage.p2.result">Result: partial fine-tuning wins from 250 to 1,000 examples, full fine-tuning only takes over from 2,000 – frozen never wins.</p>
+            <div class="tile-tags"><span>Python</span><span>PyTorch</span><span>Hugging Face Transformers</span><span>CUDA</span></div>
+            <div class="quant-links">
+                <a class="quant-btn" href="https://github.com/Roberti1902/finetuning-strategy-vs-data-budget" target="_blank" rel="noopener">GitHub ↗</a>
+                <span class="project-status"><span class="status-dot2" aria-hidden="true"></span><span data-i18n="technicalPage.p2.status">Completed</span></span>
+            </div>
+        </article>
+
+        <article class="quant-card project-card is-thesis reveal">
+            <span class="tile-num" data-i18n="technicalPage.p3.num">Project 03 · Bachelor's thesis</span>
+            <h3 data-i18n="technicalPage.p3.title">Density-based clustering of S&P 500 stocks by technical features – out-of-sample vs. the GICS classification</h3>
+            <p data-i18n="technicalPage.p3.text">Do stocks that move alike also share a sector? I group S&P 500 stocks by how they actually trade and test <span class='highlight'>out-of-sample</span> whether those clusters say more than the official <span class='highlight'>GICS sectors</span>.</p>
+            <div class="tile-tags"><span>Python</span><span>Density-based clustering</span><span>S&amp;P 500</span><span>GICS</span></div>
+            <div class="thesis-status">
+                <span class="thesis-pulse" aria-hidden="true"><span></span></span>
+                <span data-i18n="technicalPage.p3.status">In work · Coming soon</span>
+            </div>
+        </article>
     </div>
 
     <section class="container future-board future-tech reveal" aria-labelledby="future-title">
@@ -240,9 +309,9 @@
         <span class="future-horizon" aria-hidden="true"></span>
 
         <div class="future-head">
-            <span class="future-pill"><span class="future-pill-dot" aria-hidden="true"></span><span data-i18n="technicalPage.future.pill">In der Pipeline</span></span>
-            <h2 class="future-title" id="future-title" data-i18n="technicalPage.future.headline">In der Zukunft</h2>
-            <p class="future-lead" data-i18n="technicalPage.future.lead">Mein Fokus: <span class='highlight'>KI-Tools</span> in den Entwickleralltag integrieren – mehr <span class='highlight'>Output</span>, gleiche <span class='highlight'>Qualität</span>. Unternehmen zahlen für Mehrwert, und den will ich mit KI schneller liefern als je zuvor.</p>
+            <span class="future-pill"><span class="future-pill-dot" aria-hidden="true"></span><span data-i18n="technicalPage.future.pill">In the pipeline</span></span>
+            <h2 class="future-title" id="future-title" data-i18n="technicalPage.future.headline">What's next</h2>
+            <p class="future-lead" data-i18n="technicalPage.future.lead">Next: building <span class='highlight'>agents</span> that create <span class='highlight'>real value</span> – for companies, for people and for my own work.</p>
         </div>
 
         <div class="roadmap">
@@ -250,27 +319,27 @@
             <ol class="roadmap-steps">
                 <li class="is-active">
                     <span class="step-dot" aria-hidden="true"></span>
-                    <span class="step-time" data-i18n="technicalPage.future.step1Time">Ende 2026</span>
-                    <span class="step-name" data-i18n="technicalPage.future.step1Name">Bachelor</span>
-                    <span class="step-note" data-i18n="technicalPage.future.step1Note">Abschluss in Arbeit</span>
+                    <span class="step-time" data-i18n="technicalPage.future.step1Time">Now</span>
+                    <span class="step-name" data-i18n="technicalPage.future.step1Name">Bachelor's</span>
+                    <span class="step-note" data-i18n="technicalPage.future.step1Note">Thesis & electives</span>
                 </li>
-                <li >
+                <li>
                     <span class="step-dot" aria-hidden="true"></span>
-                    <span class="step-time" data-i18n="technicalPage.future.step2Time">2027</span>
-                    <span class="step-name" data-i18n="technicalPage.future.step2Name">Master</span>
-                    <span class="step-note" data-i18n="technicalPage.future.step2Note">Übernahme gesichert</span>
+                    <span class="step-time" data-i18n="technicalPage.future.step2Time">Next</span>
+                    <span class="step-name" data-i18n="technicalPage.future.step2Name">Junior role or Master's</span>
+                    <span class="step-note" data-i18n="technicalPage.future.step2Note">Still open – both excite me</span>
                 </li>
-                <li >
+                <li>
                     <span class="step-dot" aria-hidden="true"></span>
-                    <span class="step-time" data-i18n="technicalPage.future.step3Time">Im Master</span>
-                    <span class="step-name" data-i18n="technicalPage.future.step3Name">Spezialisierung</span>
-                    <span class="step-note" data-i18n="technicalPage.future.step3Note">Zertifikate & Enterprise-Workflows</span>
+                    <span class="step-time" data-i18n="technicalPage.future.step3Time">Then</span>
+                    <span class="step-name" data-i18n="technicalPage.future.step3Name">Automation services</span>
+                    <span class="step-note" data-i18n="technicalPage.future.step3Note">As a UG or small business</span>
                 </li>
-                <li >
+                <li>
                     <span class="step-dot" aria-hidden="true"></span>
                     <span class="step-time" data-i18n="technicalPage.future.step4Time">Vision</span>
-                    <span class="step-name" data-i18n="technicalPage.future.step4Name">Tech × 3D</span>
-                    <span class="step-note" data-i18n="technicalPage.future.step4Note">als eigene Dienstleistung</span>
+                    <span class="step-name" data-i18n="technicalPage.future.step4Name">Personal brand</span>
+                    <span class="step-note" data-i18n="technicalPage.future.step4Note">Content & community</span>
                 </li>
             </ol>
         </div>
@@ -278,26 +347,27 @@
         <div class="future-tiles">
             <article class="future-tile">
                 <span class="tile-num">01</span>
-                <h3 data-i18n="technicalPage.future.tile1Title">KI im Entwickleralltag</h3>
-                <p data-i18n="technicalPage.future.tile1Text">Output erhöhen, ohne Qualität zu verlieren – KI als festen Teil meines Programmier-Workflows.</p>
+                <h3 data-i18n="technicalPage.future.tile1Title">Agents in production</h3>
+                <p data-i18n="technicalPage.future.tile1Text">Agents that do real work inside my pipelines – tested and traceable, not just demos.</p>
+                <div class="tile-tags"><span>Claude Code</span><span>MCP</span><span>n8n</span></div>
             </article>
             <article class="future-tile">
                 <span class="tile-num">02</span>
-                <h3 data-i18n="technicalPage.future.tile2Title">Enterprise & CI/CD</h3>
-                <p data-i18n="technicalPage.future.tile2Text">Unternehmensnahe Workflows im Master aufbauen – und Zertifikate in Spezialisierungen sammeln.</p>
-                <div class="tile-tags"><span>AWS</span><span>Jenkins</span><span>Tekton</span><span>Kafka</span><span>Grafana</span></div>
+                <h3 data-i18n="technicalPage.future.tile2Title">Local AI</h3>
+                <p data-i18n="technicalPage.future.tile2Text">Kimi and DeepSeek on my own home server – to unlock even more possibilities of my own.</p>
+                <div class="tile-tags"><span>Kimi</span><span>DeepSeek</span><span>Home server</span></div>
             </article>
             <article class="future-tile">
                 <span class="tile-num">03</span>
-                <h3 data-i18n="technicalPage.future.tile3Title">Sprachen & Automatisierung</h3>
-                <p data-i18n="technicalPage.future.tile3Text">TypeScript, Java und Python vertiefen, Automatisierungssoftware für meinen Alltag bauen – und mehr eigene Projekte umsetzen.</p>
-                <div class="tile-tags"><span>TypeScript</span><span>Java</span><span>Python</span></div>
+                <h3 data-i18n="technicalPage.future.tile3Title">Personal content</h3>
+                <p data-i18n="technicalPage.future.tile3Text">Automated, of course – content that grows a community where people share knowledge.</p>
+                <div class="tile-tags"><span>Community</span><span>Automation</span></div>
             </article>
         </div>
 
         <div class="future-actions">
-            <a class="future-btn" href="/#service" data-i18n="technicalPage.future.ctaService">Tech × 3D: 1 Produkt. 30 Visuals.</a>
-            <a class="future-btn future-btn-ghost" href="/?topic=it#contact" data-i18n="cta.requestIt">IT-Projekt anfragen</a>
+            <a class="future-btn" href="/#service" data-i18n="technicalPage.future.ctaService">Cutless: why still cut it yourself?</a>
+            <a class="future-btn future-btn-ghost" href="/?topic=it#contact" data-i18n="cta.requestIt">Start an IT project</a>
         </div>
     </section>
 
