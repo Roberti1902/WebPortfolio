@@ -80,7 +80,7 @@
     "btn": "3D Portfolio & Projekte"
   },
   "stackPage": {
-    "headline": "3D-Stack",
+    "headline": "Creative Stack",
     "programsTitle": "Programme",
     "programList": {
       "blender": "Blender",
@@ -154,7 +154,20 @@
       "tile2Text": "Das Medium wechselt, ich passe mich an: Video Editing ausbauen und Blender-Videos produzieren.",
       "tile3Title": "Tech × 3D",
       "tile3Text": "Projekte entwickeln und eine Methode erforschen, die IT und 3D zu Mehrwert für Unternehmen verbindet.",
-      "ctaService": "Tech × 3D: 1 Produkt. 30 Visuals."
+      "ctaService": "Cutless: Warum noch selbst cutten?"
+    },
+    "toolsTitle": "Kreativ-Tools",
+    "blh": {
+      "title": "Content auf Autopilot.",
+      "lead": "Ich automatisiere <span class='highlight'>@blenderlifehacks</span> – damit ich mich auf das Wesentliche konzentrieren kann: die <span class='highlight'>kreative Gestaltung</span>. Agent-Skills machen aus einem Thema geskriptete Reels, gerenderte Carousels und Stories in einem Design-System. Ich dirigiere, die Pipeline produziert.",
+      "s1Name": "Thema",
+      "s1Note": "Ein Blender-Feature",
+      "s2Name": "Agent-Skills",
+      "s2Note": "Skript, Slides, Story",
+      "s3Name": "Rendern & exportieren",
+      "s3Note": "Blender per MCP",
+      "s4Name": "Kreative Regie",
+      "s4Note": "Dieser Teil bleibt meiner"
     }
   },
   "technicalPage": {

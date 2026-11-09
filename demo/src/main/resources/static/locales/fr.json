@@ -91,7 +91,7 @@
     "btn": "Portefeuille 3D"
   },
   "stackPage": {
-    "headline": "Stack 3D",
+    "headline": "Stack créatif",
     "programsTitle": "Programmes",
     "programList": {
       "blender": "Blender",
@@ -165,7 +165,20 @@
       "tile2Text": "Le média change, je m'adapte : développer le montage vidéo et produire des vidéos Blender.",
       "tile3Title": "Tech × 3D",
       "tile3Text": "Développer des projets et rechercher une méthode qui allie IT et 3D pour créer de la valeur en entreprise.",
-      "ctaService": "Tech × 3D : 1 produit. 30 visuels."
+      "ctaService": "Cutless : pourquoi monter soi-même ?"
+    },
+    "toolsTitle": "Outils de création",
+    "blh": {
+      "title": "Du contenu en pilote automatique.",
+      "lead": "J'automatise <span class='highlight'>@blenderlifehacks</span> – pour me concentrer sur l'essentiel : la <span class='highlight'>partie créative</span>. Des skills d'agent transforment un sujet en reels scénarisés, carrousels rendus et stories dans un même design system. Je dirige, le pipeline produit.",
+      "s1Name": "Sujet",
+      "s1Note": "Une fonction de Blender",
+      "s2Name": "Skills d'agent",
+      "s2Note": "Script, slides, story",
+      "s3Name": "Rendu & export",
+      "s3Note": "Blender via MCP",
+      "s4Name": "Direction créative",
+      "s4Note": "Cette partie reste la mienne"
     }
   },
   "technicalPage": {

@@ -321,17 +321,10 @@ img {
     }
 }
 
-/* Tech-/3D-/Projektseiten auf dem Handy: Porträt und Skill-Icons kleiner */
+/* Tech-/3D-/Projektseiten auf dem Handy: Porträt kleiner */
 @media (max-width: 575.98px) {
     .bild {
         max-width: 140px;
         height: auto;
-    }
-
-    .skill img,
-    .top-skill img {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
     }
 }

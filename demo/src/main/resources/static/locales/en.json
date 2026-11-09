@@ -80,7 +80,7 @@
     "btn": "3D Portfolio & Projects"
   },
   "stackPage": {
-    "headline": "3D Stack",
+    "headline": "Creative Stack",
     "programsTitle": "Programs",
     "section1": {
       "headline": "Developed through consistent self-study",
@@ -143,7 +143,20 @@
       "tile2Text": "The medium changes, I adapt: expanding video editing and producing Blender videos.",
       "tile3Title": "Tech × 3D",
       "tile3Text": "Developing projects and researching a method that combines IT and 3D into value for companies.",
-      "ctaService": "Tech × 3D: 1 product. 30 visuals."
+      "ctaService": "Cutless: why still cut it yourself?"
+    },
+    "toolsTitle": "Creative Design Tools",
+    "blh": {
+      "title": "Content on autopilot.",
+      "lead": "I automate <span class='highlight'>@blenderlifehacks</span> – so I can focus on what matters: the <span class='highlight'>creative part</span>. Agent skills turn one topic into scripted reels, rendered carousels and stories in one design system. I direct, the pipeline produces.",
+      "s1Name": "Topic",
+      "s1Note": "One Blender feature",
+      "s2Name": "Agent skills",
+      "s2Note": "Script, slides, story",
+      "s3Name": "Render & export",
+      "s3Note": "Blender via MCP",
+      "s4Name": "Creative direction",
+      "s4Note": "That part stays mine"
     }
   },
   "technicalPage": {

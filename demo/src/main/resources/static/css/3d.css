@@ -64,13 +64,6 @@ ul {
     list-style: none;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .zweitetech {
     padding-top: 5rem;
 }
@@ -90,17 +83,6 @@ h3 {
 
 .p-5 {
     color: white;
-}
-
-@keyframes heartbeat {
-    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px goldenrod); }
-    25% { transform: scale(1.02); filter: drop-shadow(0 0 10px goldenrod); }
-    50% { transform: scale(0.99); }
-    75% { transform: scale(1.01); }
-}
-
-.top-skill {
-    animation: heartbeat 1.5s infinite ease-in-out;
 }
 
 .projects-container {
@@ -181,4 +163,27 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+}
+
+/* Block zur automatisierten Content-Pipeline von @blenderlifehacks */
+.blh-auto {
+    margin-top: 4rem;
+}
+
+/* Creative Stack: wenige Logos, daher größere Kacheln */
+@media (min-width: 576px) {
+    .stack-gold .stack-item {
+        width: 132px;
+    }
+
+    .stack-gold .stack-icon {
+        width: 108px;
+        height: 108px;
+        border-radius: 28px;
+    }
+
+    .stack-gold .stack-icon img {
+        width: 70px;
+        height: 70px;
+    }
 }
