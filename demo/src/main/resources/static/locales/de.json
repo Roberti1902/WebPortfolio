@@ -13,7 +13,7 @@
     "topic3d": "3D & Motion",
     "topic3dDesc": "Produktvisualisierungen · Animationen · Ad Creatives",
     "topicIt": "IT & Software",
-    "topicItDesc": "Web-Apps · Backend (Java/Spring) · Automatisierungen – oder ein Jobangebot",
+    "topicItDesc": "KI-Agents & Automatisierung · Web-Apps · Backend (Java/Spring) – oder ein Jobangebot",
     "hintDefault": "Wählen Sie einen Bereich – hier erscheint Ihr direkter Kontakt.",
     "viaMail": "Schreiben Sie mir eine E-Mail",
     "mailHint": "Öffnet Ihr Mailprogramm mit einer kurzen Vorlage.",
@@ -40,7 +40,7 @@
   "nav": {
     "home": "Start",
     "technical": "Tech-Portfolio",
-    "threeD": "3D-Portfolio"
+    "threeD": "Creative-Portfolio"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
@@ -62,20 +62,20 @@
     "text": "Freelance & Nebenprojekte willkommen – <a href='#contact'>schreiben Sie mir</a>."
   },
   "about": {
-    "headline": "Mit KI programmieren. Selbst denken.",
+    "headline": "Mit KI lernen. Darüber hinaus bauen.",
     "paragraph1": "Ich entwickle Software mit <span class='highlight'>KI</span> – jeden Tag, als festen Teil meiner Arbeit. Für mich ist das der nächste logische Schritt: Sie lässt Entwickler <span class='highlight'>mehr leisten</span>, <span class='highlight'>schneller lernen</span> und Dinge bauen, die vorher <span class='highlight'>nicht möglich</span> waren.",
     "paragraph2": "Dabei lerne ich <span class='highlight'>mit</span> KI, statt <span class='highlight'>durch</span> sie ersetzt zu werden. Mit Agent-Harness-Plugins lasse ich mich beim Programmieren <span class='highlight'>abfragen</span> – damit ich ihr nie blind folge. Wer die KI und den <span class='highlight'>Kontext</span> versteht, ist nicht aufzuhalten.",
     "paragraph3": "Mein Antrieb: mit KI <span class='highlight'>echten Mehrwert</span> schaffen – für Unternehmen und für Menschen. Meiner Meinung nach sind erst <span class='highlight'>0,01 %</span> ihres Potenzials ausgeschöpft, auf jeder Ebene."
   },
   "logic": {
     "headline": "Logische Seite",
-    "paragraph": "Meine <span class='highlight'>Big 4</span>: <span class='highlight'>Java</span>, <span class='highlight'>Python</span>, <span class='highlight'>TypeScript</span> und <span class='highlight'>React</span> – dazu <span class='highlight'>Spring</span> fürs Backend. Was wirklich zählt, ist die <span class='highlight'>Logik hinter der Software</span>, nicht die Sprache.<br><br>Neben der Uni baue ich <span class='highlight'>finanzgestützte Projekte</span>: ML/DL auf Marktdaten, KI-Automatisierung, einen <span class='highlight'>Portfolio-Optimierer</span> und eine <span class='highlight'>Investment-Pipeline</span>, die nach Regeln läuft statt nach Bauchgefühl.<br><br>Ich baue <span class='highlight'>Agents</span> und setze sie in meinen eigenen Pipelines ein – und will genau wissen, <span class='highlight'>warum</span> sie tun, was sie tun.",
+    "paragraph": "Meine <span class='highlight'>Big 4</span>: <span class='highlight'>Python</span>, <span class='highlight'>Java</span>, <span class='highlight'>TypeScript</span> und <span class='highlight'>React</span> – dazu <span class='highlight'>Spring</span> fürs Backend. Was wirklich zählt, ist die <span class='highlight'>Logik hinter der Software</span>, nicht die Sprache.<br><br>Neben der Uni baue ich <span class='highlight'>finanzgestützte Projekte</span>: ML/DL auf Marktdaten, KI-Automatisierung, einen <span class='highlight'>Portfolio-Optimierer</span> und eine <span class='highlight'>Investment-Pipeline</span>, die nach Regeln läuft statt nach Bauchgefühl. <span class='highlight'>Finance × KI</span> ist genau das Feld, in dem ich bauen will.<br><br>Ich baue <span class='highlight'>Agents</span> und setze sie in meinen eigenen Pipelines ein – und will genau wissen, <span class='highlight'>warum</span> sie tun, was sie tun.",
     "btn": "Tech Portfolio & Projekte"
   },
   "creative": {
     "headline": "Kreative Seite",
     "paragraph": "<span class='highlight'>3D-Design</span> verbindet für mich <span class='highlight'>Realität</span> und <span class='highlight'>digitalen Raum</span>. Inspiriert von <span class='highlight'>Studio Ghibli</span> startete ich mit <span class='highlight'>Blender</span> – später kamen <span class='highlight'>Cinema 4D</span> und <span class='highlight'>Marvelous Designer</span> dazu.<br><br><span class='highlight'>Kreative Arbeit</span> ist mir enorm wichtig. KI soll sie nicht ersetzen, sondern <span class='highlight'>repetitive Aufgaben</span> abnehmen und dem Menschen <span class='highlight'>mehr Raum für Kreativität</span> geben. Mehr Output – und Kunst bleibt Kunst.<br><br><span class='highlight'>KI</span> verändert den kreativen Prozess – ich verbinde sie mit <span class='highlight'>Blender-MCPs</span> für maximalen Mehrwert und teile mein Wissen auf <span class='highlight'>Social Media</span>, um andere zu inspirieren.",
-    "btn": "3D Portfolio & Projekte"
+    "btn": "Creative-Portfolio & Projekte"
   },
   "stackPage": {
     "headline": "Creative Stack",
@@ -93,15 +93,14 @@
     },
     "section1": {
       "headline": "Durch kontinuierliches Selbststudium entwickelt",
-      "paragraph1": "Kreatives treibt mich seit der Kindheit an – vom Videoschnitt in <span class='highlight'>Windows Movie Maker</span> bis zu <span class='highlight'>Adobe</span>. <span class='highlight'>Studio Ghibli</span> brachte mich zu <span class='highlight'>3D</span>: Licht, Schatten und Bewegung digital <span class='highlight'>berechnen</span> – alles <span class='highlight'>Daten</span> und <span class='highlight'>Vektoren</span>.",
-      "paragraph2": "Die Kombination aus <span class='highlight'>Technik</span> und <span class='highlight'>Ästhetik</span> faszinierte mich sofort – besonders <span class='highlight'>prozedurale Texturen</span>, <span class='highlight'>physikbasiertes Shading</span> und der <span class='highlight'>Aufbau realistischer Szenen</span> durch gezielte <span class='highlight'>Lichtführung</span> und <span class='highlight'>Kamerakomposition</span>.",
-      "paragraph3": "Mit <span class='highlight'>Online-Kursen</span>, <span class='highlight'>Tutorials</span> und eigenen Projekten baute ich ein tiefes Verständnis für <span class='highlight'>3D-Visualisierung</span> auf – technisch fundiert, gestalterisch präzise."
+      "paragraph1": "Kreatives treibt mich seit der Kindheit an – vom <span class='highlight'>Windows Movie Maker</span> bis zu <span class='highlight'>Adobe</span>. <span class='highlight'>Studio Ghibli</span> brachte mich zu <span class='highlight'>3D</span>: Licht, Schatten und Bewegung berechnet – alles <span class='highlight'>Daten</span> und <span class='highlight'>Vektoren</span>.",
+      "paragraph2": "Mit <span class='highlight'>Online-Kursen</span>, Tutorials und eigenen Projekten lernte ich <span class='highlight'>prozedurale Texturen</span>, <span class='highlight'>physikbasiertes Shading</span> und <span class='highlight'>Lichtführung</span> – technisch fundiert, gestalterisch präzise."
     },
     "section2": {
       "headline": "Youtube-Videos / Webkurse:",
-      "paragraph1": "Fokus auf <span class='highlight'>photorealistisches Rendering</span>, <span class='highlight'>Shader-Workflows</span>, <span class='highlight'>Cinematic Camera Movement</span> und <span class='highlight'>prozedurale Materialsysteme</span> – von der <span class='highlight'>Konzeptphase</span> bis zum <span class='highlight'>finalen Render</span>.",
-      "paragraph2": "Vertiefung in <span class='highlight'>Motion Design</span>, <span class='highlight'>Produktvisualisierung</span>, <span class='highlight'>Redshift</span> und <span class='highlight'>stilisierten Animationen</span> für <span class='highlight'>markenorientierte 3D-Projekte</span>.",
-      "paragraph3": "<span class='highlight'>Cloth Simulation</span> auf Basis <span class='highlight'>physikalisch korrekter Stoffeigenschaften</span>, <span class='highlight'>pattern-basiertes Tailoring</span> und realistische <span class='highlight'>Fashion-Visuals</span> mit hohem Detailgrad."
+      "paragraph1": "<span class='highlight'>Photorealistisches Rendering</span>, Shader-Workflows und Cinematic Camera Moves",
+      "paragraph2": "<span class='highlight'>Motion Design</span>, Produktvisualisierung und <span class='highlight'>Redshift</span>",
+      "paragraph3": "<span class='highlight'>Cloth Simulation</span> und Fashion-Visuals in Marvelous Designer"
     },
     "projects": {
       "project1": {
@@ -180,7 +179,8 @@
       "c4": "Data Science 2",
       "c5": "Einführung in NLP",
       "c6": "Python für NLP",
-      "c7": "Deep Learning"
+      "c7": "Deep Learning",
+      "alsoUsed": "Im Studium nebenbei auch dabei: RAG, Vektor-Datenbanken, LangGraph, FastAPI, Pydantic und Langfuse."
     },
     "section2": {
       "headline2": "Heinrich Heine Universität Düsseldorf (2023-jetzt)",
@@ -248,7 +248,12 @@
       "c0Sub": "News-Scraper mit LLM-Triage",
       "c0Text": "Holt alle 30 Minuten Marktnachrichten aus RSS-Feeds, führt Duplikate zusammen und ordnet sie Tickern zu. Ein LLM <span class='highlight'>sortiert</span> jedes Ereignis vor und bewertet den <span class='highlight'>Impact</span> je Ticker – als JSON, mit <span class='highlight'>Pydantic</span> validiert; ungültige Antworten werden verworfen und protokolliert.",
       "c0Check1": "Läuft lokal auf Ollama (meine RTX 3060) oder auf Claude mit Prompt Caching und Tagesbudget",
-      "c0Check2": "Eingebaute Auswertung: Trefferquote nach 1, 5 und 20 Handelstagen"
+      "c0Check2": "Eingebaute Auswertung: Trefferquote nach 1, 5 und 20 Handelstagen",
+      "evalTitle": "Evals eingebaut – jeder Baustein prüft sich selbst",
+      "eval1": "<strong>Kalibrierung</strong> IonTrader: Brier Skill Score gegen die Basisrate",
+      "eval2": "<strong>Walk-forward</strong> Regel-Engine: mit Kosten und Overfitting-Warnung",
+      "eval3": "<strong>Trefferquote</strong> News Radar: Ergebnis nach 1, 5 und 20 Handelstagen",
+      "eval4": "<strong>Schemas</strong> Pydantic und JSON Schema verwerfen ungültige Ausgaben"
     },
     "p2": {
       "num": "Projekt 02 · NLP",
@@ -312,7 +317,7 @@
     "section2": {
       "paragraph1": "Die visuelle Identität und das <span class=\"highlight\">Storytelling</span> wurden exakt auf die Plattformästhetik abgestimmt – mit dem Ziel, <span class=\"highlight\">organisches Wachstum</span>, <span class=\"highlight\">hohe Retention</span> und <span class=\"highlight\">Wissensvermittlung</span> zu vereinen.",
       "paragraph2": "Dabei standen <span class=\"highlight\">Content-Struktur</span> und <span class=\"highlight\">Konsistenz</span> im Fokus.",
-      "paragraph3": "Durch kluge <span class=\"highlight\">A/B-Tests</span> und einen konsistenten <span class=\"highlight\">Posting-Rhythmus</span> maximierte ich die Performance und baute eine Community mit über <span class=\"highlight\">75.000 Follower:innen</span> auf."
+      "paragraph3": "Durch kluge <span class=\"highlight\">A/B-Tests</span> und einen konsistenten <span class=\"highlight\">Posting-Rhythmus</span> maximierte ich die Performance und baute eine Community mit über <span class=\"highlight\">rund 70.000 Follower:innen</span> auf."
     }
   },
   "project3Brand": {
@@ -324,17 +329,6 @@
     "section2": {
       "paragraph1": "Der Fokus dieser Brand‑Kollaborationen lag auf <span class=\"highlight\">Skill‑Reflexion</span>, <span class=\"highlight\">Networking</span> und der <span class=\"highlight\">strategischen Positionierung</span> innerhalb der Branche. Durch konstante <span class=\"highlight\">Eigeninitiative</span> lernte ich, mit <span class=\"highlight\">Drucksituationen</span> umzugehen, <span class=\"highlight\">Feedback</span> produktiv umzusetzen und <span class=\"highlight\">Projektzyklen</span> effizient zu managen.",
       "paragraph2": "Gleichzeitig setzte ich mich intensiv mit dem Wandel der Branche auseinander: Die <span class=\"highlight\">Verzahnung von 3D und KI</span> stellt für mich keinen Widerspruch, sondern eine <span class=\"highlight\">zukunftsfähige Synthese</span> dar. Ich plane die Integration von <span class=\"highlight\">lokalen AI‑Modellen</span> in meinen Workflow – als <span class=\"highlight\">Effizienz‑Booster</span>, nicht als Ersatz kreativer Prozesse. Ziel bleibt stets die <span class=\"highlight\">hochwertige Visualisierung</span> mit <span class=\"highlight\">klarer Markenbotschaft</span>."
-    }
-  },
-  "project2Portfolio": {
-    "headline": "Projekt 2: Persönliches Web-Portfolio",
-    "section1": {
-      "paragraph1": "Dieses Portfolio ist eine <span class='highlight'>Spring-Boot</span>-Anwendung: <span class='highlight'>Thymeleaf</span> rendert die Seiten aus gemeinsamen <span class='highlight'>Layout-Fragmenten</span> (Head, Navigation, Footer), statische Dateien liefert der eingebettete Server direkt aus. Gebaut mit <span class='highlight'>Java 21</span> und <span class='highlight'>Gradle</span>.",
-      "paragraph2": "Das Frontend kommt bewusst ohne Framework aus: handgeschriebenes <span class='highlight'>HTML</span>, <span class='highlight'>CSS</span> und <span class='highlight'>JavaScript</span> mit <span class='highlight'>responsivem Layout</span> vom Smartphone bis zum Desktop, eigenem Cursor, Scroll-Animationen per <span class='highlight'>IntersectionObserver</span> und Glassmorphism-Design."
-    },
-    "section2": {
-      "paragraph1": "Die Inhalte gibt es in <span class='highlight'>drei Sprachen</span> (DE/EN/FR): Die Texte liegen in JSON-Dateien und werden clientseitig eingesetzt; die Sprache folgt der <span class='highlight'>Browsereinstellung</span> und lässt sich jederzeit wechseln, fehlende Übersetzungen fallen auf Englisch zurück.",
-      "paragraph2": "Auf <span class='highlight'>Performance</span> und <span class='highlight'>Barrierefreiheit</span> habe ich geachtet: Bilder als <span class='highlight'>WebP</span> (74 MB → 3 MB), Unterstützung für reduzierte Bewegung, per Tastatur bedienbare Elemente und <span class='highlight'>SEO</span>-Grundlagen wie Meta-Tags, Sitemap und Open Graph."
     }
   }
 }

@@ -13,7 +13,7 @@
     "topic3d": "3D & Motion",
     "topic3dDesc": "Visualisations produit · Animations · Créations publicitaires",
     "topicIt": "IT & Logiciel",
-    "topicItDesc": "Applications web · Backend (Java/Spring) · Automatisations – ou une offre d’emploi",
+    "topicItDesc": "Agents IA & automatisation · Applications web · Backend (Java/Spring) – ou une offre d’emploi",
     "hintDefault": "Choisissez un domaine – votre contact direct apparaît ici.",
     "viaMail": "Écrivez-moi un e-mail",
     "mailHint": "Ouvre votre messagerie avec un court modèle.",
@@ -37,21 +37,10 @@
     "text": "La page que vous recherchez n’existe pas ou a été déplacée.",
     "button": "Retour à l’accueil"
   },
-  "project2Portfolio": {
-    "headline": "Projet 2 : Portfolio Web Personnel",
-    "section1": {
-      "paragraph1": "Ce portfolio est une application <span class='highlight'>Spring Boot</span> : <span class='highlight'>Thymeleaf</span> génère les pages à partir de <span class='highlight'>fragments de mise en page</span> partagés (en-tête, navigation, pied de page), les fichiers statiques sont servis directement par le serveur intégré. Développé avec <span class='highlight'>Java 21</span> et <span class='highlight'>Gradle</span>.",
-      "paragraph2": "Le frontend se passe volontairement de framework : <span class='highlight'>HTML</span>, <span class='highlight'>CSS</span> et <span class='highlight'>JavaScript</span> écrits à la main, avec une <span class='highlight'>mise en page responsive</span> du smartphone au bureau, un curseur personnalisé, des animations au défilement via <span class='highlight'>IntersectionObserver</span> et un design glassmorphism."
-    },
-    "section2": {
-      "paragraph1": "Le contenu existe en <span class='highlight'>trois langues</span> (DE/EN/FR) : les textes sont stockés dans des fichiers JSON et appliqués côté client ; la langue suit les <span class='highlight'>paramètres du navigateur</span> et peut être changée à tout moment, avec repli sur l’anglais pour les traductions manquantes.",
-      "paragraph2": "J’ai soigné la <span class='highlight'>performance</span> et l’<span class='highlight'>accessibilité</span> : images en <span class='highlight'>WebP</span> (74 Mo → 3 Mo), prise en charge de la réduction des animations, éléments utilisables au clavier et bases du <span class='highlight'>SEO</span> comme les balises meta, le sitemap et Open Graph."
-    }
-  },
   "nav": {
     "home": "Accueil",
     "technical": "Portfolio technique",
-    "threeD": "Portfolio 3D"
+    "threeD": "Portfolio créatif"
   },
   "footer": {
     "rights": "Tous droits réservés."
@@ -73,20 +62,20 @@
     "text": "Freelance & projets annexes bienvenus – <a href='#contact'>écrivez-moi</a>."
   },
   "about": {
-    "headline": "Coder avec l'IA. Penser par soi-même.",
+    "headline": "Apprendre avec l'IA. Construire au-delà.",
     "paragraph1": "Je développe des logiciels avec l'<span class='highlight'>IA</span> – chaque jour, comme partie intégrante de mon travail. Pour moi, c'est la suite logique : elle permet à un développeur de <span class='highlight'>produire plus</span>, d'<span class='highlight'>apprendre plus vite</span> et de construire ce qui était <span class='highlight'>impossible</span> avant.",
     "paragraph2": "Mais j'apprends <span class='highlight'>avec</span> l'IA au lieu d'être remplacé <span class='highlight'>par</span> elle. Grâce à des plugins d'agent harness, je me fais <span class='highlight'>interroger</span> pendant que je code – pour ne jamais la suivre aveuglément. Qui comprend l'IA et son <span class='highlight'>contexte</span> devient inarrêtable.",
     "paragraph3": "Ce qui me motive : créer une <span class='highlight'>vraie valeur</span> avec l'IA – pour les entreprises et pour les gens. À mon avis, nous n'avons exploité que <span class='highlight'>0,01 %</span> de son potentiel, à tous les niveaux."
   },
   "logic": {
     "headline": "Côté logique",
-    "paragraph": "Mon <span class='highlight'>Big 4</span> : <span class='highlight'>Java</span>, <span class='highlight'>Python</span>, <span class='highlight'>TypeScript</span> et <span class='highlight'>React</span> – plus <span class='highlight'>Spring</span> pour le backend. Ce qui compte vraiment, c'est la <span class='highlight'>logique derrière le logiciel</span>, pas le langage.<br><br>En parallèle de l'université, je mène des <span class='highlight'>projets liés à la finance</span> : ML/DL sur des données de marché, automatisation par l'IA, un <span class='highlight'>optimiseur de portefeuille</span> et un <span class='highlight'>pipeline d'investissement</span> qui suit des règles, pas l'intuition.<br><br>Je construis des <span class='highlight'>agents</span> et je les fais travailler dans mes propres pipelines – en voulant savoir exactement <span class='highlight'>pourquoi</span> ils font ce qu'ils font.",
+    "paragraph": "Mon <span class='highlight'>Big 4</span> : <span class='highlight'>Python</span>, <span class='highlight'>Java</span>, <span class='highlight'>TypeScript</span> et <span class='highlight'>React</span> – plus <span class='highlight'>Spring</span> pour le backend. Ce qui compte vraiment, c'est la <span class='highlight'>logique derrière le logiciel</span>, pas le langage.<br><br>En parallèle de l'université, je mène des <span class='highlight'>projets liés à la finance</span> : ML/DL sur des données de marché, automatisation par l'IA, un <span class='highlight'>optimiseur de portefeuille</span> et un <span class='highlight'>pipeline d'investissement</span> qui suit des règles, pas l'intuition. <span class='highlight'>Finance × IA</span>, c'est exactement là que je veux construire.<br><br>Je construis des <span class='highlight'>agents</span> et je les fais travailler dans mes propres pipelines – en voulant savoir exactement <span class='highlight'>pourquoi</span> ils font ce qu'ils font.",
     "btn": "Tech & Projets"
   },
   "creative": {
     "headline": "Côté créatif",
     "paragraph": "Pour moi, le <span class='highlight'>design 3D</span> relie la <span class='highlight'>réalité</span> et l'<span class='highlight'>espace numérique</span>. Inspiré par le <span class='highlight'>Studio Ghibli</span>, j'ai commencé avec <span class='highlight'>Blender</span> – puis ajouté <span class='highlight'>Cinema 4D</span> et <span class='highlight'>Marvelous Designer</span>.<br><br>Le <span class='highlight'>travail créatif</span> compte énormément pour moi. L'IA ne doit pas le remplacer, mais éliminer les <span class='highlight'>tâches répétitives</span> et laisser aux humains <span class='highlight'>plus de place pour créer</span>. Plus de production – et l'art reste de l'art.<br><br>L'<span class='highlight'>IA</span> transforme le processus créatif – je la combine avec les <span class='highlight'>MCP Blender</span> pour un maximum de valeur et partage mon savoir sur les <span class='highlight'>réseaux sociaux</span> pour inspirer les autres.",
-    "btn": "Portefeuille 3D"
+    "btn": "Portfolio créatif & projets"
   },
   "stackPage": {
     "headline": "Stack créatif",
@@ -104,15 +93,14 @@
     },
     "section1": {
       "headline": "Développé par apprentissage continu",
-      "paragraph1": "La création m'anime depuis l'enfance – du montage dans <span class='highlight'>Windows Movie Maker</span> jusqu'à <span class='highlight'>Adobe</span>. Le <span class='highlight'>Studio Ghibli</span> m'a mené à la <span class='highlight'>3D</span> : <span class='highlight'>calculer</span> numériquement lumière, ombre et mouvement – ce ne sont que des <span class='highlight'>données</span> et des <span class='highlight'>vecteurs</span>.",
-      "paragraph2": "L’alchimie entre <span class=\"highlight\">technologie</span> et <span class=\"highlight\">esthétique</span> m’a immédiatement captivé : surtout <span class=\"highlight\">textures procédurales</span>, <span class=\"highlight\">shading physique</span> et la création de scènes réalistes par la <span class=\"highlight\">gestion de la lumière</span> et la <span class=\"highlight\">composition caméra</span>.",
-      "paragraph3": "Grâce à des <span class='highlight'>cours en ligne</span>, des <span class='highlight'>tutoriels</span> et mes propres projets, j'ai acquis une compréhension approfondie de la <span class='highlight'>visualisation 3D</span> – techniquement solide, créativement précise."
+      "paragraph1": "La création me passionne depuis l'enfance – de <span class='highlight'>Windows Movie Maker</span> à <span class='highlight'>Adobe</span>. Le <span class='highlight'>Studio Ghibli</span> m'a mené à la <span class='highlight'>3D</span> : lumière, ombre et mouvement calculés – tout n'est que <span class='highlight'>données</span> et <span class='highlight'>vecteurs</span>.",
+      "paragraph2": "Grâce à des <span class='highlight'>cours en ligne</span>, des tutoriels et mes propres projets, j'ai appris les <span class='highlight'>textures procédurales</span>, le <span class='highlight'>shading physique</span> et l'<span class='highlight'>éclairage</span> – solide techniquement, précis créativement."
     },
     "section2": {
       "headline": "Vidéos YouTube / Cours en ligne",
-      "paragraph1": "Focus sur le <span class=\"highlight\">rendu photoréaliste</span>, les <span class=\"highlight\">flux de travail shader</span>, le <span class=\"highlight\">mouvement cinématique</span> et les <span class=\"highlight\">systèmes de matériaux procéduraux</span> – de la <span class=\"highlight\">phase conceptuelle</span> au <span class=\"highlight\">rendu final</span>.",
-      "paragraph2": "Approfondissement en <span class=\"highlight\">motion design</span>, <span class=\"highlight\">visualisation produit</span>, <span class=\"highlight\">Redshift</span> et <span class=\"highlight\">animations stylisées</span> pour des projets 3D orientés marque.",
-      "paragraph3": "<span class=\"highlight\">Simulation de tissu</span> basée sur des propriétés physiques, <span class=\"highlight\">patrons de couture</span> et <span class=\"highlight\">visuels mode</span> à haute fidélité."
+      "paragraph1": "<span class='highlight'>Rendu photoréaliste</span>, workflows de shaders et mouvements de caméra cinématiques",
+      "paragraph2": "<span class='highlight'>Motion design</span>, visualisation de produits et <span class='highlight'>Redshift</span>",
+      "paragraph3": "<span class='highlight'>Simulation de tissus</span> et visuels mode dans Marvelous Designer"
     },
     "projects": {
       "project1": {
@@ -191,7 +179,8 @@
       "c4": "Data Science 2",
       "c5": "Introduction au NLP",
       "c6": "Python pour le NLP",
-      "c7": "Deep Learning"
+      "c7": "Deep Learning",
+      "alsoUsed": "Aussi abordés à l'université : RAG, bases de données vectorielles, LangGraph, FastAPI, Pydantic et Langfuse."
     },
     "section2": {
       "headline2": "Université Heinrich Heine Düsseldorf (2023–présent)",
@@ -259,7 +248,12 @@
       "c0Sub": "Scraper d'actualités avec triage par LLM",
       "c0Text": "Récupère toutes les 30 minutes les actualités de marché via des flux RSS, fusionne les doublons et les associe aux tickers. Un LLM <span class='highlight'>trie</span> chaque événement et évalue son <span class='highlight'>impact</span> par ticker – en JSON, validé avec <span class='highlight'>Pydantic</span> ; les réponses invalides sont rejetées et journalisées.",
       "c0Check1": "Tourne en local sur Ollama (ma RTX 3060) ou sur Claude avec prompt caching et budget journalier",
-      "c0Check2": "Évaluation intégrée : taux de réussite après 1, 5 et 20 jours de bourse"
+      "c0Check2": "Évaluation intégrée : taux de réussite après 1, 5 et 20 jours de bourse",
+      "evalTitle": "Évaluations intégrées – chaque brique se vérifie elle-même",
+      "eval1": "<strong>Calibration</strong> IonTrader : Brier skill score face au taux de base",
+      "eval2": "<strong>Walk-forward</strong> Moteur de règles : frais inclus, alerte d'overfitting",
+      "eval3": "<strong>Taux de réussite</strong> News Radar : résultat après 1, 5 et 20 jours de bourse",
+      "eval4": "<strong>Schémas</strong> Pydantic et JSON Schema rejettent les sorties invalides"
     },
     "p2": {
       "num": "Projet 02 · NLP",

@@ -22,11 +22,6 @@ public class WebController {
         return "3d";
     }
 
-    @RequestMapping(path="/project2tech", method = RequestMethod.GET)
-    public String techproj2() {
-        return "project2tech";
-    }
-
     @RequestMapping(path="/project13d", method = RequestMethod.GET)
     public String cgproj1() {
         return "project13d";
